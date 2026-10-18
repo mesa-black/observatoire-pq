@@ -338,6 +338,11 @@ body.les-leurs .mur .cdn { opacity: .2; filter: grayscale(1); }
 .encart b { display: block; font: 400 2.4rem/1.05 var(--serif); }
 .encart b em { color: var(--vif); }
 .encart p { margin: .5rem 0 0; color: var(--doux); font-size: .9rem; }
+.clin { position: relative; margin: .6rem 0 0; padding: .7rem .8rem .6rem; background: #fffdf3; border: 1px solid var(--filet); box-shadow: 0 6px 12px -8px rgba(0, 0, 0, .35); transform: rotate(-1.2deg); font: 400 .72rem/1.5 var(--mono); color: var(--encre); }
+.clin::before { content: ""; position: absolute; top: -.35rem; left: 50%; width: .7rem; height: .7rem; margin-left: -.35rem; border-radius: 50%; background: var(--vif); box-shadow: 0 1px 2px rgba(0, 0, 0, .4); }
+.clin span { display: block; }
+.clin span::first-letter { text-transform: uppercase; }
+.clin s { color: var(--doux); }
 .trousseau-note { margin-top: 1.4rem; font: 400 .74rem var(--mono); color: var(--pale); }
 @media (max-width: 52rem) {
     .trousseau-tete { grid-template-columns: 1fr; gap: 1.2rem; }

@@ -172,6 +172,23 @@
             gained: pick('gagné', "l'hybride post-quantique"), lost: pick('perdu', "l'hybride post-quantique"), hands: pick('changé', 'de mains'),
         };
     }
+    // Relevé 4 comes out the Saturday before Blue Monday (the third Monday of
+    // January): a pinned note says so, when, and only when, the relevé is
+    // published in the three days before it. Computed, so a republication in
+    // February does not carry a stale joke.
+    function blueMonday() {
+        if (!M.published) return null;
+        const pub = new Date(`${String(M.published).slice(0, 10)}T12:00:00`);
+        const first = new Date(pub.getFullYear(), 0, 1, 12);
+        const monday = new Date(first); monday.setDate(1 + ((8 - first.getDay()) % 7) + 14);
+        const days = Math.round((monday - pub) / 864e5);
+        if (days < 1 || days > 3) return null;
+        const fmt = d => new Intl.DateTimeFormat('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' }).format(d);
+        return h('p', { class: 'clin' },
+            h('span', null, `${fmt(pub)} : le relevé.`),
+            h('span', null, `${fmt(monday)} : `, h('s', null, 'Blue Monday'), `, vos clés en laiton ne rouillent pas.`),
+            h('span', null, `Q-Day : date inconnue.`));
+    }
     // One sentence for the chapô: the hybrid and the hands first, then how many
     // doors moved at all; or that nothing did.
     function depuis(m) {
@@ -1944,7 +1961,8 @@
                 h('div', { class: 'trousseau-legende' },
                     h('span', null, h('i', { class: 'mini-cle laiton' }), `laiton · post-quantique `, h('b', null, sealedAll)),
                     h('span', null, h('i', { class: 'mini-cle fer' }), `fer · classique `, h('b', null, iron)),
-                    h('label', { class: 'bascule' }, qday, ` Le Q-Day tombe : ${iron} clés de fer rouillent d'un coup`))),
+                    h('label', { class: 'bascule' }, qday, ` Le Q-Day tombe : ${iron} clés de fer rouillent d'un coup`),
+                    blueMonday())),
             h('span', { class: 'fixe' }, `Mesuré le ${dateFr} · ne dépend pas du Q-Day`),
             trousseau,
             h('p', { class: 'trousseau-note' }, `Une clé, une porte d'entrée HTTPS ; la taille du trousseau suit son nombre de clés. Chaque nom ouvre la fiche de l'organisation.`),
