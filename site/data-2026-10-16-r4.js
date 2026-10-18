@@ -3589,13 +3589,13 @@ window.OBSERVATOIRE = {
           },
           "cle": {
             "kind": "cdn",
-            "name": "Akamai (Prolexic)",
+            "name": "Akamai",
             "country": "US",
             "asn": "213120",
             "prev": {
               "date": "2026-10-15",
               "pq": "none",
-              "name": "Akamai (Prolexic)",
+              "name": "Akamai",
               "kind": "cdn",
               "protocols": [
                 "tls1_2"

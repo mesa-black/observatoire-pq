@@ -38,9 +38,10 @@
             "country": "US"
         },
         "213120": {
-            "name": "Akamai (Prolexic)",
+            "name": "Akamai",
             "kind": "cdn",
-            "country": "US"
+            "country": "US",
+            "why": "Prolexic, Akamai's DDoS scrubbing network: the same company holds the key"
         },
         "54113": {
             "name": "Fastly",

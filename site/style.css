@@ -289,60 +289,64 @@ body.les-leurs .mur .cdn { opacity: .2; filter: grayscale(1); }
 .cle-liste li { font-size: .92rem; color: var(--doux); padding-top: .7rem; border-top: 1px solid var(--filet); }
 .cle-liste b { color: var(--encre); }
 .qui.cle-depuis { margin-bottom: 5rem; }
+/* A section that is both: .qui's padding shorthand would take .wrap's gutter away. */
+.wrap.qui { padding-inline: 1.5rem; }
+@media (max-width: 34rem) { .wrap.qui { padding-inline: 1rem; } }
 
-/* ------------------------------------------------------------ the hotel's key board (relevé 4) */
-.hotel { margin-top: 4rem; padding-top: 2.2rem; border-top: 2px solid var(--encre); }
-.hotel h2 { margin: .6rem 0 1rem; font: 400 clamp(2rem, 5vw, 3.3rem)/1.05 var(--serif); max-width: 24ch; }
-.hotel h2 em { color: var(--vif); }
-.hotel-texte { max-width: 40rem; color: var(--doux); }
-.hotel-commandes { color: var(--doux); margin-top: 1.6rem; }
+/* ------------------------------------------------------------ the key rings (relevé 4) */
 .mini-cle { display: inline-block; width: .8rem; height: 1rem; margin-right: .35rem; vertical-align: -.15rem; border-radius: 2px 2px 7px 7px; }
-.mini-cle.laiton, .fob.laiton { background: linear-gradient(160deg, #f3dc92, #c99c3f 58%, #a77729); color: #3b2610; }
-.mini-cle.fer, .fob.fer { background: linear-gradient(160deg, #d2d5d7, #959a9d 58%, #73787b); color: #1f2326; }
-.tableau-cles {
-    /* Columns, not a grid: each counter keeps its own height, Cloudflare's
-       long one does not stretch the small ones beside it. */
-    columns: 17.5rem; column-gap: 1rem;
-    padding: 1.3rem; border-radius: 14px;
-    background: repeating-linear-gradient(92deg, rgba(255, 255, 255, .035) 0 3px, transparent 3px 11px), linear-gradient(180deg, #7b5434, #5a3b23);
-    box-shadow: inset 0 0 0 3px #4a2f1b, 0 18px 40px -22px rgba(40, 20, 5, .55);
-}
-.comptoir { break-inside: avoid; margin-bottom: 1rem; background: #f6efe1; border-radius: 8px; padding: .75rem .8rem 1.1rem; box-shadow: inset 0 2px 6px rgba(60, 35, 10, .18); }
-.comptoir-plaque {
-    text-align: center; padding: .4rem .6rem .35rem; border-radius: 4px;
-    background: linear-gradient(180deg, #ecd189, #b98a33); color: #3b2610; box-shadow: inset 0 0 0 1px rgba(80, 50, 10, .35);
-}
-.comptoir-plaque b { display: block; font: 500 .78rem/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
-.comptoir-plaque small { font-size: .7rem; opacity: .8; }
-.comptoir.propre .comptoir-plaque { background: linear-gradient(180deg, #d9dcde, #9a9fa2); color: #1f2326; }
-.crochets { list-style: none; margin: .9rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem .45rem; }
-.crochets li { position: relative; padding-top: .55rem; }
-.crochets li::before { content: ""; position: absolute; top: .05rem; left: 50%; width: .16rem; height: .75rem; margin-left: -.08rem; border-radius: 2px; background: #6f6a62; z-index: 1; }
-.fob {
-    position: relative; display: flex; flex-direction: column; align-items: center; gap: .1rem;
-    width: 5.9rem; min-height: 3.9rem; padding: .95rem .3rem .5rem; border: 0; border-radius: 6px 6px 20px 20px;
-    font: 600 .66rem/1.15 var(--sans); text-align: center; cursor: pointer;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .14), 0 3px 5px -3px rgba(0, 0, 0, .45);
-    transform-origin: 50% -.4rem; transition: transform .7s cubic-bezier(.3, .7, .3, 1), opacity .7s, filter .5s;
-    transition-delay: calc(var(--i) * 6ms);
-}
-.fob::before { content: ""; position: absolute; top: .22rem; left: 50%; width: .42rem; height: .42rem; margin-left: -.21rem; border-radius: 50%; background: #f6efe1; box-shadow: inset 0 1px 2px rgba(0, 0, 0, .4); }
-.fob:hover, .fob:focus-visible { transform: rotate(-7deg); }
-.fob-n { font: 500 .58rem/1 var(--mono); opacity: .75; }
-/* One long word (STMicroelectronics, FranceConnect): smaller, never cut in two. */
-.fob.long .fob-nom { font-size: .56rem; letter-spacing: -.01em; }
-.fob-nom { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.fob-etiquette { position: absolute; bottom: -.45rem; left: 50%; transform: translateX(-50%) rotate(-4deg); padding: .05rem .35rem; border-radius: 3px; background: var(--vif); color: #fff; font: 600 .5rem/1.4 var(--sans); letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
-.tableau-cles.qday .fob.fer { transform: translateY(2.4rem) rotate(17deg); opacity: .3; background: linear-gradient(160deg, #c37a48, #8a4520 60%, #6b3317); color: #fff; }
-.tableau-cles.etranger .fob.fr { opacity: .12; filter: grayscale(1); }
-.hotel-note { margin-top: .9rem; font-size: .8rem; color: var(--doux); }
-@media (max-width: 34rem) {
-    .tableau-cles { padding: .8rem; columns: 1; }
-    .fob { width: 5.3rem; }
+.mini-cle.laiton { background: linear-gradient(160deg, #f3dc92, #c99c3f 58%, #a77729); }
+.mini-cle.fer { background: linear-gradient(160deg, #d2d5d7, #959a9d 58%, #73787b); }
+.defs-cles { position: absolute; }
+.trousseau-tete { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: 2.5rem; align-items: start; }
+.trousseau-tete > p { max-width: 38rem; color: var(--doux); margin: 0; }
+.trousseau-legende { display: grid; gap: .5rem; padding: 1rem 1.2rem; background: var(--papier); border: 1px solid var(--filet); border-radius: 14px; font-size: .9rem; }
+.trousseau-legende b { font-weight: 800; }
+.trousseau-legende .bascule { margin-top: .4rem; padding-top: .7rem; border-top: 1px dashed var(--filet); font-weight: 600; }
+.bande { margin-top: 2.6rem; }
+.bande-tete { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--filet); }
+.bande-tete h3 { margin: 0; font: 400 1.9rem/1.05 var(--serif); }
+.bande-tete h3 em { color: var(--vif); font-size: 1.25rem; }
+.bande-compte { font: 400 .78rem var(--mono); color: var(--doux); }
+.bande-barre { margin-left: auto; display: flex; align-items: center; gap: .6rem; font: 500 .78rem var(--mono); }
+.bande-barre i { display: block; width: 9rem; height: .5rem; border-radius: 4px; background: linear-gradient(90deg, #c9a03f var(--p), #9a9fa3 var(--p)); }
+.anneaux { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1rem .4rem; margin-top: 1rem; }
+.anneau-carte { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 15rem; }
+.anneau-carte.grand { flex-direction: row; align-items: center; text-align: left; gap: 1.4rem; max-width: none; padding: .9rem 1.6rem .9rem .9rem; background: var(--papier); border: 1px solid var(--filet); border-radius: 18px; }
+.anneau-carte.grand .anneau-legende b { font: 400 2.3rem/1 var(--serif); }
+.anneau-carte.grand .noms-cles { columns: 2; column-gap: 1.2rem; width: auto; max-width: 21rem; margin-inline: 0; }
+.anneau-carte.petit { max-width: 7.6rem; }
+.anneau { display: block; max-width: 100%; height: auto; }
+.anneau-fil { fill: none; stroke: #6b7075; stroke-width: 3.4; }
+.cle-svg .metal { stroke-width: .7; stroke-linejoin: round; transition: fill .6s; }
+.cle-svg.or .metal { fill: url(#cle-or); stroke: #7a5916; }
+.cle-svg.fer .metal { fill: url(#cle-fer); stroke: #4b4f53; }
+.trousseau.qday .cle-svg.fer .metal { fill: url(#cle-rouille); stroke: #5a2c14; }
+.cle-svg .trou { fill: var(--creme); stroke: rgba(0, 0, 0, .35); stroke-width: .6; }
+.anneau-legende b { display: block; font-weight: 600; font-size: .95rem; line-height: 1.2; }
+.anneau-legende small { display: block; font: 400 .72rem/1.3 var(--mono); color: var(--doux); margin-top: .15rem; }
+.pays { font: 500 .62rem var(--mono); padding: 1px 5px; border-radius: 4px; background: var(--filet); color: var(--doux); vertical-align: .15rem; }
+.pays.fr { background: #dfe6e8; color: var(--p-scelle); }
+.noms-cles { width: max-content; max-width: 100%; margin: .4rem auto 0; text-align: left; font-size: .76rem; line-height: 1.45; }
+.nom-cle { display: block; width: 100%; padding: 0; border: 0; background: none; font: inherit; color: var(--doux); text-align: inherit; cursor: pointer; }
+.nom-cle::before { content: ""; display: inline-block; width: .42rem; height: .42rem; margin-right: .35rem; border-radius: 50%; vertical-align: .05rem; background: #9a9fa3; }
+.nom-cle.or { color: var(--encre); font-weight: 600; }
+.nom-cle.or::before { background: #c9a03f; }
+.nom-cle:hover { color: var(--vif); }
+.trousseau.qday .nom-cle.fer { color: #93461f; }
+.encart { align-self: center; margin-left: auto; max-width: 23rem; padding: .3rem 0 .3rem 1.3rem; border-left: 3px solid #b8892c; }
+.encart b { display: block; font: 400 2.4rem/1.05 var(--serif); }
+.encart b em { color: var(--vif); }
+.encart p { margin: .5rem 0 0; color: var(--doux); font-size: .9rem; }
+.trousseau-note { margin-top: 1.4rem; font: 400 .74rem var(--mono); color: var(--pale); }
+@media (max-width: 52rem) {
+    .trousseau-tete { grid-template-columns: 1fr; gap: 1.2rem; }
+    .anneau-carte.grand { flex-direction: column; text-align: center; }
+    .anneau-carte.grand .noms-cles { columns: 1; }
+    .encart { margin-left: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
-    .fob { transition: none; }
-    .fob:hover, .fob:focus-visible { transform: none; }
+    .cle-svg .metal { transition: none; }
 }
 .qui { margin-top: 5rem; padding: 2.2rem 0 0; border-top: 2px solid var(--encre); }
 .qui h2 { margin: .6rem 0 1rem; font: 400 clamp(2rem, 5vw, 3.3rem)/1.05 var(--serif); max-width: 22ch; }
