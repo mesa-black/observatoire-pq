@@ -299,6 +299,22 @@
         !s.hsts ? `pas de HSTS : un visiteur peut être ramené en HTTP` : !/preload/i.test(s.hsts) ? `notre HSTS n'est pas préchargé dans les navigateurs : la toute première visite peut encore être détournée en HTTP` : '',
     ].filter(Boolean);
     if (wrong.length) $('nous').append(' ', h('b', null, 'Ce qui ne va pas chez nous : '), wrong.join(' ; '), '.');
+    // And the reader: handshake.mesa.black (devops/handshake in the
+    // observatoire) answers with the key exchange this browser just
+    // negotiated, the one fact a page cannot read on its own. One request, no
+    // cookie; nothing is shown if it does not answer (the prototype, opened
+    // here, is not an origin it serves).
+    fetch('https://handshake.mesa.black/', { cache: 'no-store', credentials: 'omit' })
+        .then(r => (r.ok ? r.json() : null))
+        .then(t => {
+            if (!t || !t.group) return;
+            const tls12 = t.version === 'TLS 1.2';
+            $('nous').append(h('span', { class: 'et-vous' }, h('b', null, 'Et vous ? '),
+                `Votre navigateur vient de négocier `, h('code', null, t.group), ` avec nous${tls12 ? ', en TLS 1.2' : ''} : `,
+                t.hybrid ? `votre connexion est déjà hybride post-quantique.`
+                    : `${tls12 ? `TLS 1.2 ne peut pas porter l'hybride. ` : `un échange classique. `}Une version récente de Chrome, Edge, Firefox ou Safari parlerait l'hybride ; derrière le proxy d'une entreprise qui inspecte le trafic, c'est lui qui a répondu.`));
+        })
+        .catch(() => {});
     // A themed relevé (2: the AI, 3: the mail) opens on its own screens: we
     // come first, right under the façade note.
     if (M.focus) {
