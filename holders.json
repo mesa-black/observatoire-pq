@@ -1,0 +1,228 @@
+{
+    "version": "2026-10-18",
+    "note": "Who holds the key of a front door: the network that answers the TLS connection (its AS, from Team Cymru), not the headers, which pass through intermediaries and can name a CDN further back (Imperva in front of CloudFront, Akamai Prolexic in front of Fastly). kind: cdn (an edge network that terminates TLS for others), cloud (a hyperscaler's load balancer), hebergeur (a hosting provider), propre (the organisation's own network, or its group's). country: where the company holding that network is incorporated, which decides whose law can compel it. An AS missing here is reported by build.sh, to be classified by hand, never guessed.",
+    "by_header": {
+        "16509": {
+            "cloudfront": {
+                "name": "Amazon CloudFront",
+                "kind": "cdn",
+                "country": "US"
+            }
+        }
+    },
+    "asn": {
+        "13335": {
+            "name": "Cloudflare",
+            "kind": "cdn",
+            "country": "US"
+        },
+        "209242": {
+            "name": "Cloudflare",
+            "kind": "cdn",
+            "country": "US"
+        },
+        "399358": {
+            "name": "Cloudflare",
+            "kind": "cdn",
+            "country": "US",
+            "why": "Anthropic's address space announced through Cloudflare, which answers the TLS"
+        },
+        "20940": {
+            "name": "Akamai",
+            "kind": "cdn",
+            "country": "US"
+        },
+        "16625": {
+            "name": "Akamai",
+            "kind": "cdn",
+            "country": "US"
+        },
+        "213120": {
+            "name": "Akamai (Prolexic)",
+            "kind": "cdn",
+            "country": "US"
+        },
+        "54113": {
+            "name": "Fastly",
+            "kind": "cdn",
+            "country": "US"
+        },
+        "19551": {
+            "name": "Imperva",
+            "kind": "cdn",
+            "country": "US",
+            "why": "Imperva (Thales group since 2023), incorporated in the US"
+        },
+        "48851": {
+            "name": "Radware",
+            "kind": "cdn",
+            "country": "IL"
+        },
+        "198949": {
+            "name": "Radware",
+            "kind": "cdn",
+            "country": "IL"
+        },
+        "16509": {
+            "name": "Amazon Web Services",
+            "kind": "cloud",
+            "country": "US"
+        },
+        "14618": {
+            "name": "Amazon Web Services",
+            "kind": "cloud",
+            "country": "US"
+        },
+        "396982": {
+            "name": "Google Cloud",
+            "kind": "cloud",
+            "country": "US"
+        },
+        "15169": {
+            "name": "Google",
+            "kind": "propre",
+            "country": "US",
+            "why": "only Google's own services here (Gemini, Vertex AI): the provider is the organisation measured"
+        },
+        "8075": {
+            "name": "Microsoft Azure",
+            "kind": "cloud",
+            "country": "US"
+        },
+        "134963": {
+            "name": "Alibaba Cloud",
+            "kind": "cloud",
+            "country": "CN"
+        },
+        "36459": {
+            "name": "GitHub (Microsoft)",
+            "kind": "propre",
+            "country": "US",
+            "why": "GitHub Copilot, served by GitHub's own network"
+        },
+        "2635": {
+            "name": "Automattic (WordPress VIP)",
+            "kind": "hebergeur",
+            "country": "US"
+        },
+        "16276": {
+            "name": "OVHcloud",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "50624": {
+            "name": "3DS Outscale",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "12876": {
+            "name": "Scaleway",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "12601": {
+            "name": "Cegedim.Cloud",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "41628": {
+            "name": "Alter Way",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "50818": {
+            "name": "Muona",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "48426": {
+            "name": "Over-Link",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "21000": {
+            "name": "Atos",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "51038": {
+            "name": "HCL",
+            "kind": "hebergeur",
+            "country": "IN",
+            "why": "HCL Technologies' French network; the group is incorporated in India"
+        },
+        "47957": {
+            "name": "Worldline",
+            "kind": "hebergeur",
+            "country": "FR"
+        },
+        "47608": {
+            "name": "Gigalis",
+            "kind": "hebergeur",
+            "country": "FR",
+            "why": "a public-interest group hosting for local public bodies"
+        },
+        "2200": {
+            "name": "Renater",
+            "kind": "hebergeur",
+            "country": "FR",
+            "why": "the national research and education network"
+        },
+        "8255": {
+            "name": "Euro-Information (Crédit Mutuel)",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "9159": {
+            "name": "Crédit Agricole",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "60855": {
+            "name": "Réseau interministériel de l'État (DINUM)",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "50588": {
+            "name": "Ministère de l'Europe et des Affaires étrangères",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "205461": {
+            "name": "France Travail",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "48140": {
+            "name": "Cirtil (Urssaf)",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "12696": {
+            "name": "AXA Technology Services",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "20675": {
+            "name": "Boursorama",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "47314": {
+            "name": "Vinci",
+            "kind": "propre",
+            "country": "FR"
+        },
+        "328126": {
+            "name": "Orange",
+            "kind": "propre",
+            "country": "FR",
+            "why": "the Orange group's own network, announced from its Tunisian branch"
+        },
+        "32934": {
+            "name": "Meta",
+            "kind": "propre",
+            "country": "US"
+        }
+    }
+}

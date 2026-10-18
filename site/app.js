@@ -130,6 +130,30 @@
         const cc = (as.match(/, ([A-Z]{2})$/) || [])[1] || '';
         return { name: as.replace(/^\S+ - /, '').replace(/, [A-Z]{2}$/, '') || 'inconnu', cc, kind: 'prestataire' };
     };
+    // Relevé 4: the doors measured at both dates, and what changed. Compared on
+    // the raw verdict: the « on demand » downgrade above has no twin in the
+    // previous measurement, and would read as a door losing the hybrid.
+    function keyMoves() {
+        const both = measured.filter(e => e.cle?.prev && e.cle.prev.reachable !== false && e.cle.prev.pq);
+        const was = e => e.cle.prev.pq === 'full', is = e => (e.onDemand ? 'full' : e.pq) === 'full';
+        const prev = both[0]?.cle.prev.date;
+        return {
+            prev, compared: both.length,
+            prevFr: prev ? new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(prev)) : '',
+            gained: both.filter(e => !was(e) && is(e)),
+            lost: both.filter(e => was(e) && !is(e)),
+            moved: both.filter(e => e.cle.prev.name && e.cle.prev.name !== e.cle.name),
+        };
+    }
+    // One sentence for the chapô: only what moved, or that nothing did.
+    function depuis(m) {
+        const parts = [
+            m.gained.length && `${plural(m.gained.length, 'porte a gagné', 'portes ont gagné')} l'hybride`,
+            m.lost.length && `${plural(m.lost.length, "l'a perdu", "l'ont perdu")}`,
+            m.moved.length && `${plural(m.moved.length, 'a changé', 'ont changé')} de mains`,
+        ].filter(Boolean);
+        return parts.length ? `Depuis la mesure du ${m.prevFr} : ${parts.join(', ')}.` : `Depuis la mesure du ${m.prevFr}, aucune porte n'a bougé.`;
+    }
     const postState = e => {
         const m = e.mail;
         if (!m) return null;
@@ -180,6 +204,21 @@
         sources($('chapo'), `les enregistrements DNS publics de chaque organisation (`, h('code', null, 'openai-domain-verification'), `, `,
             h('code', null, 'anthropic-domain-verification'), `, `, h('code', null, 'cursor-domain-verification'), `…), lus le ${dateFr} sur ses serveurs DNS faisant autorité, et la porte de chaque fournisseur, mesurée le même jour. `,
             `Pour vérifier : `, h('code', null, 'dig +short TXT qonto.com'), '.');
+    } else if (M.focus === 'cle') {
+        // Relevé 4: relevé 1's page, re-measured, read through who holds the
+        // key of each door (cle.sh). Nothing of relevé 1 is hidden.
+        document.body.classList.add('releve-cle');
+        const keyed = measured.filter(e => e.cle);
+        const viaCdn = sealed.filter(e => e.cle?.kind === 'cdn');
+        const ownKey = keyed.filter(e => e.cle.kind === 'propre');
+        const moves = keyMoves();
+        $('chapo').append(
+            `Sur `, h('strong', null, `${keyed.length} portes d'entrée françaises`), `, `, h('strong', null, sealed.length), ` parlent l'hybride post-quantique. `,
+            h('strong', null, viaCdn.length), ` d'entre elles le doivent à leur CDN, qui l'a activé pour tous ses clients sans qu'elles aient rien demandé. `,
+            `Celles qui tiennent elles-mêmes leur clé, sur leur propre réseau : `, h('strong', null, `${ownKey.filter(e => e.pq === 'full').length} sur ${ownKey.length}`), `. `,
+            moves.prev ? depuis(moves) : '',
+        );
+        sources($('chapo'), `chaque porte mesurée le ${dateFr} (OpenSSL 3.5, seul groupe offert X25519MLKEM768) ; qui la tient, d'après le réseau qui répond à la connexion TLS (Team Cymru), classé à la main dans `, h('code', null, 'holders.json'), ` : jamais deviné.`);
     } else {
         $('chapo').append(
             `Qui enregistre aujourd'hui le trafic chiffré vers un site pourra le lire le jour où un ordinateur quantique cassera l'échange de clés classique. Sur `,
@@ -1765,6 +1804,72 @@
         );
         wall.before(souv);
         sources(souv.querySelector('ul'), `pour chaque domaine, l'adresse du serveur de courrier de plus haute priorité, et le réseau qui l'annonce (Team Cymru), lus le ${dateFr}. Le prestataire est reconnu au nom du serveur quand il le dit (Google, Microsoft, Proofpoint…), au réseau sinon.`);
+    }
+
+    // ------------------------------------------------------------ who holds the key (relevé 4)
+    // Four kinds of holder, from cle.sh: the hybrid of most French front doors
+    // is their CDN's default, and the doors that keep their own key are the
+    // ones without it. Then what moved since the previous measurement.
+    if (M.focus === 'cle') {
+        const KINDS = [
+            ['cdn', 'Un CDN', 'un réseau qui répond pour des milliers de sites à la fois'],
+            ['cloud', 'Un cloud', "l'équilibreur de charge d'un géant du nuage"],
+            ['hebergeur', 'Un hébergeur', 'un prestataire qui loue ses serveurs'],
+            ['propre', 'Son propre réseau', "celui de l'organisation ou de son groupe, la clé reste chez elle"],
+        ];
+        const keyed = measured.filter(e => e.cle);
+        const sec = h('section', { class: 'wrap qui cle', 'aria-labelledby': 'cle-titre' });
+        $('atlas-bloc').before(sec);
+        const bars = h('div', { class: 'barres' });
+        const lists = h('ul', { class: 'cle-liste' });
+        for (const [k, label, what] of KINDS) {
+            const sub = keyed.filter(e => e.cle.kind === k), ok = sub.filter(e => e.pq === 'full');
+            if (!sub.length) continue;
+            const fill = h('div', { class: 'rempli' });
+            const row = h('div', { class: 'barre' },
+                h('span', { class: 'lib' }, label, h('small', null, `${ok.length} portes scellées sur ${sub.length}`)),
+                h('div', { class: 'piste', role: 'img', 'aria-label': `${label} : ${pct(ok.length, sub.length)} % scellées` }, fill),
+                h('span', { class: 'pct' }, `${pct(ok.length, sub.length)} %`, h('small', null, 'scellées')));
+            bars.append(row);
+            new IntersectionObserver((entries, obs) => {
+                if (entries[0].isIntersecting) { fill.style.width = `${pct(ok.length, sub.length)}%`; obs.disconnect(); }
+            }, { threshold: .4 }).observe(row);
+            const by = new Map();
+            for (const e of sub) by.set(e.cle.name, (by.get(e.cle.name) || 0) + 1);
+            lists.append(h('li', null, h('b', null, `${label} · ${sub.length}`), ` — ${what} : `,
+                [...by].sort((a, b) => b[1] - a[1]).map(([n, c]) => `${n} ${c}`).join(', '), '.'));
+        }
+        const cdnSealed = keyed.filter(e => e.cle.kind === 'cdn' && e.pq === 'full').length;
+        const sealedAll = keyed.filter(e => e.pq === 'full').length;
+        const us = keyed.filter(e => e.cle.country === 'US');
+        sec.append(
+            h('p', { class: 'sur' }, 'Qui tient la clé'),
+            h('h2', { id: 'cle-titre' }, `Le post-quantique des portes françaises, `, h('em', null, `c'est d'abord celui de leur CDN.`)),
+            h('p', null, `La clé d'une porte d'entrée, c'est celle de la connexion TLS : qui y répond peut lire ce qui passe. `,
+                `${pct(cdnSealed, sealedAll)} % des portes scellées le sont par un CDN, qui a activé l'hybride pour tous ses clients. `,
+                `Et ${us.length} sur ${keyed.length} sont tenues par une entreprise américaine, que sa loi peut contraindre à livrer ce qu'elle voit passer, hybride ou pas.`),
+            h('span', { class: 'fixe' }, `Mesuré le ${dateFr} · ne dépend pas du Q-Day`),
+            bars, lists,
+        );
+
+        // What moved since the previous measurement, door by door.
+        const moves = keyMoves();
+        if (moves.prev) {
+            const ch = h('section', { class: 'wrap qui cle-depuis', 'aria-labelledby': 'depuis-titre' });
+            sec.after(ch);
+            const line = (e, what) => h('li', null, h('b', null, e.name), ` (${e.host}) : ${what}`);
+            const changes = [
+                ...moves.gained.map(e => line(e, `a gagné l'hybride${e.cle.prev.name !== e.cle.name ? `, en passant de ${e.cle.prev.name} à ${e.cle.name}` : ` (${e.cle.name})`}.`)),
+                ...moves.lost.map(e => line(e, `a perdu l'hybride${e.cle.prev.name !== e.cle.name ? `, en passant de ${e.cle.prev.name} à ${e.cle.name}` : ''}.`)),
+                ...moves.moved.filter(e => !moves.gained.includes(e) && !moves.lost.includes(e)).map(e => line(e, `a changé de mains, de ${e.cle.prev.name} à ${e.cle.name}.`)),
+            ];
+            ch.append(
+                h('p', { class: 'sur' }, `Depuis le ${moves.prevFr}`),
+                h('h2', { id: 'depuis-titre' }, changes.length ? `${plural(changes.length, 'porte a bougé', 'portes ont bougé')}.` : `Aucune porte n'a bougé.`),
+                h('p', null, `Les mêmes portes, mesurées de la même façon le ${moves.prevFr} et le ${dateFr}. ${moves.compared} étaient joignables les deux fois.`),
+            );
+            if (changes.length) ch.append(h('ul', { class: 'cle-liste' }, changes));
+        }
     }
 
 })();

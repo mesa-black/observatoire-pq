@@ -3,7 +3,7 @@
 # fetch: the page opens from disk and every figure in it comes from here.
 set -eu
 cd "$(dirname "$0")"
-date=${1:-$(ls results/*.jsonl | grep -v 'self\|cost\|csp\|\.ai\.\|\.hf\.\|\.mail\.' | sort | tail -1 | xargs basename | cut -d. -f1)}
+date=${1:-$(ls results/*.jsonl | grep -v 'self\|cost\|csp\|\.ai\.\|\.hf\.\|\.mail\.\|\.cle\.' | sort | tail -1 | xargs basename | cut -d. -f1)}
 mkdir -p site
 # A relevé keeps the list it was measured against: the list moves on (relevé 2
 # added the AI group), an old relevé must not grow plaques it never measured.
@@ -25,6 +25,8 @@ tmp=$(mktemp -d); trap 'rm -rf "$tmp"' EXIT
 [ -f "results/$date.ai.jsonl" ] && cp "results/$date.ai.jsonl" "$tmp/ai" || : > "$tmp/ai"
 # hf.sh: what each one publishes on Hugging Face (verified accounts only).
 [ -f "results/$date.hf.jsonl" ] && grep '}$' "results/$date.hf.jsonl" > "$tmp/hf" || : > "$tmp/hf"
+# cle.sh (relevé 4 on): who holds the key of each door, and its previous state.
+[ -f "results/$date.cle.jsonl" ] && grep '}$' "results/$date.cle.jsonl" > "$tmp/cle" || : > "$tmp/cle"
 for f in cost self.cost; do
     if [ -f "results/$date.$f.jsonl" ]; then grep '}$' "results/$date.$f.jsonl" > "$tmp/$f" || true; else : > "$tmp/$f"; fi
 done
@@ -41,6 +43,7 @@ done
           --slurpfile hf "$tmp/hf" \
           --slurpfile mail "$tmp/mail" \
           --slurpfile mailtls "$tmp/mailtls" \
+          --slurpfile cle "$tmp/cle" \
           --slurpfile sp "results/$date.self.csp.jsonl" \
           --arg date "$date" '
         # cost.sh runs apart, one host at a time: its figures join here.
@@ -50,8 +53,9 @@ done
         | ($ai | map({(.host): {ai}}) | add // {}) as $aiBy
         | ($hf | map({(.host): {hf}}) | add // {}) as $hfBy
         | ($mail | map({(.host): {mail}}) | add // {}) as $mailBy
+        | ($cle | map({(.host): {cle}}) | add // {}) as $cleBy
         | ($mailtls | map({(.mx): (. | del(.mx))}) | add // {}) as $tlsBy
-        | ($r | map({(.host): (. + ($cost[.host] // {cost: null}) + ($page[.host] // {page: null}) + ($aiBy[.host] // {}) + ($hfBy[.host] // {}) + ($mailBy[.host] // {}))}) | add) as $by
+        | ($r | map({(.host): (. + ($cost[.host] // {cost: null}) + ($page[.host] // {page: null}) + ($aiBy[.host] // {}) + ($hfBy[.host] // {}) + ($mailBy[.host] // {}) + ($cleBy[.host] // {}))}) | add) as $by
         | {date: $date,
            meta: ($m[0] // {}),
            self: ($self[0] + {cost: ($sc[0].cost // null), page: ($sp[0] | del(.host))}),
@@ -60,6 +64,6 @@ done
     printf ';\n'
 } > "$out"
 # The latest relevé is the page's; the others stay at hand under their date.
-latest=$(ls results/*.jsonl | grep -v 'self\|cost\|csp\|\.ai\.\|\.hf\.\|\.mail\.' | sort | tail -1 | xargs basename | cut -d. -f1)
+latest=$(ls results/*.jsonl | grep -v 'self\|cost\|csp\|\.ai\.\|\.hf\.\|\.mail\.\|\.cle\.' | sort | tail -1 | xargs basename | cut -d. -f1)
 [ -z "$variant" ] && [ "$date" = "$latest" ] && cp "$out" site/data.js
 echo "$out <- results/$date.jsonl ($domains${variant:+, $meta})"

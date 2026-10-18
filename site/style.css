@@ -285,6 +285,10 @@ input[type=range] { width: 100%; height: 1.6rem; accent-color: var(--p-expose); 
 body.les-leurs .mur .cdn { opacity: .2; filter: grayscale(1); }
 
 /* ------------------------------------------------------------ who */
+.cle-liste { margin: 2rem 0 0; padding: 0; list-style: none; display: grid; gap: .7rem; max-width: 46rem; }
+.cle-liste li { font-size: .92rem; color: var(--doux); padding-top: .7rem; border-top: 1px solid var(--filet); }
+.cle-liste b { color: var(--encre); }
+.qui.cle-depuis { margin-bottom: 5rem; }
 .qui { margin-top: 5rem; padding: 2.2rem 0 0; border-top: 2px solid var(--encre); }
 .qui h2 { margin: .6rem 0 1rem; font: 400 clamp(2rem, 5vw, 3.3rem)/1.05 var(--serif); max-width: 22ch; }
 .qui h2 em { color: var(--vif); }
