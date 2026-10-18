@@ -1850,6 +1850,80 @@
         const keyed = measured.filter(e => e.cle);
         const sec = h('section', { class: 'wrap qui cle', 'aria-labelledby': 'cle-titre' });
         $('atlas-bloc').before(sec);
+
+        // The hotel's key board: one counter per holder, one fob per
+        // organisation, hung where its key is kept. Brass when the door takes
+        // the hybrid, iron when it does not. Holders with fewer than three keys
+        // share a counter by kind; the organisations' own networks share one.
+        {
+            const sealedOf = e => e.pq === 'full';
+            const movedHosts = new Set(keyMoves().hands.map(e => e.host));
+            const counters = new Map();
+            const counterOf = e => {
+                if (e.cle.kind === 'propre') return ['propre', 'Gardées à la maison', 'propre'];
+                const n = keyed.filter(x => x.cle.name === e.cle.name).length;
+                if (n >= 3) return [e.cle.name, e.cle.name, e.cle.kind];
+                return [`autres-${e.cle.kind}`, { cdn: 'Autres CDN', cloud: 'Autres clouds', hebergeur: 'Autres hébergeurs' }[e.cle.kind], e.cle.kind];
+            };
+            for (const e of keyed) {
+                const [id, label, kind] = counterOf(e);
+                if (!counters.has(id)) counters.set(id, { label, kind, keys: [] });
+                counters.get(id).keys.push(e);
+            }
+            const ORDER = { cdn: 0, cloud: 1, hebergeur: 2, propre: 3 };
+            const list = [...counters.values()].sort((a, b) => ORDER[a.kind] - ORDER[b.kind]
+                || (a.label.startsWith('Autres') - b.label.startsWith('Autres')) || b.keys.length - a.keys.length);
+            const plaqueOf = new Map(plaques.map(p => [p.e.host, p]));
+            const board = h('div', { class: 'tableau-cles' });
+            let room = 100, i = 0;
+            for (const c of list) {
+                c.keys.sort((a, b) => sealedOf(b) - sealedOf(a) || a.name.localeCompare(b.name, 'fr'));
+                const countries = [...new Set(c.keys.map(e => e.cle.country))];
+                const hooks = h('ul', { class: 'crochets' });
+                for (const e of c.keys) {
+                    room += 1;
+                    const sealedHere = sealedOf(e);
+                    const fob = h('button', {
+                        type: 'button',
+                        class: `fob ${sealedHere ? 'laiton' : 'fer'}${e.cle.country === 'FR' ? ' fr' : ''}${movedHosts.has(e.host) ? ' demenage' : ''}${e.name.split(/\s/).some(w => w.length > 14) ? ' long' : ''}`,
+                        style: `--i: ${i++}`,
+                        title: `${e.name} — clé tenue par ${e.cle.name} (${e.cle.country}) · ${sealedHere ? 'post-quantique' : 'classique'}`,
+                    }, h('span', { class: 'fob-n' }, `n° ${room}`), h('span', { class: 'fob-nom' }, e.name),
+                        movedHosts.has(e.host) ? h('span', { class: 'fob-etiquette' }, 'déménagée') : null);
+                    fob.addEventListener('click', () => { const p = plaqueOf.get(e.host); if (p) openSheet(p); });
+                    hooks.append(h('li', null, fob));
+                }
+                const gold = c.keys.filter(sealedOf).length;
+                board.append(h('section', { class: `comptoir ${c.kind}`, 'aria-label': `${c.label} : ${c.keys.length} clés` },
+                    h('div', { class: 'comptoir-plaque' },
+                        h('b', null, c.label),
+                        h('small', null, `${plural(c.keys.length, 'clé', 'clés')} · ${gold} en laiton${countries.length === 1 && c.kind !== 'propre' ? ` · ${countries[0]}` : ''}`)),
+                    hooks));
+            }
+            const qday = h('input', { type: 'checkbox' }), away = h('input', { type: 'checkbox' });
+            qday.addEventListener('change', () => board.classList.toggle('qday', qday.checked));
+            away.addEventListener('change', () => board.classList.toggle('etranger', away.checked));
+            const brass = keyed.filter(sealedOf).length;
+            const cdnBrass = keyed.filter(e => sealedOf(e) && e.cle.kind === 'cdn').length;
+            const home = counters.get('propre')?.keys || [];
+            const hotel = h('section', { class: 'wrap hotel', 'aria-labelledby': 'hotel-titre' },
+                h('p', { class: 'sur' }, 'La réception'),
+                h('h2', { id: 'hotel-titre' }, `${keyed.length} portes, ${brass} clés en laiton. `, h('em', null, `${cdnBrass} attendent au comptoir d'un CDN.`)),
+                h('p', { class: 'hotel-texte' }, `Chaque organisation a confié la clé de sa porte d'entrée à quelqu'un : celui qui répond à la connexion chiffrée. `,
+                    `Le laiton, c'est l'hybride post-quantique ; le fer, l'échange classique, que le Q-Day ouvrira. `,
+                    `Les comptoirs des CDN croulent sous le laiton, qu'ils ont posé pour tous leurs clients. `,
+                    `Les ${home.length} organisations qui gardent leur clé à la maison n'en ont que ${home.filter(sealedOf).length} en laiton.`),
+                h('div', { class: 'tri-commandes hotel-commandes' },
+                    h('label', { class: 'bascule' }, qday, ' Le Q-Day tombe'),
+                    h('label', { class: 'bascule' }, away, ` Clés tenues hors de France seulement (${keyed.filter(e => e.cle.country !== 'FR').length})`),
+                    h('span', { class: 'tri-legende' },
+                        h('span', null, h('i', { class: 'mini-cle laiton' }), `laiton : post-quantique ${brass}`),
+                        h('span', null, h('i', { class: 'mini-cle fer' }), `fer : classique ${keyed.length - brass}`))),
+                board,
+                h('p', { class: 'hotel-note' }, `Chaque clé ouvre la fiche de l'organisation. Le numéro de chambre ne veut rien dire : c'est l'ordre du tableau.`),
+            );
+            sec.before(hotel);
+        }
         const bars = h('div', { class: 'barres' });
         const lists = h('ul', { class: 'cle-liste' });
         for (const [k, label, what] of KINDS) {
