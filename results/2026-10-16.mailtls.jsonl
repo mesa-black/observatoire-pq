@@ -1,0 +1,73 @@
+{"mx":"accor.in.tmes.trendmicro.eu","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:24Z"}
+{"mx":"aspmx.l.google.com","reachable":true,"hybrid":true,"default":"X25519MLKEM768","protocol":"TLSv1.3","at":"2026-10-16T10:40:24Z"}
+{"mx":"assurancemaladiefr.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:40:25Z"}
+{"mx":"bouygues-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:40:25Z"}
+{"mx":"chulyon-fr0i.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:40:26Z"}
+{"mx":"de-smtp-inbound-1.mimecast.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:26Z"}
+{"mx":"essilorluxottica-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:40:26Z"}
+{"mx":"eurofins-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:40:27Z"}
+{"mx":"euronext-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:40:27Z"}
+{"mx":"exotec-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:40:27Z"}
+{"mx":"fwmail.chu-bordeaux.fr","reachable":true,"hybrid":false,"default":"ECDH prime256v1","protocol":"TLSv1.2","at":"2026-10-16T10:40:28Z"}
+{"mx":"legrandgroup-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:40:28Z"}
+{"mx":"mail-01.franceconnect.gouv.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:34Z"}
+{"mx":"mail-in.protection.bpce-it.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:35Z"}
+{"mx":"mail-premium.cnil.fr","reachable":true,"hybrid":false,"default":"ECDH prime256v1","protocol":"TLSv1.2","at":"2026-10-16T10:40:36Z"}
+{"mx":"mail.dgfip.finances.gouv.fr","reachable":true,"hybrid":false,"default":"ECDH prime256v1","protocol":"TLSv1.3","at":"2026-10-16T10:40:36Z"}
+{"mx":"mail.iap.socgen.com","reachable":true,"hybrid":false,"default":"DH 2048 bits","protocol":"TLSv1.2","at":"2026-10-16T10:40:37Z"}
+{"mx":"mail0.elysee.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:37Z"}
+{"mx":"mail001.boursorama.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.2","at":"2026-10-16T10:40:38Z"}
+{"mx":"mail1.banque-france.fr","reachable":true,"hybrid":false,"default":"ECDH prime256v1","protocol":"TLSv1.2","at":"2026-10-16T10:40:39Z"}
+{"mx":"mailstream-eu1.mxrecord.io","reachable":true,"hybrid":true,"default":"X25519MLKEM768","protocol":"TLSv1.3","at":"2026-10-16T10:40:39Z"}
+{"mx":"mel1.cnaf.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.2","at":"2026-10-16T10:40:40Z"}
+{"mx":"mercure.credit-agricole.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.2","at":"2026-10-16T10:40:41Z"}
+{"mx":"mib.chu-toulouse.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:41Z"}
+{"mx":"mx-front-zi-de.adc.education.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:42Z"}
+{"mx":"mx01.cloud.vadesecure.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:45Z"}
+{"mx":"mx01.m03.pfai.din.gouv.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:46Z"}
+{"mx":"mx01.m24.pfai.din.gouv.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.2","at":"2026-10-16T10:40:46Z"}
+{"mx":"mx01.thalesgroup.com","reachable":true,"hybrid":false,"default":"<NULL>","protocol":"","at":"2026-10-16T10:40:46Z"}
+{"mx":"mx07-002b3401.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:40:47Z"}
+{"mx":"mx1.ants.gouv.fr","reachable":false,"hybrid":false,"default":"","protocol":"","at":"2026-10-16T10:41:11Z"}
+{"mx":"mx1.hc1506-8.eu.iphmx.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.2","at":"2026-10-16T10:41:11Z"}
+{"mx":"mx1.hc1819-26.eu.iphmx.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:12Z"}
+{"mx":"mx1.hc674-87.eu.iphmx.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:12Z"}
+{"mx":"mx1.mgn.net","reachable":false,"hybrid":false,"default":"","protocol":"","at":"2026-10-16T10:41:36Z"}
+{"mx":"mx1.myeers.net","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:37Z"}
+{"mx":"mx11.urssaf.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.2","at":"2026-10-16T10:41:37Z"}
+{"mx":"mx5.arkea.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:43Z"}
+{"mx":"mxa-000f8e02.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:44Z"}
+{"mx":"mxa-00168301.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:44Z"}
+{"mx":"mxa-00181c02.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:45Z"}
+{"mx":"mxa-0018c002.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:46Z"}
+{"mx":"mxa-001c6c01.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:47Z"}
+{"mx":"mxa-0024c501.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:47Z"}
+{"mx":"mxa-00284a02.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:48Z"}
+{"mx":"mxa-002c9e02.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:48Z"}
+{"mx":"mxa-002fa101.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:49Z"}
+{"mx":"mxa-00338701.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:50Z"}
+{"mx":"mxa-0033df01.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:50Z"}
+{"mx":"mxa-00365e01.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:51Z"}
+{"mx":"mxa-0037c801.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:52Z"}
+{"mx":"mxa-00752701.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:52Z"}
+{"mx":"mxa-00810f01.gslb.pphosted.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:53Z"}
+{"mx":"nwgroupe-com0e.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:41:53Z"}
+{"mx":"pasqal-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:41:54Z"}
+{"mx":"pernodricard-com01e.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:41:56Z"}
+{"mx":"pro075001app410.social.gouv.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:41:57Z"}
+{"mx":"publicisgroupe-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:41:58Z"}
+{"mx":"relaismsg.finances.gouv.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:42:01Z"}
+{"mx":"relay1-c.dila.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.2","at":"2026-10-16T10:42:01Z"}
+{"mx":"rpi0i692.laposte.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.2","at":"2026-10-16T10:42:02Z"}
+{"mx":"smtp-in-internet-usr-m.gslb.srv.bnpparibas","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:42:02Z"}
+{"mx":"smtp-ina.orange.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:42:02Z"}
+{"mx":"smtp1-inki.e-i.net","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:42:05Z"}
+{"mx":"smtp1.diplomatie.gouv.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:42:05Z"}
+{"mx":"smtps1.monespacesante.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:42:06Z"}
+{"mx":"st-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:42:06Z"}
+{"mx":"stellantis-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:42:07Z"}
+{"mx":"tigre.interieur.gouv.fr","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:42:07Z"}
+{"mx":"totalenergies-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:42:07Z"}
+{"mx":"vade-mx-fr01.hornetsecurity.com","reachable":true,"hybrid":false,"default":"X25519 253 bits","protocol":"TLSv1.3","at":"2026-10-16T10:42:08Z"}
+{"mx":"verkor-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:42:08Z"}
+{"mx":"younited-com.mail.protection.outlook.com","reachable":true,"hybrid":false,"default":"ECDH secp384r1","protocol":"TLSv1.3","at":"2026-10-16T10:42:09Z"}

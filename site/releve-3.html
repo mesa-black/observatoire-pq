@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Observatoire post-quantique</title>
+<meta name="description" content="Chaque mois, ce que les portes d'entrée publiques des grandes organisations françaises laisseront lire le jour où un ordinateur quantique cassera l'échange de clés classique.">
+<meta name="author" content="Jérôme Nadaud">
+<meta name="referrer" content="no-referrer">
+<link rel="preload" href="fonts/instrument-serif-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bricolage-grotesque-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script src="data-2026-10-16-r3.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<header class="wrap tete">
+    <div class="plaque enseigne" role="img" aria-label="Observatoire post-quantique, relevé du mois">
+        <span class="haut">Observatoire</span>
+        <span class="nom">Post-quantique</span>
+        <span class="bas" id="releve">Relevé n° 1</span>
+    </div>
+    <div>
+        <p class="sur">Les portes d'entrée de la France, relevées chaque mois</p>
+        <h1>Enregistré <em>aujourd'hui</em>, lu demain.</h1>
+        <p class="chapo" id="chapo"></p>
+    </div>
+    <p class="facade"><b>On relève des façades.</b> Chaque plaque porte sur la porte d'entrée publique d'une organisation : la connexion HTTPS qu'ouvre un navigateur vers son site. Réseaux internes, échanges entre serveurs, bases de données : rien de ce qui est derrière ne se voit d'ici. Tirer de la façade une conclusion sur l'intérieur est un pari. On le prend, et on le dit.</p>
+</header>
+
+<section class="wrap scan" id="scan" hidden aria-labelledby="scan-titre"></section>
+
+<div class="wrap" id="atlas-bloc">
+    <section class="atlas" aria-labelledby="atlas-titre">
+        <p class="sur">Qui tient les portes</p>
+        <h2 id="atlas-titre"></h2>
+        <p class="atlas-texte" id="atlas-texte"></p>
+        <div class="atlas-choix" role="group" aria-label="Relier les organisations à">
+            <button type="button" class="choix" data-par="porte" aria-pressed="true">Qui répond à l'adresse</button>
+            <button type="button" class="choix" data-par="ac" aria-pressed="false">Qui signe le certificat</button>
+        </div>
+        <figure class="atlas-cadre">
+            <div id="atlas"></div>
+            <figcaption class="atlas-legende">
+                <span><i class="pastille scelle"></i>Scellé</span>
+                <span><i class="pastille partie"></i>En partie</span>
+                <span><i class="pastille ouvert"></i>Classique</span>
+                <span><i class="part"></i>Part scellée de l'entreprise</span>
+                <span>Chaque point ouvre la fiche de l'organisation.</span>
+            </figcaption>
+        </figure>
+        <details class="atlas-liste">
+            <summary>La carte en liste</summary>
+            <div id="atlas-liste"></div>
+        </details>
+
+    </section>
+</div>
+
+<section class="machine" aria-label="Choisir l'année du Q-Day">
+    <div class="wrap machine-in">
+        <div>
+            <p class="sur">Q-Day</p>
+            <output class="annee" id="annee" for="q">2035</output>
+        </div>
+        <div class="curseur">
+            <label for="q">L'année où un ordinateur quantique saura casser l'échange de clés classique. Personne ne la connaît : choisissez-la.</label>
+            <input type="range" id="q" min="2027" max="2050" step="1" value="2035">
+            <div class="reperes" aria-hidden="true"><span>2027</span><span>2035 · NIST</span><span>2050</span></div>
+            <p class="curseur-note" id="curseur-note"></p>
+        </div>
+        <div class="tampon" aria-live="polite" title="Organisations dont un échange enregistré aujourd'hui serait lisible cette année-là, alors qu'il est encore sensible">
+            <div><span class="n" id="expose">0</span><span class="quoi" id="expose-quoi">exposées</span></div>
+        </div>
+    </div>
+</section>
+
+<div class="wrap reglages">
+    <label class="bascule"><input type="checkbox" id="les-leurs"> Qui a fait le travail ? Écarter les portes prêtées par un CDN</label>
+    <div class="legende" aria-hidden="true">
+        <span><i class="pastille scelle"></i>Scellé</span>
+        <span><i class="pastille partie"></i>En partie</span>
+        <span><i class="pastille ouvert"></i>Lisible, encore sensible</span>
+        <span><i class="pastille perime"></i>Lisible, plus sensible</span>
+        <span><i class="pastille voile"></i>Gris : part de la durée de sensibilité écoulée au Q-Day</span>
+    </div>
+</div>
+
+<section class="wrap vision" id="vision" hidden aria-labelledby="vision-titre"></section>
+
+<main class="wrap">
+    <p class="nous" id="nous"></p>
+    <div id="groupes"></div>
+
+    <section class="analyses" aria-label="Qui tient les portes, en détail">
+        <div class="qui">
+        <h3 id="qui-titre"></h3>
+        <p id="qui-texte"></p>
+        <div class="barres" id="barres"></div>
+    </div>
+
+    <div class="qui souverain">
+        <p class="sur">Souveraineté</p>
+        <h3 id="droit-titre"></h3>
+        <p id="droit-texte"></p>
+        <div class="barres" id="droit-barres"></div>
+        <ul class="droit-groupes" id="droit-groupes"></ul>
+        <p class="droit-note" id="droit-note"></p>
+    </div>
+
+    <div class="qui dans-la-page">
+        <p class="sur">Dans la page</p>
+        <h3 id="csp-titre"></h3>
+        <p id="csp-texte"></p>
+        <div class="barres" id="csp-barres"></div>
+        <h4 class="csp-sous">Ce que chargent les pages d'accueil</h4>
+        <ul class="tiers" id="csp-tiers"></ul>
+        <p class="droit-note" id="csp-note"></p>
+    </div>
+    </section>
+
+    <section class="chiffres" aria-labelledby="chiffres-titre">
+        <p class="sur">Au-delà de l'hybride</p>
+        <h2 id="chiffres-titre">Le relevé, en chiffres</h2>
+        <ul class="grille-chiffres" id="chiffres"></ul>
+    </section>
+
+    <section class="plaque sablier" aria-labelledby="sablier-titre">
+        <div>
+            <p class="sur">Mesuré avec Sablier</p>
+            <h2 id="sablier-titre">Faites le relevé chez vous.</h2>
+            <p>Sablier est l'outil libre de BlackMesa qui inventorie la cryptographie d'un projet et dit combien de temps elle tient. Il sait aussi demander à un serveur ce qu'il négocie réellement, y compris l'hybride post-quantique.</p>
+            <p id="sablier-sonde">Ce premier relevé a été fait avec une sonde OpenSSL 3.5 écrite pour l'occasion ; les suivants passeront par Sablier.</p>
+        </div>
+        <div>
+            <pre><code>git clone https://github.com/mesa-black/sablier
+cd sablier
+make probe HOST=votre-site.fr</code></pre>
+            <a class="bouton" href="https://github.com/mesa-black/sablier" rel="noopener">Sablier sur GitHub <span aria-hidden="true">→</span></a>
+        </div>
+    </section>
+
+    <section class="methode" aria-labelledby="methode-titre">
+        <p class="sur">Méthode</p>
+        <h2 id="methode-titre">Ce qu'on a fait, ce qu'on ne voit pas</h2>
+        <div class="colonnes">
+            <div>
+                <h3>Le relevé</h3>
+                <p>Pour chaque nom, un client <code>OpenSSL 3.5.9</code> ouvre une connexion TLS 1.3 en ne proposant que le groupe hybride <code>X25519MLKEM768</code>, cinq fois de suite. Cinq réussites : scellé. Aucune : non. Entre les deux : une flotte de serveurs à moitié migrée.</p>
+                <p>Une connexion avec les réglages par défaut du client, qui propose l'hybride et X25519 comme un navigateur, relève ce qu'obtient vraiment un visiteur. Puis une connexion par version de TLS, une par groupe d'échange proposé seul, le certificat, l'en-tête HSTS, et, à part, un serveur à la fois, dix handshakes hybrides et dix classiques, alternés, pour en mesurer le prix.</p>
+                <p>L'opérateur réseau vient de l'annonce BGP de l'adresse (base DNS de Team Cymru) : c'est le pays où ce système autonome est enregistré, pas celui du serveur.</p>
+            </div>
+            <div>
+                <h3>Ce qu'on ne voit pas</h3>
+                <ul>
+                    <li>Tout ce qui est derrière la porte : un CDN peut parler hybride au navigateur et classique au serveur de l'organisation.</li>
+                    <li>Les applications mobiles, les API, les espaces connectés quand ils vivent sous un autre nom.</li>
+                    <li>Les signatures et les certificats : un enregistrement d'aujourd'hui ne permet pas de les falsifier demain.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Les hypothèses</h3>
+                <p>La durée pendant laquelle une donnée reste sensible est posée par catégorie et affichée en tête de chaque groupe. Ce sont des hypothèses, pas des mesures : elles décident si un échange lu en <span class="annee-ref">2035</span> fait encore mal.</p>
+                <p>Le CDN est déduit des en-têtes HTTP (<code>cf-ray</code>, <code>x-amz-cf-id</code>…), ou à défaut du réseau qui annonce l'adresse (Cloudflare, Akamai, Fastly, Imperva). Amazon, Google et Microsoft hébergent aussi des serveurs ordinaires : sans en-tête, ils comptent comme serveur propre.</p>
+                <p>La page d'accueil est ensuite chargée comme le ferait un navigateur, redirections suivies : on y lit la Content-Security-Policy (en-tête ou balise meta) et les scripts tiers présents dans le HTML servi. Une CSP est dite stricte quand ses scripts exigent un jeton (nonce), une empreinte ou <code>'strict-dynamic'</code>, sans <code>'unsafe-inline'</code> effectif ni joker.</p>
+                <p>HSTS est lu sur la page d'accueil. Sans lui, une adresse tapée sans <code>https://</code> part d'abord en clair et peut être détournée avant tout chiffrement.</p>
+            </div>
+        </div>
+        <details>
+            <summary>Tous les relevés, en tableau</summary>
+            <div class="defile"><table id="tableau"></table></div>
+        </details>
+    </section>
+</main>
+
+<dialog class="fiche" id="fiche">
+    <button type="button" class="fiche-fermer" id="fiche-fermer" aria-label="Fermer la fiche">×</button>
+    <div id="fiche-corps"></div>
+</dialog>
+
+<footer class="wrap pied">
+    <p class="signe">Jérôme Nadaud</p>
+    <p class="liens">
+        <a href="https://github.com/jnadaud" rel="noopener me">GitHub</a>
+        <a href="https://github.com/mesa-black" rel="noopener">BlackMesa</a>
+        <a href="https://www.linkedin.com/in/jeromenadaud" rel="noopener me">LinkedIn</a>
+        <a href="https://mesa.black/" rel="noopener">Le blog</a>
+    </p>
+    <p>Un projet BlackMesa. Pas de cookie, pas de traceur, rien qui vienne d'ailleurs : polices et scripts sont servis d'ici.</p>
+</footer>
+</body>
+</html>

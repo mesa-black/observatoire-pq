@@ -1,0 +1,5 @@
+# Generated: the single-file export of a relevé, and screenshots taken while
+# designing. Both come back from the sources here; neither is a measurement.
+export/
+shots/
+.DS_Store
