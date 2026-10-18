@@ -9,7 +9,8 @@ window.OBSERVATOIRE = {
       "Qui tient la clé",
       "de la porte d'entrée ?"
     ],
-    "published": "2027-01-16"
+    "published": "2027-01-16",
+    "depuis": 1
   },
   "self": {
     "host": "mesa.black",
@@ -190,7 +191,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Imperva",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "GlobalSign nv-sa"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -306,7 +324,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         },
@@ -423,7 +458,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Imperva",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "GlobalSign nv-sa"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -532,7 +584,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -661,7 +730,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "AXA Technology Services",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -766,7 +852,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=15768000",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 3
+              }
             }
           }
         },
@@ -884,7 +987,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 3
+              }
             }
           }
         },
@@ -995,7 +1115,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -1112,7 +1249,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Automattic (WordPress VIP)",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000;includesubdomains",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 6
+              }
             }
           }
         },
@@ -1232,7 +1386,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=2592000",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         },
@@ -1339,7 +1510,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Crédit Agricole",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -1448,7 +1636,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Fastly",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -1564,7 +1769,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=86400",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 3
+              }
             }
           }
         },
@@ -1675,7 +1897,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 3
+              }
             }
           }
         },
@@ -1786,7 +2025,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -1902,7 +2158,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -2016,7 +2289,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 5
+              }
             }
           }
         },
@@ -2133,7 +2423,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=16070400; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 7
+              }
             }
           }
         },
@@ -2243,7 +2550,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 403,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -2353,7 +2677,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=15768000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -2474,7 +2815,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains;preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -2584,7 +2942,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -2703,7 +3078,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=15768000 ; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         },
@@ -2803,7 +3195,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Microsoft Azure",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -2925,7 +3334,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Orange",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -3039,7 +3465,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=1000; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 4
+              }
             }
           }
         },
@@ -3153,7 +3596,23 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Akamai (Prolexic)",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2"
+              ],
+              "hsts": "max-age=16070400; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 3
+              }
             }
           }
         },
@@ -3265,7 +3724,23 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2"
+              ],
+              "hsts": "max-age=63072000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -3371,7 +3846,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 3
+              }
             }
           }
         },
@@ -3478,7 +3970,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 403,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -3601,7 +4110,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -3727,7 +4253,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 7
+              }
             }
           }
         },
@@ -3836,7 +4379,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Imperva",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -3953,7 +4513,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000 ; includesubdomains ; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -4072,7 +4649,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=86400",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 4
+              }
             }
           }
         },
@@ -4188,7 +4782,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Imperva",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "GlobalSign nv-sa"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -4299,7 +4910,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -4405,7 +5033,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "partial",
               "name": "Google Cloud",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -4520,7 +5165,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 403,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -4616,7 +5278,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Vinci",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Gandi"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         }
@@ -4745,7 +5424,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=15552000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 3072,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -4857,7 +5553,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "partial",
               "name": "Google Cloud",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 4
+              }
             }
           }
         },
@@ -4966,7 +5679,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=15768000; includesubdomains",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -5075,7 +5805,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "partial",
               "name": "Google Cloud",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -5195,7 +5942,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -5309,7 +6073,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 4
+              }
             }
           }
         },
@@ -5423,7 +6204,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 4
+              }
             }
           }
         },
@@ -5539,7 +6337,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains;",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 6
+              }
             }
           }
         },
@@ -5651,7 +6466,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Fastly",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31622400",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 5
+              }
             }
           }
         },
@@ -5763,7 +6595,26 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "partial",
               "name": "Google Cloud",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1",
+                "tls1_1",
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -5872,7 +6723,26 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1",
+                "tls1_1",
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -5986,7 +6856,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 4
+              }
             }
           }
         },
@@ -6099,7 +6986,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 5
+              }
             }
           }
         },
@@ -6212,7 +7116,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "partial",
               "name": "Google Cloud",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 3
+              }
             }
           }
         },
@@ -6321,7 +7242,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 403,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -6421,7 +7359,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -6647,7 +7602,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -6747,7 +7719,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "OVHcloud",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         },
@@ -6849,7 +7838,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Automattic (WordPress VIP)",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 3
+              }
             }
           }
         },
@@ -6960,7 +7966,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -7073,7 +8096,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -7199,7 +8239,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 6
+              }
             }
           }
         },
@@ -7311,7 +8368,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -7426,7 +8500,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Gandi SAS"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 6
+              }
             }
           }
         },
@@ -7535,7 +8626,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=2592000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -7646,7 +8754,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -7758,7 +8883,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -7877,7 +9019,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 3
+              }
             }
           }
         },
@@ -7987,7 +9146,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 3
+              }
             }
           }
         },
@@ -8098,7 +9274,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=2592000",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -8210,7 +9403,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -8311,7 +9521,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Microsoft Azure",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 3
+              }
             }
           }
         }
@@ -8426,7 +9653,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=34560000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -8524,7 +9768,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Worldline",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -8632,7 +9893,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Imperva",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "GlobalSign nv-sa"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         },
@@ -8742,7 +10020,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 3
+              }
             }
           }
         },
@@ -8838,7 +10133,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Radware",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -8951,7 +10263,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cirtil (Urssaf)",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -9050,7 +10379,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "France Travail",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -9144,7 +10490,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "OVHcloud",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 3072,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "GlobalSign nv-sa"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -9255,7 +10618,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo (Europe) SL"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -9361,7 +10741,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo (Europe) SL"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -9469,7 +10866,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -9560,7 +10974,23 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Réseau interministériel de l'État (DINUM)",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo (Europe) SL"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -9668,7 +11098,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=15552000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 3072,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -9766,7 +11213,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Réseau interministériel de l'État (DINUM)",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo (Europe) SL"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -9875,7 +11339,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cegedim.Cloud",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "DigiCert Ireland Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -9982,7 +11463,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 384,
+                "curve": "P-384",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Hellenic Academic and Research Institutions CA"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -10078,7 +11576,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Ministère de l'Europe et des Affaires étrangères",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Gandi SAS"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -10174,7 +11689,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "3DS Outscale",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Gandi SAS"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -10292,7 +11824,26 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1",
+                "tls1_1",
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo (Europe) SL"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -10403,7 +11954,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=600",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         }
@@ -10514,7 +12082,23 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Crédit Agricole",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -10617,7 +12201,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -10711,7 +12312,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Amazon Web Services",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -10822,7 +12440,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=600",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "GlobalSign nv-sa"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -10930,7 +12565,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "partial",
               "name": "Google Cloud",
-              "kind": "cloud"
+              "kind": "cloud",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -11040,7 +12692,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -11150,7 +12819,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -11253,7 +12939,23 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Euro-Information (Crédit Mutuel)",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "GlobalSign nv-sa"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -11348,7 +13050,23 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Euro-Information (Crédit Mutuel)",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2"
+              ],
+              "hsts": "max-age=31536000",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "GlobalSign nv-sa"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 3
+              }
             }
           }
         },
@@ -11447,7 +13165,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Boursorama",
-              "kind": "propre"
+              "kind": "propre",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -11559,7 +13294,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Amazon CloudFront",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Amazon"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         },
@@ -11666,7 +13418,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Akamai",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "DigiCert Inc"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         }
@@ -11785,7 +13554,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 2
+              }
             }
           }
         },
@@ -11885,7 +13671,23 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Atos",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2"
+              ],
+              "hsts": "max-age=63072000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -11983,7 +13785,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Radware",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 0
+              }
             }
           }
         },
@@ -12082,7 +13901,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Alter Way",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -12182,7 +14018,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "HCL",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Hellenic Academic and Research Institutions CA"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         },
@@ -12281,7 +14134,26 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Renater",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1",
+                "tls1_1",
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=63072000; includesubdomains",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },
@@ -12391,7 +14263,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "OVHcloud",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA384",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 2
+              }
             }
           }
         },
@@ -12497,7 +14386,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Over-Link",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=31536000; includesubdomains; preload",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Let's Encrypt"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 0
+              }
             }
           }
         },
@@ -12602,7 +14508,25 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Gigalis",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1",
+                "tls1_1",
+                "tls1_2"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 2048,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Sectigo Limited"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         },
@@ -12700,7 +14624,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "none",
               "name": "Muona",
-              "kind": "hebergeur"
+              "kind": "hebergeur",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "",
+              "cert": {
+                "key": "rsaEncryption",
+                "bits": 4096,
+                "curve": "",
+                "sig": "sha256WithRSAEncryption",
+                "issuer": "Hellenic Academic and Research Institutions CA"
+              },
+              "page": {
+                "code": 200,
+                "csp": false,
+                "scripts": 1
+              }
             }
           }
         }
@@ -13525,7 +15466,24 @@ window.OBSERVATOIRE = {
               "date": "2026-10-15",
               "pq": "full",
               "name": "Cloudflare",
-              "kind": "cdn"
+              "kind": "cdn",
+              "protocols": [
+                "tls1_2",
+                "tls1_3"
+              ],
+              "hsts": "max-age=15552000; includesubdomains; preload",
+              "cert": {
+                "key": "id-ecPublicKey",
+                "bits": 256,
+                "curve": "P-256",
+                "sig": "ecdsa-with-SHA256",
+                "issuer": "Google Trust Services"
+              },
+              "page": {
+                "code": 200,
+                "csp": true,
+                "scripts": 1
+              }
             }
           }
         },

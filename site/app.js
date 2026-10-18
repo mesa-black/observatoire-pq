@@ -130,29 +130,59 @@
         const cc = (as.match(/, ([A-Z]{2})$/) || [])[1] || '';
         return { name: as.replace(/^\S+ - /, '').replace(/, [A-Z]{2}$/, '') || 'inconnu', cc, kind: 'prestataire' };
     };
-    // Relevé 4: the doors measured at both dates, and what changed. Compared on
-    // the raw verdict: the « on demand » downgrade above has no twin in the
-    // previous measurement, and would read as a door losing the hybrid.
+    // Relevé 4: the doors measured at both dates, and what changed, subject by
+    // subject. The verdict is compared raw: the « on demand » downgrade above
+    // has no twin in the previous measurement, and would read as a loss. A
+    // certificate counts as changed when its kind of key or its issuer does,
+    // not when it is merely renewed.
     function keyMoves() {
         const both = measured.filter(e => e.cle?.prev && e.cle.prev.reachable !== false && e.cle.prev.pq);
-        const was = e => e.cle.prev.pq === 'full', is = e => (e.onDemand ? 'full' : e.pq) === 'full';
         const prev = both[0]?.cle.prev.date;
+        const P = e => e.cle.prev;
+        const was = e => P(e).pq === 'full', is = e => (e.onDemand ? 'full' : e.pq) === 'full';
+        const old = l => (l || []).some(v => v === 'tls1' || v === 'tls1_1');
+        const t13 = l => (l || []).includes('tls1_3');
+        const certKind = c => !c ? '' : /rsa/i.test(c.key) ? `RSA ${c.bits}` : `ECDSA ${c.curve || c.bits}`;
+        const certOf = c => !c ? '' : `${certKind(c)}, ${c.issuer || '?'}`;
+        const csp = pg => !!pg && !!(pg.csp || pg.meta_csp);
+        const served = e => P(e).page?.code === 200 && e.page?.code === 200;
+        const topics = [
+            ["l'hybride post-quantique", "gagné", e => !was(e) && is(e)],
+            ["l'hybride post-quantique", "perdu", e => was(e) && !is(e)],
+            ['de mains', 'changé', e => P(e).name && P(e).name !== e.cle.name, e => `${P(e).name} → ${e.cle.name}`],
+            ['TLS 1.0 et 1.1', 'fermé', e => old(P(e).protocols) && !old(e.protocols)],
+            ['TLS 1.0 ou 1.1', 'rouvert', e => !old(P(e).protocols) && old(e.protocols)],
+            ['TLS 1.3', 'ouvert', e => !t13(P(e).protocols) && t13(e.protocols)],
+            ['TLS 1.3', 'fermé', e => t13(P(e).protocols) && !t13(e.protocols)],
+            ['de certificat', 'changé', e => P(e).cert && e.cert && (certKind(P(e).cert) !== certKind(e.cert) || P(e).cert.issuer !== e.cert.issuer), e => `${certOf(P(e).cert)} → ${certOf(e.cert)}`],
+            // HSTS is left out: probe.sh reads it on one HEAD request, and a door
+            // that answers a robot with a 403, or one edge with and one without,
+            // flips between two runs a day apart (BlaBlaCar, Caisse d'Épargne).
+            // The policy is compared only when the home page answered 200 both
+            // times: a blocking page has no policy, and is not a withdrawal.
+            ['une politique de contenu (CSP)', 'ajouté', e => served(e) && !P(e).page.csp && csp(e.page)],
+            ['leur politique de contenu (CSP)', 'retiré', e => served(e) && P(e).page.csp && !csp(e.page)],
+        ].map(([what, verb, test, detail]) => ({ what, verb, detail, doors: both.filter(test) }));
+        const moved = new Set(topics.flatMap(t => t.doors));
+        const pick = (verb, what) => topics.find(t => t.verb === verb && t.what === what).doors;
         return {
-            prev, compared: both.length,
+            prev, compared: both.length, topics, moved: [...moved],
             prevFr: prev ? new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(prev)) : '',
-            gained: both.filter(e => !was(e) && is(e)),
-            lost: both.filter(e => was(e) && !is(e)),
-            moved: both.filter(e => e.cle.prev.name && e.cle.prev.name !== e.cle.name),
+            since: M.depuis ? `le relevé ${M.depuis}` : null,
+            gained: pick('gagné', "l'hybride post-quantique"), lost: pick('perdu', "l'hybride post-quantique"), hands: pick('changé', 'de mains'),
         };
     }
-    // One sentence for the chapô: only what moved, or that nothing did.
+    // One sentence for the chapô: the hybrid and the hands first, then how many
+    // doors moved at all; or that nothing did.
     function depuis(m) {
+        const when = m.since ? `Depuis ${m.since} (${m.prevFr})` : `Depuis la mesure du ${m.prevFr}`;
+        if (!m.moved.length) return `${when}, aucune porte n'a bougé.`;
         const parts = [
             m.gained.length && `${plural(m.gained.length, 'porte a gagné', 'portes ont gagné')} l'hybride`,
             m.lost.length && `${plural(m.lost.length, "l'a perdu", "l'ont perdu")}`,
-            m.moved.length && `${plural(m.moved.length, 'a changé', 'ont changé')} de mains`,
+            m.hands.length && `${plural(m.hands.length, 'a changé', 'ont changé')} de mains`,
         ].filter(Boolean);
-        return parts.length ? `Depuis la mesure du ${m.prevFr} : ${parts.join(', ')}.` : `Depuis la mesure du ${m.prevFr}, aucune porte n'a bougé.`;
+        return `${when} : ${parts.length ? parts.join(', ') + ' ; ' : ''}${plural(m.moved.length, 'porte a bougé', 'portes ont bougé')} en tout.`;
     }
     const postState = e => {
         const m = e.mail;
@@ -1852,23 +1882,22 @@
             bars, lists,
         );
 
-        // What moved since the previous measurement, door by door.
+        // What moved since the previous measurement, subject by subject.
         const moves = keyMoves();
         if (moves.prev) {
             const ch = h('section', { class: 'wrap qui cle-depuis', 'aria-labelledby': 'depuis-titre' });
             sec.after(ch);
-            const line = (e, what) => h('li', null, h('b', null, e.name), ` (${e.host}) : ${what}`);
-            const changes = [
-                ...moves.gained.map(e => line(e, `a gagné l'hybride${e.cle.prev.name !== e.cle.name ? `, en passant de ${e.cle.prev.name} à ${e.cle.name}` : ` (${e.cle.name})`}.`)),
-                ...moves.lost.map(e => line(e, `a perdu l'hybride${e.cle.prev.name !== e.cle.name ? `, en passant de ${e.cle.prev.name} à ${e.cle.name}` : ''}.`)),
-                ...moves.moved.filter(e => !moves.gained.includes(e) && !moves.lost.includes(e)).map(e => line(e, `a changé de mains, de ${e.cle.prev.name} à ${e.cle.name}.`)),
-            ];
+            const when = moves.since ? `${moves.since}, le ${moves.prevFr}` : `la mesure du ${moves.prevFr}`;
+            const rows = moves.topics.filter(t => t.doors.length).map(t => h('li', null,
+                h('b', null, `${plural(t.doors.length, `porte a ${t.verb}`, `portes ont ${t.verb}`)} ${t.what}`), ' : ',
+                t.detail ? t.doors.map(e => `${e.name} (${t.detail(e)})`).join(', ') : names(t.doors, 99), '.'));
             ch.append(
-                h('p', { class: 'sur' }, `Depuis le ${moves.prevFr}`),
-                h('h2', { id: 'depuis-titre' }, changes.length ? `${plural(changes.length, 'porte a bougé', 'portes ont bougé')}.` : `Aucune porte n'a bougé.`),
-                h('p', null, `Les mêmes portes, mesurées de la même façon le ${moves.prevFr} et le ${dateFr}. ${moves.compared} étaient joignables les deux fois.`),
+                h('p', { class: 'sur' }, moves.since ? `Depuis ${moves.since}` : `Depuis le ${moves.prevFr}`),
+                h('h2', { id: 'depuis-titre' }, moves.moved.length ? `${plural(moves.moved.length, 'porte a bougé', 'portes ont bougé')}, ${plural(moves.compared - moves.moved.length, "n'a pas changé", "n'ont pas changé")}.` : `Aucune porte n'a bougé.`),
+                h('p', null, `Les mêmes portes, mesurées de la même façon : ${when}, puis le ${dateFr}. ${moves.compared} étaient joignables les deux fois. `,
+                    `On compte l'hybride, qui tient la clé, les versions de TLS acceptées, le certificat (un renouvellement ne compte pas, un changement de type de clé ou d'émetteur oui) et la politique de contenu de la page d'accueil quand elle a répondu les deux fois.`),
             );
-            if (changes.length) ch.append(h('ul', { class: 'cle-liste' }, changes));
+            if (rows.length) ch.append(h('ul', { class: 'cle-liste' }, rows));
         }
     }
 

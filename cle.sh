@@ -16,13 +16,21 @@ set -eu
 cd "$(dirname "$0")"
 date=${1:?usage: ./cle.sh DATE PREVIOUS}
 prev=${2:?usage: ./cle.sh DATE PREVIOUS}
+# The previous state keeps what can be compared door by door: the verdict, the
+# holder, the TLS versions, the certificate, HSTS, and the home page's policy
+# (csp.sh, when that day has one, with the HTTP status it got). Not the
+# handshake's cost: milliseconds that move between two runs would read as
+# changes everywhere.
+oldcsp=results/$prev.csp.jsonl; [ -f "$oldcsp" ] || oldcsp=/dev/null
 out=$(jq -c -n --slurpfile h holders.json \
           --slurpfile cur "results/$date.jsonl" \
           --slurpfile old "results/$prev.jsonl" \
+          --slurpfile oldp "$oldcsp" \
           --arg prev "$prev" '
     def holder($r): ($r.net.asn // "") as $a
         | ($h[0].by_header[$a][$r.front // ""] // $h[0].asn[$a] // null);
     ($old | map({(.host): .}) | add // {}) as $before
+    | ($oldp | map({(.host): {code, csp: ((.csp // "") != "" or (.meta_csp // "") != ""), scripts: ((.scripts // []) | length)}}) | add // {}) as $page
     | $cur[] | select(.reachable) | . as $r | holder($r) as $x
     | {host,
        cle: ((if $x then ($x | {kind, name, country}) else {kind: null, as: $r.net.as} end)
@@ -30,7 +38,9 @@ out=$(jq -c -n --slurpfile h holders.json \
              prev: ($before[$r.host] // null
                  | if . == null then null
                    elif .reachable | not then {date: $prev, reachable: false}
-                   else holder(.) as $y | {date: $prev, pq, name: ($y.name // null), kind: ($y.kind // null)} end)})}')
+                   else holder(.) as $y | {date: $prev, pq, name: ($y.name // null), kind: ($y.kind // null),
+                        protocols, hsts, cert: (.cert // null | if . then {key, bits, curve, sig, issuer} else null end),
+                        page: ($page[.host] // null)} end)})}')
 unknown=$(printf '%s\n' "$out" | jq -r 'select(.cle.kind == null) | "  AS\(.cle.asn) \(.cle.as // "?") — \(.host)"')
 if [ -n "$unknown" ]; then
     printf 'cle.sh: networks missing from holders.json, classify them by hand:\n%s\n' "$unknown" >&2
