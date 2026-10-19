@@ -7,7 +7,7 @@ window.OBSERVATOIRE = {
     "kicker": "Relevé n° 6 · spécial Pâques · maquette sur les mesures d'octobre",
     "title": [
       "La chasse aux œufs",
-      "Qui se cache dans vos pages ?"
+      "Qui se cache dans vos pages ?"
     ],
     "published": "2027-03-26",
     "exception": "Exceptionnellement, ce relevé paraît le vendredi 26 mars, veille du week-end de Pâques, et non le 16."
