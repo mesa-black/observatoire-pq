@@ -254,6 +254,20 @@
         sources($('chapo'), `les enregistrements DNS publics de chaque organisation (`, h('code', null, 'openai-domain-verification'), `, `,
             h('code', null, 'anthropic-domain-verification'), `, `, h('code', null, 'cursor-domain-verification'), `…), lus le ${dateFr} sur ses serveurs DNS faisant autorité, et la porte de chaque fournisseur, mesurée le même jour. `,
             `Pour vérifier : `, h('code', null, 'dig +short TXT qonto.com'), '.');
+    } else if (M.focus === 'rencontres') {
+        // Relevé 5, Saint-Valentin: the dating apps, counted apart (APART) and
+        // told here, as letters sealed or left open (the letters' table below).
+        document.body.classList.add('releve-rencontres');
+        const apps = reachable.filter(e => e.g === 'rencontres');
+        const sealedApps = apps.filter(e => e.pq === 'full');
+        $('chapo').append(
+            `Deux jours après la Saint-Valentin, nous avons frappé à `, h('strong', null, `${apps.length} portes d'entrée`),
+            ` d'applis et de sites de rencontre utilisés en France. `,
+            h('strong', null, sealedApps.length), ` sont cachetées à l'hybride X25519MLKEM768 ; `,
+            h('strong', null, apps.length - sealedApps.length), ` partent encore sous pli ouvert, en échange de clés classique. `,
+            `Conversations privées, orientation, photos : des secrets qui doivent le rester toute une vie.`,
+        );
+        sources($('chapo'), `chaque porte mesurée le ${dateFr} (OpenSSL 3.5, seul groupe offert X25519MLKEM768) ; pour une appli qui appelle sa propre adresse, cette adresse aussi.`);
     } else if (M.focus === 'cle') {
         // Relevé 4: relevé 1's page, re-measured, read through who holds the
         // key of each door (cle.sh). Nothing of relevé 1 is hidden.
@@ -2006,6 +2020,117 @@
                     `On compte l'hybride, qui tient la clé, les versions de TLS acceptées, le certificat (un renouvellement ne compte pas, un changement de type de clé ou d'émetteur oui) et la politique de contenu de la page d'accueil quand elle a répondu les deux fois.`),
             );
             if (rows.length) ch.append(h('ul', { class: 'cle-liste' }, rows));
+        }
+    }
+
+    // ------------------------------------------------------------ the letters' table (relevé 5)
+    // Each dating door is a love letter: sealed with a heart of wax when it
+    // takes the hybrid, its flap open when it does not. Every envelope has the
+    // same height, open or shut, so the rows stay even. Built with s_(), never
+    // as markup (Trusted Types). The letters read at the Q-Day are fiction,
+    // drawn from a pool so that the page holds whatever doors stay open.
+    if (M.focus === 'rencontres') {
+        const apps = reachable.filter(e => e.g === 'rencontres');
+        const isSealed = e => e.pq === 'full';
+        const plaqueOf = new Map(plaques.map(p => [p.e.host, p]));
+        const holderOf = e => e.cle ? `${e.cle.name}${e.cle.country === 'FR' ? ', France' : e.cle.country === 'GB' ? ', Royaume-Uni' : ''}` : '';
+        const tls12 = e => !(e.protocols || []).includes('tls1_3');
+        const HEART = 'M0 14 C-13 5 -17 -1 -17 -6.5 -17 -12 -13 -16 -8 -16 -4.4 -16 -1.6 -14 0 -11 1.6 -14 4.4 -16 8 -16 13 -16 17 -12 17 -6.5 17 -1 13 5 0 14Z';
+        const grad = (id, kind, stops, extra = {}) => s_(kind, { id, ...extra }, stops.map(([o, c]) => s_('stop', { offset: o, 'stop-color': c })));
+        const defs = s_('svg', { width: 0, height: 0, 'aria-hidden': 'true', class: 'defs-lettres' }, s_('defs', null,
+            grad('lt-paper', 'linearGradient', [[0, '#fffdf8'], [1, '#f6efe4']], { x1: 0, y1: 0, x2: 0, y2: 1 }),
+            grad('lt-flap', 'linearGradient', [[0, '#f7f0e4'], [1, '#efe4d4']], { x1: 0, y1: 0, x2: 0, y2: 1 }),
+            grad('lt-in', 'linearGradient', [[0, '#e8c9c2'], [1, '#dcb3ab']], { x1: 0, y1: 0, x2: 0, y2: 1 }),
+            grad('lt-wax', 'radialGradient', [[0, '#cf3a4a'], ['.55', '#a61e2d'], [1, '#7c1220']], { cx: '.38', cy: '.32', r: '.8' })));
+        // One envelope, 200 × 190 whatever its state: the open flap rises into
+        // the space the sealed one leaves empty.
+        const envelope = (e, i) => {
+            if (isSealed(e)) return s_('svg', { class: 'enveloppe', viewBox: '0 0 200 190', 'aria-hidden': 'true' },
+                s_('rect', { x: 2, y: 58, width: 196, height: 128, rx: 4, fill: 'url(#lt-paper)', stroke: '#d9cbb7' }),
+                s_('path', { d: 'M2 186 L100 120 L198 186', fill: 'none', stroke: '#e7dbc9', 'stroke-width': 1.5 }),
+                s_('path', { d: 'M3 59 L100 122 L197 59 Z', fill: 'url(#lt-flap)', stroke: '#d9cbb7' }),
+                s_('g', { transform: 'translate(100 112)' },
+                    s_('circle', { r: 30, fill: '#a61e2d', opacity: '.18', transform: 'translate(1 3)' }),
+                    s_('path', { d: HEART, fill: 'url(#lt-wax)', transform: 'scale(1.95)' }),
+                    s_('path', { d: HEART, fill: 'none', stroke: '#7c1220', 'stroke-opacity': '.55', 'stroke-width': '.8', transform: 'scale(1.5)' }),
+                    s_('text', { class: 'cachet-texte', y: 1, 'text-anchor': 'middle' }, 'ML-KEM')));
+            return s_('svg', { class: 'enveloppe', viewBox: '0 0 200 190', 'aria-hidden': 'true' },
+                s_('path', { d: 'M3 59 L100 4 L197 59 Z', fill: 'url(#lt-in)', stroke: '#d3b1a8' }),
+                s_('g', { transform: `rotate(${i % 2 ? -3 : 3} 100 90)` },
+                    s_('rect', { x: 26, y: 16, width: 148, height: 120, fill: '#fffdf8', stroke: '#ddd0bd' }),
+                    s_('text', { class: 'lettre-debut', x: 38, y: 38 }, 'Mon cœur,'),
+                    s_('path', { d: 'M38 50h112M38 61h96M38 72h120M38 83h80', stroke: '#1f2326', 'stroke-opacity': '.22', 'stroke-width': 2.2, 'stroke-linecap': 'round' })),
+                s_('path', { d: 'M2 59 L100 118 L198 59 L198 186 L2 186 Z', fill: 'url(#lt-paper)', stroke: '#d9cbb7' }),
+                s_('path', { d: 'M2 186 L88 124 M198 186 L112 124', stroke: '#e7dbc9', 'stroke-width': 1.5 }));
+        };
+        // Sealed first, then open: the eye finds the open letters together.
+        const order = [...apps].sort((a, b) => isSealed(b) - isSealed(a));
+        const grid = h('ul', { class: 'lettres-grille' });
+        order.forEach((e, i) => {
+            const b = h('button', { type: 'button', class: `lettre-env ${isSealed(e) ? 'cachetee' : 'ouverte'}`, style: `--r: ${[-2, 1.4, -.6, 1.8, -1.4, .8][i % 6]}deg`,
+                'aria-label': `${e.name} : ${isSealed(e) ? 'cachetée, échange hybride' : 'pli ouvert, échange classique'}` },
+                envelope(e, i),
+                h('span', { class: 'env-nom' }, e.name),
+                h('span', { class: 'env-hote' }, e.host),
+                h('span', { class: 'env-chez' }, h('i', null, 'chez '), holderOf(e), tls12(e) ? h('span', { class: 'env-tls' }, 'TLS 1.2') : null));
+            b.addEventListener('click', () => { const p = plaqueOf.get(e.host); if (p) openSheet(p); });
+            grid.append(h('li', null, b));
+        });
+        const sealedApps = apps.filter(isSealed), open = apps.filter(e => !isSealed(e));
+        // The cases worth a sentence, found in the data rather than named here.
+        const brand = e => e.name.split(',')[0].replace(/ \(.*\)$/, '');
+        const brands = list => [...new Set(list.map(brand))];
+        const cdnButOld = open.filter(e => e.cle?.kind === 'cdn' && tls12(e));
+        const ownNet = open.filter(e => e.cle?.kind === 'propre');
+        const elsewhere = open.filter(e => !cdnButOld.includes(e) && !ownNet.includes(e));
+        const notes = [];
+        if (cdnButOld.length) notes.push(h('div', { class: 'lettres-encart' },
+            h('p', { class: 'sur' }, 'Le cas ' + brands(cdnButOld).join(', ')),
+            h('p', { class: 'lettres-encart-titre' }, `${brands(cdnButOld).join(' et ')} ${brands(cdnButOld).length > 1 ? 'sont' : 'est'} chez ${[...new Set(cdnButOld.map(e => e.cle.name))].join(', ')}, mais ${brands(cdnButOld).length > 1 ? 'ont' : 'a'} gardé TLS 1.2 : `, h('em', null, `${brands(cdnButOld).length > 1 ? 'ils se sont privés' : 'il s\'est privé'} de l'hybride.`)),
+            h('p', null, `L'hybride n'existe qu'en TLS 1.3. Le CDN le propose à tous ses clients, encore faut-il ouvrir la porte à TLS 1.3.`)));
+        if (ownNet.length) notes.push(h('div', { class: 'lettres-encart' },
+            h('p', { class: 'sur' }, 'Réseau maison'),
+            h('p', { class: 'lettres-encart-titre' }, `${brands(ownNet).join(' et ')} servent `, h('em', null, `depuis leur propre réseau`), `${ownNet[0].cle.country === 'GB' ? ', au Royaume-Uni' : ''}.`),
+            h('p', null, `Sans CDN pour le faire à leur place, ils négocient encore un échange classique. Comme au relevé 4 : qui garde sa clé n'a pas l'hybride.`)));
+        if (elsewhere.length) notes.push(h('div', { class: 'lettres-encart' },
+            h('p', { class: 'sur' }, 'Ailleurs'),
+            h('p', { class: 'lettres-encart-titre' }, `${brands(elsewhere).join(', ')} : `, h('em', null, `un pli ouvert.`)),
+            h('p', null, elsewhere.map(e => `${e.host} chez ${holderOf(e)}${tls12(e) ? ', TLS 1.2 seulement' : ''}`).join(' ; ') + '.')));
+        const heart = (filled) => s_('svg', { class: `coeur ${filled ? 'plein' : 'vide'}`, viewBox: '-18 -17 36 32', 'aria-hidden': 'true' }, s_('path', { d: HEART }));
+        const byCdn = sealedApps.filter(e => e.cle?.kind === 'cdn').length;
+        const tally = h('div', { class: 'lettres-compte' },
+            h('p', null, h('b', null, sealedApps.length), ' cachetées ', h('span', { class: 'coeurs' }, sealedApps.map(() => heart(true)))),
+            h('p', null, h('b', null, open.length), ' plis ouverts ', h('span', { class: 'coeurs' }, open.map(() => heart(false)))),
+            h('p', { class: 'lettres-compte-note' }, `Sur les ${sealedApps.length} cachetées, ${byCdn} le doivent à leur CDN.`));
+        const sec = h('section', { class: 'wrap lettres', 'aria-labelledby': 'lettres-titre' },
+            defs,
+            h('p', { class: 'sur' }, 'La table des lettres'),
+            h('h2', { id: 'lettres-titre' }, `${sealedApps.length} lettres cachetées, `, h('em', null, `${open.length} plis ouverts.`)),
+            h('p', { class: 'lettres-chapo' }, `Chaque appli est une lettre. Cachetée d'un cœur de cire quand sa porte parle l'hybride post-quantique : illisible, même après le jour Q. Sous pli ouvert quand elle s'en tient à l'échange classique : enregistrée aujourd'hui, lue le jour Q. Chaque lettre ouvre la fiche de l'appli.`),
+            h('div', { class: 'lettres-table' }, grid),
+            h('div', { class: 'lettres-bas' }, h('div', { class: 'lettres-encarts' }, notes), tally));
+        $('scan').before(sec);
+
+        // The Q-Day: the open letters, read aloud. Fiction, one per open door.
+        const POOL = [
+            ['Mon cœur, à samedi, même heure, même terrasse. Je garde la table près de la fenêtre.', '— C.'],
+            ['Tu sais, je n\'ai encore rien dit à ma famille. Laisse-moi un peu de temps.', '— ta J.'],
+            ['Les photos d\'hier soir, garde-les pour toi, promis ? Je t\'embrasse fort.', '— M.'],
+            ['On s\'est croisés au marché, rue des Martyrs. Tu portais un ciré jaune.', '— A.'],
+            ['J\'habite au troisième, code 41B. Monte quand tu veux, je laisse la lumière.', '— L.'],
+            ['Je n\'ai jamais osé l\'écrire à personne : je crois que je t\'aime.', '— R.'],
+            ['Ne dis rien au bureau, pas encore. Vendredi, même endroit ?', '— S.'],
+            ['Mon médecin dit que tout va bien. Je voulais que tu le saches avant tout le monde.', '— N.'],
+        ];
+        if (open.length) {
+            const lus = h('ul', { class: 'lettres-lues' }, open.map((e, i) => h('li', null,
+                h('p', { class: 'lue-de' }, e.host), h('p', { class: 'lue-texte' }, POOL[i % POOL.length][0]), h('p', { class: 'lue-sig' }, POOL[i % POOL.length][1]))));
+            sec.after(h('section', { class: 'wrap lettres-qday', 'aria-labelledby': 'lettres-qday-titre' },
+                h('p', { class: 'sur' }, 'Le jour Q · simulation'),
+                h('h2', { id: 'lettres-qday-titre' }, `Le jour où l'ordinateur quantique arrive, `, h('em', null, `les plis ouverts se lisent à voix haute.`)),
+                h('p', null, `Une conversation chiffrée en classique peut être enregistrée dès aujourd'hui et déchiffrée ce jour-là. Voici ce que deviendraient les ${open.length} lettres restées ouvertes. Les ${sealedApps.length} autres gardent leur cachet.`),
+                lus,
+                h('p', { class: 'lettres-qday-pied' }, h('span', { class: 'coeurs' }, sealedApps.map(() => heart(true))), ` ${sealedApps.length} lettres cachetées · toujours illisibles après le jour Q. Textes des lettres : fictifs.`)));
         }
     }
 

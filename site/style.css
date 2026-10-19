@@ -976,3 +976,65 @@ pre code { background: none; border: 0; padding: 0; font: inherit; color: inheri
 .tri.qday .piece.classique .cachet { background: radial-gradient(circle at 35% 30%, #c9a49d, #8a6a63 60%, #5e4a45); filter: grayscale(.6); clip-path: polygon(0 0, 55% 0, 45% 48%, 62% 100%, 0 100%); }
 .tri.qday .piece.classique .p-dos { display: flex; }
 .tri.qday .piece.classique { box-shadow: 0 0 0 2px #a5582a, 0 12px 20px -12px rgba(40, 22, 5, .7); }
+
+/* ------------------------------------------------------------ relevé 5: the letters' table */
+.releve-rencontres #atlas-bloc, .releve-rencontres .analyses, .releve-rencontres .chiffres, .releve-rencontres #groupes, .releve-rencontres .reglages, .releve-rencontres .machine { display: none; }
+.defs-lettres { position: absolute; }
+.lettres { margin-top: 3rem; }
+.lettres h2, .lettres-qday h2 { margin: .5rem 0 1rem; font: 400 clamp(2rem, 5vw, 3.2rem)/1.05 var(--serif); max-width: 24ch; }
+.lettres h2 em { color: var(--vif); }
+.lettres-chapo { max-width: 42rem; color: var(--doux); }
+/* Blush paper, fixed in both themes like the sorting office's kraft. */
+.lettres-table {
+    position: relative; overflow: hidden; margin-top: 1.6rem; padding: 2.2rem 1.6rem 1.6rem; border-radius: 14px;
+    background: repeating-linear-gradient(0deg, rgba(166, 30, 45, .025) 0 1px, transparent 1px 6px), linear-gradient(160deg, #f8e8e4, #f1d9d3);
+    box-shadow: inset 0 0 0 1px rgba(166, 30, 45, .12);
+}
+.lettres-table::before, .lettres-table::after { content: ""; position: absolute; z-index: 0; width: 22rem; height: 2.2rem; background: linear-gradient(90deg, #a61e2d, #c8384a 50%, #a61e2d); opacity: .85; box-shadow: 0 2px 6px rgba(80, 10, 20, .3); }
+.lettres-table::before { top: 2.4rem; left: -6.5rem; transform: rotate(-35deg); }
+.lettres-table::after { bottom: 2.4rem; right: -6.5rem; transform: rotate(-35deg); }
+.lettres-grille { position: relative; z-index: 2; list-style: none; margin: 0; padding: 0; display: grid; gap: 1.4rem 1rem; grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr)); }
+.lettre-env { display: flex; flex-direction: column; align-items: center; width: 100%; padding: 0; border: 0; background: none; cursor: pointer; text-align: center; color: #2b1a1d; transform: rotate(var(--r)); transition: transform .3s; }
+.lettre-env:hover, .lettre-env:focus-visible { transform: rotate(0) translateY(-3px); }
+.enveloppe { width: 100%; max-width: 11rem; height: auto; filter: drop-shadow(0 6px 8px rgba(90, 30, 40, .18)); }
+.cachet-texte { font: 500 9.5px var(--mono); fill: #fbe3df; letter-spacing: .3px; }
+.lettre-debut { font: italic 400 13px var(--serif); fill: #1f2326; fill-opacity: .75; }
+.env-nom { margin-top: .35rem; font: italic 400 1.2rem/1.1 var(--serif); }
+.env-hote { margin-top: .2rem; font: 400 .66rem var(--mono); color: #6b4e52; }
+.env-chez { font-size: .72rem; color: #4a3236; }
+.env-chez i { font-style: normal; color: #8a6b6f; }
+.env-tls { margin-left: .3rem; padding: 0 .3rem; border: 1px solid #a61e2d; border-radius: 3px; font: 500 .62rem var(--mono); color: #a61e2d; }
+.lettres-bas { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: 1.5rem 2.5rem; align-items: start; margin-top: 2rem; }
+.lettres-encarts { display: grid; gap: 1rem; }
+.lettres-encart { padding: 1rem 1.2rem; background: var(--papier); border: 1px solid var(--filet); border-left: 4px solid #a61e2d; border-radius: 0 10px 10px 0; }
+.lettres-encart .sur { margin: 0 0 .3rem; color: #a61e2d; }
+.lettres-encart-titre { margin: 0 0 .4rem; font: 400 1.45rem/1.15 var(--serif); color: var(--encre); }
+.lettres-encart-titre em { color: var(--vif); }
+.lettres-encart p:last-child { margin: 0; font-size: .88rem; color: var(--doux); }
+.lettres-compte p { margin: 0 0 .6rem; font-size: .8rem; color: var(--doux); text-transform: uppercase; letter-spacing: .06em; }
+.lettres-compte b { margin-right: .3rem; font: 400 1.6rem var(--serif); color: var(--encre); text-transform: none; }
+.lettres-compte .lettres-compte-note { text-transform: none; letter-spacing: 0; font-size: .85rem; }
+.coeurs { display: inline-flex; flex-wrap: wrap; gap: .15rem; vertical-align: middle; margin-left: .3rem; }
+.coeur { width: .95rem; height: .85rem; }
+.coeur.plein path { fill: #a61e2d; }
+.coeur.vide path { fill: none; stroke: #a61e2d; stroke-width: 2.2; }
+.lettres-qday { margin-top: 3rem; padding-block: 2.2rem 2.4rem; background: #263a42; border-radius: 14px; color: #ece8df; }
+.lettres-qday .sur { color: #e9b9a3; }
+.lettres-qday h2 em { color: #e9b9a3; }
+.lettres-qday > p { max-width: 42rem; color: #b8c3c6; }
+.lettres-lues { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
+.lettres-lues li { padding: .8rem .9rem 1rem; background: repeating-linear-gradient(180deg, #fffdf8 0 1.45rem, #e7e2d6 1.45rem calc(1.45rem + 1px)); color: #1f2326; transform: rotate(-.8deg); box-shadow: 0 8px 14px -8px rgba(0, 0, 0, .55); }
+.lettres-lues li:nth-child(even) { transform: rotate(.9deg); }
+.lue-de { margin: 0 0 .3rem; font: 500 .62rem var(--mono); color: #a61e2d; }
+.lue-texte { margin: 0; font: italic 400 1.02rem/1.45rem var(--serif); }
+.lue-sig { margin: .4rem 0 0; text-align: right; font: italic 400 .9rem var(--serif); color: #5b6064; }
+.lettres-qday-pied { margin-top: 1.4rem; font-size: .8rem; color: #e9b9a3; }
+.lettres-qday-pied .coeur.plein path { fill: #e9b9a3; }
+@media (max-width: 52rem) { .lettres-bas { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 34rem) {
+    .lettres-grille { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem .6rem; }
+    .lettres-table { padding: 1.4rem .8rem 1rem; }
+    .cachet-texte { display: none; }
+    .env-hote { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .lettre-env { transition: none; } }
