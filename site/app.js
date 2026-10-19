@@ -15,6 +15,7 @@
         etat:    { years: 25, what: 'déclaration, dossier social, identité' },
         banques: { years: 10, what: 'relevé de compte, virement' },
         sante:   { years: 50, what: 'dossier patient, rendez-vous' },
+        rencontres: { years: 50, what: 'conversation privée, orientation, photos' },
     };
     const CDN = { cloudflare: 'Cloudflare', akamai: 'Akamai', cloudfront: 'CloudFront', fastly: 'Fastly', azure: 'Azure', google: 'Google', imperva: 'Imperva' };
 

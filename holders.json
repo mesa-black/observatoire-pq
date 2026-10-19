@@ -224,6 +224,12 @@
             "name": "Meta",
             "kind": "propre",
             "country": "US"
+        },
+        "12678": {
+            "name": "Bumble (Badoo)",
+            "kind": "propre",
+            "country": "GB",
+            "why": "Badoo Trading's own network: Bumble and Badoo, one group, answer on it"
         }
     }
 }
