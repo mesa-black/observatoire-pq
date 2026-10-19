@@ -210,7 +210,10 @@ input[type=range] { width: 100%; height: 1.6rem; accent-color: var(--p-expose); 
 .deux-mots p { margin: 0; font-size: .95rem; color: var(--doux); }
 .deux-mots b { color: var(--encre); }
 .deux-mots-bouton { display: inline-block; margin-top: .9rem; padding: .55rem 1rem; border-radius: 999px; background: var(--p-scelle); color: #fff; font-weight: 700; font-size: .9rem; text-decoration: none; }
-.deux-mots-bouton:hover, .deux-mots-bouton:focus-visible { background: var(--vif); }
+/* The text colour is set here too: the global a:hover would turn it the
+   colour of the background. One dark ochre in both themes: white stays
+   readable on it (about 4.9:1), where the dark theme's light --vif is not. */
+.deux-mots-bouton:hover, .deux-mots-bouton:focus-visible { background: #a5582a; color: #fff; }
 .et-vous a { color: var(--lien); }
 .et-vous { display: block; margin-top: .6rem; padding-top: .6rem; border-top: 1px dashed var(--filet); }
 
