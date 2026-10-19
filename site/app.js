@@ -99,6 +99,31 @@
     // hypothesis says (code, documents), longer if the organisation's own data does.
     const aiUntil = e => RECORDED + Math.max(lifeOf(e).years, LIFE.ia.years);
     const usersOf = k => measured.filter(e => (e.ai || []).includes(k));
+    // Relevé 6: who stands behind each third-party script, by its host,
+    // classified by hand as holders.json is. What it does, only when its
+    // publisher says so; a host not listed here is shown as itself.
+    const TIERS_PROV = [
+        [/googletagmanager\.com$/, 'Google Tag Manager', 'un gestionnaire de balises'], [/(cookielaw\.org|onetrust\.com)$/, 'OneTrust', 'un bandeau cookies'],
+        [/cloudflareinsights\.com$/, 'Cloudflare Web Analytics', 'une mesure d\'audience'], [/^cdnjs\.cloudflare\.com$/, 'cdnjs'], [/^challenges\.cloudflare\.com$/, 'Cloudflare Turnstile'],
+        [/jsdelivr\.net$/, 'jsDelivr'], [/tagcommander\.com$/, 'Tag Commander', 'un gestionnaire de balises'], [/trustcommander\.net$/, 'Trust Commander', 'un bandeau cookies'],
+        [/youtube(-nocookie)?\.com$/, 'YouTube'], [/^maps\.googleapis\.com$/, 'Google Maps'], [/abtasty\.com$/, 'AB Tasty'],
+        [/cookiebot\.com$/, 'Cookiebot', 'un bandeau cookies'], [/fontawesome\.com$/, 'Font Awesome'], [/vimeo\.com$/, 'Vimeo'], [/trustpilot\.com$/, 'Trustpilot'],
+        [/wp\.com$/, 'Jetpack (WordPress.com)'], [/jquery\.com$/, 'jQuery CDN'], [/unpkg\.com$/, 'unpkg'], [/cookieyes\.com$/, 'CookieYes', 'un bandeau cookies'],
+        [/aticdn\.net$/, 'Piano Analytics', 'une mesure d\'audience'], [/polyfill-fastly\.io$/, 'Polyfill (Fastly)'], [/parsely\.com$/, 'Parse.ly', 'une mesure d\'audience'],
+        [/trustarc\.com$/, 'TrustArc', 'un bandeau cookies'], [/elfsight\.com$/, 'Elfsight'], [/clearbit\.com$/, 'Clearbit', 'un traceur qui identifie l\'entreprise du visiteur'],
+        [/readspeaker\.com$/, 'ReadSpeaker', 'une lecture vocale'], [/usercentrics\.eu$/, 'Usercentrics', 'un bandeau cookies'], [/decibelinsight\.net$/, 'Decibel', 'un enregistreur de sessions'],
+        [/mapbox\.com$/, 'Mapbox'], [/datatables\.net$/, 'DataTables'], [/bootstrapcdn\.com$/, 'BootstrapCDN'], [/(website-files\.com|d3e54v103j8qbb\.cloudfront\.net)$/, 'Webflow'],
+        [/(hubspot|hs-scripts|hsappstatic)/, 'HubSpot'], [/plausible\.io$/, 'Plausible', 'une mesure d\'audience'], [/qualified\.com$/, 'Qualified'],
+        [/luckyorange\.com$/, 'Lucky Orange', 'un enregistreur de sessions'], [/monetate\.net$/, 'Monetate'], [/optimizely\.com$/, 'Optimizely'], [/stripe\.com$/, 'Stripe'],
+        [/^(www|cse)\.google\.com$/, 'Google (recherche)'], [/dynatrace\.com$/, 'Dynatrace'], [/trackingplan\.com$/, 'Trackingplan'],
+        [/cdn-apple\.com$/, 'Apple ID'], [/twic\.pics$/, 'TwicPics'], [/addtoany\.com$/, 'AddToAny'], [/framer(usercontent)?\.com$/, 'Framer'],
+        [/captcha-delivery\.com$/, 'DataDome'], [/appsflyer\.com$/, 'AppsFlyer'], [/prismic\.io$/, 'Prismic'], [/kameleoon\.eu$/, 'Kameleoon'],
+        [/cloudimg\.io$/, 'Cloudimage'], [/dailymotion\.com$/, 'Dailymotion'], [/ahrefs\.com$/, 'Ahrefs'], [/datadoghq/, 'Datadog RUM'],
+    ];
+    const provOf = host => {
+        const hit = TIERS_PROV.find(([re]) => re.test(host));
+        return hit ? { name: hit[1], what: hit[2] || null } : { name: host, what: null };
+    };
     // Relevé 3: who carries each organisation's mail, and whether TLS between
     // mail servers is required (MTA-STS enforce, DANE) or merely offered.
     const POST = {
@@ -268,6 +293,24 @@
             `Conversations privées, orientation, photos : des secrets qui doivent le rester toute une vie.`,
         );
         sources($('chapo'), `chaque porte mesurée le ${dateFr} (OpenSSL 3.5, seul groupe offert X25519MLKEM768) ; pour une appli qui appelle sa propre adresse, cette adresse aussi.`);
+    } else if (M.focus === 'oeufs') {
+        // Relevé 6, Easter: the third parties each home page loads (tiers.sh),
+        // eggs hidden in the grass. Told in the chocolate shop below.
+        document.body.classList.add('releve-oeufs');
+        const read = measured.filter(e => e.page);
+        const hunted = measured.filter(e => (e.tiers || []).length);
+        const eggs = hunted.flatMap(e => e.tiers);
+        const dark = eggs.filter(t => t.pq !== 'full');
+        const betrayed = hunted.filter(e => e.pq === 'full' && e.tiers.some(t => t.pq !== 'full'));
+        $('chapo').append(
+            `Une page d'accueil, c'est une porte d'entrée… et des œufs cachés dans l'herbe : les scripts tiers, chacun une connexion TLS vers le serveur d'un autre, sous la clé d'un autre. `,
+            `Sur ${read.length} pages d'accueil lues, ${hunted.length} en cachent : `, h('strong', null, `${eggs.length} œufs`), `, venus de `,
+            h('strong', null, `${new Set(eggs.map(t => provOf(t.host).name)).size} fournisseurs`), `. `,
+            `${eggs.length - dark.length} sont emballés en hybride. `, h('strong', null, `${dark.length} sont en chocolat noir`),
+            betrayed.length ? `, dont ${betrayed.length} chez des organisations qui ont pourtant scellé leur propre porte.` : '.',
+        );
+        sources($('chapo'), `les scripts que nomme le HTML servi de chaque page d'accueil, lu le ${dateFr} ; la porte de chaque tiers, mesurée le même jour (OpenSSL 3.5, seul groupe offert X25519MLKEM768). `,
+            `Compte plancher : ce qu'un gestionnaire de balises ajoute une fois la page chargée ne se voit pas d'ici.`);
     } else if (M.focus === 'cle') {
         // Relevé 4: relevé 1's page, re-measured, read through who holds the
         // key of each door (cle.sh). Nothing of relevé 1 is hidden.
@@ -290,6 +333,8 @@
             h('strong', null, sealed.length), ` parlent déjà l'hybride post-quantique. Faites avancer le temps pour voir ce que les autres laisseront lire.`,
         );
     }
+    // A relevé that leaves its usual day (the 16th) says so, under its headline.
+    if (M.exception) $('chapo').after(h('p', { class: 'exception' }, M.exception));
 
     const s = D.self;
     $('nous').append(
@@ -1130,6 +1175,7 @@
                         row('Porte', [CDN[e.front] ? `${CDN[e.front]}, CDN` : 'pas de CDN signalé', e.server ? ` · « ${e.server} »` : '']),
                         (e.ai || []).length && e.g !== 'ia' && row('Fournisseurs d\'IA', e.ai.map(k => `${PROVIDERS[k].label}${providerSealed(k) ? '' : ' (classique)'}`).join(', ')),
                         cspOf(e) && row('CSP', CSP_LABEL[cspOf(e).kind] + (cspOf(e).meta ? ' (balise meta)' : '')),
+                        (e.tiers || []).length && row('Scripts tiers', e.tiers.map(t => `${t.host}${t.pq === 'full' ? '' : ' (classique)'}`).join(', ')),
                         row('HSTS', maxAge ? `${Math.round(maxAge[1] / 86400)} jours${/includesubdomains/.test(e.hsts) ? ', sous-domaines compris' : ''}${/preload/.test(e.hsts) ? ', préchargé' : ''}` : 'absent'),
                         row('Hypothèse', `${life.what} : sensible ${life.years} ans`),
                         row('Relevé', e.at ? `${dateTimeFr.format(new Date(e.at))} UTC` : dateFr),
@@ -2134,4 +2180,143 @@
         }
     }
 
+    // ------------------------------------------------------------ the chocolate shop (relevé 6)
+    // Each third party is an egg in the shop window, one per provider, its
+    // size by the number of pages that load it: wrapped in gold foil when its
+    // own door takes the hybrid, bare dark chocolate when it does not. The
+    // dark ones are labelled with the pages that serve them, each opening
+    // that organisation's sheet. Built with s_(), never as markup.
+    if (M.focus === 'oeufs') {
+        const hunted = measured.filter(e => (e.tiers || []).length);
+        const plaqueOf = new Map(plaques.map(p => [p.e.host, p]));
+        const isGold = t => t.pq === 'full';
+        // One provider per name and wrapping: a provider with a classical host
+        // and sealed ones shows on both shelves.
+        const byProv = new Map();
+        for (const e of hunted) for (const t of e.tiers) {
+            const pv = provOf(t.host), k = (isGold(t) ? '' : '!') + pv.name;
+            const p = byProv.get(k) || byProv.set(k, { ...pv, gold: isGold(t), pages: new Set(), hosts: new Set(), orgs: [] }).get(k);
+            p.pages.add(e.host); p.hosts.add(t.host);
+            if (!p.orgs.includes(e)) p.orgs.push(e);
+        }
+        const provs = [...byProv.values()].map(p => ({ ...p, n: p.pages.size })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'fr'));
+        const gold = provs.filter(p => p.gold), dark = provs.filter(p => !p.gold);
+
+        // The egg: 100 × 130, one path. Foil facets drawn from a seed per
+        // provider, so the same egg always crinkles the same way.
+        const EGG = 'M50 0C79 0 100 44 100 80 100 111 78 130 50 130 22 130 0 111 0 80 0 44 21 0 50 0Z';
+        const CRACK = 'M-2 66L12 58 22 70 34 57 45 69 56 56 67 70 78 58 89 68 102 60';
+        const grad = (id, stops) => s_('radialGradient', { id, cx: '36%', cy: '30%', r: '80%' }, stops.map(([o, c]) => s_('stop', { offset: o, 'stop-color': c })));
+        const defs = s_('svg', { width: 0, height: 0, 'aria-hidden': 'true', class: 'defs-oeufs' }, s_('defs', null,
+            grad('oe-or', [[0, '#fbeeb8'], ['.35', '#f3dc92'], ['.7', '#c99c3f'], [1, '#8f6420']]),
+            grad('oe-choc', [[0, '#8a5a3a'], ['.35', '#5a3520'], [1, '#2a170b']]),
+            s_('clipPath', { id: 'oe-forme' }, s_('path', { d: EGG }))));
+        const seeded = name => { let x = 7; for (const c of name) x = (x * 31 + c.charCodeAt(0)) % 2147483647; return () => (x = (x * 16807) % 2147483647) / 2147483647; };
+        const shine = op => s_('ellipse', { cx: 33, cy: 34, rx: 12, ry: 20, transform: 'rotate(-24 33 34)', fill: '#fff', opacity: op });
+        function egg(px, kind, name = '') {
+            const svg = s_('svg', { class: `oeuf ${kind}`, width: Math.round(px * 108 / 140), height: px, style: `--h: ${px}px`, viewBox: '-4 -4 108 140', 'aria-hidden': 'true' },
+                s_('ellipse', { cx: 50, cy: 131, rx: 44, ry: 5, fill: '#2a170b', opacity: '.22' }));
+            if (kind === 'fendu') {
+                // Bottom half in place, the top lifted off: what the Q-Day does to a classical exchange.
+                const half = d => s_('g', { 'clip-path': 'url(#oe-forme)' }, s_('path', { d: EGG, fill: 'url(#oe-choc)' }), s_('path', { d, class: 'oeuf-vide' }), s_('path', { d: CRACK, fill: 'none', stroke: '#1a0d05', 'stroke-width': 2 }));
+                svg.append(half(`${CRACK}L102 -5 -2 -5Z`), s_('g', { transform: 'translate(-8 -26) rotate(-16 20 60)' }, half(`${CRACK}L102 140 -2 140Z`)),
+                    s_('path', { d: 'M70 128l5-4 3 5zM84 130l3-3 2 3zM18 129l4-3 1 4z', fill: '#3b2212' }));
+                return svg;
+            }
+            const inside = s_('g', { 'clip-path': 'url(#oe-forme)' });
+            if (kind === 'or') {
+                const rnd = seeded(name);
+                for (let i = 0; i < 26; i++) {
+                    const x = rnd() * 110 - 5, y = rnd() * 140 - 5, r = 8 + rnd() * 16, k = 3 + Math.floor(rnd() * 3), pts = [];
+                    for (let j = 0; j < k; j++) { const a = j / k * 6.283 + rnd() * .8; pts.push(`${(x + Math.cos(a) * r).toFixed(1)},${(y + Math.sin(a) * r * .8).toFixed(1)}`); }
+                    const lit = rnd() < .5;
+                    inside.append(s_('polygon', { points: pts.join(' '), fill: lit ? '#fff8d8' : '#7a5310', opacity: ((lit ? .18 : .14) * (.5 + rnd())).toFixed(3) }));
+                }
+                for (let i = 0; i < 34; i++) {
+                    let x = rnd() * 100, y = rnd() * 130, d = `M${x.toFixed(1)} ${y.toFixed(1)}`;
+                    for (let j = 0; j < 3; j++) { x += rnd() * 14 - 7; y += rnd() * 14 - 7; d += `L${x.toFixed(1)} ${y.toFixed(1)}`; }
+                    inside.append(s_('path', { d, fill: 'none', stroke: rnd() < .55 ? '#fffbe6' : '#6e4a12', 'stroke-width': (.5 + rnd() * .7).toFixed(2), opacity: (.35 + rnd() * .35).toFixed(2), 'stroke-linejoin': 'bevel' }));
+                }
+                inside.append(s_('path', { d: 'M-5 74C25 66 75 84 105 72', fill: 'none', stroke: '#fff3c4', 'stroke-width': 1.2, opacity: '.6' }),
+                    s_('path', { d: 'M-5 77C25 69 75 87 105 75', fill: 'none', stroke: '#7a5310', opacity: '.35' }), shine('.45'));
+            } else {
+                inside.append(s_('path', { d: 'M8 70C30 64 70 64 92 70', fill: 'none', stroke: '#2a170b', 'stroke-width': 1.4, opacity: '.55' }),
+                    s_('path', { d: 'M8 72C30 66 70 66 92 72', fill: 'none', stroke: '#a2724f', 'stroke-width': .8, opacity: '.45' }), shine('.22'));
+            }
+            svg.append(s_('path', { d: EGG, fill: kind === 'or' ? 'url(#oe-or)' : 'url(#oe-choc)' }), inside,
+                s_('path', { d: EGG, fill: 'none', stroke: kind === 'or' ? '#8f6420' : '#22130a', opacity: '.5' }));
+            return svg;
+        }
+        const size = n => Math.round(30 + 27 * Math.sqrt(n));
+        const pages = n => plural(n, 'page', 'pages');
+        const orgButton = e => {
+            const b = h('button', { type: 'button', class: 'oeuf-chez' }, e.name);
+            b.addEventListener('click', () => { const p = plaqueOf.get(e.host); if (p) openSheet(p); });
+            return b;
+        };
+        // A shelf: the eggs stand on a glass plank, each item carrying its own
+        // piece of it so that a row that wraps keeps its plank.
+        const shelf = (title, sub, items, dark) => {
+            const zone = (dark ? 84 : Math.max(...items.map(p => size(p.n)))) + 8;
+            return h('div', { class: 'rayon' },
+                h('div', { class: 'rayon-tete' }, h('h3', null, ...title), h('span', null, sub)),
+                h('ul', { class: 'rayon-oeufs', style: `--zone: ${zone}px` }, items.map((p, i) => h('li', { style: `--r: ${((i % 3) - 1) * (dark ? 1.3 : 2.2)}deg` },
+                    h('div', { class: 'oeuf-zone' }, egg(dark ? 84 : size(p.n), dark ? 'choc' : 'or', p.name)),
+                    dark
+                        ? h('div', { class: 'etiquette' }, h('span', { class: 'etiquette-nom' }, p.name),
+                            p.name !== [...p.hosts][0] ? h('span', { class: 'etiquette-hote' }, [...p.hosts].join(', ')) : null,
+                            h('span', { class: 'etiquette-chez' }, 'chez ', p.orgs.map((e, j) => [j ? ', ' : '', orgButton(e)])))
+                        : h('div', { class: `etiquette${p.n > 9 ? ' grande' : ''}`, title: [...p.hosts].join(', ') }, h('span', { class: 'etiquette-nom' }, p.name),
+                            h('span', { class: 'etiquette-pages' }, pages(p.n)))))));
+        };
+        const big = gold.filter(p => p.n >= 5), mid = gold.filter(p => p.n >= 3 && p.n < 5), two = gold.filter(p => p.n === 2), one = gold.filter(p => p.n === 1);
+        const vitre = h('div', { class: 'vitre' },
+            big.length && shelf(['Les pièces ', h('em', null, 'maîtresses')], 'Emballé or · un œuf par fournisseur, sa taille selon le nombre de pages', big),
+            mid.length && shelf(['La ', h('em', null, 'collection')], '3 à 4 pages', mid),
+            two.length && shelf(['Les ', h('em', null, 'petits sujets')], '2 pages', two),
+            one.length && h('details', { class: 'assortiment' },
+                h('summary', null, h('span', { class: 'assortiment-titre' }, 'L\'assortiment ', h('em', null, 'au détail')), h('span', null, `${one.length} fournisseurs, une page chacun ; tous emballés or`)),
+                h('ul', null, one.map(p => h('li', { title: [...p.hosts].join(', ') }, egg(22, 'or', p.name), h('span', null, p.name))))),
+            dark.length && h('div', { class: 'chocolat-noir' }, shelf(['Chocolat noir : ', h('em', null, 'non emballé')], `${plural(dark.length, 'fournisseur', 'fournisseurs')} en échange classique · l'étiquette dit quelle page le sert`, dark, true)),
+            h('div', { class: 'vitrine-legende' },
+                h('span', null, egg(26, 'or', 'légende'), 'Papier doré : le serveur tiers accepte X25519MLKEM768'),
+                h('span', null, egg(26, 'choc'), 'Chocolat nu : échange de clés classique'),
+                h('span', { class: 'vitrine-echelle' }, 'Taille de l\'œuf selon √ pages')));
+
+        // The paradox, from the data: a sealed front door whose page still
+        // opens a classical connection to someone else.
+        const classicalOf = e => e.tiers.filter(t => !isGold(t));
+        const betrayed = hunted.filter(e => e.pq === 'full' && classicalOf(e).length);
+        const neither = hunted.filter(e => e.pq !== 'full' && classicalOf(e).length);
+        const whats = [...new Set(betrayed.flatMap(e => classicalOf(e).map(t => provOf(t.host).what)).filter(Boolean))];
+        const unnamed = betrayed.flatMap(classicalOf).filter(t => !provOf(t.host).what).length;
+        const paradoxe = betrayed.length && h('div', { class: 'paradoxe' },
+            h('p', { class: 'sur' }, 'Le paradoxe'),
+            h('p', { class: 'paradoxe-titre' }, 'Une porte blindée, ', h('em', null, 'un tiers en fer-blanc.')),
+            h('p', null, h('b', null, `${betrayed.length === 6 ? 'Six' : betrayed.length} ${betrayed.length > 1 ? 'maisons' : 'maison'}`), ` ${betrayed.length > 1 ? 'ont' : 'a'} scellé leur propre porte, mais leur page appelle un tiers resté classique : `,
+                [...whats, unnamed ? `${plural(unnamed, 'script', 'scripts')} dont l'éditeur ne se présente pas` : null].filter(Boolean).join(', '),
+                `. Le visiteur ouvre deux connexions, et la plus faible fixe le niveau.`),
+            h('ul', { class: 'paradoxe-liste' }, betrayed.map(e => h('li', null, orgButton(e), ' ', h('code', null, classicalOf(e).map(t => t.host).join(', '))))),
+            neither.length ? h('p', { class: 'paradoxe-ni' }, h('b', null, neither.map(e => e.name).join(', ')), ` : ni l'une ni l'autre. Porte d'entrée classique, et un tiers classique aussi (`, neither.map(e => classicalOf(e).map(t => t.host).join(', ')).join(' ; '), `).`) : null);
+
+        const sec = h('section', { class: 'wrap chocolaterie', 'aria-labelledby': 'chocolaterie-titre' },
+            defs,
+            h('div', { class: 'enseigne' }, h('p', { class: 'enseigne-nom', id: 'chocolaterie-titre' }, 'Chocolaterie du Q-Day'), h('p', { class: 'enseigne-sous' }, 'Maison fondée sur X25519MLKEM768')),
+            h('div', { class: 'store', 'aria-hidden': 'true' }),
+            h('div', { class: 'devanture' }, vitre),
+            paradoxe);
+        $('scan').before(sec);
+
+        // The Q-Day: the gold holds, the dark chocolate cracks.
+        const keep = gold.slice(0, 2);
+        sec.after(h('section', { class: 'wrap oeufs-qday', 'aria-labelledby': 'oeufs-qday-titre' },
+            h('div', null,
+                h('p', { class: 'sur' }, 'Le jour où l\'ordinateur quantique arrive'),
+                h('h2', { id: 'oeufs-qday-titre' }, 'Le papier doré tient, ', h('em', null, 'le chocolat nu se fend.')),
+                h('p', null, `Un échange de clés enregistré aujourd'hui en classique se lira ce jour-là. L'emballage hybride, lui, résiste.`)),
+            h('ul', { class: 'oeufs-qday-rang' },
+                keep.map(p => h('li', { class: 'tient' }, egg(62, 'or', p.name), h('span', null, p.name))),
+                h('li', { class: 'separe', 'aria-hidden': 'true' }),
+                dark.map(p => h('li', null, egg(62, 'fendu'), h('span', null, p.orgs.map(e => e.name).join(', ')))))));
+    }
 })();

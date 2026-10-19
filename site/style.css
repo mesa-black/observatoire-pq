@@ -1042,3 +1042,106 @@ pre code { background: none; border: 0; padding: 0; font: inherit; color: inheri
    blush when the letter is open. Relevé 5 only. */
 .releve-rencontres .fiche-tete { background: #a61e2d; color: #fbe3df; box-shadow: inset 0 0 0 4px #a61e2d, inset 0 0 0 5.5px rgba(255, 255, 255, .5); }
 .releve-rencontres .fiche-tete.ouvert, .releve-rencontres .fiche-tete.partie { background: #f1d9d3; color: #7c1220; box-shadow: inset 0 0 0 4px #f1d9d3, inset 0 0 0 5.5px #a61e2d; }
+
+/* ------------------------------------------------------------ relevé 6: the chocolate shop */
+.releve-oeufs #atlas-bloc, .releve-oeufs .analyses, .releve-oeufs .chiffres, .releve-oeufs #groupes, .releve-oeufs .reglages, .releve-oeufs .machine { display: none; }
+.exception { max-width: 42rem; margin: .8rem 0 0; padding-left: .9rem; border-left: 2px solid var(--vif); font-size: .92rem; color: var(--doux); }
+.defs-oeufs { position: absolute; }
+.oeuf { display: block; overflow: visible; }
+.oeuf-vide { fill: #2e4a55; }
+.chocolaterie { margin-top: 3rem; }
+/* The shop keeps its colours in both themes, like the sorting office's kraft. */
+.enseigne { position: relative; z-index: 3; width: min(40rem, 92%); margin: 0 auto; padding: 1rem 1rem .9rem; text-align: center; background: linear-gradient(#2b4550, #203840); border-radius: 6px; box-shadow: 0 0 0 3px #c99c3f inset, 0 0 0 7px #203840 inset, 0 0 0 8px rgba(201, 156, 63, .55) inset, 0 10px 24px rgba(0, 0, 0, .2); }
+.enseigne-nom { margin: 0; font: 400 clamp(1.7rem, 4.5vw, 2.5rem)/1 var(--serif); color: #e9c973; }
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+    .enseigne-nom { background: linear-gradient(180deg, #f7e6a8, #d4a94c 55%, #a77729); -webkit-background-clip: text; background-clip: text; color: transparent; }
+}
+.enseigne-sous { margin: .4rem 0 0; font: 400 .66rem var(--mono); letter-spacing: .24em; text-transform: uppercase; color: #e4c77c; }
+/* The awning: stripes, their lower edge scalloped by a mask, one scallop per stripe. */
+.store { position: relative; z-index: 2; height: 3.4rem; margin-top: -1.4rem; border-top: 3px solid #c99c3f; background: repeating-linear-gradient(90deg, #2e4a55 0 4.5rem, #ece0c8 4.5rem 9rem);
+    -webkit-mask: linear-gradient(#000, #000) top / 100% calc(100% - 1.2rem) no-repeat, radial-gradient(2.25rem 1.2rem at 50% 0, #000 97%, transparent) bottom left / 4.5rem 1.2rem repeat-x;
+    mask: linear-gradient(#000, #000) top / 100% calc(100% - 1.2rem) no-repeat, radial-gradient(2.25rem 1.2rem at 50% 0, #000 97%, transparent) bottom left / 4.5rem 1.2rem repeat-x; }
+.devanture { padding: 1.1rem; background: linear-gradient(#7a5236, #5b3b26); border-radius: 0 0 10px 10px; box-shadow: 0 18px 40px rgba(59, 34, 18, .14); }
+.vitre { position: relative; overflow: hidden; padding: 1.9rem 2.1rem .6rem; background: linear-gradient(180deg, #fdfbf6, #f6efe2); border-radius: 3px; color: #1f2326; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .08), inset 0 0 60px rgba(201, 185, 154, .2); }
+.vitre::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 0 30%, rgba(255, 255, 255, .31) 34%, transparent 40% 62%, rgba(255, 255, 255, .22) 64%, transparent 67%); }
+.rayon { position: relative; z-index: 1; margin-bottom: 1.6rem; }
+.rayon-tete { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .9rem; margin-bottom: .4rem; }
+.rayon-tete h3, .assortiment-titre { margin: 0; font: 400 1.55rem/1.1 var(--serif); }
+.rayon-tete h3 em, .assortiment-titre em { color: #a5582a; }
+.rayon-tete span, .assortiment summary > span:last-child { font: 400 .7rem var(--mono); letter-spacing: .04em; color: #5b6064; }
+.rayon-oeufs { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: space-around; }
+.rayon-oeufs li { flex: 1 1 7.5rem; display: flex; flex-direction: column; align-items: center; min-width: 0; }
+/* Each egg stands on its own piece of the glass plank: wrapped rows keep theirs. */
+.oeuf-zone { display: flex; align-items: flex-end; justify-content: center; align-self: stretch; height: var(--zone); padding-bottom: 4px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .8) 0, rgba(231, 239, 238, .6) 30%, rgba(185, 203, 201, .6) 100%) 0 100% / 100% 16px no-repeat; margin-bottom: 4px; }
+.etiquette { position: relative; display: flex; flex-direction: column; margin-top: 1.4rem; padding: .45rem .7rem .45rem 1.25rem; max-width: 100%; text-align: left; background: #fbf9f4; border: 1px solid #d9cfbd; border-radius: 3px 6px 6px 3px; box-shadow: 0 3px 6px rgba(59, 34, 18, .07); transform: rotate(var(--r)); transform-origin: 50% -1.6rem; }
+.etiquette::before { content: ""; position: absolute; left: .45rem; top: 50%; width: 6px; height: 6px; margin-top: -3px; border-radius: 50%; background: #f3efe7; box-shadow: inset 0 0 0 1px #b8ab93; }
+.etiquette::after { content: ""; position: absolute; left: .62rem; bottom: 50%; width: 1px; height: calc(50% + 1.75rem); background: #8a7a62; transform-origin: bottom; transform: rotate(16deg); }
+.etiquette-nom { font-weight: 600; font-size: .84rem; line-height: 1.2; overflow-wrap: break-word; }
+.etiquette.grande .etiquette-nom { font-size: 1rem; }
+.etiquette-pages { font: 400 .68rem var(--mono); color: #5b6064; }
+.etiquette-pages::before { content: "● "; color: #8a6420; }
+.etiquette-hote { margin-top: .1rem; font: 400 .64rem/1.3 var(--mono); color: #6b5a48; overflow-wrap: anywhere; }
+.etiquette-chez { margin-top: .15rem; font: italic 400 .95rem/1.15 var(--serif); color: #a5582a; }
+.oeuf-chez { padding: 0; border: 0; background: none; font: inherit; color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; cursor: pointer; }
+.oeuf-chez:hover, .oeuf-chez:focus-visible { color: #7c3c18; }
+.assortiment { position: relative; z-index: 1; margin-bottom: 1.6rem; border-radius: 6px; background: linear-gradient(#efe6d6, #e6dac5); box-shadow: inset 0 2px 6px rgba(59, 34, 18, .13); }
+.assortiment summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .9rem; padding: .9rem 1.2rem; cursor: pointer; list-style: none; }
+.assortiment summary::-webkit-details-marker { display: none; }
+.assortiment summary::after { content: "Ouvrir la boîte ▾"; margin-left: auto; font: 500 .7rem var(--mono); color: #8a6420; }
+.assortiment[open] summary::after { content: "Refermer ▴"; }
+.assortiment ul { list-style: none; margin: 0; padding: 0 1.2rem 1rem; display: grid; gap: .6rem .8rem; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); }
+.assortiment li { display: flex; align-items: center; gap: .5rem; min-width: 0; font-size: .8rem; }
+.assortiment li span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.assortiment .oeuf { flex: none; }
+.chocolat-noir { position: relative; z-index: 1; margin: 1.6rem 0 0; padding: 1.4rem 1.6rem .4rem; background: linear-gradient(#3a2416, #2a190f); border-radius: 4px; color: #f3e7d6; }
+.chocolat-noir .rayon-tete h3 { color: #f6ecdc; }
+.chocolat-noir .rayon-tete h3 em { color: #e3a77a; }
+.chocolat-noir .rayon-tete span { color: #cbb59a; }
+.chocolat-noir .oeuf-zone { background-image: linear-gradient(180deg, rgba(255, 255, 255, .33), rgba(255, 255, 255, .1) 40%, rgba(255, 255, 255, .06)); }
+.chocolat-noir .rayon-oeufs li { flex-basis: 8rem; }
+.chocolat-noir .etiquette { width: 100%; max-width: 9.2rem; background: #f6eee0; border-color: #c9b28f; color: #1f2326; }
+.chocolat-noir .etiquette::before { background: #2a190f; }
+.chocolat-noir .etiquette::after { background: #d8c3a2; }
+.vitrine-legende { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: .6rem 1.6rem; align-items: center; margin: 1.2rem 0 1.1rem; font-size: .8rem; color: #5b6064; }
+.vitrine-legende span { display: flex; align-items: center; gap: .5rem; }
+.vitrine-echelle { margin-left: auto; font: 400 .68rem var(--mono); }
+.paradoxe { max-width: 48rem; margin: 2rem auto 0; padding: 1.1rem 1.3rem 1.2rem; background: var(--papier); border: 1px solid var(--filet); border-left: 4px solid var(--vif); border-radius: 0 10px 10px 0; }
+.paradoxe .sur { margin: 0 0 .3rem; color: var(--vif); }
+.paradoxe-titre { margin: 0 0 .5rem; font: 400 1.7rem/1.15 var(--serif); }
+.paradoxe-titre em { color: var(--vif); }
+.paradoxe > p:not(.sur):not(.paradoxe-titre) { margin: 0 0 .6rem; color: var(--doux); }
+.paradoxe-liste { margin: 0 0 .6rem; padding-left: 1.1rem; font-size: .9rem; }
+.paradoxe-liste .oeuf-chez { color: var(--encre); font-weight: 600; }
+.paradoxe-liste code { font-size: .78rem; color: var(--doux); overflow-wrap: anywhere; }
+.paradoxe .paradoxe-ni { margin: 0; padding-top: .6rem; border-top: 1px dashed var(--filet); font-size: .88rem; }
+.oeufs-qday { margin-top: 2.4rem; padding-block: 1.7rem 1.9rem; display: grid; grid-template-columns: 17rem minmax(0, 1fr); gap: 1.4rem 2rem; align-items: center; background: #2e4a55; border-radius: 10px; color: #eef2f1; }
+.oeufs-qday .sur { margin: 0; color: #e4c77c; }
+.oeufs-qday h2 { margin: .4rem 0 0; font: 400 2rem/1.05 var(--serif); }
+.oeufs-qday h2 em { color: #f0b98f; }
+.oeufs-qday p:not(.sur) { margin: .6rem 0 0; font-size: .86rem; color: #c9d6d5; }
+.oeufs-qday-rang { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: .8rem .4rem; }
+.oeufs-qday-rang li { display: flex; flex-direction: column; align-items: center; gap: .35rem; flex: 1 1 0; min-width: 4rem; }
+.oeufs-qday-rang .separe { flex: none; min-width: 0; }
+.oeufs-qday-rang span { min-height: 1.7rem; font: 400 .64rem/1.3 var(--mono); text-align: center; color: #c9d6d5; overflow-wrap: break-word; width: 100%; }
+.oeufs-qday-rang .tient span { color: #e4c77c; }
+.oeufs-qday-rang .separe { width: 1px; align-self: stretch; background: rgba(255, 255, 255, .19); }
+@media (max-width: 52rem) { .oeufs-qday { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 34rem) {
+    .devanture { padding: .6rem; }
+    .vitre { padding: 1.2rem .9rem .4rem; }
+    .rayon-oeufs li { flex-basis: 6rem; }
+    /* Smaller eggs, so that a wrapped row does not stand under a tall plank. */
+    .rayon-oeufs .oeuf { width: auto; height: calc(var(--h) * .62); }
+    .oeuf-zone { height: calc(var(--zone) * .62 + 4px); }
+    .etiquette { margin-top: 1.1rem; padding: .35rem .45rem .35rem 1rem; }
+    .etiquette::before { left: .3rem; }
+    .etiquette::after { left: .47rem; }
+    .etiquette-nom, .etiquette.grande .etiquette-nom { font-size: .72rem; }
+    .etiquette-pages { font-size: .6rem; }
+    .oeufs-qday-rang span { font-size: .58rem; }
+    .chocolat-noir { padding: 1.1rem .8rem .3rem; }
+    .chocolat-noir .rayon-oeufs li { flex-basis: 8.5rem; }
+    .vitrine-echelle { margin-left: 0; }
+    .store { height: 2.6rem; }
+}
