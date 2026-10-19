@@ -14,7 +14,9 @@ It measures façades: one public HTTPS host per organisation. Nothing behind it.
     hosts | podman run --rm -i --entrypoint sh localhost/observatoire-pq -c 'xargs -P 12 -n 1 sh /probe.sh' > results/$d.jsonl
     # timings alone on the line, one host at a time (~20 min)
     hosts | podman run --rm -i --entrypoint sh localhost/observatoire-pq -c 'xargs -P 1 -n 1 sh /cost.sh' > results/$d.cost.jsonl
-    hosts | podman run --rm -i --entrypoint sh localhost/observatoire-pq -c 'xargs -P 12 -n 1 sh /csp.sh' > results/$d.csp.jsonl
+    # one file per host, then joined: a long CSP line written by twelve parallel
+    # processes into one pipe can be cut in two by another (Back Market, 19/10)
+    o=$(mktemp -d); hosts | podman run --rm -i -v "$o:/out" --entrypoint sh localhost/observatoire-pq -c 'xargs -P 12 -I{} sh -c "sh /csp.sh {} > /out/{}.json"' && cat "$o"/*.json > results/$d.csp.jsonl
     podman run --rm localhost/observatoire-pq mesa.black > results/$d.self.jsonl
     podman run --rm --entrypoint sh localhost/observatoire-pq /csp.sh mesa.black > results/$d.self.csp.jsonl
     podman run --rm --entrypoint sh localhost/observatoire-pq /cost.sh mesa.black > results/$d.self.cost.jsonl

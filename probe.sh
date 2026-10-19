@@ -100,7 +100,12 @@ fi
 net='{}'
 if [ -n "$ip" ]; then
     rev=$(printf '%s' "$ip" | awk -F. '{print $4"."$3"."$2"."$1}')
-    origin=$(dig +short +time=3 TXT "$rev.origin.asn.cymru.com" | head -1 | tr -d '"')
+    # An address can sit in two announced prefixes (a provider's /22 inside
+    # another network's /18): the most specific one is where traffic goes.
+    # head -1 took whichever came first, and the order varies: Albert's
+    # address read Outscale on 16 October and Shaw (CA) on the 19th.
+    origin=$(dig +short +time=3 TXT "$rev.origin.asn.cymru.com" | tr -d '"' \
+        | awk -F'|' '{ split($2, p, "/"); print p[2] + 0 "\t" $0 }' | sort -rn | head -1 | cut -f2-)
     asn=$(printf '%s' "$origin" | cut -d'|' -f1 | tr -d ' ' | cut -d' ' -f1)
     cc=$(printf '%s' "$origin" | cut -d'|' -f3 | tr -d ' ')
     asname=''
