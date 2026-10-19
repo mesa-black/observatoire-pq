@@ -2,11 +2,11 @@
 {"host":"api.mistral.ai","tiers":[{"host":"static.cloudflareinsights.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"app.brevo.com","tiers":[{"host":"static.cloudflareinsights.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"app.spendesk.com","tiers":[{"host":"web.cmp.usercentrics.eu","pq":"none","group":"X25519","reachable":true}]}
-{"host":"badoo.com","tiers":[{"host":"eu1.ecdn2.badoocdn.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
+{"host":"badoo.com","tiers":[{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"chat.deepseek.com","tiers":[{"host":"a0fea896111e.58271916.eu-west-3.token.awswaf.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"chat.mistral.ai","tiers":[{"host":"static.cloudflareinsights.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"claude.ai","tiers":[{"host":"assets-proxy.anthropic.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
-{"host":"contentsquare.com","tiers":[{"host":"cdn.cookielaw.org","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"reveal.clearbit.com","pq":"none","group":"X25519","reachable":true},{"host":"t.contentsquare.net","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
+{"host":"contentsquare.com","tiers":[{"host":"cdn.cookielaw.org","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"reveal.clearbit.com","pq":"none","group":"X25519","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"copilot.microsoft.com","tiers":[{"host":"mem.gfx.ms","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"res.cdn.office.net","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"corporate.arcelormittal.com","tiers":[{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"dentalmonitoring.com","tiers":[{"host":"cdn.cookielaw.org","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"kit.fontawesome.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
@@ -18,7 +18,7 @@
 {"host":"gemini.google.com","tiers":[{"host":"gemini.gstatic.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.gstatic.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"grindr.com","tiers":[{"host":"ajax.googleapis.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"cdn.jsdelivr.net","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"cdn.prod.website-files.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"d3e54v103j8qbb.cloudfront.net","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"unpkg.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"grok.com","tiers":[{"host":"static.cloudflareinsights.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
-{"host":"group.bnpparibas","tiers":[{"host":"cdn-group.bnpparibas.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
+{"host":"group.bnpparibas","tiers":[{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"group.bureauveritas.com","tiers":[{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"happn.com","tiers":[{"host":"events.framer.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"framerusercontent.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"hinge.co","tiers":[{"host":"cdn.cookielaw.org","pq":"full","group":"X25519MLKEM768","reachable":true}]}
@@ -36,10 +36,9 @@
 {"host":"www.airliquide.com","tiers":[{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.ameli.fr","tiers":[{"host":"cdn.jsdelivr.net","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"tag.aticdn.net","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.ankorstore.com","tiers":[{"host":"cdnjs.cloudflare.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"code.jquery.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"js.stripe.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
-{"host":"www.backmarket.fr","tiers":[{"host":"front-office.statics.backmarket.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.banque-france.fr","tiers":[{"host":"cdn.jsdelivr.net","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"cdn.trustcommander.net","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.banquepopulaire.fr","tiers":[{"host":"pno21vdz38.kameleoon.eu","pq":"full","group":"X25519MLKEM768","reachable":true}]}
-{"host":"www.blablacar.fr","tiers":[{"host":"cdn.blablacar.com","pq":"none","group":"X25519","reachable":true},{"host":"try.abtasty.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
+{"host":"www.blablacar.fr","tiers":[{"host":"try.abtasty.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.boursobank.com","tiers":[{"host":"widget.trustpilot.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.bouygues.com","tiers":[{"host":"consent.cookiebot.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.youtube.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.caisse-epargne.fr","tiers":[{"host":"0ziq3geklq.kameleoon.eu","pq":"full","group":"X25519MLKEM768","reachable":true}]}
@@ -48,11 +47,9 @@
 {"host":"www.chu-bordeaux.fr","tiers":[{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.chu-lille.fr","tiers":[{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.chu-lyon.fr","tiers":[{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
-{"host":"www.cic.fr","tiers":[{"host":"cdnii.e-i.com","pq":"none","group":"prime256v1","reachable":true},{"host":"cdnwmii.e-i.com","pq":"none","group":"prime256v1","reachable":true},{"host":"cdnwmsi.e-i.com","pq":"none","group":"prime256v1","reachable":true}]}
 {"host":"www.credit-agricole.com","tiers":[{"host":"maps.googleapis.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"tag.aticdn.net","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.credit-agricole.fr","tiers":[{"host":"cdn.tagcommander.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
-{"host":"www.creditmutuel.fr","tiers":[{"host":"cdnsi.e-i.com","pq":"none","group":"prime256v1","reachable":true},{"host":"cdnwmsi.e-i.com","pq":"none","group":"prime256v1","reachable":true}]}
-{"host":"www.danone.com","tiers":[{"host":"cdn.tagcommander.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"static.aemcs.digital4danone.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
+{"host":"www.danone.com","tiers":[{"host":"cdn.tagcommander.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.doctolib.fr","tiers":[{"host":"www.datadoghq-browser-agent.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.economie.gouv.fr","tiers":[{"host":"static.cloudflareinsights.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.eiffage.com","tiers":[{"host":"cdn.cookielaw.org","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"cdn.tagcommander.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.google.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
@@ -87,7 +84,7 @@
 {"host":"www.renaultgroup.com","tiers":[{"host":"cdn.cookielaw.org","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.safran-group.com","tiers":[{"host":"cdn-cookieyes.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"cdnjs.cloudflare.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.sanofi.com","tiers":[{"host":"maps.googleapis.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
-{"host":"www.se.com","tiers":[{"host":"js-cdn.dynatrace.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"sdk.trackingplan.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"selectandconfig-widget.schneider-electric.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
+{"host":"www.se.com","tiers":[{"host":"js-cdn.dynatrace.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"sdk.trackingplan.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.service-public.gouv.fr","tiers":[{"host":"try.abtasty.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.shift-technology.com","tiers":[{"host":"consent.cookiebot.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"play.hubspotvideo.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"static.hsappstatic.net","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"tools.luckyorange.com","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}
 {"host":"www.societegenerale.com","tiers":[{"host":"polyfill-fastly.io","pq":"full","group":"X25519MLKEM768","reachable":true},{"host":"www.googletagmanager.com","pq":"full","group":"X25519MLKEM768","reachable":true}]}

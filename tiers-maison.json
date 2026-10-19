@@ -1,0 +1,15 @@
+{
+    "version": "2026-10-19",
+    "note": "Domains a page loads scripts from that belong to the same organisation or group under another name: not third parties. tiers.sh already drops the page's own registrable domain; this list holds what it cannot guess (another extension, a group IT company, a dedicated CDN name). Keyed by the page's host, each value a registrable domain with the reason. Added by hand, checked one by one: never inferred.",
+    "pages": {
+        "badoo.com": {"badoocdn.com": "Badoo's own CDN name"},
+        "contentsquare.com": {"contentsquare.net": "Contentsquare's own tag, on its .net"},
+        "group.bnpparibas": {"bnpparibas.com": "BNP Paribas, .com of the group"},
+        "www.backmarket.fr": {"backmarket.com": "Back Market, its .com static host"},
+        "www.blablacar.fr": {"blablacar.com": "BlaBlaCar, its .com CDN"},
+        "www.cic.fr": {"e-i.com": "Euro-Information, the IT company of the Crédit Mutuel group, CIC's parent"},
+        "www.creditmutuel.fr": {"e-i.com": "Euro-Information, the IT company of the Crédit Mutuel group"},
+        "www.danone.com": {"digital4danone.com": "Danone's own digital platform"},
+        "www.se.com": {"schneider-electric.com": "Schneider Electric, se.com's company"}
+    }
+}

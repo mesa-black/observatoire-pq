@@ -18,14 +18,17 @@
 set -eu
 cd "$(dirname "$0")"
 date=${1:?usage: ./tiers.sh DATE}
-out=$(jq -c -n --slurpfile p "results/$date.csp.jsonl" --slurpfile t "results/$date.tiers-probe.jsonl" '
+# Domains of the same group under another name, checked by hand (tiers-maison.json).
+out=$(jq -c -n --slurpfile p "results/$date.csp.jsonl" --slurpfile t "results/$date.tiers-probe.jsonl" --slurpfile m tiers-maison.json '
     # The registrable domain: two labels, three under suffixes like gouv.fr or
     # co.uk. A script from the domain of the page itself (its CDN subdomain, its
     # static host) is the site, not a third party.
     def apex: split(".") | if (.[-2:] | join(".")) as $s | ["gouv.fr", "co.uk", "com.au", "asso.fr"] | index($s) then .[-3:] else .[-2:] end | join(".");
     ($t | map({(.host): {pq: (if .reachable then .pq else null end), group: (.group // null), reachable}}) | add // {}) as $probe
     | $p[]
-    | ([.host, ((.final // "") | sub("^https?://"; "") | split("/")[0])] | map(select(. != "") | apex)) as $own
+    | .host as $page
+    | ([.host, ((.final // "") | sub("^https?://"; "") | split("/")[0])] | map(select(. != "") | apex)
+        + ($m[0].pages[$page] // {} | keys)) as $own
     | {host, tiers: [(.scripts // [])[] | select(apex as $a | $own | index($a) | not) | . as $h | {host: $h} + ($probe[$h] // {missing: true})]}
     | select(.tiers | length > 0)')
 missing=$(printf '%s\n' "$out" | jq -r '.tiers[] | select(.missing) | .host' | sort -u)
