@@ -60,11 +60,13 @@
     for (const g of D.groups) for (const e of g.entries) e.g = g.key;
     const all = D.groups.flatMap(g => g.entries.map(e => ({ ...e, g: g.key })));
     // Every figure on the page is about organisations. The AI providers of
-    // relevé 2 have their plaques and sheets, but are not counted among them:
-    // they are where the organisations send data, not organisations under
-    // review (and all but four are American, which would tilt every share).
+    // relevé 2 and the dating apps of relevé 5 have their plaques and sheets,
+    // but are not counted among them: they are where people send data, not the
+    // French organisations under review (and most are foreign, which would
+    // tilt every share). Their own figures are computed apart, by their relevé.
+    const APART = new Set(['ia', 'rencontres']);
     const reachable = all.filter(e => e.reachable);
-    const measured = reachable.filter(e => e.g !== 'ia');
+    const measured = reachable.filter(e => !APART.has(e.g));
     const sealed = measured.filter(e => e.pq === 'full');
     const cdn = measured.filter(e => e.front && e.front !== 'other');
     const own = measured.filter(e => e.front === 'other');
@@ -540,7 +542,7 @@
                 // Its years, so the plaque says what the slider changes for it.
                 etat.textContent = (e.onDemand ? `◩ Sur demande · ${e.group} par défaut` : `◩ En partie · ${e.hits} connexions sur ${e.tries}`)
                     + (sensitive ? ` · sensible jusqu'en ${RECORDED + life.years}` : ` · plus sensible depuis ${RECORDED + life.years + 1}`);
-                if (sensitive) { if (group.key !== 'ia') exposed++; perGroup[group.key] = (perGroup[group.key] || 0) + 1; }
+                if (sensitive) { if (!APART.has(group.key)) exposed++; perGroup[group.key] = (perGroup[group.key] || 0) + 1; }
                 scramble(flux, `${noise(e.host, 8)} ${kind}`);
             } else {
                 const now = sensitive ? 'ouvert' : 'perime';
@@ -553,7 +555,7 @@
                 etat.textContent = sensitive
                     ? `▲ Lisible en ${Y} · sensible jusqu'en ${until}, encore ${plural(until - Y + 1, 'an', 'ans')}`
                     : `△ Lisible en ${Y} · plus sensible depuis ${until + 1}`;
-                if (sensitive) { if (group.key !== 'ia') exposed++; perGroup[group.key] = (perGroup[group.key] || 0) + 1; }
+                if (sensitive) { if (!APART.has(group.key)) exposed++; perGroup[group.key] = (perGroup[group.key] || 0) + 1; }
                 scramble(flux, label);
             }
         }
