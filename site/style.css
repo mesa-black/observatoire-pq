@@ -203,6 +203,8 @@ input[type=range] { width: 100%; height: 1.6rem; accent-color: var(--p-expose); 
     color: var(--doux);
 }
 .nous b { color: var(--encre); font-weight: 800; }
+.comprendre-lien { margin: .9rem 0 0; font-size: .92rem; }
+.comprendre-lien a, .et-vous a { color: var(--lien); }
 .et-vous { display: block; margin-top: .6rem; padding-top: .6rem; border-top: 1px dashed var(--filet); }
 
 /* ------------------------------------------------------------ groups */

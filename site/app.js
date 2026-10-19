@@ -312,7 +312,8 @@
             $('nous').append(h('span', { class: 'et-vous' }, h('b', null, 'Et vous ? '),
                 `Votre navigateur vient de négocier `, h('code', null, t.group), ` avec nous${tls12 ? ', en TLS 1.2' : ''} : `,
                 t.hybrid ? `votre connexion est déjà hybride post-quantique.`
-                    : `${tls12 ? `TLS 1.2 ne peut pas porter l'hybride. ` : `un échange classique. `}Une version récente de Chrome, Edge, Firefox ou Safari parlerait l'hybride ; derrière le proxy d'une entreprise qui inspecte le trafic, c'est lui qui a répondu.`));
+                    : `${tls12 ? `TLS 1.2 ne peut pas porter l'hybride. ` : `un échange classique. `}Une version récente de Chrome, Edge, Firefox ou Safari parlerait l'hybride ; derrière le proxy d'une entreprise qui inspecte le trafic, c'est lui qui a répondu.`,
+                ' ', h('a', { href: '/comprendre#hybride' }, 'Ce que ça veut dire →')));
         })
         .catch(() => {});
     // A themed relevé (2: the AI, 3: the mail) opens on its own screens: we
