@@ -1038,3 +1038,7 @@ pre code { background: none; border: 0; padding: 0; font: inherit; color: inheri
     .env-hote { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .lettre-env { transition: none; } }
+/* The sheet a letter opens keeps the table's colours: wax red when sealed,
+   blush when the letter is open. Relevé 5 only. */
+.releve-rencontres .fiche-tete { background: #a61e2d; color: #fbe3df; box-shadow: inset 0 0 0 4px #a61e2d, inset 0 0 0 5.5px rgba(255, 255, 255, .5); }
+.releve-rencontres .fiche-tete.ouvert, .releve-rencontres .fiche-tete.partie { background: #f1d9d3; color: #7c1220; box-shadow: inset 0 0 0 4px #f1d9d3, inset 0 0 0 5.5px #a61e2d; }
