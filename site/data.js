@@ -1,5 +1,5 @@
 window.OBSERVATOIRE = {
-  "date": "2026-10-16",
+  "date": "2026-11-02",
   "meta": {
     "number": 2,
     "focus": "ia",
@@ -8,7 +8,7 @@ window.OBSERVATOIRE = {
       "Ils confient leurs données à l'IA.",
       "Pour combien de temps ?"
     ],
-    "published": "2026-11-16"
+    "published": "2026-11-02"
   },
   "self": {
     "host": "mesa.black",
@@ -49,13 +49,13 @@ window.OBSERVATOIRE = {
     "hsts": "max-age=31536000; includesubdomains; preload",
     "front": "other",
     "server": "",
-    "at": "2026-10-16T18:19:41Z",
+    "at": "2026-11-02T13:28:52Z",
     "cost": {
-      "hybrid": 21.2,
-      "classical": 18.3,
-      "hybrid_median": 22.4,
-      "classical_median": 20.8,
-      "rtt": 11.7,
+      "hybrid": 21.5,
+      "classical": 18.5,
+      "hybrid_median": 24.4,
+      "classical_median": 22.1,
+      "rtt": 11.9,
       "n": [
         10,
         10
@@ -73,7 +73,7 @@ window.OBSERVATOIRE = {
       "referrer": "strict-origin-when-cross-origin",
       "permissions": "accelerometer=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=(), browsing-topics=()",
       "coop": "",
-      "bytes": 13539
+      "bytes": 16869
     }
   },
   "groups": [
@@ -124,13 +124,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudfront",
           "server": "",
-          "at": "2026-10-15T22:06:15Z",
+          "at": "2026-11-02T13:27:19Z",
           "cost": {
-            "hybrid": 16.6,
-            "classical": 15.4,
-            "hybrid_median": 21,
-            "classical_median": 21.4,
-            "rtt": 8.8,
+            "hybrid": 15,
+            "classical": 13.5,
+            "hybrid_median": 17.9,
+            "classical_median": 17.8,
+            "rtt": 6.9,
             "n": [
               10,
               10
@@ -148,38 +148,12 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "accelerometer=(), fullscreen=(self \"https://players.brightcove.net\"), camera=(), display-capture=()",
             "coop": "",
-            "bytes": 807340
+            "bytes": 816543
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "accor.in.tmes.trendmicro.eu"
-            ],
-            "provider": "trendmicro",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "18.185.115.147",
-              "asn": "16509",
-              "as": "AMAZON-02 - Amazon.com, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Air Liquide",
@@ -219,13 +193,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:23Z",
+          "at": "2026-11-02T13:27:29Z",
           "cost": {
-            "hybrid": 14.9,
-            "classical": 12.2,
-            "hybrid_median": 15.9,
-            "classical_median": 15.3,
-            "rtt": 7.4,
+            "hybrid": 13.9,
+            "classical": 13.7,
+            "hybrid_median": 18.4,
+            "classical_median": 17.3,
+            "rtt": 6.8,
             "n": [
               10,
               10
@@ -245,7 +219,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 166693
+            "bytes": 166907
           },
           "ai": [],
           "hf": [
@@ -255,35 +229,9 @@ window.OBSERVATOIRE = {
               "models": 0,
               "datasets": 0,
               "spaces": 0,
-              "followers": 26
+              "followers": 27
             }
-          ],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          ]
         },
         {
           "name": "Airbus",
@@ -324,13 +272,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:23Z",
+          "at": "2026-11-02T13:27:29Z",
           "cost": {
-            "hybrid": 15.1,
-            "classical": 13.1,
-            "hybrid_median": 17.1,
-            "classical_median": 16,
-            "rtt": 7.8,
+            "hybrid": 16.2,
+            "classical": 15.9,
+            "hybrid_median": 27.5,
+            "classical_median": 20.8,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -350,7 +298,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 248443
+            "bytes": 249322
           },
           "ai": [],
           "hf": [
@@ -362,33 +310,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 90
             }
-          ],
-          "mail": {
-            "mx": [
-              "mx1.myeers.net"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "87.190.7.230",
-              "asn": "3320",
-              "as": "DTAG - Deutsche Telekom AG, DE"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:37Z"
-            }
-          }
+          ]
         },
         {
           "name": "ArcelorMittal",
@@ -429,13 +351,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:08Z",
+          "at": "2026-11-02T13:27:12Z",
           "cost": {
-            "hybrid": 21.2,
-            "classical": 17.8,
-            "hybrid_median": 23.1,
-            "classical_median": 20.8,
-            "rtt": 9.3,
+            "hybrid": 23.1,
+            "classical": 20.2,
+            "hybrid_median": 29.4,
+            "classical_median": 22.7,
+            "rtt": 9.2,
             "n": [
               10,
               10
@@ -444,7 +366,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://corporate.arcelormittal.com/",
             "code": 200,
-            "csp": "default-src 'self'; script-src 'nonce-YzNjMTViZTktN2MyOC00NGFiLTk3ZWMtYjRiZDRmZTk3ZDgz' 'strict-dynamic' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://*.userway.org; img-src 'self' https://cdn.arcelormittal.com blob: data: https://www.googletagmanager.com https://imgsct.cookiebot.com https://*.clarity.ms https://*.userway.org https://i.vimeocdn.com; font-src 'self'; object-src 'none'; connect-src 'self' https://cdn.arcelormittal.com https://*.userway.org https://api.mapbox.com https://consentcdn.cookiebot.com https://events.mapbox.com https://player.vimeo.com https://www.youtube.com https://vod-adaptive-ak.vimeocdn.com https://*.clarity.ms https://*.google-analytics.com; base-uri 'self'; frame-src https://gateway.zscalertwo.net https://*.userway.org https://*.euroland.com https://open.spotify.com https://www.google.com https://player.vimeo.com https://vod-adaptive-ak.vimeocdn.com https://www.youtube.com https://consentcdn.cookiebot.com https://w.soundcloud.com; form-action 'self'; media-src 'self' blob: data: https://player.vimeo.com https://vod-adaptive-ak.vimeocdn.com; frame-ancestors 'none'; manifest-src 'self'; upgrade-insecure-requests;",
+            "csp": "default-src 'self'; script-src 'nonce-YjFiOTE3Y2YtMWFmYy00NWY5LTg3MzYtNGZmNmJlYTM1ZmNj' 'strict-dynamic' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://*.userway.org; img-src 'self' https://cdn.arcelormittal.com blob: data: https://www.googletagmanager.com https://imgsct.cookiebot.com https://*.clarity.ms https://*.userway.org https://i.vimeocdn.com; font-src 'self'; object-src 'none'; connect-src 'self' https://cdn.arcelormittal.com https://*.userway.org https://api.mapbox.com https://consentcdn.cookiebot.com https://events.mapbox.com https://player.vimeo.com https://www.youtube.com https://vod-adaptive-ak.vimeocdn.com https://*.clarity.ms https://*.google-analytics.com; base-uri 'self'; frame-src https://gateway.zscalertwo.net https://*.userway.org https://*.euroland.com https://open.spotify.com https://www.google.com https://player.vimeo.com https://vod-adaptive-ak.vimeocdn.com https://www.youtube.com https://consentcdn.cookiebot.com https://w.soundcloud.com; form-action 'self'; media-src 'self' blob: data: https://player.vimeo.com https://vod-adaptive-ak.vimeocdn.com; frame-ancestors 'none'; manifest-src 'self'; upgrade-insecure-requests;",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -455,37 +377,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "interest-cohort=()",
             "coop": "",
-            "bytes": 1758774
+            "bytes": 1771882
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx07-002b3401.pphosted.com",
-              "mx08-002b3401.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.132.180.24",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:47Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "AXA",
@@ -512,8 +407,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "DigiCert Inc",
-            "from": "2025-10-03",
-            "until": "2026-11-03",
+            "from": "2026-09-16",
+            "until": "2027-04-02",
             "names": 1
           },
           "net": {
@@ -525,7 +420,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "other",
           "server": "aws",
-          "at": "2026-10-15T22:06:27Z",
+          "at": "2026-11-02T13:27:33Z",
           "cost": null,
           "page": {
             "final": "https://www.axa.com/fr",
@@ -539,7 +434,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 908856
+            "bytes": 909867
           },
           "ai": [],
           "hf": [
@@ -549,7 +444,7 @@ window.OBSERVATOIRE = {
               "models": 0,
               "datasets": 0,
               "spaces": 0,
-              "followers": 13
+              "followers": 14
             },
             {
               "name": "AXA-Belgium-AIAS",
@@ -575,34 +470,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 3
             }
-          ],
-          "mail": {
-            "mx": [
-              "mxa-00181c02.gslb.pphosted.com",
-              "mxb-00181c02.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "185.132.180.43",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:45Z"
-            }
-          }
+          ]
         },
         {
           "name": "BNP Paribas",
@@ -642,13 +510,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15768000",
           "front": "akamai",
           "server": "akamaighost",
-          "at": "2026-10-15T22:06:15Z",
+          "at": "2026-11-02T13:27:19Z",
           "cost": {
-            "hybrid": 13.5,
-            "classical": 12.9,
-            "hybrid_median": 19.2,
-            "classical_median": 14.7,
-            "rtt": 8.8,
+            "hybrid": 14,
+            "classical": 11.6,
+            "hybrid_median": 16.3,
+            "classical_median": 13.4,
+            "rtt": 7.4,
             "n": [
               10,
               10
@@ -670,7 +538,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "accelerometer=(), ambient-light-sensor=(), battery=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), screen-wake-lock=(), usb=(), xr-spatial-tracking=()",
             "coop": "same-origin-allow-popups",
-            "bytes": 134308
+            "bytes": 134403
           },
           "ai": [],
           "hf": [
@@ -682,20 +550,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 1
             }
-          ],
-          "mail": {
-            "mx": [],
-            "provider": "none",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {}
-          }
+          ]
         },
         {
           "name": "Bouygues",
@@ -722,8 +577,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Let's Encrypt",
-            "from": "2026-08-07",
-            "until": "2026-11-05",
+            "from": "2026-10-16",
+            "until": "2027-01-14",
             "names": 12
           },
           "net": {
@@ -735,13 +590,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "akamai",
           "server": "",
-          "at": "2026-10-15T22:06:30Z",
+          "at": "2026-11-02T13:27:35Z",
           "cost": {
-            "hybrid": 17.8,
-            "classical": 14.2,
-            "hybrid_median": 21.9,
-            "classical_median": 16.3,
-            "rtt": 7.9,
+            "hybrid": 22.2,
+            "classical": 13.6,
+            "hybrid_median": 36.5,
+            "classical_median": 20.5,
+            "rtt": 7.8,
             "n": [
               10,
               10
@@ -763,7 +618,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 323650
+            "bytes": 331531
           },
           "ai": [],
           "hf": [
@@ -775,33 +630,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 3
             }
-          ],
-          "mail": {
-            "mx": [
-              "bouygues-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.91.162",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:25Z"
-            }
-          }
+          ]
         },
         {
           "name": "Bureau Veritas",
@@ -843,13 +672,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "cloudfront",
           "server": "nginx",
-          "at": "2026-10-15T22:06:38Z",
+          "at": "2026-11-02T13:27:43Z",
           "cost": {
-            "hybrid": 14.8,
-            "classical": 13.7,
-            "hybrid_median": 18.2,
+            "hybrid": 13.1,
+            "classical": 13.3,
+            "hybrid_median": 17.8,
             "classical_median": 15.3,
-            "rtt": 8.3,
+            "rtt": 7.4,
             "n": [
               10,
               10
@@ -870,37 +699,10 @@ window.OBSERVATOIRE = {
             "referrer": "origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 119580
+            "bytes": 119412
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-0037c801.gslb.pphosted.com",
-              "mxb-0037c801.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.132.181.103",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:52Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Capgemini",
@@ -940,7 +742,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000;includesubdomains",
           "front": "other",
           "server": "nginx",
-          "at": "2026-10-15T22:06:31Z",
+          "at": "2026-11-02T13:27:37Z",
           "cost": null,
           "page": {
             "final": "https://www.capgemini.com/",
@@ -961,7 +763,7 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer",
             "permissions": "geolocation=(self), microphone=()",
             "coop": "",
-            "bytes": 269513
+            "bytes": 269650
           },
           "ai": [
             "openai",
@@ -974,38 +776,9 @@ window.OBSERVATOIRE = {
               "models": 0,
               "datasets": 0,
               "spaces": 1,
-              "followers": 1174
+              "followers": 1183
             }
-          ],
-          "mail": {
-            "mx": [
-              "mx1.hc674-87.eu.iphmx.com",
-              "mx1.hc756-17.eu.iphmx.com",
-              "mx2.hc674-87.eu.iphmx.com",
-              "mx2.hc756-17.eu.iphmx.com"
-            ],
-            "provider": "cisco",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "23.90.116.133",
-              "asn": "30238",
-              "as": "AS-IRONP-VEGA - Cisco Systems Ironport Division, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:12Z"
-            }
-          }
+          ]
         },
         {
           "name": "Carrefour",
@@ -1038,7 +811,7 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "104.18.35.216",
+            "ip": "172.64.152.40",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -1046,13 +819,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=2592000",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:31Z",
+          "at": "2026-11-02T13:27:38Z",
           "cost": {
-            "hybrid": 15.8,
-            "classical": 14.9,
-            "hybrid_median": 18.9,
-            "classical_median": 18.7,
-            "rtt": 8.9,
+            "hybrid": 17,
+            "classical": 16.2,
+            "hybrid_median": 21.2,
+            "classical_median": 17.7,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -1072,7 +845,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "geolocation=(),midi=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()",
             "coop": "",
-            "bytes": 36618
+            "bytes": 36816
           },
           "ai": [
             "anthropic"
@@ -1086,34 +859,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 8
             }
-          ],
-          "mail": {
-            "mx": [
-              "de-smtp-inbound-1.mimecast.com",
-              "de-smtp-inbound-2.mimecast.com"
-            ],
-            "provider": "mimecast",
-            "mtasts": null,
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "194.104.110.22",
-              "asn": "39588",
-              "as": "MIMECAST-DE - Mimecast Services Limited, GB"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:26Z"
-            }
-          }
+          ]
         },
         {
           "name": "Crédit Agricole",
@@ -1153,7 +899,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:36Z",
+          "at": "2026-11-02T13:27:47Z",
           "cost": null,
           "page": {
             "final": "https://www.credit-agricole.com/",
@@ -1170,7 +916,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 202757
+            "bytes": 196871
           },
           "ai": [],
           "hf": [
@@ -1182,33 +928,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 3
             }
-          ],
-          "mail": {
-            "mx": [
-              "mercure.credit-agricole.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "158.190.50.50",
-              "asn": "9159",
-              "as": "UNSPECIFIED - Credit Agricole SA, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:41Z"
-            }
-          }
+          ]
         },
         {
           "name": "Danone",
@@ -1236,12 +956,12 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Sectigo Limited",
-            "from": "2026-10-09",
+            "from": "2026-10-20",
             "until": "2026-12-20",
-            "names": 79
+            "names": 80
           },
           "net": {
-            "ip": "199.232.171.10",
+            "ip": "151.101.123.10",
             "asn": "54113",
             "cc": "US",
             "as": "FASTLY - Fastly, Inc., US"
@@ -1249,13 +969,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "fastly",
           "server": "",
-          "at": "2026-10-15T22:06:38Z",
+          "at": "2026-11-02T13:27:46Z",
           "cost": {
-            "hybrid": 16,
-            "classical": 13.6,
-            "hybrid_median": 17.9,
-            "classical_median": 15.9,
-            "rtt": 9.2,
+            "hybrid": 14.7,
+            "classical": 11.6,
+            "hybrid_median": 18.1,
+            "classical_median": 19.9,
+            "rtt": 7,
             "n": [
               10,
               10
@@ -1276,36 +996,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin",
             "permissions": "geolocation=*",
             "coop": "",
-            "bytes": 242013
+            "bytes": 241946
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-000f8e02.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": "enforce",
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "143.55.144.8",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:44Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Dassault Systèmes",
@@ -1332,12 +1026,12 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA384",
             "issuer": "Let's Encrypt",
-            "from": "2026-08-12",
-            "until": "2026-11-10",
+            "from": "2026-10-17",
+            "until": "2027-01-15",
             "names": 1
           },
           "net": {
-            "ip": "23.222.250.244",
+            "ip": "23.33.90.152",
             "asn": "20940",
             "cc": "US",
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
@@ -1345,13 +1039,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=86400",
           "front": "akamai",
           "server": "",
-          "at": "2026-10-15T22:06:22Z",
+          "at": "2026-11-02T13:27:29Z",
           "cost": {
-            "hybrid": 20,
-            "classical": 15.3,
-            "hybrid_median": 23.9,
-            "classical_median": 19.5,
-            "rtt": 8.7,
+            "hybrid": 15.6,
+            "classical": 15.1,
+            "hybrid_median": 21.2,
+            "classical_median": 20.9,
+            "rtt": 7.1,
             "n": [
               10,
               10
@@ -1373,7 +1067,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "accelerometer=(), geolocation=(self), fullscreen=(self \"https://www.youtube.com\" \"https://player.youku.com\" \"https://*.3ds.com\" \"https://*.solidworks.com\" \"https://*.draftsight.com\" \"https://delmiaworks.com\" \"https://blog.3dexperienceworks.com\" \"https://edrawingsviewer.com\" \"https://3dexperienceworld.com\" \"https://3dexperienceworks.com\"), autoplay=(self), camera=(self), display-capture=(), encrypted-media=(), gyroscope=(), magnetometer=(), microphone=(self), midi=(), payment=(self), picture-in-picture=(self), publickey-credentials-get=(), sync-xhr=(), usb=(), wake-lock=(), xr-spatial-tracking=(), notifications=(self), push=(self)",
             "coop": "",
-            "bytes": 599119
+            "bytes": 601604
           },
           "ai": [
             "openai",
@@ -1382,34 +1076,7 @@ window.OBSERVATOIRE = {
             "cursor",
             "perplexity"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-00752701.gslb.pphosted.com",
-              "mxb-00752701.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "143.55.144.134",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:52Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Eiffage",
@@ -1437,12 +1104,12 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-08-29",
-            "until": "2026-11-27",
+            "from": "2026-10-27",
+            "until": "2027-01-25",
             "names": 1
           },
           "net": {
-            "ip": "104.18.16.127",
+            "ip": "104.18.17.127",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -1450,13 +1117,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:41Z",
+          "at": "2026-11-02T13:27:50Z",
           "cost": {
-            "hybrid": 16.6,
-            "classical": 14.6,
-            "hybrid_median": 21.7,
-            "classical_median": 18.2,
-            "rtt": 9.4,
+            "hybrid": 16.7,
+            "classical": 15.2,
+            "hybrid_median": 23.3,
+            "classical_median": 23.7,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -1471,44 +1138,18 @@ window.OBSERVATOIRE = {
             "scripts": [
               "cdn.cookielaw.org",
               "cdn.tagcommander.com",
-              "www.google.com"
+              "www.google.com",
+              "www.googletagmanager.com"
             ],
             "xfo": "",
             "xcto": "nosniff",
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 153758
+            "bytes": 170752
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-00284a02.gslb.pphosted.com",
-              "mxb-00284a02.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "185.183.31.34",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:48Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Engie",
@@ -1542,7 +1183,7 @@ window.OBSERVATOIRE = {
             "names": 3
           },
           "net": {
-            "ip": "143.204.194.55",
+            "ip": "143.204.194.49",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -1550,13 +1191,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "cloudfront",
           "server": "engie",
-          "at": "2026-10-15T22:07:06Z",
+          "at": "2026-11-02T13:28:14Z",
           "cost": {
-            "hybrid": 13.8,
-            "classical": 12.8,
-            "hybrid_median": 16,
-            "classical_median": 17,
-            "rtt": 8.7,
+            "hybrid": 13.7,
+            "classical": 15,
+            "hybrid_median": 24.7,
+            "classical_median": 21.4,
+            "rtt": 7.4,
             "n": [
               10,
               10
@@ -1577,37 +1218,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "accelerometer=(), autoplay=(self), camera=(), display-capture=(), encrypted-media=*, fullscreen=*, geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=*, publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(self), xr-spatial-tracking=()",
             "coop": "",
-            "bytes": 290932
+            "bytes": 289284
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-00338701.gslb.pphosted.com",
-              "mxb-00338701.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.183.28.174",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:50Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "EssilorLuxottica",
@@ -1639,7 +1253,7 @@ window.OBSERVATOIRE = {
             "names": 100
           },
           "net": {
-            "ip": "23.222.250.235",
+            "ip": "23.33.90.138",
             "asn": "20940",
             "cc": "US",
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
@@ -1647,13 +1261,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:42Z",
+          "at": "2026-11-02T13:27:52Z",
           "cost": {
-            "hybrid": 23.9,
-            "classical": 22.6,
-            "hybrid_median": 29.5,
-            "classical_median": 32.1,
-            "rtt": 9.2,
+            "hybrid": 18.1,
+            "classical": 17.1,
+            "hybrid_median": 21.2,
+            "classical_median": 27,
+            "rtt": 7.6,
             "n": [
               10,
               10
@@ -1671,7 +1285,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 63957
+            "bytes": 64069
           },
           "ai": [
             "anthropic"
@@ -1685,33 +1299,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 2
             }
-          ],
-          "mail": {
-            "mx": [
-              "essilorluxottica-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.103.36",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:26Z"
-            }
-          }
+          ]
         },
         {
           "name": "Eurofins Scientific",
@@ -1754,13 +1342,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:43Z",
+          "at": "2026-11-02T13:27:53Z",
           "cost": {
             "hybrid": 45.1,
-            "classical": 48.4,
-            "hybrid_median": 47.3,
-            "classical_median": 50.3,
-            "rtt": 9.1,
+            "classical": 47.2,
+            "hybrid_median": 47.5,
+            "classical_median": 50.7,
+            "rtt": 7.2,
             "n": [
               10,
               10
@@ -1770,7 +1358,7 @@ window.OBSERVATOIRE = {
             "final": "https://www.eurofins.com:443/en/",
             "code": 200,
             "csp": "",
-            "csp_ro": "connect-src 'self' https://*.eurofins.com https://*.amazonaws.com https://*.googleapis.com https://*.gstatic.com https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; default-src 'self'; font-src 'self' data: https://*.eurofins.com https://*.googleapis.com https://*.gstatic.com; frame-src 'self' https://*.eurofins.com https://*.youtube.com https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; img-src 'self' data: https://*.eurofins.com https://*.amazonaws.com https://*.googleapis.com https://*.gstatic.com https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; object-src 'none'; script-src 'self' https://*.eurofins.com https://*.googleapis.com https://*.gstatic.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ 'strict-dynamic' 'nonce-ayG2D+ztDAaXmasr/4UF8Q=='; style-src-elem 'self' https://*.eurofins.com https://*.googleapis.com 'unsafe-inline'; style-src 'self' https://*.eurofins.com https://*.googleapis.com 'unsafe-inline'",
+            "csp_ro": "connect-src 'self' https://*.eurofins.com https://*.amazonaws.com https://*.googleapis.com https://*.gstatic.com https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; default-src 'self'; font-src 'self' data: https://*.eurofins.com https://*.googleapis.com https://*.gstatic.com; frame-src 'self' https://*.eurofins.com https://*.youtube.com https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; img-src 'self' data: https://*.eurofins.com https://*.amazonaws.com https://*.googleapis.com https://*.gstatic.com https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; object-src 'none'; script-src 'self' https://*.eurofins.com https://*.googleapis.com https://*.gstatic.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ 'strict-dynamic' 'nonce-XDqZEI1L7y9uauFUHB0uyg=='; style-src-elem 'self' https://*.eurofins.com https://*.googleapis.com 'unsafe-inline'; style-src 'self' https://*.eurofins.com https://*.googleapis.com 'unsafe-inline'",
             "meta_csp": "",
             "scripts": [
               "cdn-ukwest.onetrust.com",
@@ -1784,36 +1372,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "camera=(), microphone=(), geolocation=()",
             "coop": "",
-            "bytes": 254411
+            "bytes": 254485
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "eurofins-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.166.0",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:27Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Euronext",
@@ -1847,7 +1409,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "13.227.173.128",
+            "ip": "13.227.173.43",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -1855,13 +1417,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=16070400; includesubdomains",
           "front": "cloudfront",
           "server": "cloudfront",
-          "at": "2026-10-15T22:07:07Z",
+          "at": "2026-11-02T13:28:15Z",
           "cost": {
-            "hybrid": 18.7,
-            "classical": 18,
-            "hybrid_median": 43.9,
-            "classical_median": 26.8,
-            "rtt": 10.6,
+            "hybrid": 14,
+            "classical": 12.7,
+            "hybrid_median": 17.2,
+            "classical_median": 14.3,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -1887,38 +1449,12 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 457112
+            "bytes": 457357
           },
           "ai": [
             "openai"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "euronext-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.89.0",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:27Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Hermès",
@@ -1946,12 +1482,12 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-08-22",
-            "until": "2026-11-20",
+            "from": "2026-10-20",
+            "until": "2027-01-18",
             "names": 1
           },
           "net": {
-            "ip": "104.18.22.243",
+            "ip": "104.18.23.243",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -1959,13 +1495,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:45Z",
+          "at": "2026-11-02T13:27:55Z",
           "cost": {
-            "hybrid": 16.9,
-            "classical": 13.7,
-            "hybrid_median": 18.8,
-            "classical_median": 15.6,
-            "rtt": 8.2,
+            "hybrid": 16.2,
+            "classical": 14,
+            "hybrid_median": 18.4,
+            "classical_median": 17.6,
+            "rtt": 8.8,
             "n": [
               10,
               10
@@ -1989,34 +1525,7 @@ window.OBSERVATOIRE = {
             "bytes": 1131
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-0018c002.gslb.pphosted.com",
-              "mxb-0018c002.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.132.182.222",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:46Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Kering",
@@ -2048,7 +1557,7 @@ window.OBSERVATOIRE = {
             "names": 20
           },
           "net": {
-            "ip": "23.222.250.246",
+            "ip": "23.72.248.224",
             "asn": "20940",
             "cc": "US",
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
@@ -2056,13 +1565,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15768000",
           "front": "akamai",
           "server": "",
-          "at": "2026-10-15T22:06:49Z",
+          "at": "2026-11-02T13:27:58Z",
           "cost": {
             "hybrid": 21,
-            "classical": 16.2,
-            "hybrid_median": 23.5,
-            "classical_median": 17.9,
-            "rtt": 9.2,
+            "classical": 13.4,
+            "hybrid_median": 24.8,
+            "classical_median": 21.2,
+            "rtt": 7.7,
             "n": [
               10,
               10
@@ -2082,39 +1591,12 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 209670
+            "bytes": 209965
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-00168301.gslb.pphosted.com",
-              "mxb-00168301.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.132.182.47",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:44Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "L'Oréal",
@@ -2155,13 +1637,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains;preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:51Z",
+          "at": "2026-11-02T13:28:04Z",
           "cost": {
-            "hybrid": 18.2,
-            "classical": 12.6,
-            "hybrid_median": 22.9,
-            "classical_median": 16.6,
-            "rtt": 8.2,
+            "hybrid": 15.5,
+            "classical": 14.9,
+            "hybrid_median": 20.1,
+            "classical_median": 21.7,
+            "rtt": 8.9,
             "n": [
               10,
               10
@@ -2182,7 +1664,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 205721
+            "bytes": 185714
           },
           "ai": [
             "anthropic"
@@ -2196,34 +1678,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 55
             }
-          ],
-          "mail": {
-            "mx": [
-              "mxa-002fa101.gslb.pphosted.com",
-              "mxb-002fa101.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.183.28.107",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:49Z"
-            }
-          }
+          ]
         },
         {
           "name": "Legrand",
@@ -2257,7 +1712,7 @@ window.OBSERVATOIRE = {
             "names": 4
           },
           "net": {
-            "ip": "143.204.194.13",
+            "ip": "143.204.194.93",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -2265,13 +1720,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudfront",
           "server": "",
-          "at": "2026-10-15T22:07:15Z",
+          "at": "2026-11-02T13:28:27Z",
           "cost": {
-            "hybrid": 15.7,
-            "classical": 13.2,
-            "hybrid_median": 22.1,
-            "classical_median": 16.8,
-            "rtt": 7.9,
+            "hybrid": 15.5,
+            "classical": 13.7,
+            "hybrid_median": 19.9,
+            "classical_median": 15.1,
+            "rtt": 8.4,
             "n": [
               10,
               10
@@ -2280,7 +1735,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://www.legrand.com/fr",
             "code": 200,
-            "csp": "default-src 'self'; script-src  'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net  https://*.qualtrics.com https://*.piwik.pro https://www.youtube.com/ https://*.googleapis.com https://secure.leadforensics.com/ https://*.hotjar.com ; style-src 'self' 'unsafe-inline' https://*.googleapis.com  https://*.hotjar.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.gstatic.com https://*.googleapis.com  https://*.qualtrics.com https://*.legrand.com https://*.legrandgroup.com;; frame-src https://www.youtube.com/ https://www.youtube-nocookie.com https://*.qualtrics.com https://legrand.symex.be;; frame-ancestors https://*.legrand.com https://*.legrandgroup.com https://www.googletagmanager.com https://legrand.symex.be; font-src  https://*.googleapis.com https://*.legrand.com https://*.gstatic.com https://*.hotjar.com; connect-src 'self' https://legrand.symex.be https://www.google-analytics.com https://legrand-plateforme.containers.piwik.pro https://cdn.jsdelivr.net  https://*.qualtrics.com https://*.piwik.pro https://www.youtube.com/ https://*.googleapis.com https://www.youtube-nocookie.com https://*.google-analytics.com https://www.googletagmanager.com www.google.com https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com; report-uri /report-csp-violation; upgrade-insecure-requests",
+            "csp": "default-src 'self'; script-src  'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net  https://*.qualtrics.com https://*.piwik.pro https://www.youtube.com/ https://*.googleapis.com https://secure.leadforensics.com/ https://*.hotjar.com  https://*.google.com ; style-src 'self' 'unsafe-inline' https://*.googleapis.com  https://*.hotjar.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.gstatic.com https://*.googleapis.com  https://*.qualtrics.com https://*.legrand.com https://*.legrandgroup.com  https://*.google.com;; frame-src https://www.youtube.com/ https://www.youtube-nocookie.com https://*.qualtrics.com https://legrand.symex.be;; frame-ancestors https://*.legrand.com https://*.legrandgroup.com https://www.googletagmanager.com https://legrand.symex.be; font-src  https://*.googleapis.com https://*.legrand.com https://*.gstatic.com https://*.hotjar.com; connect-src 'self' https://legrand.symex.be https://www.google-analytics.com https://legrand-plateforme.containers.piwik.pro https://cdn.jsdelivr.net  https://*.qualtrics.com https://*.piwik.pro https://www.youtube.com/ https://*.googleapis.com https://www.youtube-nocookie.com https://*.google-analytics.com https://www.googletagmanager.com https://*.google.com https://*.hotjar.com https://*.hotjar.io wss://*.hotjar.com; report-uri /report-csp-violation; upgrade-insecure-requests",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -2292,36 +1747,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 299448
+            "bytes": 245614
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "legrandgroup-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": null,
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.185.114",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:28Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "LVMH",
@@ -2348,12 +1777,12 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA384",
             "issuer": "DigiCert Inc",
-            "from": "2026-06-05",
-            "until": "2026-12-20",
+            "from": "2026-10-22",
+            "until": "2027-05-08",
             "names": 6
           },
           "net": {
-            "ip": "23.222.250.236",
+            "ip": "23.72.248.212",
             "asn": "20940",
             "cc": "US",
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
@@ -2361,13 +1790,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15768000 ; preload",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:53Z",
+          "at": "2026-11-02T13:28:05Z",
           "cost": {
-            "hybrid": 15.3,
-            "classical": 14.9,
-            "hybrid_median": 24.4,
-            "classical_median": 18.4,
-            "rtt": 8.4,
+            "hybrid": 16.5,
+            "classical": 12.5,
+            "hybrid_median": 20.1,
+            "classical_median": 19.6,
+            "rtt": 7.3,
             "n": [
               10,
               10
@@ -2387,7 +1816,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 1976785
+            "bytes": 2020258
           },
           "ai": [
             "openai"
@@ -2401,34 +1830,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 3
             }
-          ],
-          "mail": {
-            "mx": [
-              "mxa-0024c501.gslb.pphosted.com",
-              "mxb-0024c501.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "91.207.212.79",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:47Z"
-            }
-          }
+          ]
         },
         {
           "name": "Michelin",
@@ -2461,7 +1863,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "150.171.110.121",
+            "ip": "150.171.110.119",
             "asn": "8075",
             "cc": "US",
             "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
@@ -2469,54 +1871,24 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "azure",
           "server": "",
-          "at": "2026-10-15T22:06:54Z",
+          "at": "2026-11-02T13:28:08Z",
           "cost": null,
           "page": {
             "final": "https://www.michelin.com/",
-            "code": 200,
-            "csp": "default-src 'self' *.google-analytics.com *.doubleclick.net https://api.privacy-center.org https://dgaddcosdev.blob.core.windows.net https://agngnconpm.cloudimg.io *.googleapis.com https://phmgxnk.pa-cd.com *.mouseflow.com https://siteintercept.qualtrics.com *.kameleoon.eu *.kameleoon.com *.hcaptcha.com; style-src 'self' 'unsafe-inline' https://dgaddcosdev.blob.core.windows.net agngnconpm.cloudimg.io *.kameleoon.eu *.kameleoon.com https://fonts.googleapis.com; script-src 'self' *.google-analytics.com *.doubleclick.net *.googletagmanager.com *.google.com https://sdk.privacy-center.org https://dgaddcosdev.blob.core.windows.net agngnconpm.cloudimg.io 'unsafe-eval' 'unsafe-inline' *.youtube.com *.hcaptcha.com https://tag.aticdn.net *.mouseflow.com *.siteintercept.qualtrics.com https://siteintercept.qualtrics.com *.kameleoon.eu *.kameleoon.com www.google.com www.gstatic.com; font-src 'self' https://dgaddcosdev.blob.core.windows.net agngnconpm.cloudimg.io *.kameleoon.eu *.kameleoon.com https://fonts.gstatic.com; img-src 'self' blob: data: *.ytimg.com https://sdk.privacy-center.org https://dgaddcosdev.blob.core.windows.net agngnconpm.cloudimg.io dxm.pre-prod.contentcenter.michelin.com https://agngnconpm.cloudimg.io *.qualtrics.com *.kameleoon.eu *.kameleoon.com; frame-src 'self' *.youtube.com *.vimeo.com https://edge.media-server.com https://dgaddcosprod.blob.core.windows.net https://charts.symex.be https://youtu.be *.hcaptcha.com *.sibforms.com https://vimeo.com *.qualtrics.com www.google.com; base-uri 'self'; object-src 'self' data: https://dgaddcosdev.blob.core.windows.net; connect-src 'self' www.google.com www.gstatic.com *.google-analytics.com *.doubleclick.net *.mouseflow.com *.qualtrics.com *.kameleoon.eu *.kameleoon.com https://api.privacy-center.org https://dgaddcosdev.blob.core.windows.net https://agngnconpm.cloudimg.io https://phmgxnk.pa-cd.com https://siteintercept.qualtrics.com *.googleapis.com",
+            "code": 503,
+            "csp": "",
             "csp_ro": "",
             "meta_csp": "",
-            "scripts": [
-              "6sdq1nkxog.kameleoon.eu",
-              "agngnconpm.cloudimg.io"
-            ],
-            "xfo": "SAMEORIGIN",
+            "scripts": [],
+            "xfo": "",
             "xcto": "",
-            "referrer": "strict-origin-when-cross-origin",
-            "permissions": "fullscreen=(self \"https://www.youtube.com\")",
+            "referrer": "",
+            "permissions": "",
             "coop": "",
-            "bytes": 947735
+            "bytes": 107
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "de-smtp-inbound-1.mimecast.com",
-              "de-smtp-inbound-2.mimecast.com"
-            ],
-            "provider": "mimecast",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "194.104.110.22",
-              "asn": "39588",
-              "as": "MIMECAST-DE - Mimecast Services Limited, GB"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:26Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Orange",
@@ -2557,13 +1929,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "nginx",
-          "at": "2026-10-15T22:06:59Z",
+          "at": "2026-11-02T13:28:10Z",
           "cost": {
-            "hybrid": 13.7,
-            "classical": 12.7,
-            "hybrid_median": 15.5,
-            "classical_median": 14.5,
-            "rtt": 8,
+            "hybrid": 13.5,
+            "classical": 11.7,
+            "hybrid_median": 14.8,
+            "classical_median": 13.2,
+            "rtt": 8.2,
             "n": [
               10,
               10
@@ -2584,7 +1956,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 166575
+            "bytes": 165823
           },
           "ai": [
             "openai",
@@ -2597,36 +1969,9 @@ window.OBSERVATOIRE = {
               "models": 12,
               "datasets": 13,
               "spaces": 1,
-              "followers": 418
+              "followers": 419
             }
-          ],
-          "mail": {
-            "mx": [
-              "smtp-ina.orange.com",
-              "smtp-inb.orange.com"
-            ],
-            "provider": "orange",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "80.12.126.182",
-              "asn": "3215",
-              "as": "AS3215 - Orange S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:02Z"
-            }
-          }
+          ]
         },
         {
           "name": "Pernod Ricard",
@@ -2660,7 +2005,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "52.222.201.12",
+            "ip": "52.222.201.5",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -2668,13 +2013,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=1000; preload",
           "front": "cloudfront",
           "server": "nginx",
-          "at": "2026-10-15T22:07:23Z",
+          "at": "2026-11-02T13:28:34Z",
           "cost": {
-            "hybrid": 16.6,
-            "classical": 13.3,
-            "hybrid_median": 18.1,
-            "classical_median": 16,
-            "rtt": 9.1,
+            "hybrid": 13.8,
+            "classical": 12.2,
+            "hybrid_median": 18.3,
+            "classical_median": 14.4,
+            "rtt": 8,
             "n": [
               10,
               10
@@ -2697,38 +2042,12 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 164490
+            "bytes": 165117
           },
           "ai": [
             "openai"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "pernodricard-com01e.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.137.0",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:56Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Publicis Groupe",
@@ -2763,7 +2082,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=16070400; includesubdomains",
           "front": "fastly",
           "server": "apache",
-          "at": "2026-10-15T22:07:01Z",
+          "at": "2026-11-02T13:28:14Z",
           "cost": null,
           "page": {
             "final": "https://www.publicisgroupe.com/fr/splash",
@@ -2804,33 +2123,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 4
             }
-          ],
-          "mail": {
-            "mx": [
-              "publicisgroupe-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.42.81",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:58Z"
-            }
-          }
+          ]
         },
         {
           "name": "Renault",
@@ -2857,21 +2150,21 @@ window.OBSERVATOIRE = {
             "names": 30
           },
           "net": {
-            "ip": "176.34.170.218",
+            "ip": "63.35.10.166",
             "asn": "16509",
-            "cc": "IE",
+            "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
           },
           "hsts": "max-age=63072000; includesubdomains",
           "front": "other",
           "server": "nginx",
-          "at": "2026-10-15T22:07:02Z",
+          "at": "2026-11-02T13:28:15Z",
           "cost": {
-            "hybrid": 54.1,
-            "classical": 51.5,
-            "hybrid_median": 56.1,
-            "classical_median": 56.4,
-            "rtt": 24.1,
+            "hybrid": 51.9,
+            "classical": 49.4,
+            "hybrid_median": 55.5,
+            "classical_median": 57.2,
+            "rtt": 23.6,
             "n": [
               10,
               10
@@ -2891,7 +2184,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "autoplay=(self \"https://assets.renaultgroup.com\" \"https://staging-assets.renaultgroup.com\"), fullscreen=(self), geolocation=(self)",
             "coop": "",
-            "bytes": 349871
+            "bytes": 349693
           },
           "ai": [],
           "hf": [
@@ -2903,34 +2196,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 55
             }
-          ],
-          "mail": {
-            "mx": [
-              "mx1.hc1506-8.eu.iphmx.com",
-              "mx2.hc1506-8.eu.iphmx.com"
-            ],
-            "provider": "cisco",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "23.90.122.141",
-              "asn": "30238",
-              "as": "AS-IRONP-VEGA - Cisco Systems Ironport Division, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:41:11Z"
-            }
-          }
+          ]
         },
         {
           "name": "Safran",
@@ -2963,7 +2229,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "172.64.151.66",
+            "ip": "104.18.36.190",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -2971,13 +2237,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:07:02Z",
+          "at": "2026-11-02T13:28:14Z",
           "cost": {
-            "hybrid": 20.4,
-            "classical": 17.7,
-            "hybrid_median": 24.5,
-            "classical_median": 21.8,
-            "rtt": 9.7,
+            "hybrid": 15.8,
+            "classical": 14.1,
+            "hybrid_median": 25.6,
+            "classical_median": 18.2,
+            "rtt": 7.9,
             "n": [
               10,
               10
@@ -2999,7 +2265,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "display-capture=(self), microphone=(), camera=(), fullscreen=(self \"https://safran.webtv-solution.video\" \"https://mediacloud.media.safran-group.com\"), picture-in-picture=(self \"https://safran.webtv-solution.video\" \"https://mediacloud.media.safran-group.com\"), geolocation=(self), web-share=*",
             "coop": "",
-            "bytes": 214868
+            "bytes": 199188
           },
           "ai": [],
           "hf": [
@@ -3009,22 +2275,9 @@ window.OBSERVATOIRE = {
               "models": 0,
               "datasets": 0,
               "spaces": 0,
-              "followers": 17
+              "followers": 18
             }
-          ],
-          "mail": {
-            "mx": [],
-            "provider": "none",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": null,
-            "spf": "-all",
-            "starttls": null,
-            "net": {}
-          }
+          ]
         },
         {
           "name": "Saint-Gobain",
@@ -3065,13 +2318,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:07:02Z",
+          "at": "2026-11-02T13:28:16Z",
           "cost": {
-            "hybrid": 20.2,
-            "classical": 17.2,
-            "hybrid_median": 23.3,
-            "classical_median": 19.5,
-            "rtt": 8.8,
+            "hybrid": 18.8,
+            "classical": 18.5,
+            "hybrid_median": 25.3,
+            "classical_median": 22.5,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -3092,34 +2345,7 @@ window.OBSERVATOIRE = {
             "bytes": 127510
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-002c9e02.gslb.pphosted.com",
-              "mxb-002c9e02.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "185.183.31.92",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:48Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Sanofi",
@@ -3153,7 +2379,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "13.227.173.79",
+            "ip": "13.227.173.82",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -3161,13 +2387,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "cloudfront",
           "server": "cloudfront",
-          "at": "2026-10-15T22:07:26Z",
+          "at": "2026-11-02T13:28:40Z",
           "cost": {
-            "hybrid": 15.8,
-            "classical": 15,
-            "hybrid_median": 16.7,
-            "classical_median": 15.8,
-            "rtt": 8.6,
+            "hybrid": 13.9,
+            "classical": 13.8,
+            "hybrid_median": 18.3,
+            "classical_median": 17.3,
+            "rtt": 7.8,
             "n": [
               10,
               10
@@ -3180,7 +2406,6 @@ window.OBSERVATOIRE = {
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
-              "maps.googleapis.com",
               "www.googletagmanager.com"
             ],
             "xfo": "SAMEORIGIN",
@@ -3188,7 +2413,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 261867
+            "bytes": 274137
           },
           "ai": [
             "anthropic",
@@ -3201,36 +2426,9 @@ window.OBSERVATOIRE = {
               "models": 0,
               "datasets": 0,
               "spaces": 0,
-              "followers": 120
+              "followers": 122
             }
-          ],
-          "mail": {
-            "mx": [
-              "de-smtp-inbound-1.mimecast.com",
-              "de-smtp-inbound-2.mimecast.com"
-            ],
-            "provider": "mimecast",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "194.104.110.22",
-              "asn": "39588",
-              "as": "MIMECAST-DE - Mimecast Services Limited, GB"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:26Z"
-            }
-          }
+          ]
         },
         {
           "name": "Schneider Electric",
@@ -3270,13 +2468,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:07:04Z",
+          "at": "2026-11-02T13:28:18Z",
           "cost": {
-            "hybrid": 12.9,
-            "classical": 12.1,
-            "hybrid_median": 14.4,
-            "classical_median": 13.2,
-            "rtt": 7.7,
+            "hybrid": 14.5,
+            "classical": 12,
+            "hybrid_median": 17.6,
+            "classical_median": 17.6,
+            "rtt": 7.4,
             "n": [
               10,
               10
@@ -3286,7 +2484,7 @@ window.OBSERVATOIRE = {
             "final": "https://www.se.com/ww/en/",
             "code": 200,
             "csp": "upgrade-insecure-requests",
-            "csp_ro": "default-src 'self' blob: https: data: mediastream: 'unsafe-eval' 'unsafe-inline'; connect-src cdn.builder.codes *.builder.io *.schneider-electric.com *.se.com glue.pes-stg.cloud.spryker.toys service.force.com *.apc.com nebula-cdn.kampyle.com ubt-eu.kampyle.com sbt-prod.kampyle.com udc-neb.kampyle.com *.ariba.com *.amazonaws.com twitter.com zinfi.net firebaselogging-pa.googleapis.com firebaseremoteconfig.googleapis.com firebaseinstallations.googleapis.com resources.digital-cloud.medallia.eu/ partnerassessment.secure.force.com se.my.salesforce.com se.my.salesforce-sites.com *.salesforceliveagent.com *.squared.com/* *.onetrust.com seadvantage.force.com:443/ seadvantage.my.site.com:443/ seadvantage.my.site.com/* *.pendo.io tag.commander1.com www.google-analytics.com *.google.com salesforce.com salesforceliveagent.com documentforce.com kampyle.com force.com cookielaw.org unpkg.com cdn.jsdelivr.net *.demandbase.com twimg.com *.twimg.com *.youtube.com *.zinfi.net *.google.ru akstat.io *.go-mpulse.net/* microsoft.com *.clipsal.com/* cdn.cookielaw.org maxcdn.bootstrapcdn.com *.dynatrace.com *.kampyle.com *.google-analytics.com *.amazoncognito.com *.doubleclick.net googlemaps.github.io *.googlemaps.github.io/* maps.googleapis.com *.googleapis.com *.zscaler.net static.lightning.force.com www.apc.com api.company-target.com js-cdn.dynatrace.com c.go-mpulse.net *.akstat.io *.applanga.com 'self' *.akstat.io/ *.d2osz8slymlqdp.cloudfront.net *.google.com.sa *.google.by su.symexbelgium.com d2osz8slymlqdp.cloudfront.net d2cbq57joo8non.cloudfront.net use.typekit.net wss://*.execute-api.us-east-1.amazonaws.com wss://*.iot.us-east-1.amazonaws.com wss://4g5de7bcl4.execute-api.us-east-1.amazonaws.com wss://545sekhka2.execute-api.us-east-1.amazonaws.com wss://a307bjgfbycsj5-ats.iot.us-east-1.amazonaws.com wss://fjwji5pjgbbzzp2xmyispmyo6u.appsync-realtime-api.us-east-1.amazonaws.com wss://ixbskdr5a5bnbhl3qtwi5nhslu.appsync-realtime-api.us-east-1.amazonaws.com wss://qjye63smz5ggbb33xs4rn6hoiq.appsync-realtime-api.us-east-1.amazonaws.com wss://tu43ymv7pc.execute-api.us-east-1.amazonaws.com wss://0jyqaecg5j.execute-api.us-east-1.amazonaws.com wss://a307bjgfbycsj5-ats.iot.us-east-1.amazonaws.com wss://xbezullc75gyffaqf3npo2pavi.appsync-realtime-api.us-east-1.amazonaws.com *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io uiaas.myschneider.se.com; img-src *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io; report-uri https://semyschneiderweb.report-uri.com/r/t/csp/reportOnly; script-src 'self' blob: https: data: mediastream: 'unsafe-eval' 'unsafe-inline' 'nonce-3pH4M+JgIGJpBEGU2Eo3MA=='",
+            "csp_ro": "default-src 'self' blob: https: data: mediastream: 'unsafe-eval' 'unsafe-inline'; connect-src cdn.builder.codes *.builder.io *.schneider-electric.com *.se.com glue.pes-stg.cloud.spryker.toys service.force.com *.apc.com nebula-cdn.kampyle.com ubt-eu.kampyle.com sbt-prod.kampyle.com udc-neb.kampyle.com *.ariba.com *.amazonaws.com twitter.com zinfi.net firebaselogging-pa.googleapis.com firebaseremoteconfig.googleapis.com firebaseinstallations.googleapis.com resources.digital-cloud.medallia.eu/ partnerassessment.secure.force.com se.my.salesforce.com se.my.salesforce-sites.com *.salesforceliveagent.com *.squared.com/* *.onetrust.com seadvantage.force.com:443/ seadvantage.my.site.com:443/ seadvantage.my.site.com/* *.pendo.io tag.commander1.com www.google-analytics.com *.google.com salesforce.com salesforceliveagent.com documentforce.com kampyle.com force.com cookielaw.org unpkg.com cdn.jsdelivr.net *.demandbase.com twimg.com *.twimg.com *.youtube.com *.zinfi.net *.google.ru akstat.io *.go-mpulse.net/* microsoft.com *.clipsal.com/* cdn.cookielaw.org maxcdn.bootstrapcdn.com *.dynatrace.com *.kampyle.com *.google-analytics.com *.amazoncognito.com *.doubleclick.net googlemaps.github.io *.googlemaps.github.io/* maps.googleapis.com *.googleapis.com *.zscaler.net static.lightning.force.com www.apc.com api.company-target.com js-cdn.dynatrace.com c.go-mpulse.net *.akstat.io *.applanga.com 'self' *.akstat.io/ *.d2osz8slymlqdp.cloudfront.net *.google.com.sa *.google.by su.symexbelgium.com d2osz8slymlqdp.cloudfront.net d2cbq57joo8non.cloudfront.net use.typekit.net wss://*.execute-api.us-east-1.amazonaws.com wss://*.iot.us-east-1.amazonaws.com wss://4g5de7bcl4.execute-api.us-east-1.amazonaws.com wss://545sekhka2.execute-api.us-east-1.amazonaws.com wss://a307bjgfbycsj5-ats.iot.us-east-1.amazonaws.com wss://fjwji5pjgbbzzp2xmyispmyo6u.appsync-realtime-api.us-east-1.amazonaws.com wss://ixbskdr5a5bnbhl3qtwi5nhslu.appsync-realtime-api.us-east-1.amazonaws.com wss://qjye63smz5ggbb33xs4rn6hoiq.appsync-realtime-api.us-east-1.amazonaws.com wss://tu43ymv7pc.execute-api.us-east-1.amazonaws.com wss://0jyqaecg5j.execute-api.us-east-1.amazonaws.com wss://a307bjgfbycsj5-ats.iot.us-east-1.amazonaws.com wss://xbezullc75gyffaqf3npo2pavi.appsync-realtime-api.us-east-1.amazonaws.com *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io uiaas.myschneider.se.com; img-src *.visualwebsiteoptimizer.com app.vwo.com useruploads.vwo.io; report-uri https://semyschneiderweb.report-uri.com/r/t/csp/reportOnly; script-src 'self' blob: https: data: mediastream: 'unsafe-eval' 'unsafe-inline' 'nonce-YskyF7YU9cNaqYT2lOsBGw=='",
             "meta_csp": "",
             "scripts": [
               "js-cdn.dynatrace.com",
@@ -3302,7 +2500,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 1983271
+            "bytes": 2027018
           },
           "ai": [
             "anthropic",
@@ -3315,36 +2513,9 @@ window.OBSERVATOIRE = {
               "models": 0,
               "datasets": 0,
               "spaces": 0,
-              "followers": 70
+              "followers": 73
             }
-          ],
-          "mail": {
-            "mx": [
-              "de-smtp-inbound-1.mimecast.com",
-              "de-smtp-inbound-2.mimecast.com"
-            ],
-            "provider": "mimecast",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "194.104.110.22",
-              "asn": "39588",
-              "as": "MIMECAST-DE - Mimecast Services Limited, GB"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:26Z"
-            }
-          }
+          ]
         },
         {
           "name": "Société Générale",
@@ -3385,13 +2556,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "fastly",
           "server": "apache",
-          "at": "2026-10-15T22:07:05Z",
+          "at": "2026-11-02T13:28:19Z",
           "cost": {
-            "hybrid": 14.5,
-            "classical": 14.3,
-            "hybrid_median": 16,
-            "classical_median": 15.4,
-            "rtt": 8.7,
+            "hybrid": 15.5,
+            "classical": 12.2,
+            "hybrid_median": 18.3,
+            "classical_median": 17.3,
+            "rtt": 7.4,
             "n": [
               10,
               10
@@ -3412,36 +2583,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 201455
+            "bytes": 204089
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail.iap.socgen.com"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "194.119.31.5",
-              "asn": "3299",
-              "as": "UNSPECIFIED - Societe Generale S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "DH 2048 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:37Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Stellantis",
@@ -3468,12 +2613,12 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Let's Encrypt",
-            "from": "2026-09-03",
-            "until": "2026-12-02",
-            "names": 99
+            "from": "2026-10-30",
+            "until": "2027-01-28",
+            "names": 92
           },
           "net": {
-            "ip": "23.222.250.238",
+            "ip": "23.72.248.209",
             "asn": "20940",
             "cc": "US",
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
@@ -3481,13 +2626,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000 ; includesubdomains ; preload",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:07:09Z",
+          "at": "2026-11-02T13:28:19Z",
           "cost": {
-            "hybrid": 21.1,
-            "classical": 18.5,
-            "hybrid_median": 25.5,
-            "classical_median": 21.2,
-            "rtt": 8.5,
+            "hybrid": 20.3,
+            "classical": 19.6,
+            "hybrid_median": 26.8,
+            "classical_median": 25.3,
+            "rtt": 8.9,
             "n": [
               10,
               10
@@ -3508,7 +2653,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 98259
+            "bytes": 98001
           },
           "ai": [],
           "hf": [
@@ -3520,33 +2665,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 45
             }
-          ],
-          "mail": {
-            "mx": [
-              "stellantis-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.68.29",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:07Z"
-            }
-          }
+          ]
         },
         {
           "name": "STMicroelectronics",
@@ -3578,7 +2697,7 @@ window.OBSERVATOIRE = {
             "names": 10
           },
           "net": {
-            "ip": "23.222.250.244",
+            "ip": "23.72.248.198",
             "asn": "20940",
             "cc": "US",
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
@@ -3586,13 +2705,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=86400",
           "front": "akamai",
           "server": "",
-          "at": "2026-10-15T22:07:07Z",
+          "at": "2026-11-02T13:28:19Z",
           "cost": {
-            "hybrid": 18.7,
-            "classical": 14,
-            "hybrid_median": 20.7,
-            "classical_median": 16.5,
-            "rtt": 8.1,
+            "hybrid": 19.4,
+            "classical": 15.3,
+            "hybrid_median": 29.5,
+            "classical_median": 20.6,
+            "rtt": 7.5,
             "n": [
               10,
               10
@@ -3601,7 +2720,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://www.st.com/content/st_com/en.html",
             "code": 200,
-            "csp": "upgrade-insecure-requests; default-src 'nonce-ed4323011cae37ca636ec6d7d27ee984' data: blob: scripts.demandbase.com *.st.com *.st.com.cn *.zscaler.net www.googletagmanager.com widget.decibelinsight.net http://st-videos.s3.amazonaws.com feedback.digital-cloud.medallia.eu www.google.fr www.linkedin.com swa.sc.adobedc.cn www.youtube.com cdn.cookielaw.org dpm.demdex.net stmicroelectronics.demdex.net cm.everesttech.net st.componentsearchengine.com api.demandbase.com s.company-target.com vendor.ultralibrarian.com st-videos.s3.amazonaws.com st-cn-videos.s3.amazonaws.com st-epres.s3.amazonaws.com st-onlinetraining.s3.amazonaws.com st-pictures.s3-eu-west-1.amazonaws.com st-trainings.s3.amazonaws.com s7mbrstream-g1.scene7.com d1yo2adjencc3o.cloudfront.net screencapture.kampyle.com td.doubleclick.net www.facebook.com s7g10.scene7.com px.ads.linkedin.com www.google.it www.google.com screencapture-cdn.kampyle.com resources.digital-cloud.medallia.eu sbt-prod.kampyle.com udc-neb.kampyle.com md-scp.kampyle.com nebula-cdn.kampyle.com www.google-analytics.com hello.myfonts.net/count/39cfed monitor.clickcease.com www.clickcease.com/monitor/stat.js; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: screencapture.kampyle.com d3js.org api.demandbase.com md-scp.kampyle.com screencapture-cdn.kampyle.com resources.digital-cloud.medallia.eu sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com www.googletagmanager.com analytics.google.com www.analytics.google.com region1.google-analytics.com region1.analytics.google.com googleads.g.doubleclick.net www.google.com stats.g.doubleclick.net s7g10.scene7.com stcareers.talent-soft.com d2r1yp2w7bby2u.cloudfront.net static.clevertap.com us1.wzrkt.com swa.sc.adobedc.cn 856-pvp-715.mktoresp.com munchkin.marketo.net content.st.com *.go-mpulse.net www.facebook.com/tr/ monitor.clickcease.com www.clickcease.com/monitor/stat.js cdn.tt.omtrdc.net stmicroelectronics.tt.omtrdc.net serve.nrich.ai g.3gl.net r.3gl.net rjs.3gl.net maps.googleapis.com fonts.googleapis.com/css maps.google.com hello.myfonts.net/count/39cfed *.zscaler.net *.st.com *.st.com.cn *.stmicroelectronics.com.cn browser-update.org assets.adobedtm.com st-cn-videos.s3.amazonaws.com st-epres.s3.amazonaws.com st-onlinetraining.s3.amazonaws.com st-pictures.s3-eu-west-1.amazonaws.com st-trainings.s3.amazonaws.com st-videos.s3.amazonaws.com px.ads.linkedin.com cdn.cookielaw.org snap.licdn.com www.google-analytics.com connect.facebook.net cdn.id5-sync.com tags.crwdcntrl.net scripts.demandbase.com autocomplete.demandbase.com tag.demandbase.com cdn.decibelinsight.net collection.decibelinsight.net; style-src 'unsafe-inline' data: blob: *.st.com *.st.com.cn screencapture.kampyle.com s7g10.scene7.com screencapture-cdn.kampyle.com resources.digital-cloud.medallia.eu sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com md-scp.kampyle.com stcareers.talent-soft.com monitor.clickcease.com www.clickcease.com/monitor/stat.js hello.myfonts.net/count/39cfed; object-src 'none'; connect-src 'self' analytics-fe.digital-cloud.medallia.eu analytics.google.com www.google.com feedback.digital-cloud.medallia.eu px.ads.linkedin.com segments.company-target.com geolocation.onetrust.com www.google.it google.com swa.sc.adobedc.cn pagead2.googlesyndication.com cdn.linkedin.oribi.io screencapture.kampyle.com screencapture-cdn.kampyle.com md-scp.kampyle.com tag-logger.demandbase.com region1.google-analytics.com region1.analytics.google.com us1.wzrkt.com resources.digital-cloud.medallia.eu ubt-lb.digital-cloud.medallia.eu sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com 554-cze-897.mktoutil.com 856-pvp-715.mktoutil.com stcareers.talent-soft.com s7g10.scene7.com s7mbrstream-g1.scene7.com www.google-analytics.com serve.nrich.ai *.go-mpulse.net *.akamaihd.net *.akstat.io https://cdn.cookielaw.org/ stats.g.doubleclick.net 856-pvp-715.mktoresp.com munchkin.marketo.net content.st.com www.facebook.com/tr/ monitor.clickcease.com www.clickcease.com hello.myfonts.net privacyportal-de.onetrust.com r.3gl.net rjs.3gl.net g.3gl.net maps.googleapis.com fonts.googleapis.com/css maps.google.com *.zscaler.net *.st.com *.st.com.cn *.stmicroelectronics.com.cn scripts.demandbase.com autocomplete.demandbase.com tag.demandbase.com bcp.crwdcntrl.net id5-sync.com api.company-target.com st-cn-videos.s3.amazonaws.com st-epres.s3.amazonaws.com st-onlinetraining.s3.amazonaws.com st-pictures.s3-eu-west-1.amazonaws.com st-trainings.s3.amazonaws.com st-videos.s3.amazonaws.com api.ipify.org *.tt.omtrdc.net dpm.demdex.net cdn.decibelinsight.net collection.decibelinsight.net https://collection.decibelinsight.net wss://collection.decibelinsight.net; frame-ancestors www.googletagmanager.com eds.st.com 'self';",
+            "csp": "upgrade-insecure-requests; default-src 'nonce-44cfa1b92a85da6b85026172e27468e2' data: blob: scripts.demandbase.com *.st.com *.st.com.cn *.zscaler.net www.googletagmanager.com widget.decibelinsight.net http://st-videos.s3.amazonaws.com feedback.digital-cloud.medallia.eu www.google.fr www.linkedin.com swa.sc.adobedc.cn www.youtube.com cdn.cookielaw.org dpm.demdex.net stmicroelectronics.demdex.net cm.everesttech.net st.componentsearchengine.com api.demandbase.com s.company-target.com vendor.ultralibrarian.com st-videos.s3.amazonaws.com st-cn-videos.s3.amazonaws.com st-epres.s3.amazonaws.com st-onlinetraining.s3.amazonaws.com st-pictures.s3-eu-west-1.amazonaws.com st-trainings.s3.amazonaws.com s7mbrstream-g1.scene7.com d1yo2adjencc3o.cloudfront.net screencapture.kampyle.com td.doubleclick.net www.facebook.com s7g10.scene7.com px.ads.linkedin.com www.google.it www.google.com screencapture-cdn.kampyle.com resources.digital-cloud.medallia.eu sbt-prod.kampyle.com udc-neb.kampyle.com md-scp.kampyle.com nebula-cdn.kampyle.com www.google-analytics.com hello.myfonts.net/count/39cfed monitor.clickcease.com www.clickcease.com/monitor/stat.js; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: screencapture.kampyle.com d3js.org api.demandbase.com md-scp.kampyle.com screencapture-cdn.kampyle.com resources.digital-cloud.medallia.eu sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com www.googletagmanager.com analytics.google.com www.analytics.google.com region1.google-analytics.com region1.analytics.google.com googleads.g.doubleclick.net www.google.com stats.g.doubleclick.net s7g10.scene7.com stcareers.talent-soft.com d2r1yp2w7bby2u.cloudfront.net static.clevertap.com us1.wzrkt.com swa.sc.adobedc.cn 856-pvp-715.mktoresp.com munchkin.marketo.net content.st.com *.go-mpulse.net www.facebook.com/tr/ monitor.clickcease.com www.clickcease.com/monitor/stat.js cdn.tt.omtrdc.net stmicroelectronics.tt.omtrdc.net serve.nrich.ai g.3gl.net r.3gl.net rjs.3gl.net maps.googleapis.com fonts.googleapis.com/css maps.google.com hello.myfonts.net/count/39cfed *.zscaler.net *.st.com *.st.com.cn *.stmicroelectronics.com.cn browser-update.org assets.adobedtm.com st-cn-videos.s3.amazonaws.com st-epres.s3.amazonaws.com st-onlinetraining.s3.amazonaws.com st-pictures.s3-eu-west-1.amazonaws.com st-trainings.s3.amazonaws.com st-videos.s3.amazonaws.com px.ads.linkedin.com cdn.cookielaw.org snap.licdn.com www.google-analytics.com connect.facebook.net cdn.id5-sync.com tags.crwdcntrl.net scripts.demandbase.com autocomplete.demandbase.com tag.demandbase.com cdn.decibelinsight.net collection.decibelinsight.net; style-src 'unsafe-inline' data: blob: *.st.com *.st.com.cn screencapture.kampyle.com s7g10.scene7.com screencapture-cdn.kampyle.com resources.digital-cloud.medallia.eu sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com md-scp.kampyle.com stcareers.talent-soft.com monitor.clickcease.com www.clickcease.com/monitor/stat.js hello.myfonts.net/count/39cfed; object-src 'none'; connect-src 'self' analytics-fe.digital-cloud.medallia.eu analytics.google.com www.google.com feedback.digital-cloud.medallia.eu px.ads.linkedin.com segments.company-target.com geolocation.onetrust.com www.google.it google.com swa.sc.adobedc.cn pagead2.googlesyndication.com cdn.linkedin.oribi.io screencapture.kampyle.com screencapture-cdn.kampyle.com md-scp.kampyle.com tag-logger.demandbase.com region1.google-analytics.com region1.analytics.google.com us1.wzrkt.com resources.digital-cloud.medallia.eu ubt-lb.digital-cloud.medallia.eu sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com 554-cze-897.mktoutil.com 856-pvp-715.mktoutil.com stcareers.talent-soft.com s7g10.scene7.com s7mbrstream-g1.scene7.com www.google-analytics.com serve.nrich.ai *.go-mpulse.net *.akamaihd.net *.akstat.io https://cdn.cookielaw.org/ stats.g.doubleclick.net 856-pvp-715.mktoresp.com munchkin.marketo.net content.st.com www.facebook.com/tr/ monitor.clickcease.com www.clickcease.com hello.myfonts.net privacyportal-de.onetrust.com r.3gl.net rjs.3gl.net g.3gl.net maps.googleapis.com fonts.googleapis.com/css maps.google.com *.zscaler.net *.st.com *.st.com.cn *.stmicroelectronics.com.cn scripts.demandbase.com autocomplete.demandbase.com tag.demandbase.com bcp.crwdcntrl.net id5-sync.com api.company-target.com st-cn-videos.s3.amazonaws.com st-epres.s3.amazonaws.com st-onlinetraining.s3.amazonaws.com st-pictures.s3-eu-west-1.amazonaws.com st-trainings.s3.amazonaws.com st-videos.s3.amazonaws.com api.ipify.org *.tt.omtrdc.net dpm.demdex.net cdn.decibelinsight.net collection.decibelinsight.net https://collection.decibelinsight.net wss://collection.decibelinsight.net; frame-ancestors www.googletagmanager.com eds.st.com 'self';",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -3615,7 +2734,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 245658
+            "bytes": 245084
           },
           "ai": [],
           "hf": [
@@ -3625,35 +2744,9 @@ window.OBSERVATOIRE = {
               "models": 65,
               "datasets": 0,
               "spaces": 2,
-              "followers": 117
+              "followers": 120
             }
-          ],
-          "mail": {
-            "mx": [
-              "st-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": "testing",
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.73.155",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:06Z"
-            }
-          }
+          ]
         },
         {
           "name": "Thales",
@@ -3681,8 +2774,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "GlobalSign nv-sa",
-            "from": "2026-08-26",
-            "until": "2026-11-24",
+            "from": "2026-10-25",
+            "until": "2027-01-23",
             "names": 7
           },
           "net": {
@@ -3694,13 +2787,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "imperva",
           "server": "",
-          "at": "2026-10-15T22:07:09Z",
+          "at": "2026-11-02T13:28:23Z",
           "cost": {
-            "hybrid": 13.7,
-            "classical": 13.3,
-            "hybrid_median": 18.3,
-            "classical_median": 17,
-            "rtt": 7.9,
+            "hybrid": 16.7,
+            "classical": 13.6,
+            "hybrid_median": 20.1,
+            "classical_median": 16.5,
+            "rtt": 8.6,
             "n": [
               10,
               10
@@ -3718,7 +2811,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 1155
+            "bytes": 1154
           },
           "ai": [],
           "hf": [
@@ -3726,38 +2819,11 @@ window.OBSERVATOIRE = {
               "name": "thalesgroup",
               "fullname": "Thales",
               "models": 0,
-              "datasets": 0,
+              "datasets": 1,
               "spaces": 0,
-              "followers": 107
+              "followers": 111
             }
-          ],
-          "mail": {
-            "mx": [
-              "mx01.thalesgroup.com",
-              "mx02.thalesgroup.com"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "23.90.119.252",
-              "asn": "30238",
-              "as": "AS-IRONP-VEGA - Cisco Systems Ironport Division, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "<NULL>",
-              "protocol": "",
-              "at": "2026-10-16T10:40:46Z"
-            }
-          }
+          ]
         },
         {
           "name": "TotalEnergies",
@@ -3798,13 +2864,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:21Z",
+          "at": "2026-11-02T13:27:26Z",
           "cost": {
-            "hybrid": 17.4,
-            "classical": 16.8,
+            "hybrid": 20,
+            "classical": 15.3,
             "hybrid_median": 23.5,
-            "classical_median": 19.1,
-            "rtt": 9,
+            "classical_median": 20.7,
+            "rtt": 8.4,
             "n": [
               10,
               10
@@ -3824,46 +2890,20 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 114004
+            "bytes": 113985
           },
           "ai": [
             "anthropic",
             "mistral"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "totalenergies-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.103.137",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:07Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Unibail-Rodamco-Westfield",
           "host": "www.urw.com",
           "reachable": true,
-          "pq": "partial",
-          "hits": 2,
+          "pq": "full",
+          "hits": 5,
           "tries": 5,
           "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
@@ -3873,6 +2913,7 @@ window.OBSERVATOIRE = {
             "tls1_3"
           ],
           "groups": [
+            "X25519MLKEM768",
             "X25519",
             "secp256r1",
             "secp384r1"
@@ -3883,8 +2924,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Google Trust Services",
-            "from": "2026-09-01",
-            "until": "2026-11-30",
+            "from": "2026-10-28",
+            "until": "2027-01-26",
             "names": 1
           },
           "net": {
@@ -3896,15 +2937,15 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "google",
           "server": "google frontend",
-          "at": "2026-10-15T22:07:10Z",
+          "at": "2026-11-02T13:28:24Z",
           "cost": {
-            "hybrid": 24.7,
-            "classical": 20.8,
-            "hybrid_median": 26.3,
-            "classical_median": 23.1,
-            "rtt": 9,
+            "hybrid": 20.1,
+            "classical": 16.8,
+            "hybrid_median": 25.4,
+            "classical_median": 20.9,
+            "rtt": 8.2,
             "n": [
-              8,
+              10,
               10
             ]
           },
@@ -3920,37 +2961,10 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer",
             "permissions": "",
             "coop": "",
-            "bytes": 322989
+            "bytes": 322948
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-001c6c01.gslb.pphosted.com",
-              "mxb-001c6c01.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "91.207.212.76",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:47Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Veolia",
@@ -3978,8 +2992,8 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-08-19",
-            "until": "2026-11-17",
+            "from": "2026-10-18",
+            "until": "2027-01-16",
             "names": 1
           },
           "net": {
@@ -3988,34 +3002,39 @@ window.OBSERVATOIRE = {
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
           },
-          "hsts": "",
+          "hsts": "max-age=31536000; includesubdomains",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:07:10Z",
+          "at": "2026-11-02T13:28:24Z",
           "cost": {
-            "hybrid": 16.9,
-            "classical": 15.2,
-            "hybrid_median": 20.4,
-            "classical_median": 16.6,
-            "rtt": 9.6,
+            "hybrid": 19.1,
+            "classical": 15.6,
+            "hybrid_median": 26.3,
+            "classical_median": 18.5,
+            "rtt": 8.3,
             "n": [
               10,
               10
             ]
           },
           "page": {
-            "final": "https://www.veolia.com/",
-            "code": 403,
-            "csp": "default-src 'none'; script-src 'nonce-CwDHRYyBgEn5u41CyusCzN' 'unsafe-eval' https://challenges.cloudflare.com; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self' https://challenges.cloudflare.com; connect-src 'self' https://challenges.cloudflare.com; frame-src 'self' https://challenges.cloudflare.com blob:; child-src 'self' https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri 'self'",
+            "final": "https://www.veolia.com/fr",
+            "code": 200,
+            "csp": "",
             "csp_ro": "",
-            "meta_csp": "default-src &#39;none&#39;; script-src &#39;nonce-CwDHRYyBgEn5u41CyusCzN&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;",
-            "scripts": [],
+            "meta_csp": "",
+            "scripts": [
+              "cdn.jsdelivr.net",
+              "static.cloudflareinsights.com",
+              "www.googletagmanager.com",
+              "www.youtube-nocookie.com"
+            ],
             "xfo": "SAMEORIGIN",
             "xcto": "nosniff",
-            "referrer": "same-origin",
-            "permissions": "accelerometer=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=(),xr-spatial-tracking=*",
-            "coop": "same-origin",
-            "bytes": 5777
+            "referrer": "",
+            "permissions": "",
+            "coop": "",
+            "bytes": 122870
           },
           "ai": [],
           "hf": [
@@ -4027,33 +3046,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 10
             }
-          ],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          ]
         },
         {
           "name": "Vinci",
@@ -4093,7 +3086,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:07:10Z",
+          "at": "2026-11-02T13:28:24Z",
           "cost": null,
           "page": {
             "final": "https://www.vinci.com/",
@@ -4107,37 +3100,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=()",
             "coop": "",
-            "bytes": 125204
+            "bytes": 128035
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-00810f01.gslb.pphosted.com",
-              "mxb-00810f01.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "66.159.246.200",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:53Z"
-            }
-          }
+          "hf": []
         }
       ]
     },
@@ -4189,13 +3155,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15552000",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:04Z",
           "cost": {
-            "hybrid": 25.8,
-            "classical": 24.2,
-            "hybrid_median": 30,
-            "classical_median": 27.6,
-            "rtt": 8.2,
+            "hybrid": 31.9,
+            "classical": 29.5,
+            "hybrid_median": 38,
+            "classical_median": 41.8,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -4216,7 +3182,7 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer-when-downgrade",
             "permissions": "",
             "coop": "",
-            "bytes": 1562215
+            "bytes": 1558365
           },
           "ai": [],
           "hf": [
@@ -4228,42 +3194,16 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 23
             }
-          ],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          ]
         },
         {
           "name": "Ankorstore",
           "host": "www.ankorstore.com",
           "reachable": true,
-          "pq": "partial",
-          "hits": 3,
+          "pq": "full",
+          "hits": 5,
           "tries": 5,
-          "group": "X25519",
+          "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
           "cipher": "TLS_AES_256_GCM_SHA384",
           "protocols": [
@@ -4271,6 +3211,7 @@ window.OBSERVATOIRE = {
             "tls1_3"
           ],
           "groups": [
+            "X25519MLKEM768",
             "X25519",
             "secp256r1",
             "secp384r1"
@@ -4294,15 +3235,15 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "google",
           "server": "istio-envoy",
-          "at": "2026-10-15T22:06:24Z",
+          "at": "2026-11-02T13:27:29Z",
           "cost": {
-            "hybrid": 20.7,
+            "hybrid": 15.4,
             "classical": 15,
-            "hybrid_median": 25,
-            "classical_median": 22.5,
-            "rtt": 8.9,
+            "hybrid_median": 21.4,
+            "classical_median": 20.7,
+            "rtt": 8.2,
             "n": [
-              6,
+              10,
               10
             ]
           },
@@ -4323,38 +3264,12 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 518606
+            "bytes": 518263
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Back Market",
@@ -4395,13 +3310,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15768000; includesubdomains",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:27Z",
+          "at": "2026-11-02T13:27:34Z",
           "cost": {
-            "hybrid": 15.7,
-            "classical": 12.1,
-            "hybrid_median": 18.8,
-            "classical_median": 17.1,
-            "rtt": 8.6,
+            "hybrid": 15.1,
+            "classical": 13.2,
+            "hybrid_median": 18.9,
+            "classical_median": 17.6,
+            "rtt": 7.9,
             "n": [
               10,
               10
@@ -4410,7 +3325,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://www.backmarket.fr/fr-fr",
             "code": 200,
-            "csp": "script-src 'self' https://*.statics.backmarket.com https://gobbledygook.backmarket.fr https://eps.backmarket.fr https://front-office.statics.backmarket.com/d4a7417e9b3317cdb6dbba9725b09dfd7cd125bb/ https://www.googletagmanager.com https://*.hotjar.com https://*.hotjar.io https://sc-static.net https://www.google.com/pagead/ https://www.googleadservices.com https://www.googletagservices.com https://*.googlesyndication.com https://www.gstatic.com https://retail.googleapis.com https://*.yahoo.co.jp https://*.g.doubleclick.net https://d34r8q7sht0t9k.cloudfront.net https://connect.facebook.net https://bat.bing.com https://bat.bing-int.com https://www.redditstatic.com https://analytics.tiktok.com https://www.dwin1.com https://js.adsrvr.org https://*.dotomi.com https://*.teads.tv https://pixel.byspotify.com https://cdn.attraqt.io https://*.tvsquared.com https://*.yimg.jp https://*.yimg.com https://*.outbrain.com https://js.cnnx.link https://cdn.taboola.com https://d.line-scdn.net https://lantern.roeyecdn.com https://statics.a8.net https://static.ads-twitter.com https://the.sciencebehindecommerce.com https://embed.typeform.com https://widgets.trustedshops.com https://*.clarity.ms https://widget.trustpilot.com https://cdn.scalapay.com https://www.awin1.com https://*.creativecdn.com https://*.pinimg.com https://*.pinterest.com https://cdn.amplitude.com https://tag.flvcdn.net https://www.youtube.com https://ozasp.jp https://capi-automation.s3.us-east-2.amazonaws.com https://bzrcdn.openai.com https://app.intercom.io https://widget.intercom.io https://js.intercomcdn.com https://cdn-scripts.signifyd.com https://imgs.signifyd.com https://64.online-metrix.net https://d354c9v5bptm0r.cloudfront.net https://h64.online-metrix.net https://sdk.privacy-center.org https://api.privacy-center.org https://assets.oney.io https://cdn.scalapay.com https://cdn1.affirm.com https://*.klarna.com https://*.klarnacdn.net https://js.processout.com https://*.squarecdn.com https://pay.google.com https://applepay.cdn-apple.com https://www.paypal.com https://*.paylution.com https://backmarket.mydral.com blob: 'unsafe-inline' 'unsafe-eval'; object-src 'none'; report-uri https://browser-intake-datadoghq.com/api/v2/logs?dd-api-key=pubdc168fd6fb5f2bf245b09ff737b0112b&ddsource=csp-report&dd-evp-origin=content-security-policy&ddtags=environment%3Aprod%2Ccontinent%3Aeu%2Csource%3Anode%2Cservice%3Afront-office%2CserviceVersion%3Ad4a7417e9b3317cdb6dbba9725b09dfd7cd125bb%2Cpolicy-id%3Av1;",
+            "csp": "script-src 'self' https://*.statics.backmarket.com https://gobbledygook.backmarket.fr https://eps.backmarket.fr https://front-office.statics.backmarket.com/94119de6830e876b56b7ee93c22106b4e059c741/ https://www.googletagmanager.com https://edi5on.com https://cdn.lemrock.com https://*.hotjar.com https://*.hotjar.io https://sc-static.net https://www.google.com/pagead/ https://www.googleadservices.com https://www.googletagservices.com https://*.googlesyndication.com https://www.gstatic.com https://retail.googleapis.com https://*.yahoo.co.jp https://*.g.doubleclick.net https://d34r8q7sht0t9k.cloudfront.net https://connect.facebook.net https://bat.bing.com https://bat.bing-int.com https://www.redditstatic.com https://analytics.tiktok.com https://www.dwin1.com https://js.adsrvr.org https://*.dotomi.com https://*.teads.tv https://pixel.byspotify.com https://cdn.attraqt.io https://*.tvsquared.com https://*.yimg.jp https://*.yimg.com https://*.outbrain.com https://js.cnnx.link https://cdn.taboola.com https://d.line-scdn.net https://lantern.roeyecdn.com https://statics.a8.net https://static.ads-twitter.com https://the.sciencebehindecommerce.com https://embed.typeform.com https://widgets.trustedshops.com https://*.clarity.ms https://widget.trustpilot.com https://cdn.scalapay.com https://www.awin1.com https://*.creativecdn.com https://*.pinimg.com https://*.pinterest.com https://cdn.amplitude.com https://tag.flvcdn.net https://www.youtube.com https://ozasp.jp https://capi-automation.s3.us-east-2.amazonaws.com https://bzrcdn.openai.com https://app.intercom.io https://widget.intercom.io https://js.intercomcdn.com https://cdn-scripts.signifyd.com https://imgs.signifyd.com https://64.online-metrix.net https://d354c9v5bptm0r.cloudfront.net https://h64.online-metrix.net https://sdk.privacy-center.org https://api.privacy-center.org https://assets.oney.io https://cdn.scalapay.com https://cdn1.affirm.com https://*.klarna.com https://*.klarnacdn.net https://js.processout.com https://*.squarecdn.com https://pay.google.com https://applepay.cdn-apple.com https://www.paypal.com https://*.paylution.com https://backmarket.mydral.com blob: 'unsafe-inline' 'unsafe-eval'; object-src 'none'; report-uri https://browser-intake-datadoghq.com/api/v2/logs?dd-api-key=pubdc168fd6fb5f2bf245b09ff737b0112b&ddsource=csp-report&dd-evp-origin=content-security-policy&ddtags=environment%3Aprod%2Ccontinent%3Aeu%2Csource%3Anode%2Cservice%3Afront-office%2CserviceVersion%3A94119de6830e876b56b7ee93c22106b4e059c741%2Cpolicy-id%3Av1;",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -4422,43 +3337,17 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 1076648
+            "bytes": 1238676
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "BlaBlaCar",
           "host": "www.blablacar.fr",
           "reachable": true,
-          "pq": "partial",
-          "hits": 3,
+          "pq": "full",
+          "hits": 5,
           "tries": 5,
           "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
@@ -4492,15 +3381,15 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "google",
           "server": "istio-envoy",
-          "at": "2026-10-15T22:06:30Z",
+          "at": "2026-11-02T13:27:35Z",
           "cost": {
-            "hybrid": 20.5,
-            "classical": 17.5,
-            "hybrid_median": 27.2,
-            "classical_median": 23.6,
-            "rtt": 9.4,
+            "hybrid": 17,
+            "classical": 13.7,
+            "hybrid_median": 23.8,
+            "classical_median": 28.2,
+            "rtt": 9,
             "n": [
-              6,
+              10,
               10
             ]
           },
@@ -4519,36 +3408,10 @@ window.OBSERVATOIRE = {
             "referrer": "origin-when-cross-origin, strict-origin-when-cross-origin",
             "permissions": "geolocation=(self), microphone=()",
             "coop": "",
-            "bytes": 244052
+            "bytes": 243423
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Brevo",
@@ -4576,12 +3439,12 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-08-21",
-            "until": "2026-11-19",
+            "from": "2026-10-20",
+            "until": "2027-01-18",
             "names": 1
           },
           "net": {
-            "ip": "141.101.90.106",
+            "ip": "141.101.90.105",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -4589,13 +3452,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:03Z",
+          "at": "2026-11-02T13:27:08Z",
           "cost": {
-            "hybrid": 18.5,
-            "classical": 16,
-            "hybrid_median": 28.5,
-            "classical_median": 22.6,
-            "rtt": 7.9,
+            "hybrid": 21.5,
+            "classical": 17.8,
+            "hybrid_median": 49.4,
+            "classical_median": 51.3,
+            "rtt": 7.2,
             "n": [
               10,
               10
@@ -4630,33 +3493,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 5
             }
-          ],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          ]
         },
         {
           "name": "Contentsquare",
@@ -4697,13 +3534,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000",
           "front": "other",
           "server": "vercel",
-          "at": "2026-10-15T22:06:07Z",
+          "at": "2026-11-02T13:27:12Z",
           "cost": {
-            "hybrid": 17.5,
-            "classical": 15.8,
-            "hybrid_median": 19.2,
-            "classical_median": 18.8,
-            "rtt": 8.6,
+            "hybrid": 17.2,
+            "classical": 14.8,
+            "hybrid_median": 18.4,
+            "classical_median": 15.5,
+            "rtt": 8.5,
             "n": [
               10,
               10
@@ -4726,39 +3563,13 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 565112
+            "bytes": 555122
           },
           "ai": [
             "anthropic",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Dental Monitoring",
@@ -4800,13 +3611,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "other",
           "server": "apache",
-          "at": "2026-10-15T22:06:12Z",
+          "at": "2026-11-02T13:27:16Z",
           "cost": {
-            "hybrid": 30.4,
-            "classical": 32.9,
-            "hybrid_median": 34,
-            "classical_median": 34.5,
-            "rtt": 23.5,
+            "hybrid": 32.6,
+            "classical": 28.9,
+            "hybrid_median": 35.3,
+            "classical_median": 34,
+            "rtt": 22.7,
             "n": [
               10,
               10
@@ -4834,33 +3645,7 @@ window.OBSERVATOIRE = {
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "EcoVadis",
@@ -4893,7 +3678,7 @@ window.OBSERVATOIRE = {
             "names": 22
           },
           "net": {
-            "ip": "104.18.18.98",
+            "ip": "104.18.19.98",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -4901,13 +3686,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains;",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:11Z",
+          "at": "2026-11-02T13:27:16Z",
           "cost": {
             "hybrid": 18.7,
-            "classical": 14.8,
-            "hybrid_median": 21.2,
-            "classical_median": 18.2,
-            "rtt": 8.3,
+            "classical": 16.1,
+            "hybrid_median": 22.9,
+            "classical_median": 20.3,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -4932,39 +3717,13 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin,",
             "permissions": "accelerometer=(), autoplay=*, camera=(), display-capture=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), sync-xhr=(), usb=(), xr-spatial-tracking=()",
             "coop": "",
-            "bytes": 187346
+            "bytes": 191316
           },
           "ai": [
             "anthropic",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Exotec",
@@ -5005,13 +3764,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31622400",
           "front": "fastly",
           "server": "nginx",
-          "at": "2026-10-15T22:06:44Z",
+          "at": "2026-11-02T13:27:56Z",
           "cost": {
-            "hybrid": 15.4,
-            "classical": 12,
-            "hybrid_median": 19.6,
-            "classical_median": 15.1,
-            "rtt": 6.9,
+            "hybrid": 13.4,
+            "classical": 12.3,
+            "hybrid_median": 17.3,
+            "classical_median": 15.9,
+            "rtt": 6.8,
             "n": [
               10,
               10
@@ -5035,50 +3794,22 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer",
             "permissions": "",
             "coop": "",
-            "bytes": 437880
+            "bytes": 513678
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "exotec-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.166.1",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:27Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Harmattan AI",
           "host": "harmattan.ai",
           "reachable": true,
-          "pq": "partial",
-          "hits": 3,
+          "pq": "full",
+          "hits": 5,
           "tries": 5,
-          "group": "X25519",
+          "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
           "cipher": "TLS_AES_256_GCM_SHA384",
           "protocols": [
-            "tls1",
-            "tls1_1",
             "tls1_2",
             "tls1_3"
           ],
@@ -5107,15 +3838,15 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "uploadserver",
-          "at": "2026-10-15T22:06:15Z",
+          "at": "2026-11-02T13:27:21Z",
           "cost": {
-            "hybrid": 18.7,
-            "classical": 14.9,
-            "hybrid_median": 23.8,
-            "classical_median": 21.3,
+            "hybrid": 17.9,
+            "classical": 15,
+            "hybrid_median": 23.2,
+            "classical_median": 23.1,
             "rtt": 8.9,
             "n": [
-              6,
+              10,
               10
             ]
           },
@@ -5138,33 +3869,7 @@ window.OBSERVATOIRE = {
             "anthropic",
             "mistral"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "iad",
@@ -5205,16 +3910,16 @@ window.OBSERVATOIRE = {
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
           },
-          "hsts": "",
+          "hsts": "max-age=300",
           "front": "cloudfront",
           "server": "nginx/1.26.3",
-          "at": "2026-10-15T22:07:09Z",
+          "at": "2026-11-02T13:28:19Z",
           "cost": {
-            "hybrid": 13.8,
-            "classical": 13.5,
+            "hybrid": 13.1,
+            "classical": 12.7,
             "hybrid_median": 15.8,
-            "classical_median": 16.4,
-            "rtt": 7.6,
+            "classical_median": 15.2,
+            "rtt": 8.3,
             "n": [
               10,
               10
@@ -5226,42 +3931,18 @@ window.OBSERVATOIRE = {
             "csp": "",
             "csp_ro": "",
             "meta_csp": "",
-            "scripts": [],
+            "scripts": [
+              "assets.iadfrance.fr"
+            ],
             "xfo": "",
             "xcto": "",
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 230443
+            "bytes": 238664
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Ivalua",
@@ -5294,21 +3975,21 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "141.193.213.20",
-            "asn": "209242",
+            "ip": "162.159.134.42",
+            "asn": "13335",
             "cc": "US",
-            "as": "CLOUDFLARESPECTRUM - Cloudflare London, LLC, US"
+            "as": "CLOUDFLARENET - Cloudflare, Inc., US"
           },
-          "hsts": "max-age=63072000",
+          "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:48Z",
+          "at": "2026-11-02T13:27:57Z",
           "cost": {
-            "hybrid": 16.8,
-            "classical": 16.2,
-            "hybrid_median": 20.2,
-            "classical_median": 18,
-            "rtt": 8.6,
+            "hybrid": 18.5,
+            "classical": 16.8,
+            "hybrid_median": 25.1,
+            "classical_median": 18.2,
+            "rtt": 9,
             "n": [
               10,
               10
@@ -5326,44 +4007,18 @@ window.OBSERVATOIRE = {
               "player.vimeo.com",
               "www.ivalua.com"
             ],
-            "xfo": "SAMEORIGIN",
+            "xfo": "",
             "xcto": "nosniff",
-            "referrer": "strict-origin-when-cross-origin",
-            "permissions": "geolocation=(), midi=(), sync-xhr=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), fullscreen=(self), payment=()",
+            "referrer": "",
+            "permissions": "",
             "coop": "",
-            "bytes": 243516
+            "bytes": 254649
           },
           "ai": [
             "openai",
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "none",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Ledger",
@@ -5405,13 +4060,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:51Z",
+          "at": "2026-11-02T13:28:01Z",
           "cost": {
-            "hybrid": 16.6,
-            "classical": 17.7,
-            "hybrid_median": 20.8,
-            "classical_median": 19.1,
-            "rtt": 8.7,
+            "hybrid": 18,
+            "classical": 13.8,
+            "hybrid_median": 20.9,
+            "classical_median": 21.8,
+            "rtt": 8.9,
             "n": [
               10,
               10
@@ -5435,44 +4090,18 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 345010
+            "bytes": 271535
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": "testing",
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Lydia",
           "host": "www.lydia-app.com",
           "life": "banques",
           "reachable": true,
-          "pq": "partial",
-          "hits": 2,
+          "pq": "full",
+          "hits": 5,
           "tries": 5,
           "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
@@ -5493,8 +4122,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Google Trust Services",
-            "from": "2026-09-01",
-            "until": "2026-11-30",
+            "from": "2026-10-25",
+            "until": "2027-01-23",
             "names": 2
           },
           "net": {
@@ -5506,15 +4135,15 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "google",
           "server": "nginx",
-          "at": "2026-10-15T22:06:53Z",
+          "at": "2026-11-02T13:28:06Z",
           "cost": {
-            "hybrid": 18.8,
-            "classical": 15.3,
-            "hybrid_median": 24.5,
-            "classical_median": 21.3,
-            "rtt": 8.1,
+            "hybrid": 15.3,
+            "classical": 14.3,
+            "hybrid_median": 20.7,
+            "classical_median": 16.9,
+            "rtt": 8,
             "n": [
-              6,
+              10,
               10
             ]
           },
@@ -5534,38 +4163,12 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 91986
+            "bytes": 112780
           },
           "ai": [
             "openai"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "ManoMano",
@@ -5598,7 +4201,7 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "172.64.153.2",
+            "ip": "104.18.34.254",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -5606,13 +4209,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:53Z",
+          "at": "2026-11-02T13:28:07Z",
           "cost": {
-            "hybrid": 16.3,
-            "classical": 14.6,
-            "hybrid_median": 23.1,
-            "classical_median": 16.7,
-            "rtt": 9,
+            "hybrid": 16,
+            "classical": 13.7,
+            "hybrid_median": 24.8,
+            "classical_median": 18.3,
+            "rtt": 9.6,
             "n": [
               10,
               10
@@ -5621,7 +4224,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://www.manomano.fr/",
             "code": 200,
-            "csp": "frame-ancestors 'self' https://*.manomano.fr *.manomano.com *.manomano.tech; script-src 'nonce-MjM5MTI5MjEtNWIxMC00NTA5LTg3ODItOGUwMWQ4MGJhMmY5' 'strict-dynamic' 'self' 'sha256-3NLv9noPeilbdo9psOAjUxvQheNTsUubZ0XDi3qpsmg=' 'sha256-mOD3IyhE+LFUH7xW73lbDY1seVd8buyPdkj+Thxu+hk=' https:; object-src 'none'; base-uri 'none'; report-uri https://manomano.uriports.com/reports; report-to default",
+            "csp": "frame-ancestors 'self' https://*.manomano.fr *.manomano.com *.manomano.tech; script-src 'nonce-YjZhZDRiNjgtYTNhZS00MmIwLWEyY2ItZTFjODJjYWRlMGRj' 'strict-dynamic' 'self' 'sha256-3NLv9noPeilbdo9psOAjUxvQheNTsUubZ0XDi3qpsmg=' 'sha256-mOD3IyhE+LFUH7xW73lbDY1seVd8buyPdkj+Thxu+hk=' https:; object-src 'none'; base-uri 'none'; report-uri https://manomano.uriports.com/reports; report-to default",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -5633,36 +4236,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "same-origin-allow-popups",
-            "bytes": 414788
+            "bytes": 411785
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Mirakl",
@@ -5693,7 +4270,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "63.176.8.218",
+            "ip": "35.157.26.135",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -5701,7 +4278,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "other",
           "server": "netlify",
-          "at": "2026-10-15T22:06:57Z",
+          "at": "2026-11-02T13:28:09Z",
           "cost": null,
           "page": {
             "final": "https://www.mirakl.com/",
@@ -5717,40 +4294,14 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 222469
+            "bytes": 222600
           },
           "ai": [
             "openai",
             "anthropic",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Mistral AI",
@@ -5791,13 +4342,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15552000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:09:38Z",
+          "at": "2026-11-02T13:27:23Z",
           "cost": {
-            "hybrid": 16.1,
-            "classical": 13,
-            "hybrid_median": 20.3,
-            "classical_median": 17.3,
-            "rtt": 8.8,
+            "hybrid": 20.4,
+            "classical": 17.1,
+            "hybrid_median": 22.6,
+            "classical_median": 22.1,
+            "rtt": 8.5,
             "n": [
               10,
               10
@@ -5806,7 +4357,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://mistral.ai/",
             "code": 200,
-            "csp": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://client.axept.io https://api.axept.io https://static.axept.io https://js-eu1.hs-scripts.com https://js-eu1.hscollectedforms.net https://js-eu1.hs-analytics.net https://js-eu1.hs-banner.com https://forms-eu1.hscollectedforms.net https://cdn.jsdelivr.net https://static.claydar.com https://cdn.claydar.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://fonts.googleapis.com https://fonts.axept.io; font-src 'self' https://fonts.gstatic.com https://fonts.axept.io; img-src 'self' data: blob: https://cms.globalaegis.net https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://axeptio.imgix.net https://track-eu1.hubspot.com https://favicons.axept.io https://i.ytimg.com https://www.google.com https://www.google.fr https://www.google.de https://www.google.co.uk https://www.google.es https://www.google.it https://www.google.nl https://www.google.be https://www.google.ch https://www.google.at https://www.google.pt https://www.google.ie https://www.google.dk https://www.google.se https://www.google.no https://www.google.fi https://www.google.pl https://www.google.cz https://www.google.gr https://www.google.hu https://www.google.ro https://www.google.sk https://www.google.bg https://www.google.hr https://www.google.si https://www.google.lt https://www.google.lv https://www.google.ee https://www.google.lu https://www.google.com.tr https://www.google.ru https://www.google.com.ua https://www.google.ca https://www.google.com.mx https://www.google.com.br https://www.google.com.ar https://www.google.co.jp https://www.google.com.au https://www.google.co.nz https://www.google.co.in https://www.google.com.sg https://www.google.com.hk https://www.google.co.kr https://www.google.com.my https://www.google.co.th https://www.google.co.id https://www.google.com.ph https://www.google.com.vn https://www.google.co.za https://www.google.ae https://www.google.com.sa https://www.google.co.il https://www.google.com.eg; media-src 'self' https://cms.globalaegis.net blob:; connect-src 'self' https://cms.globalaegis.net https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.googletagmanager.com https://client.axept.io https://static.axept.io https://api.axept.io https://forms-eu1.hscollectedforms.net https://ingesteer.services-prod.nsvcs.net https://api.claydar.com https://pagead2.googlesyndication.com https://stats.g.doubleclick.net https://www.google.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://app.storylane.io https://spaces-blogs-staging-mistral-01d83c8e.koyeb.app/ https://*.demo.emmi.ai/ https://challenges.cloudflare.com https://ml4-blog-widgets.netlify.app; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://chat.mistral.ai; frame-ancestors 'none'; upgrade-insecure-requests",
+            "csp": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://client.axept.io https://api.axept.io https://static.axept.io https://js-eu1.hs-scripts.com https://js-eu1.hscollectedforms.net https://js-eu1.hs-analytics.net https://js-eu1.hs-banner.com https://forms-eu1.hscollectedforms.net https://cdn.jsdelivr.net https://static.claydar.com https://cdn.claydar.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://fonts.googleapis.com https://fonts.axept.io; font-src 'self' https://fonts.gstatic.com https://fonts.axept.io; img-src 'self' data: blob: https://cms.globalaegis.net https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://axeptio.imgix.net https://track-eu1.hubspot.com https://favicons.axept.io https://i.ytimg.com https://www.google.com https://www.google.fr https://www.google.de https://www.google.co.uk https://www.google.es https://www.google.it https://www.google.nl https://www.google.be https://www.google.ch https://www.google.at https://www.google.pt https://www.google.ie https://www.google.dk https://www.google.se https://www.google.no https://www.google.fi https://www.google.pl https://www.google.cz https://www.google.gr https://www.google.hu https://www.google.ro https://www.google.sk https://www.google.bg https://www.google.hr https://www.google.si https://www.google.lt https://www.google.lv https://www.google.ee https://www.google.lu https://www.google.com.tr https://www.google.ru https://www.google.com.ua https://www.google.ca https://www.google.com.mx https://www.google.com.br https://www.google.com.ar https://www.google.co.jp https://www.google.com.au https://www.google.co.nz https://www.google.co.in https://www.google.com.sg https://www.google.com.hk https://www.google.co.kr https://www.google.com.my https://www.google.co.th https://www.google.co.id https://www.google.com.ph https://www.google.com.vn https://www.google.co.za https://www.google.ae https://www.google.com.sa https://www.google.co.il https://www.google.com.eg https://pagead2.googlesyndication.com https://stats.g.doubleclick.net https://googleads.g.doubleclick.net https://td.doubleclick.net; media-src 'self' https://cms.globalaegis.net blob:; connect-src 'self' https://cms.globalaegis.net https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://www.googletagmanager.com https://client.axept.io https://static.axept.io https://api.axept.io https://forms-eu1.hscollectedforms.net https://ingesteer.services-prod.nsvcs.net https://api.claydar.com https://pagead2.googlesyndication.com https://stats.g.doubleclick.net https://www.google.com; frame-src 'self' https://www.googletagmanager.com https://td.doubleclick.net https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://app.storylane.io https://spaces-blogs-staging-mistral-01d83c8e.koyeb.app/ https://*.demo.emmi.ai/ https://challenges.cloudflare.com https://ml4-blog-widgets.netlify.app; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://chat.mistral.ai; frame-ancestors 'none'; upgrade-insecure-requests",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -5817,48 +4368,13 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "camera=(), microphone=(), geolocation=()",
             "coop": "",
-            "bytes": 336207
+            "bytes": 318503
           },
           "ai": [
             "mistral",
             "cursor"
           ],
-          "hf": [
-            {
-              "name": "mistralai",
-              "fullname": "Mistral AI_",
-              "models": 81,
-              "datasets": 4,
-              "spaces": 6,
-              "followers": 20072
-            }
-          ],
-          "mail": {
-            "mx": [
-              "mailstream-eu1.mxrecord.io"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "172.65.245.214",
-              "asn": "13335",
-              "as": "CLOUDFLARENET - Cloudflare, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:39Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Morpho",
@@ -5887,8 +4403,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Let's Encrypt",
-            "from": "2026-08-27",
-            "until": "2026-11-25",
+            "from": "2026-10-29",
+            "until": "2027-01-27",
             "names": 1
           },
           "net": {
@@ -5900,13 +4416,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "other",
           "server": "vercel",
-          "at": "2026-10-15T22:06:18Z",
+          "at": "2026-11-02T13:27:24Z",
           "cost": {
-            "hybrid": 17.5,
-            "classical": 16.6,
-            "hybrid_median": 20.8,
-            "classical_median": 17.6,
-            "rtt": 8.1,
+            "hybrid": 15.6,
+            "classical": 13.2,
+            "hybrid_median": 19.8,
+            "classical_median": 18.2,
+            "rtt": 7.3,
             "n": [
               10,
               10
@@ -5915,7 +4431,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://morpho.org/",
             "code": 200,
-            "csp": "default-src 'self'; script-src 'self' 'nonce-8z4I3xXDcfOx8glzNkaEQA==' 'strict-dynamic'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://secure.gravatar.com https://cdn.morpho.org https://*.public.blob.vercel-storage.com; font-src 'self' data:; media-src 'self' https://*.public.blob.vercel-storage.com; connect-src 'self' https://api.morpho.org https://*.public.blob.vercel-storage.com https://s2620792.us-west-2a.betterstackdata.com; frame-src 'self' https://*.framer.app https://*.figma.site https://platform.twitter.com; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; report-uri https://s2620792.us-west-2a.betterstackdata.com/api/2620792/security/?sentry_key=RQszR15fqLGZZAwiiDRKn6E6; report-to csp-endpoint",
+            "csp": "default-src 'self'; script-src 'self' 'nonce-ho+IUQVteDkPMWOMh8SiXw==' 'strict-dynamic'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://secure.gravatar.com https://cdn.morpho.org https://*.public.blob.vercel-storage.com; font-src 'self' data:; media-src 'self' https://*.public.blob.vercel-storage.com; connect-src 'self' https://api.morpho.org https://*.public.blob.vercel-storage.com https://s2620792.us-west-2a.betterstackdata.com; frame-src 'self' https://*.framer.app https://*.figma.site https://platform.twitter.com; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; report-uri https://s2620792.us-west-2a.betterstackdata.com/api/2620792/security/?sentry_key=RQszR15fqLGZZAwiiDRKn6E6; report-to csp-endpoint",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [],
@@ -5924,49 +4440,23 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "geolocation=(), microphone=(), camera=(), payment=()",
             "coop": "same-origin",
-            "bytes": 802903
+            "bytes": 801233
           },
           "ai": [
             "openai",
             "anthropic",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "NW Groupe",
           "host": "www.nw-groupe.com",
           "reachable": true,
-          "pq": "none",
-          "hits": 0,
+          "pq": "full",
+          "hits": 5,
           "tries": 5,
-          "group": "X25519",
+          "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
           "cipher": "TLS_AES_256_GCM_SHA384",
           "protocols": [
@@ -5974,6 +4464,7 @@ window.OBSERVATOIRE = {
             "tls1_3"
           ],
           "groups": [
+            "X25519MLKEM768",
             "X25519",
             "secp256r1",
             "secp384r1"
@@ -5997,8 +4488,18 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "apache",
-          "at": "2026-10-15T22:06:59Z",
-          "cost": null,
+          "at": "2026-11-02T13:28:10Z",
+          "cost": {
+            "hybrid": 20.1,
+            "classical": 21.6,
+            "hybrid_median": 23.4,
+            "classical_median": 24,
+            "rtt": 11.6,
+            "n": [
+              10,
+              10
+            ]
+          },
           "page": {
             "final": "https://www.nw-groupe.com/fr/",
             "code": 200,
@@ -6019,33 +4520,7 @@ window.OBSERVATOIRE = {
             "openai",
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "nwgroupe-com0e.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.91.162",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:53Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Pasqal",
@@ -6086,7 +4561,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "nginx",
-          "at": "2026-10-15T22:06:59Z",
+          "at": "2026-11-02T13:28:10Z",
           "cost": null,
           "page": {
             "final": "https://www.pasqal.com/",
@@ -6104,38 +4579,12 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 297644
+            "bytes": 291811
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "pasqal-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.164.0",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:54Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "PayFit",
@@ -6170,7 +4619,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "99.86.109.17",
+            "ip": "99.86.109.115",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -6178,13 +4627,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudfront",
           "server": "amazons3",
-          "at": "2026-10-15T22:06:27Z",
+          "at": "2026-11-02T13:27:31Z",
           "cost": {
-            "hybrid": 13.9,
-            "classical": 12.9,
-            "hybrid_median": 15.3,
-            "classical_median": 14,
-            "rtt": 8,
+            "hybrid": 13.7,
+            "classical": 15.8,
+            "hybrid_median": 23.6,
+            "classical_median": 17.7,
+            "rtt": 7.8,
             "n": [
               10,
               10
@@ -6202,39 +4651,13 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 1016
+            "bytes": 1015
           },
           "ai": [
             "openai",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Pennylane",
@@ -6276,13 +4699,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:03Z",
+          "at": "2026-11-02T13:27:07Z",
           "cost": {
-            "hybrid": 16.2,
-            "classical": 14.4,
-            "hybrid_median": 20.9,
-            "classical_median": 16,
-            "rtt": 9.2,
+            "hybrid": 16.7,
+            "classical": 16.6,
+            "hybrid_median": 26.3,
+            "classical_median": 18.9,
+            "rtt": 8.4,
             "n": [
               10,
               10
@@ -6291,7 +4714,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://app.pennylane.com/auth/login",
             "code": 200,
-            "csp": "default-src 'self'; base-uri 'self'; connect-src 'self' https: blob: https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://*.screeb.app wss://*.screeb.app https://track-eu.customer.io https://*.api.gist.build https://*.cloud.gist.build https://sentry.io wss://ws-eu.pusher.com wss://*.pennylane.com wss://*.intercom.io wss://*.intercom-messenger.com https://api.segment.io https://cdn.segment.com https://*.intercom.io https://*.eu.intercom.io https://rum.browser-intake-datadoghq.eu https://browser-intake-datadoghq.eu https://in.eu2.segmentapis.com https://events.eu1.segmentapis.com https://*.amplitude.com; child-src 'self' data: https://demo.arcade.software https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://jeancaisse-20190924.s3.eu-west-1.amazonaws.com https://challenges.cloudflare.com https://app.datadoghq.eu/ https://www.figma.com https://*.githubusercontent.com https://*.google.com blob: https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://www.loom.com https://metabase.pennylane.tech https://metabase.pennylane.com https://*.pennylane.com https://identity.swan.io https://stage.teledec.fr https://www.teledec.fr https://form.typeform.com/ https://www.youtube.com https://m.youtube.com https://content.pennylane.com https://pay-sandbox.gocardless.com https://pay.gocardless.com https://js.stripe.com https://hooks.stripe.com https://view.officeapps.live.com https://checkoutshopper-test.adyen.com https://checkoutshopper-live.adyen.com https://pal-test.adyen.com https://pal-live.adyen.com https://app.vialink.biz https://app.eu.vialink.biz https://app.vialink.fr https://app.eu.vialink.fr; font-src 'self' http: https: data: blob:; frame-src 'self' data: https://demo.arcade.software https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://jeancaisse-20190924.s3.eu-west-1.amazonaws.com https://challenges.cloudflare.com https://app.datadoghq.eu/ https://www.figma.com https://renderer.gist.build https://code.gist.build https://*.githubusercontent.com https://*.google.com blob: https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://www.loom.com https://metabase.pennylane.tech https://metabase.pennylane.com https://*.pennylane.com https://identity.swan.io https://oauth.swan.io https://mandate-v2.sandbox.swan.io https://mandate-v2.swan.io https://stage.teledec.fr https://www.teledec.fr https://form.typeform.com/ https://www.youtube.com https://m.youtube.com https://content.pennylane.com https://pay-sandbox.gocardless.com https://pay.gocardless.com https://*.screeb.app wss://*.screeb.app https://js.stripe.com https://hooks.stripe.com https://view.officeapps.live.com https://mandate-previews.gocardless.com/ https://apps.universign.com https://apps.alpha.universign.com https://checkoutshopper-test.adyen.com https://checkoutshopper-live.adyen.com https://pal-test.adyen.com https://pal-live.adyen.com https://app.vialink.biz https://app.eu.vialink.biz https://app.vialink.fr https://app.eu.vialink.fr https://*.wlp-acs.com; frame-ancestors 'self' data: https://business.foodetective.co https://business.staging.foodtekk.com https://renderer.gist.build https://code.gist.build https://*.google.com https://*.pennylane.com blob:; img-src 'self' https: blob: data: https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://track-eu.customer.io https://*.api.gist.build https://*.cloud.gist.build https://*.amplitude.com; media-src 'self' data: https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://*.amplitude.com; object-src 'self' mailto: https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://jeancaisse-20190924.s3.eu-west-1.amazonaws.com https://portail.e-facture.net http://www.lei-france.insee.fr https://www.lei-france.insee.fr https://invoice.stripe.com https://mandate-v2.sandbox.swan.io https://mandate-v2.swan.io https://mandate-previews.gocardless.com/; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline' https: http: https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://cdn.segment.com https://www.figma.com https://assets.customer.io https://code.gist.build https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://unpkg.com https://*.screeb.app wss://*.screeb.app https://form.typeform.com/ https://www.youtube.com https://m.youtube.com https://appsforoffice.microsoft.com https://*.amplitude.com 'nonce-OcYkLPuAHiJPUmsJ0Vm8Cg=='; script-src-attr 'unsafe-inline' 'nonce-OcYkLPuAHiJPUmsJ0Vm8Cg=='; script-src-elem 'self' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline' https: http: https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://cdn.segment.com https://www.figma.com https://assets.customer.io https://code.gist.build https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://unpkg.com https://*.screeb.app wss://*.screeb.app https://form.typeform.com/ https://www.youtube.com https://m.youtube.com https://appsforoffice.microsoft.com 'nonce-OcYkLPuAHiJPUmsJ0Vm8Cg=='; style-src 'self' 'unsafe-inline' https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://cdn.jsdelivr.net/ https://ka-p.fontawesome.com https://use.fontawesome.com https://fonts.googleapis.com https://www.gstatic.com https://*.typekit.net https://api.pagescreen.io https://code.gist.build https://*.amplitude.com; style-src-elem 'self' data: 'unsafe-inline' https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://cdn.jsdelivr.net/ https://ka-p.fontawesome.com https://use.fontawesome.com https://fonts.googleapis.com https://www.gstatic.com https://*.typekit.net https://api.pagescreen.io https://code.gist.build https://jeanterpret.pennylane-staging.com https://jeanterpret.pennylane.com; worker-src 'self' blob:; report-uri https://pennylane.report-uri.com/r/d/csp/enforce",
+            "csp": "default-src 'self'; base-uri 'self'; connect-src 'self' https: blob: https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://*.screeb.app wss://*.screeb.app https://track-eu.customer.io https://*.api.gist.build https://*.cloud.gist.build https://sentry.io wss://ws-eu.pusher.com wss://*.pennylane.com wss://*.intercom.io wss://*.intercom-messenger.com https://api.segment.io https://cdn.segment.com https://*.intercom.io https://*.eu.intercom.io https://rum.browser-intake-datadoghq.eu https://browser-intake-datadoghq.eu https://in.eu2.segmentapis.com https://events.eu1.segmentapis.com https://*.amplitude.com; child-src 'self' data: https://demo.arcade.software https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://jeancaisse-20190924.s3.eu-west-1.amazonaws.com https://challenges.cloudflare.com https://app.datadoghq.eu/ https://www.figma.com https://*.githubusercontent.com https://*.google.com blob: https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://www.loom.com https://metabase.pennylane.tech https://metabase.pennylane.com https://*.pennylane.com https://storybook.pennylane-staging.com https://identity.swan.io https://stage.teledec.fr https://www.teledec.fr https://form.typeform.com/ https://www.youtube.com https://m.youtube.com https://content.pennylane.com https://pay-sandbox.gocardless.com https://pay.gocardless.com https://js.stripe.com https://hooks.stripe.com https://view.officeapps.live.com https://checkoutshopper-test.adyen.com https://checkoutshopper-live.adyen.com https://pal-test.adyen.com https://pal-live.adyen.com https://app.vialink.biz https://app.eu.vialink.biz https://app.vialink.fr https://app.eu.vialink.fr; font-src 'self' http: https: data: blob:; frame-src 'self' data: https://demo.arcade.software https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://jeancaisse-20190924.s3.eu-west-1.amazonaws.com https://challenges.cloudflare.com https://app.datadoghq.eu/ https://www.figma.com https://renderer.gist.build https://code.gist.build https://*.githubusercontent.com https://*.google.com blob: https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://www.loom.com https://metabase.pennylane.tech https://metabase.pennylane.com https://*.pennylane.com https://storybook.pennylane-staging.com https://identity.swan.io https://oauth.swan.io https://mandate-v2.sandbox.swan.io https://mandate-v2.swan.io https://stage.teledec.fr https://www.teledec.fr https://form.typeform.com/ https://www.youtube.com https://m.youtube.com https://content.pennylane.com https://pay-sandbox.gocardless.com https://pay.gocardless.com https://*.screeb.app wss://*.screeb.app https://js.stripe.com https://hooks.stripe.com https://view.officeapps.live.com https://mandate-previews.gocardless.com/ https://apps.universign.com https://apps.alpha.universign.com https://checkoutshopper-test.adyen.com https://checkoutshopper-live.adyen.com https://pal-test.adyen.com https://pal-live.adyen.com https://app.vialink.biz https://app.eu.vialink.biz https://app.vialink.fr https://app.eu.vialink.fr https://*.wlp-acs.com; frame-ancestors 'self' data: https://business.foodetective.co https://business.staging.foodtekk.com https://renderer.gist.build https://code.gist.build https://*.google.com https://*.pennylane.com blob:; img-src 'self' https: blob: data: https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://track-eu.customer.io https://*.api.gist.build https://*.cloud.gist.build https://*.amplitude.com; media-src 'self' data: https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://*.amplitude.com; object-src 'self' mailto: https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://jeancaisse-20190924.s3.eu-west-1.amazonaws.com https://portail.e-facture.net http://www.lei-france.insee.fr https://www.lei-france.insee.fr https://invoice.stripe.com https://mandate-v2.sandbox.swan.io https://mandate-v2.swan.io https://mandate-previews.gocardless.com/; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline' https: http: https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://cdn.segment.com https://www.figma.com https://assets.customer.io https://code.gist.build https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://unpkg.com https://*.screeb.app wss://*.screeb.app https://form.typeform.com/ https://www.youtube.com https://m.youtube.com https://appsforoffice.microsoft.com https://*.amplitude.com 'nonce-xWaeNWr1afInvy6BoVglIg=='; script-src-attr 'unsafe-inline' 'nonce-xWaeNWr1afInvy6BoVglIg=='; script-src-elem 'self' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline' https: http: https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://cdn.segment.com https://www.figma.com https://assets.customer.io https://code.gist.build https://js.intercomcdn.com https://widget.intercom.io https://intercom-sheets.com https://video-messages.intercomcdn.com https://unpkg.com https://*.screeb.app wss://*.screeb.app https://form.typeform.com/ https://www.youtube.com https://m.youtube.com https://appsforoffice.microsoft.com 'nonce-xWaeNWr1afInvy6BoVglIg=='; style-src 'self' 'unsafe-inline' https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://cdn.jsdelivr.net/ https://ka-p.fontawesome.com https://use.fontawesome.com https://fonts.googleapis.com https://www.gstatic.com https://*.typekit.net https://api.pagescreen.io https://code.gist.build https://*.amplitude.com; style-src-elem 'self' data: 'unsafe-inline' https://d1sf7nqdl8wqk.cloudfront.net https://serve-cdn-assets.pennylane.workers.dev https://*.pennylane.com https://*.birdie.so/ wss://*.birdie.so https://*.birdiefly.com wss://*.birdiefly.com https://cdn.jsdelivr.net/ https://ka-p.fontawesome.com https://use.fontawesome.com https://fonts.googleapis.com https://www.gstatic.com https://*.typekit.net https://api.pagescreen.io https://code.gist.build https://jeanterpret.pennylane-staging.com https://jeanterpret.pennylane.com https://*.amplitude.com; worker-src 'self' blob:; report-uri https://pennylane.report-uri.com/r/d/csp/enforce",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -6302,40 +4725,14 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "accelerometer=(self), ambient-light-sensor=(), autoplay=(self), camera=(self), encrypted-media=(), fullscreen=(self \"https://*.youtube.com\"), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(self), midi=(), payment=(self \"https://checkout.stripe.com\" \"https://hooks.stripe.com\" \"https://js.stripe.com\"), picture-in-picture=(self \"https://*.youtube.com\"), usb=(self)",
             "coop": "",
-            "bytes": 15111
+            "bytes": 15292
           },
           "ai": [
             "openai",
             "anthropic",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Pigment",
@@ -6363,8 +4760,8 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-09-02",
-            "until": "2026-12-01",
+            "from": "2026-10-31",
+            "until": "2027-01-29",
             "names": 1
           },
           "net": {
@@ -6376,13 +4773,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:07:00Z",
+          "at": "2026-11-02T13:28:13Z",
           "cost": {
-            "hybrid": 15.1,
-            "classical": 14.1,
-            "hybrid_median": 19.5,
-            "classical_median": 16.9,
-            "rtt": 9.3,
+            "hybrid": 18.2,
+            "classical": 15.5,
+            "hybrid_median": 27.2,
+            "classical_median": 17.5,
+            "rtt": 8.3,
             "n": [
               10,
               10
@@ -6407,7 +4804,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 431978
+            "bytes": 432228
           },
           "ai": [
             "openai",
@@ -6423,33 +4820,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 6
             }
-          ],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": "enforce",
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          ]
         },
         {
           "name": "Qonto",
@@ -6484,7 +4855,7 @@ window.OBSERVATOIRE = {
             "names": 9
           },
           "net": {
-            "ip": "13.227.173.34",
+            "ip": "13.227.173.27",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -6492,13 +4863,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudfront",
           "server": "amazons3",
-          "at": "2026-10-15T22:06:27Z",
+          "at": "2026-11-02T13:27:31Z",
           "cost": {
-            "hybrid": 13.3,
+            "hybrid": 15.5,
             "classical": 12.7,
-            "hybrid_median": 15.4,
-            "classical_median": 15.4,
-            "rtt": 8.3,
+            "hybrid_median": 20,
+            "classical_median": 15.5,
+            "rtt": 7.9,
             "n": [
               10,
               10
@@ -6516,40 +4887,14 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 25256
+            "bytes": 29307
           },
           "ai": [
             "openai",
             "anthropic",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Shift Technology",
@@ -6582,7 +4927,7 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "199.60.103.31",
+            "ip": "199.60.103.225",
             "asn": "209242",
             "cc": "US",
             "as": "CLOUDFLARESPECTRUM - Cloudflare London, LLC, US"
@@ -6590,13 +4935,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:07:05Z",
+          "at": "2026-11-02T13:28:18Z",
           "cost": {
-            "hybrid": 20.6,
-            "classical": 19.4,
-            "hybrid_median": 24.4,
-            "classical_median": 20.9,
-            "rtt": 9.1,
+            "hybrid": 19.5,
+            "classical": 17.3,
+            "hybrid_median": 22.5,
+            "classical_median": 22.3,
+            "rtt": 8.4,
             "n": [
               10,
               10
@@ -6621,38 +4966,12 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer-when-downgrade",
             "permissions": "",
             "coop": "",
-            "bytes": 170271
+            "bytes": 170390
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Sorare",
@@ -6694,13 +5013,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=2592000; includesubdomains",
           "front": "cloudfront",
           "server": "cloudfront",
-          "at": "2026-10-15T22:06:45Z",
+          "at": "2026-11-02T13:27:51Z",
           "cost": {
-            "hybrid": 14.4,
-            "classical": 13.3,
-            "hybrid_median": 18,
-            "classical_median": 15.2,
-            "rtt": 8.5,
+            "hybrid": 14.2,
+            "classical": 14,
+            "hybrid_median": 18.1,
+            "classical_median": 16.4,
+            "rtt": 9,
             "n": [
               10,
               10
@@ -6718,38 +5037,12 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "camera=(), geolocation=(), microphone=()",
             "coop": "same-origin-allow-popups",
-            "bytes": 21273
+            "bytes": 21129
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Spendesk",
@@ -6791,13 +5084,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:03Z",
+          "at": "2026-11-02T13:27:07Z",
           "cost": {
-            "hybrid": 16.9,
-            "classical": 14.7,
-            "hybrid_median": 18,
-            "classical_median": 18.7,
-            "rtt": 8.7,
+            "hybrid": 16.2,
+            "classical": 14.5,
+            "hybrid_median": 21.1,
+            "classical_median": 19.7,
+            "rtt": 8.2,
             "n": [
               10,
               10
@@ -6807,7 +5100,7 @@ window.OBSERVATOIRE = {
             "final": "https://app.spendesk.com/app",
             "code": 200,
             "csp": "frame-ancestors 'self' https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com chrome-extension://dipeehgoehnglgojdgfmndjemdfepkeb https://*.marqeta.com https://app.storyblok.com https://www.spendesk.com",
-            "csp_ro": "connect-src 'self' https://api.spendesk.com https://logs.browser-intake-datadoghq.eu https://rum.browser-intake-datadoghq.eu https://browser-intake-datadoghq.eu https://api.segment.io https://cdn.segment.com https://api.amplitude.com https://gs.eu.amplitude.com https://api-sr.eu.amplitude.com https://api.storyblok.com https://api-js.mixpanel.com https://api-iam.intercom.io https://d3r43gyd9zmfep.cloudfront.net wss://nexus-websocket-a.intercom.io https://bat.bing.com https://in.hotjar.com https://*.trychameleon.com https://forms.hubspot.com https://eligibility.wootric.com https://stats.g.doubleclick.net https://www.google-analytics.com https://*.google-analytics.com https://*.spendesk.tools https://*.spendesk.com https://spx-staging-dev-i18n.s3.eu-west-1.amazonaws.com https://spx-staging-dev.s3.eu-west-1.amazonaws.com https://spx-production-i18n.s3.eu-west-1.amazonaws.com https://spx-production.s3.eu-west-1.amazonaws.com https://s3.eu-west-1.amazonaws.com/spx-staging https://s3.eu-west-1.amazonaws.com/spx-production https://app.satismeter.com https://accounts.google.com https://px.ads.linkedin.com https://widgets.marqeta.com https://*.usercentrics.eu https://login.microsoftonline.com/* https://sr-client-cfg.eu.amplitude.com https://maps.googleapis.com https://places.googleapis.com https://maps.gstatic.com https://assets.duffel.com https://api.duffel.com wss://chat.stream-io-api.com/connect https://chat.stream-io-api.com 'report-sample';script-src 'self' https://*.marqeta.com https://js.intercomcdn.com https://*.google-analytics.com https://cdn.wootric.com https://fast.trychameleon.com https://fastly.trychameleon.com https://widget.intercom.io https://cdn.mxpnl.com https://cdn.segment.com https://cdn.amplitude.com https://cdn.eu.amplitude.com https://tracking.g2crowd.com https://scout-cdn.salesloft.com https://serve.albacross.com https://js.hsforms.net https://d3r43gyd9zmfep.cloudfront.net https://cdn-3.convertexperiments.com https://www.googleoptimize.com https://apis.google.com https://www.google.com https://accounts.google.com https://maps.googleapis.com https://maps.gstatic.com https://analytics.twitter.com https://bat.bing.com https://cdn.heapanalytics.com https://connect.facebook.net https://*.g.doubleclick.net https://js.hs-analytics.net https://js.hs-banner.com https://*.hs-scripts.com https://js.hsleadflows.net https://script.hotjar.com https://snap.licdn.com https://static.ads-twitter.com https://static.hotjar.com https://www.googleadservices.com https://*.googletagmanager.com https://unpkg.com https://*.spendesk.com https://app.satismeter.com https://*.usercentrics.eu https://assets.duffel.com 'nonce-mBsOlxfvP94dzSw8wu7a0' 'report-sample';worker-src 'self' blob:;frame-ancestors 'self' https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com chrome-extension://dipeehgoehnglgojdgfmndjemdfepkeb https://*.marqeta.com https://app.storyblok.com https://www.spendesk.com;report-uri https://api.spendesk.com/security/report/csp;block-all-mixed-content",
+            "csp_ro": "connect-src 'self' https://api.spendesk.com https://logs.browser-intake-datadoghq.eu https://rum.browser-intake-datadoghq.eu https://browser-intake-datadoghq.eu https://api.segment.io https://cdn.segment.com https://api.amplitude.com https://gs.eu.amplitude.com https://api-sr.eu.amplitude.com https://api.storyblok.com https://api-js.mixpanel.com https://api-iam.intercom.io https://d3r43gyd9zmfep.cloudfront.net wss://nexus-websocket-a.intercom.io https://bat.bing.com https://in.hotjar.com https://*.trychameleon.com https://forms.hubspot.com https://eligibility.wootric.com https://stats.g.doubleclick.net https://www.google-analytics.com https://*.google-analytics.com https://*.spendesk.tools https://*.spendesk.com https://spx-staging-dev-i18n.s3.eu-west-1.amazonaws.com https://spx-staging-dev.s3.eu-west-1.amazonaws.com https://spx-production-i18n.s3.eu-west-1.amazonaws.com https://spx-production.s3.eu-west-1.amazonaws.com https://s3.eu-west-1.amazonaws.com/spx-staging https://s3.eu-west-1.amazonaws.com/spx-production https://app.satismeter.com https://accounts.google.com https://px.ads.linkedin.com https://widgets.marqeta.com https://*.usercentrics.eu https://login.microsoftonline.com/* https://sr-client-cfg.eu.amplitude.com https://maps.googleapis.com https://places.googleapis.com https://maps.gstatic.com https://assets.duffel.com https://api.duffel.com wss://chat.stream-io-api.com/connect https://chat.stream-io-api.com 'report-sample';script-src 'self' https://*.marqeta.com https://js.intercomcdn.com https://*.google-analytics.com https://cdn.wootric.com https://fast.trychameleon.com https://fastly.trychameleon.com https://widget.intercom.io https://cdn.mxpnl.com https://cdn.segment.com https://cdn.amplitude.com https://cdn.eu.amplitude.com https://tracking.g2crowd.com https://scout-cdn.salesloft.com https://serve.albacross.com https://js.hsforms.net https://d3r43gyd9zmfep.cloudfront.net https://cdn-3.convertexperiments.com https://www.googleoptimize.com https://apis.google.com https://www.google.com https://accounts.google.com https://maps.googleapis.com https://maps.gstatic.com https://analytics.twitter.com https://bat.bing.com https://cdn.heapanalytics.com https://connect.facebook.net https://*.g.doubleclick.net https://js.hs-analytics.net https://js.hs-banner.com https://*.hs-scripts.com https://js.hsleadflows.net https://script.hotjar.com https://snap.licdn.com https://static.ads-twitter.com https://static.hotjar.com https://www.googleadservices.com https://*.googletagmanager.com https://unpkg.com https://*.spendesk.com https://app.satismeter.com https://*.usercentrics.eu https://assets.duffel.com 'nonce-8FPnTzlqvpFPu0O3tDlmU' 'report-sample';worker-src 'self' blob:;frame-ancestors 'self' https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com https://api.spendesk.com chrome-extension://dipeehgoehnglgojdgfmndjemdfepkeb https://*.marqeta.com https://app.storyblok.com https://www.spendesk.com;report-uri https://api.spendesk.com/security/report/csp;block-all-mixed-content",
             "meta_csp": "",
             "scripts": [
               "web.cmp.usercentrics.eu"
@@ -6817,38 +5110,12 @@ window.OBSERVATOIRE = {
             "referrer": "origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 46915
+            "bytes": 49835
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Swile",
@@ -6881,7 +5148,7 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "216.150.16.193",
+            "ip": "216.150.1.129",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -6889,13 +5156,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000",
           "front": "other",
           "server": "vercel",
-          "at": "2026-10-15T22:07:09Z",
+          "at": "2026-11-02T13:28:20Z",
           "cost": {
-            "hybrid": 19.2,
-            "classical": 16.5,
-            "hybrid_median": 19.8,
-            "classical_median": 18,
-            "rtt": 8.7,
+            "hybrid": 16.8,
+            "classical": 15.2,
+            "hybrid_median": 24,
+            "classical_median": 22.2,
+            "rtt": 8.4,
             "n": [
               10,
               10
@@ -6905,7 +5172,7 @@ window.OBSERVATOIRE = {
             "final": "https://www.swile.co/",
             "code": 200,
             "csp": "",
-            "csp_ro": "base-uri 'self'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://fonts.gstatic.com; form-action 'self'; frame-src 'self' https://td.doubleclick.net; connect-src 'self' https://swile-privacy.my.onetrust.com https://cdn.cookielaw.org https://static.axept.io https://api.axept.io https://client.axept.io https://swile.containers.piwik.pro https://swile.piwik.pro/ https://adservice.google.com https://googleads.g.doubleclick.net https://www.google.com; img-src 'self' blob: data: https://cdn.cookielaw.org https://static.axept.io https://axeptio.imgix.net https://www.google.fr https://www.googletagmanager.com https://fonts.gstatic.com; manifest-src 'self'; object-src 'none'; report-uri https://csp-report.browser-intake-datadoghq.eu/api/v2/logs?dd-api-key=pub1f7041eb55ec9a12eea50b161be3d8c0&dd-evp-origin=content-security-policy&ddsource=csp-report; report-to csp; script-src 'nonce-MmU5ZDhhMjUtMzgxNC00ZDI2LWFiMTgtYzIzNjdmNjRjZmVh' 'strict-dynamic' https://static.axept.io; style-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://fonts.googleapis.com",
+            "csp_ro": "base-uri 'self'; default-src 'none'; frame-ancestors 'none'; font-src 'self' https://fonts.gstatic.com; form-action 'self'; frame-src 'self' https://td.doubleclick.net; connect-src 'self' https://swile-privacy.my.onetrust.com https://cdn.cookielaw.org https://static.axept.io https://api.axept.io https://client.axept.io https://swile.containers.piwik.pro https://swile.piwik.pro/ https://adservice.google.com https://googleads.g.doubleclick.net https://www.google.com; img-src 'self' blob: data: https://cdn.cookielaw.org https://static.axept.io https://axeptio.imgix.net https://www.google.fr https://www.googletagmanager.com https://fonts.gstatic.com; manifest-src 'self'; object-src 'none'; report-uri https://csp-report.browser-intake-datadoghq.eu/api/v2/logs?dd-api-key=pub1f7041eb55ec9a12eea50b161be3d8c0&dd-evp-origin=content-security-policy&ddsource=csp-report; report-to csp; script-src 'nonce-ZDg4NmE0NGItMGUwYS00ZjhiLTliMmYtMzQ0OTM5Mzg2OTQz' 'strict-dynamic' https://static.axept.io; style-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://fonts.googleapis.com",
             "meta_csp": "",
             "scripts": [
               "player.vimeo.com",
@@ -6916,39 +5183,13 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 228064
+            "bytes": 223552
           },
           "ai": [
             "anthropic",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Veepee",
@@ -6989,13 +5230,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:07:10Z",
+          "at": "2026-11-02T13:28:23Z",
           "cost": {
-            "hybrid": 16.6,
-            "classical": 14.4,
-            "hybrid_median": 20.7,
-            "classical_median": 19.1,
-            "rtt": 9.2,
+            "hybrid": 18.2,
+            "classical": 18,
+            "hybrid_median": 23.2,
+            "classical_median": 22.2,
+            "rtt": 8.8,
             "n": [
               10,
               10
@@ -7017,7 +5258,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 614480
+            "bytes": 782842
           },
           "ai": [],
           "hf": [
@@ -7029,33 +5270,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 32
             }
-          ],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          ]
         },
         {
           "name": "Verkor",
@@ -7096,13 +5311,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:21Z",
+          "at": "2026-11-02T13:27:26Z",
           "cost": {
-            "hybrid": 17.9,
-            "classical": 16.8,
-            "hybrid_median": 19.7,
-            "classical_median": 18.5,
-            "rtt": 9.3,
+            "hybrid": 18.4,
+            "classical": 16.3,
+            "hybrid_median": 20.6,
+            "classical_median": 22,
+            "rtt": 8.9,
             "n": [
               10,
               10
@@ -7127,33 +5342,7 @@ window.OBSERVATOIRE = {
             "bytes": 100292
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "verkor-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.166.0",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:08Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Vestiaire Collective",
@@ -7186,7 +5375,7 @@ window.OBSERVATOIRE = {
             "names": 3
           },
           "net": {
-            "ip": "172.64.152.172",
+            "ip": "104.18.35.84",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -7194,13 +5383,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=2592000",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:11Z",
+          "at": "2026-11-02T13:27:15Z",
           "cost": {
-            "hybrid": 15.9,
-            "classical": 12.2,
-            "hybrid_median": 16.7,
-            "classical_median": 14.6,
-            "rtt": 8.2,
+            "hybrid": 14.8,
+            "classical": 13,
+            "hybrid_median": 21.8,
+            "classical_median": 16.6,
+            "rtt": 7.9,
             "n": [
               10,
               10
@@ -7221,38 +5410,12 @@ window.OBSERVATOIRE = {
             "referrer": "origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 277010
+            "bytes": 227789
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Voodoo",
@@ -7291,14 +5454,14 @@ window.OBSERVATOIRE = {
           },
           "hsts": "max-age=31536000",
           "front": "other",
-          "server": "framer/24ab00f",
-          "at": "2026-10-15T22:06:21Z",
+          "server": "framer/ad3cf8f",
+          "at": "2026-11-02T13:27:27Z",
           "cost": {
-            "hybrid": 19.1,
-            "classical": 18.3,
-            "hybrid_median": 27.2,
-            "classical_median": 22.3,
-            "rtt": 12.6,
+            "hybrid": 16.5,
+            "classical": 17.2,
+            "hybrid_median": 19.2,
+            "classical_median": 19,
+            "rtt": 10.7,
             "n": [
               10,
               10
@@ -7319,40 +5482,14 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 373252
+            "bytes": 372240
           },
           "ai": [
             "openai",
             "anthropic",
             "cursor"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Younited",
@@ -7381,12 +5518,12 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Let's Encrypt",
-            "from": "2026-08-31",
-            "until": "2026-11-29",
+            "from": "2026-11-01",
+            "until": "2027-01-30",
             "names": 2
           },
           "net": {
-            "ip": "150.171.109.106",
+            "ip": "150.171.109.101",
             "asn": "8075",
             "cc": "US",
             "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
@@ -7394,7 +5531,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "azure",
           "server": "",
-          "at": "2026-10-15T22:07:12Z",
+          "at": "2026-11-02T13:28:24Z",
           "cost": null,
           "page": {
             "final": "https://younited.com/fr/",
@@ -7412,36 +5549,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "accelerometer=(), geolocation=(), fullscreen=(self \"https://demo.arcade.software\"), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), display-capture=()",
             "coop": "",
-            "bytes": 212283
+            "bytes": 212487
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "younited-com.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.73.145",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:09Z"
-            }
-          }
+          "hf": []
         }
       ]
     },
@@ -7489,15 +5600,15 @@ window.OBSERVATOIRE = {
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
           },
           "hsts": "max-age=34560000; includesubdomains",
-          "front": "other",
+          "front": "akamai",
           "server": "",
-          "at": "2026-10-15T22:06:46Z",
+          "at": "2026-11-02T13:27:55Z",
           "cost": {
-            "hybrid": 19.8,
-            "classical": 19.6,
-            "hybrid_median": 26.4,
-            "classical_median": 23.2,
-            "rtt": 7.9,
+            "hybrid": 19.5,
+            "classical": 15.7,
+            "hybrid_median": 21.6,
+            "classical_median": 22.8,
+            "rtt": 7.3,
             "n": [
               10,
               10
@@ -7515,36 +5626,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 297048
+            "bytes": 301014
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail.dgfip.finances.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "145.242.11.31",
-              "asn": "34177",
-              "as": "CELESTE-AS - Celeste SAS, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH prime256v1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:36Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Service-Public",
@@ -7584,7 +5669,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:07:04Z",
+          "at": "2026-11-02T13:28:18Z",
           "cost": null,
           "page": {
             "final": "https://www.service-public.gouv.fr/",
@@ -7601,36 +5686,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=*, geolocation=(self), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=*, usb=(), xr-spatial-tracking=()",
             "coop": "same-origin-allow-popups",
-            "bytes": 53194
+            "bytes": 53169
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "relay1-c.dila.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": null,
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "185.24.187.180",
-              "asn": "60855",
-              "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:42:01Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "FranceConnect",
@@ -7671,13 +5730,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:12Z",
+          "at": "2026-11-02T13:27:16Z",
           "cost": {
-            "hybrid": 20.9,
-            "classical": 22,
-            "hybrid_median": 25,
-            "classical_median": 25.5,
-            "rtt": 13.5,
+            "hybrid": 14.7,
+            "classical": 13.3,
+            "hybrid_median": 17.6,
+            "classical_median": 18.1,
+            "rtt": 7.5,
             "n": [
               10,
               10
@@ -7697,36 +5756,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 29605
+            "bytes": 29197
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail-01.franceconnect.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "82.210.16.170",
-              "asn": "34177",
-              "as": "CELESTE-AS - Celeste SAS, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:34Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Ameli",
@@ -7754,12 +5787,12 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Sectigo Limited",
-            "from": "2025-12-02",
-            "until": "2026-12-02",
+            "from": "2026-10-26",
+            "until": "2027-05-12",
             "names": 16
           },
           "net": {
-            "ip": "141.101.90.105",
+            "ip": "141.101.90.106",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -7767,13 +5800,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:24Z",
+          "at": "2026-11-02T13:27:30Z",
           "cost": {
-            "hybrid": 18.4,
-            "classical": 15.6,
-            "hybrid_median": 23,
-            "classical_median": 38.9,
-            "rtt": 8.7,
+            "hybrid": 19.9,
+            "classical": 16.6,
+            "hybrid_median": 52.9,
+            "classical_median": 54.5,
+            "rtt": 7.3,
             "n": [
               10,
               10
@@ -7783,7 +5816,7 @@ window.OBSERVATOIRE = {
             "final": "https://www.ameli.fr/",
             "code": 200,
             "csp": "",
-            "csp_ro": "",
+            "csp_ro": "default-src 'self'; script-src 'self' https://gcfkffj.pa-cd.com Video Platform Features; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://i.vimeocdn.com; media-src https://vod-progressive.akamaized.net https://*.vimeocdn.com; frame-src Video Platform Features; frame-ancestors 'self'; child-src Video Platform Features; font-src 'self'; connect-src 'self' https://gcfkffj.pa-cd.com; report-uri /report-csp-violation; upgrade-insecure-requests",
             "meta_csp": "",
             "scripts": [
               "cdn.jsdelivr.net",
@@ -7795,36 +5828,10 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer-when-downgrade",
             "permissions": "",
             "coop": "",
-            "bytes": 88765
+            "bytes": 88820
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "assurancemaladiefr.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.166.2",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:25Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "CAF",
@@ -7851,8 +5858,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Sectigo Limited",
-            "from": "2026-04-28",
-            "until": "2026-11-12",
+            "from": "2026-10-22",
+            "until": "2027-05-08",
             "names": 2
           },
           "net": {
@@ -7863,8 +5870,8 @@ window.OBSERVATOIRE = {
           },
           "hsts": "",
           "front": "other",
-          "server": "rdwr",
-          "at": "2026-10-15T22:06:31Z",
+          "server": "",
+          "at": "2026-11-02T13:27:36Z",
           "cost": null,
           "page": {
             "final": "https://www.caf.fr/",
@@ -7878,37 +5885,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 125629
+            "bytes": 125794
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mel1.cnaf.fr",
-              "mel2.cnaf.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "91.231.174.103",
-              "asn": "204835",
-              "as": "IMS3 - Caisse Nationale des Allocations Familiales (CNAF), FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:40Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Urssaf",
@@ -7949,13 +5929,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:07:10Z",
+          "at": "2026-11-02T13:28:23Z",
           "cost": {
-            "hybrid": 26,
-            "classical": 21.5,
-            "hybrid_median": 32.8,
-            "classical_median": 26,
-            "rtt": 16.1,
+            "hybrid": 22.5,
+            "classical": 21.3,
+            "hybrid_median": 25.1,
+            "classical_median": 22.9,
+            "rtt": 14.7,
             "n": [
               10,
               10
@@ -7967,49 +5947,16 @@ window.OBSERVATOIRE = {
             "csp": "",
             "csp_ro": "",
             "meta_csp": "",
-            "scripts": [
-              "res.tmg.urssaf.fr"
-            ],
+            "scripts": [],
             "xfo": "",
             "xcto": "nosniff",
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 363387
+            "bytes": 358237
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx11.urssaf.fr",
-              "mx21.urssaf.fr",
-              "mx31.urssaf.fr",
-              "mx41.urssaf.fr",
-              "mx51.urssaf.fr",
-              "mx61.urssaf.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "91.209.25.135",
-              "asn": "48140",
-              "as": "cirtilnet - Agence Centrale Des Organismes De Securite Sociale, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:41:37Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "France Travail",
@@ -8049,7 +5996,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:07:06Z",
+          "at": "2026-11-02T13:28:16Z",
           "cost": null,
           "page": {
             "final": "https://www.francetravail.fr/accueil/",
@@ -8069,34 +6016,7 @@ window.OBSERVATOIRE = {
             "bytes": 23264
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx1.hc1819-26.eu.iphmx.com",
-              "mx2.hc1819-26.eu.iphmx.com"
-            ],
-            "provider": "cisco",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "194.165.193.234",
-              "asn": "30238",
-              "as": "AS-IRONP-VEGA - Cisco Systems Ironport Division, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:12Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "ANTS",
@@ -8135,7 +6055,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:04Z",
           "cost": null,
           "page": {
             "final": "https://ants.gouv.fr/",
@@ -8152,33 +6072,7 @@ window.OBSERVATOIRE = {
             "bytes": 222
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx1.ants.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "217.108.240.82",
-              "asn": "3215",
-              "as": "AS3215 - Orange S.A., FR"
-            },
-            "tls": {
-              "reachable": false,
-              "hybrid": false,
-              "default": "",
-              "protocol": "",
-              "at": "2026-10-16T10:41:11Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Élysée",
@@ -8211,7 +6105,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "104.18.31.248",
+            "ip": "104.18.30.248",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -8219,13 +6113,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:41Z",
+          "at": "2026-11-02T13:27:51Z",
           "cost": {
             "hybrid": 23.6,
-            "classical": 22.6,
-            "hybrid_median": 27.5,
-            "classical_median": 26.2,
-            "rtt": 9,
+            "classical": 22,
+            "hybrid_median": 28.6,
+            "classical_median": 29.6,
+            "rtt": 7.8,
             "n": [
               10,
               10
@@ -8235,7 +6129,7 @@ window.OBSERVATOIRE = {
             "final": "https://www.elysee.fr/",
             "code": 200,
             "csp": "upgrade-insecure-requests",
-            "csp_ro": "default-src 'self' https:; base-uri https://www.elysee.fr; block-all-mixed-content; child-src *; font-src 'self' data: https://fonts.gstatic.com https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr; form-action 'self'; frame-ancestors 'none'; img-src https://stats.g.doubleclick.net data: https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://*.tile.openstreetmap.org; object-src 'none'; script-src 'unsafe-inline' https://www.elysee.fr https://isho.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://platform.twitter.com https://www.instagram.com; style-src https://fonts.googleapis.com 'unsafe-inline' https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr",
+            "csp_ro": "default-src 'self' https:; base-uri https://www.elysee.fr; block-all-mixed-content; child-src *; font-src 'self' data: https://fonts.gstatic.com https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr; form-action 'self'; frame-ancestors 'none'; img-src https://stats.g.doubleclick.net data: https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://*.tile.openstreetmap.org; object-src 'none'; script-src 'unsafe-inline' https://www.elysee.fr https://isho.elysee.fr https://admin.elysee.fr https://www.elysee.fr https://captcha.liveidentity.com https://platform.twitter.com https://www.instagram.com; style-src https://fonts.googleapis.com 'unsafe-inline' https://www.elysee.fr https://admin.elysee.fr https://www.elysee.fr,script-src 'unsafe-inline' 'unsafe-eval'; connect-src 'none'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=KsUI1xc2_7TmOJuRqXyqPdJ_vT4xzYwGzi99Yed9kCU-1793626124.5123787-1.0.1.1-GXqiz3KCWquY2rYC5xupn9_3YcaG7t.0v5EUt7QI0SM4lZm3VI3Vh1XlYsNmr4cMobq5UIe1fQ2mmNGll1jJN1qBJ5KfR2J1SNeG4w4mz9hSP0keOlPFaRQ6Em2aqR7X9urLHq5tWgQr64ibB0.rJ1zx7GQ68S1dv_DA1nynnLI; report-to cf-csp-endpoint",
             "meta_csp": "",
             "scripts": [
               "www.elysee.fr"
@@ -8245,39 +6139,12 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer, strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 230103
+            "bytes": 228854
           },
           "ai": [
             "anthropic"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail0.elysee.fr",
-              "mail10.elysee.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.24.185.86",
-              "asn": "60855",
-              "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:37Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Gouvernement",
@@ -8310,7 +6177,7 @@ window.OBSERVATOIRE = {
             "names": 4
           },
           "net": {
-            "ip": "141.101.90.107",
+            "ip": "141.101.90.105",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -8318,13 +6185,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:48Z",
+          "at": "2026-11-02T13:27:56Z",
           "cost": {
-            "hybrid": 31.1,
-            "classical": 28.3,
-            "hybrid_median": 41,
-            "classical_median": 35.8,
-            "rtt": 8.7,
+            "hybrid": 42.8,
+            "classical": 39.6,
+            "hybrid_median": 64.8,
+            "classical_median": 86.7,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -8333,7 +6200,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://www.info.gouv.fr/",
             "code": 200,
-            "csp": "default-src 'self'; base-uri 'self'; block-all-mixed-content; connect-src 'self' geo.api.gouv.fr *.gouvernement.fr *.api.swiftype.com app-eu.readspeaker.com cdn-eu.readspeaker.com vtdnntts-eu.readspeaker.com media-eu.readspeaker.com www.google.com translate.googleapis.com www.googleadservices.com googletagmanager.com www.googletagmanager.com cdn.by.wonderpush.com measurements-api.wonderpush.com api.wonderpush.com zhsv.info.gouv.fr ad.doubleclick.net server.adform.net s2.adform.net *.criteo.com connect.facebook.net www.facebook.com api.carte-jnr.fr wss://genii-messages.tolk.ai genii-api.tolk.ai c.amazon-adsystem.com/ aax-eu.amazon-adsystem.com ara.paa-reporting-advertising.amazon; font-src 'self' data: fonts.gstatic.com genii-script.tolk.ai/fonts/; frame-src 'self' *.doubleclick.net cdn.by.wonderpush.com instagram.com www.instagram.com twitter.com platform.twitter.com syndication.twitter.com x.com dailymotion.com www.dailymotion.com geo.dailymotion.com linkedin.com www.linkedin.com media.licdn.com vimeo.com www.vimeo.com player.vimeo.com youtube.com www.youtube.com www.youtube-nocookie.com connect.facebook.net www.facebook.com app-eu.readspeaker.com *.sibforms.com server.adform.net s2.adform.net *.criteo.com documentation-administrative.gouv.fr embed.acast.com aax-eu.amazon-adsystem.com; img-src blob: 'self' https://www.info.gouv.fr zhsv.info.gouv.fr data: piste.gouv.fr *.piste.gouv.fr cdn-eu.readspeaker.com openlayers.org tile.openstreetmap.org *.tile.openstreetmap.org tile.openstreetmap.fr *.tile.openstreetmap.fr data.geopf.fr *.doubleclick.net googletagmanager.com www.googletagmanager.com translate.google.com fonts.gstatic.com abs.twimg.com pbs.twimg.com ton.twimg.com platform.twitter.com syndication.twitter.com ytimg.com *.ytimg.com server.adform.net s2.adform.net *.criteo.com connect.facebook.net www.facebook.com genii-public.oos.cloudgouv-eu-west-1.outscale.com hawk-tracker.360yield.com; media-src blob: 'self' cdn-eu.readspeaker.com; object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'self' barometre.gouvernement.fr zhsv.info.gouv.fr piste.gouv.fr *.piste.gouv.fr cdn-eu.readspeaker.com googletagmanager.com www.googletagmanager.com platform.twitter.com *.twitter.com www.instagram.com connect.facebook.net www.facebook.com cdn.by.wonderpush.com server.adform.net s2.adform.net *.criteo.com genii-script.tolk.ai kwo.eulerian.net c.amazon-adsystem.com libjs.s4mdsp.com; style-src 'unsafe-inline' 'self' barometre.gouvernement.fr piste.gouv.fr *.piste.gouv.fr cdn-eu.readspeaker.com www.gstatic.com ton.twimg.com platform.twitter.com genii-script.tolk.ai genii-public.oos.cloudgouv-eu-west-1.outscale.com/project-5cc16925-df8c-41f2-9020-58b67a0bfe79/css/custom.css",
+            "csp": "default-src 'self'; base-uri 'self'; block-all-mixed-content; connect-src 'self' geo.api.gouv.fr *.gouvernement.fr *.api.swiftype.com app-eu.readspeaker.com cdn-eu.readspeaker.com vtdnntts-eu.readspeaker.com media-eu.readspeaker.com www.google.com translate.googleapis.com www.googleadservices.com googletagmanager.com www.googletagmanager.com cdn.by.wonderpush.com measurements-api.wonderpush.com api.wonderpush.com zhsv.info.gouv.fr ad.doubleclick.net server.adform.net s2.adform.net *.criteo.com connect.facebook.net www.facebook.com api.carte-jnr.fr wss://genii-messages.tolk.ai genii-api.tolk.ai c.amazon-adsystem.com/ aax-eu.amazon-adsystem.com ara.paa-reporting-advertising.amazon; font-src 'self' data: fonts.gstatic.com genii-script.tolk.ai; frame-src 'self' *.doubleclick.net cdn.by.wonderpush.com instagram.com www.instagram.com twitter.com platform.twitter.com syndication.twitter.com x.com dailymotion.com www.dailymotion.com geo.dailymotion.com linkedin.com www.linkedin.com media.licdn.com vimeo.com www.vimeo.com player.vimeo.com youtube.com www.youtube.com www.youtube-nocookie.com connect.facebook.net www.facebook.com app-eu.readspeaker.com *.sibforms.com server.adform.net s2.adform.net *.criteo.com documentation-administrative.gouv.fr embed.acast.com aax-eu.amazon-adsystem.com; img-src blob: 'self' https://www.info.gouv.fr zhsv.info.gouv.fr data: piste.gouv.fr *.piste.gouv.fr cdn-eu.readspeaker.com openlayers.org tile.openstreetmap.org *.tile.openstreetmap.org tile.openstreetmap.fr *.tile.openstreetmap.fr data.geopf.fr *.doubleclick.net googletagmanager.com www.googletagmanager.com translate.google.com fonts.gstatic.com abs.twimg.com pbs.twimg.com ton.twimg.com platform.twitter.com syndication.twitter.com ytimg.com *.ytimg.com server.adform.net s2.adform.net *.criteo.com connect.facebook.net www.facebook.com genii-public.oos.cloudgouv-eu-west-1.outscale.com hawk-tracker.360yield.com; media-src blob: 'self' cdn-eu.readspeaker.com; object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'self' barometre.gouvernement.fr zhsv.info.gouv.fr piste.gouv.fr *.piste.gouv.fr cdn-eu.readspeaker.com googletagmanager.com www.googletagmanager.com platform.twitter.com *.twitter.com www.instagram.com connect.facebook.net www.facebook.com cdn.by.wonderpush.com server.adform.net s2.adform.net *.criteo.com genii-script.tolk.ai kwo.eulerian.net c.amazon-adsystem.com libjs.s4mdsp.com; style-src 'unsafe-inline' 'self' barometre.gouvernement.fr piste.gouv.fr *.piste.gouv.fr cdn-eu.readspeaker.com www.gstatic.com ton.twimg.com platform.twitter.com genii-script.tolk.ai genii-public.oos.cloudgouv-eu-west-1.outscale.com/project-5cc16925-df8c-41f2-9020-58b67a0bfe79/css/custom.css",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [],
@@ -8342,36 +6209,10 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer",
             "permissions": "",
             "coop": "",
-            "bytes": 257880
+            "bytes": 259599
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx1.mgn.net"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "195.46.193.85",
-              "asn": "8784",
-              "as": "AS8784 - Odigo SASU, FR"
-            },
-            "tls": {
-              "reachable": false,
-              "hybrid": false,
-              "default": "",
-              "protocol": "",
-              "at": "2026-10-16T10:41:36Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Ministère de l'Intérieur",
@@ -8404,7 +6245,7 @@ window.OBSERVATOIRE = {
             "names": 22
           },
           "net": {
-            "ip": "104.20.35.184",
+            "ip": "172.66.149.1",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -8412,13 +6253,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:48Z",
+          "at": "2026-11-02T13:27:57Z",
           "cost": {
-            "hybrid": 32.2,
-            "classical": 29.1,
-            "hybrid_median": 33.8,
-            "classical_median": 32.8,
-            "rtt": 8.3,
+            "hybrid": 37,
+            "classical": 33.6,
+            "hybrid_median": 44.1,
+            "classical_median": 37.9,
+            "rtt": 9.7,
             "n": [
               10,
               10
@@ -8438,36 +6279,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 76317
+            "bytes": 74884
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "tigre.interieur.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "143.196.251.35",
-              "asn": "60855",
-              "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:07Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Ministère des Armées",
@@ -8502,7 +6317,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:40Z",
+          "at": "2026-11-02T13:27:47Z",
           "cost": null,
           "page": {
             "final": "https://www.defense.gouv.fr/",
@@ -8516,37 +6331,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 94040
+            "bytes": 99765
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx01.m03.pfai.din.gouv.fr",
-              "mx02.m03.pfai.din.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": null,
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "143.126.248.45",
-              "asn": "60855",
-              "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:46Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Ministère de l'Économie",
@@ -8587,13 +6375,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15552000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:40Z",
+          "at": "2026-11-02T13:27:47Z",
           "cost": {
-            "hybrid": 26,
-            "classical": 27.4,
-            "hybrid_median": 37.4,
-            "classical_median": 35.7,
-            "rtt": 8.9,
+            "hybrid": 33.5,
+            "classical": 27.2,
+            "hybrid_median": 38,
+            "classical_median": 38.4,
+            "rtt": 8.3,
             "n": [
               10,
               10
@@ -8613,36 +6401,10 @@ window.OBSERVATOIRE = {
             "referrer": "same-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 135201
+            "bytes": 134741
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "relaismsg.finances.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": null,
-            "starttls": null,
-            "net": {
-              "ip": "193.17.19.75",
-              "asn": "60855",
-              "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:01Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Ministère de la Justice",
@@ -8679,56 +6441,27 @@ window.OBSERVATOIRE = {
             "cc": "FR",
             "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
           },
-          "hsts": "",
+          "hsts": "max-age=16070400; includesubdomains",
           "front": "other",
-          "server": "bigip",
-          "at": "2026-10-15T22:06:49Z",
+          "server": "",
+          "at": "2026-11-02T13:27:58Z",
           "cost": null,
           "page": {
             "final": "https://www.justice.gouv.fr/",
             "code": 200,
-            "csp": "",
+            "csp": "default-src 'self' 'unsafe-inline' *.youtube-nocookie.com gva.et-gv.fr bhog.justice.gouv.fr minjus.ent.et-gv.fr; script-src 'self' 'unsafe-inline' *.youtube-nocookie.com gva.et-gv.fr bhog.justice.gouv.fr minjus.ent.et-gv.fr; object-src 'none'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' 'unsafe-inline' data: *.youtube.com *.ytimg.com *.tile.openstreetmap.fr gva.et-gv.fr *.gva.et-gv.fr bhog.justice.gouv.fr *.bhog.justice.gouv.fr minjus.ent.et-gv.fr; media-src 'self' *.youtube.com *.mediatheque.justice.gouv.fr; frame-src 'self' *.youtube.com *.youtube-nocookie.com *.dailymotion.com player.vimeo.com *.stats.justice.gouv.fr; font-src 'self' 'unsafe-inline' data: fonts.googleapis.com fonts.gstatic.com ; connect-src 'self' 'unsafe-inline' *.tile.openstreetmap.fr; report-uri /report-csp-violation; upgrade-insecure-requests",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [],
-            "xfo": "",
-            "xcto": "",
+            "xfo": "SAMEORIGIN",
+            "xcto": "nosniff",
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 15891
+            "bytes": 81093
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx01.m24.pfai.din.gouv.fr",
-              "mx02.m24.pfai.din.gouv.fr",
-              "mx03.m24.pfai.din.gouv.fr",
-              "mx04.m24.pfai.din.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "143.126.248.52",
-              "asn": "60855",
-              "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:46Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Ministère de la Santé",
@@ -8737,9 +6470,9 @@ window.OBSERVATOIRE = {
           "pq": "full",
           "hits": 5,
           "tries": 5,
-          "group": "X25519",
+          "group": "ffdhe3072",
           "protocol": "TLSv1.3",
-          "cipher": "TLS_AES_128_GCM_SHA256",
+          "cipher": "TLS_AES_256_GCM_SHA384",
           "protocols": [
             "tls1_2",
             "tls1_3"
@@ -8769,13 +6502,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:19Z",
+          "at": "2026-11-02T13:27:26Z",
           "cost": {
-            "hybrid": 22.1,
-            "classical": 19,
-            "hybrid_median": 23.4,
-            "classical_median": 21.8,
-            "rtt": 8.9,
+            "hybrid": 21,
+            "classical": 19.1,
+            "hybrid_median": 24.3,
+            "classical_median": 21.5,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -8793,39 +6526,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 5465
+            "bytes": 6003
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "pro075001app410.social.gouv.fr",
-              "pro075001app411.social.gouv.fr",
-              "pro093001app412.social.gouv.fr",
-              "pro093001app413.social.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "~all",
-            "starttls": null,
-            "net": {
-              "ip": "164.131.244.121",
-              "asn": "60855",
-              "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:57Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Éducation nationale",
@@ -8858,7 +6562,7 @@ window.OBSERVATOIRE = {
             "names": 3
           },
           "net": {
-            "ip": "141.101.90.106",
+            "ip": "141.101.90.107",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -8866,13 +6570,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:41Z",
+          "at": "2026-11-02T13:27:51Z",
           "cost": {
-            "hybrid": 24.3,
-            "classical": 25.8,
-            "hybrid_median": 36.9,
-            "classical_median": 73.2,
-            "rtt": 8.7,
+            "hybrid": 29.2,
+            "classical": 25.9,
+            "hybrid_median": 58.4,
+            "classical_median": 76.4,
+            "rtt": 7.6,
             "n": [
               10,
               10
@@ -8890,37 +6594,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 94089
+            "bytes": 94590
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx-front-zi-de.adc.education.fr",
-              "mx-front-zi-du.adc.education.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": null,
-            "spf": null,
-            "starttls": null,
-            "net": {
-              "ip": "193.49.70.20",
-              "asn": "2200",
-              "as": "FR-RENATER - Renater, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:42Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Affaires étrangères",
@@ -8952,7 +6629,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "45.145.121.70",
+            "ip": "185.149.13.70",
             "asn": "50588",
             "cc": "FR",
             "as": "FR-MAE - Ministere De L_europe Et Des Affaires Etrangeres, FR"
@@ -8960,7 +6637,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:39Z",
+          "at": "2026-11-02T13:27:46Z",
           "cost": null,
           "page": {
             "final": "https://www.diplomatie.gouv.fr/fr",
@@ -8974,37 +6651,10 @@ window.OBSERVATOIRE = {
             "referrer": "same-origin",
             "permissions": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
             "coop": "",
-            "bytes": 131163
+            "bytes": 131003
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "smtp1.diplomatie.gouv.fr",
-              "smtp2.diplomatie.gouv.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.149.13.97",
-              "asn": "50588",
-              "as": "FR-MAE - Ministere De L_europe Et Des Affaires Etrangeres, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:05Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "ANSSI",
@@ -9016,7 +6666,7 @@ window.OBSERVATOIRE = {
           "tries": 5,
           "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
-          "cipher": "TLS_AES_256_GCM_SHA384",
+          "cipher": "TLS_AES_128_GCM_SHA256",
           "protocols": [
             "tls1_2",
             "tls1_3"
@@ -9029,30 +6679,30 @@ window.OBSERVATOIRE = {
           ],
           "cert": {
             "key": "rsaEncryption",
-            "bits": 4096,
+            "bits": 2048,
             "curve": "",
             "sig": "sha256WithRSAEncryption",
-            "issuer": "Gandi SAS",
-            "from": "2026-02-16",
-            "until": "2027-02-16",
+            "issuer": "GlobalSign nv-sa",
+            "from": "2026-10-17",
+            "until": "2027-01-15",
             "names": 4
           },
           "net": {
-            "ip": "80.247.13.145",
-            "asn": "50624",
-            "cc": "FR",
-            "as": "OUTSCALE - Outscale SASU, FR"
+            "ip": "45.60.33.39",
+            "asn": "19551",
+            "cc": "US",
+            "as": "INCAPSULA - Incapsula Inc, US"
           },
-          "hsts": "max-age=31536000",
-          "front": "other",
+          "hsts": "",
+          "front": "imperva",
           "server": "",
-          "at": "2026-10-15T22:06:08Z",
+          "at": "2026-11-02T13:27:13Z",
           "cost": {
-            "hybrid": 18.1,
-            "classical": 18.9,
-            "hybrid_median": 21,
-            "classical_median": 22.5,
-            "rtt": 10.1,
+            "hybrid": 14.7,
+            "classical": 12.2,
+            "hybrid_median": 16.6,
+            "classical_median": 15.8,
+            "rtt": 7.6,
             "n": [
               10,
               10
@@ -9061,34 +6711,19 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://cyber.gouv.fr/",
             "code": 200,
-            "csp": "frame-ancestors 'self'",
+            "csp": "",
             "csp_ro": "",
             "meta_csp": "",
-            "scripts": [
-              "tube.numerique.gouv.fr"
-            ],
-            "xfo": "SAMEORIGIN",
-            "xcto": "nosniff",
-            "referrer": "strict-origin-when-cross-origin",
+            "scripts": [],
+            "xfo": "",
+            "xcto": "",
+            "referrer": "",
             "permissions": "",
-            "coop": "same-origin",
-            "bytes": 37697
+            "coop": "",
+            "bytes": 212
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [],
-            "provider": "none",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {}
-          }
+          "hf": []
         },
         {
           "name": "CNIL",
@@ -9131,13 +6766,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:36Z",
+          "at": "2026-11-02T13:27:44Z",
           "cost": {
-            "hybrid": 23.8,
-            "classical": 19.8,
-            "hybrid_median": 37.2,
-            "classical_median": 44.7,
-            "rtt": 9.6,
+            "hybrid": 18.8,
+            "classical": 17.7,
+            "hybrid_median": 25.6,
+            "classical_median": 21.3,
+            "rtt": 8.2,
             "n": [
               10,
               10
@@ -9155,7 +6790,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 84769
+            "bytes": 84722
           },
           "ai": [],
           "hf": [
@@ -9167,34 +6802,7 @@ window.OBSERVATOIRE = {
               "spaces": 2,
               "followers": 13
             }
-          ],
-          "mail": {
-            "mx": [
-              "mail-premium.cnil.fr",
-              "mail-premium2.cnil.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.24.184.82",
-              "asn": "60855",
-              "as": "DISIC-RIE-AS - LA DIRECTION INTERMINISTERIELLE DU NUMERIQUE, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH prime256v1",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:36Z"
-            }
-          }
+          ]
         },
         {
           "name": "Banque de France",
@@ -9226,21 +6834,21 @@ window.OBSERVATOIRE = {
             "names": 53
           },
           "net": {
-            "ip": "23.222.250.22",
+            "ip": "2.16.245.135",
             "asn": "20940",
-            "cc": "US",
+            "cc": "NL",
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
           },
           "hsts": "max-age=600",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:28Z",
+          "at": "2026-11-02T13:27:33Z",
           "cost": {
-            "hybrid": 17.1,
-            "classical": 13.5,
-            "hybrid_median": 20.9,
-            "classical_median": 14.6,
-            "rtt": 7.7,
+            "hybrid": 18.9,
+            "classical": 12.8,
+            "hybrid_median": 25.4,
+            "classical_median": 15.4,
+            "rtt": 6.9,
             "n": [
               10,
               10
@@ -9261,39 +6869,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 370578
+            "bytes": 371598
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail1.banque-france.fr",
-              "mail10.banque-france.fr",
-              "mail2.banque-france.fr",
-              "mail20.banque-france.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "62.23.47.172",
-              "asn": "8220",
-              "as": "COLT - COLT Technology Services Group Limited, GB"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH prime256v1",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:39Z"
-            }
-          }
+          "hf": []
         }
       ]
     },
@@ -9338,7 +6917,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "other",
           "server": "apache",
-          "at": "2026-10-15T22:06:37Z",
+          "at": "2026-11-02T13:27:46Z",
           "cost": null,
           "page": {
             "final": "https://www.credit-agricole.fr/",
@@ -9354,7 +6933,7 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer-when-downgrade",
             "permissions": "sync-xhr=('https://*.credit-agricole.fr')",
             "coop": "same-origin-allow-popups",
-            "bytes": 411895
+            "bytes": 413590
           },
           "ai": [],
           "hf": [
@@ -9366,33 +6945,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 3
             }
-          ],
-          "mail": {
-            "mx": [
-              "mercure.credit-agricole.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "158.190.50.50",
-              "asn": "9159",
-              "as": "UNSPECIFIED - Credit Agricole SA, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:41Z"
-            }
-          }
+          ]
         },
         {
           "name": "BNP Paribas",
@@ -9419,9 +6972,9 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA384",
             "issuer": "DigiCert Inc",
-            "from": "2025-11-07",
-            "until": "2026-11-06",
-            "names": 12
+            "from": "2026-10-16",
+            "until": "2027-05-02",
+            "names": 6
           },
           "net": {
             "ip": "23.40.5.242",
@@ -9432,13 +6985,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "akamai",
           "server": "akamaighost",
-          "at": "2026-10-15T22:06:16Z",
+          "at": "2026-11-02T13:27:22Z",
           "cost": {
-            "hybrid": 15.7,
-            "classical": 13,
-            "hybrid_median": 17.5,
-            "classical_median": 15.2,
-            "rtt": 7.3,
+            "hybrid": 15.2,
+            "classical": 12.2,
+            "hybrid_median": 23.4,
+            "classical_median": 15.3,
+            "rtt": 7.7,
             "n": [
               10,
               10
@@ -9458,7 +7011,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 213941
+            "bytes": 214950
           },
           "ai": [],
           "hf": [
@@ -9470,20 +7023,7 @@ window.OBSERVATOIRE = {
               "spaces": 0,
               "followers": 1
             }
-          ],
-          "mail": {
-            "mx": [],
-            "provider": "none",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {}
-          }
+          ]
         },
         {
           "name": "Société Générale",
@@ -9514,7 +7054,7 @@ window.OBSERVATOIRE = {
             "names": 21
           },
           "net": {
-            "ip": "15.188.200.112",
+            "ip": "13.36.118.62",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -9522,7 +7062,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:18Z",
+          "at": "2026-11-02T13:27:24Z",
           "cost": null,
           "page": {
             "final": "https://particuliers.sg.fr/",
@@ -9536,36 +7076,10 @@ window.OBSERVATOIRE = {
             "referrer": "origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 121716
+            "bytes": 121833
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail.iap.socgen.com"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "194.119.31.8",
-              "asn": "3299",
-              "as": "UNSPECIFIED - Societe Generale S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "DH 2048 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:37Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "La Banque Postale",
@@ -9592,26 +7106,26 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA384",
             "issuer": "GlobalSign nv-sa",
-            "from": "2026-04-13",
-            "until": "2026-10-29",
+            "from": "2026-10-12",
+            "until": "2027-04-29",
             "names": 2
           },
           "net": {
-            "ip": "2.21.243.123",
+            "ip": "23.33.90.160",
             "asn": "20940",
-            "cc": "NL",
+            "cc": "US",
             "as": "AKAMAI-ASN1 - Akamai International B.V., NL"
           },
           "hsts": "max-age=600",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:51Z",
+          "at": "2026-11-02T13:27:59Z",
           "cost": {
-            "hybrid": 17.4,
-            "classical": 15.1,
-            "hybrid_median": 23.7,
-            "classical_median": 20,
-            "rtt": 8.7,
+            "hybrid": 16,
+            "classical": 14.9,
+            "hybrid_median": 21,
+            "classical_median": 18.4,
+            "rtt": 7.6,
             "n": [
               10,
               10
@@ -9632,48 +7146,19 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 223288
+            "bytes": 226075
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "rpi0i692.laposte.fr",
-              "rpi0i694.laposte.fr",
-              "rpi0i752.laposte.fr",
-              "rpi0i754.laposte.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "178.213.67.13",
-              "asn": "35676",
-              "as": "LA-POSTE - La Poste S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:42:02Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "LCL",
           "host": "www.lcl.fr",
           "reachable": true,
-          "pq": "partial",
-          "hits": 2,
+          "pq": "full",
+          "hits": 5,
           "tries": 5,
-          "group": "X25519",
+          "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
           "cipher": "TLS_AES_256_GCM_SHA384",
           "protocols": [
@@ -9681,6 +7166,7 @@ window.OBSERVATOIRE = {
             "tls1_3"
           ],
           "groups": [
+            "X25519MLKEM768",
             "X25519",
             "secp256r1",
             "secp384r1"
@@ -9691,8 +7177,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Sectigo Limited",
-            "from": "2026-07-05",
-            "until": "2027-01-19",
+            "from": "2025-11-03",
+            "until": "2026-11-03",
             "names": 1
           },
           "net": {
@@ -9704,22 +7190,12 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "google",
           "server": "",
-          "at": "2026-10-15T22:06:50Z",
-          "cost": {
-            "hybrid": 24,
-            "classical": 20.7,
-            "hybrid_median": 26.5,
-            "classical_median": 24.1,
-            "rtt": 9.1,
-            "n": [
-              6,
-              10
-            ]
-          },
+          "at": "2026-11-02T13:28:01Z",
+          "cost": null,
           "page": {
             "final": "https://www.lcl.fr/",
             "code": 200,
-            "csp": "default-src 'self' https://*.lcl.fr https://*.id.fr.cly; base-uri 'self'; object-src 'none'; frame-ancestors 'self' https://*.lcl.fr https://*.id.fr.cly https://i.ytimg.com; frame-src 'self' https://*.lcl.gca https://*.lcl.fr https://*.fr.cly https://*.group.gca https://*.prodinfo.gca https://cdn.trustcommander.net https://www.google.com https://*.prismic.io https://www.youtube.com https://youtube.com https://diagnostic.nexecur.fr https://*.streamlike.com https://lcl.clients.harvest.fr http://lcl.clients.harvest.fr https://www.facebook.com https://www.instagram.com https://www.linkedin.com https://x.com https://*.x.com https://*.twitter.com https://w.soundcloud.com https://www.tiktok.com https://alarme.nexecur.fr; script-src 'self' 'unsafe-eval' 'nonce-cYx208C37nV5sA4jKBC6/qYz0PQ7HDaC8H+DMaLSzic=' https://onelinksmartscript.appsflyer.com https://cdn.tagcommander.com https://cdn.trustcommander.net https://cdn.jsdelivr.net https://prismic.io https://*.prismic.io https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://www.tiktok.com https://*.tiktok.com https://*.ttwstatic.com https://*.tiktokw.us https://*.tiktokw.eu https://*.tiktokcdn-us.com https://x.com https://*.x.com https://*.twitter.com https://snap.licdn.com https://connect.facebook.net https://static.ads-twitter.com https://*.g.doubleclick.net https://mmtro.com https://*.mmtro.com https://html2canvas.hertzen.com https://tag.aticdn.net 'unsafe-hashes' 'sha256-MhtPZXr7+LpJUY5qtMutB+qWfQtMaPccfe7QXtCcEYc='; style-src 'self' 'nonce-cYx208C37nV5sA4jKBC6/qYz0PQ7HDaC8H+DMaLSzic=' https://fonts.googleapis.com https://*.ttwstatic.com 'unsafe-hashes' 'sha256-YLrkGJkSArF0qiusPn6+SF6+M6tuJnaRhTlSmYTyi1c=' 'sha256-UP0QZg7irvSMvOBz9mH2PIIE28+57UiavRfeVea0l3g=' 'sha256-QUUarKcK1+Uvj9wHZFN/a5AstfkLR+1kuL90J98KHIA=' 'sha256-ibtZaD1lK+plWZu6IsOsIEaldm8AHwaipEnluSX5aZw=' 'sha256-URq8ZilbVVMjAd6zOVE5B4r5Z+qQs4pbe1annO6TVt4=' 'sha256-BP+M1AXHqyPKnYRRgXdxpigh6EyqAOpwfw/E1kKZtQQ=' 'sha256-/aBYYnLJ+kjOFJoffiEokT/6p+C/XZIAcr8Pt6wp0aI=' 'sha256-7fYo8yTdFATeW9s9rooTjEaPsP5NAh+ldMQgArv/l70=' 'sha256-ryAKBfXWli4W45M0TcE6ZrgydwbsdY7gamWZ8zZL7eM='; style-src-attr 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: ws: wss:;",
+            "csp": "default-src 'self' https://*.lcl.fr https://*.id.fr.cly; base-uri 'self'; object-src 'none'; frame-ancestors 'self' https://*.lcl.fr https://*.id.fr.cly https://i.ytimg.com; frame-src 'self' https://*.lcl.gca https://*.lcl.fr https://*.fr.cly https://*.group.gca https://*.prodinfo.gca https://cdn.trustcommander.net https://www.google.com https://*.prismic.io https://www.youtube.com https://youtube.com https://diagnostic.nexecur.fr https://*.streamlike.com https://lcl.clients.harvest.fr http://lcl.clients.harvest.fr https://www.facebook.com https://www.instagram.com https://www.linkedin.com https://x.com https://*.x.com https://*.twitter.com https://w.soundcloud.com https://www.tiktok.com https://alarme.nexecur.fr; script-src 'self' 'unsafe-eval' 'nonce-lrl2VDWv39j+UBw59J5wK2NZmUfROFCzOsPkoQBqfeo=' https://onelinksmartscript.appsflyer.com https://cdn.tagcommander.com https://cdn.trustcommander.net https://cdn.jsdelivr.net https://prismic.io https://*.prismic.io https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://www.tiktok.com https://*.tiktok.com https://*.ttwstatic.com https://*.tiktokw.us https://*.tiktokw.eu https://*.tiktokcdn-us.com https://x.com https://*.x.com https://*.twitter.com https://snap.licdn.com https://connect.facebook.net https://static.ads-twitter.com https://*.g.doubleclick.net https://mmtro.com https://*.mmtro.com https://html2canvas.hertzen.com https://tag.aticdn.net 'unsafe-hashes' 'sha256-MhtPZXr7+LpJUY5qtMutB+qWfQtMaPccfe7QXtCcEYc='; style-src 'self' 'nonce-lrl2VDWv39j+UBw59J5wK2NZmUfROFCzOsPkoQBqfeo=' https://fonts.googleapis.com https://*.ttwstatic.com 'unsafe-hashes' 'sha256-YLrkGJkSArF0qiusPn6+SF6+M6tuJnaRhTlSmYTyi1c=' 'sha256-UP0QZg7irvSMvOBz9mH2PIIE28+57UiavRfeVea0l3g=' 'sha256-QUUarKcK1+Uvj9wHZFN/a5AstfkLR+1kuL90J98KHIA=' 'sha256-ibtZaD1lK+plWZu6IsOsIEaldm8AHwaipEnluSX5aZw=' 'sha256-URq8ZilbVVMjAd6zOVE5B4r5Z+qQs4pbe1annO6TVt4=' 'sha256-BP+M1AXHqyPKnYRRgXdxpigh6EyqAOpwfw/E1kKZtQQ=' 'sha256-/aBYYnLJ+kjOFJoffiEokT/6p+C/XZIAcr8Pt6wp0aI=' 'sha256-7fYo8yTdFATeW9s9rooTjEaPsP5NAh+ldMQgArv/l70=' 'sha256-ryAKBfXWli4W45M0TcE6ZrgydwbsdY7gamWZ8zZL7eM='; style-src-attr 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: ws: wss:;",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -9731,36 +7207,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 431624
+            "bytes": 433038
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mercure.credit-agricole.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "158.190.50.50",
-              "asn": "9159",
-              "as": "UNSPECIFIED - Credit Agricole SA, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:41Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Caisse d'Épargne",
@@ -9794,21 +7244,21 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "13.227.231.64",
+            "ip": "13.227.231.42",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
           },
-          "hsts": "",
+          "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudfront",
-          "server": "rdwr",
-          "at": "2026-10-15T22:06:55Z",
+          "server": "",
+          "at": "2026-11-02T13:28:01Z",
           "cost": {
-            "hybrid": 14.4,
-            "classical": 13.9,
-            "hybrid_median": 16.9,
-            "classical_median": 15.8,
-            "rtt": 8.8,
+            "hybrid": 14,
+            "classical": 13.6,
+            "hybrid_median": 17.8,
+            "classical_median": 15,
+            "rtt": 8.5,
             "n": [
               10,
               10
@@ -9832,33 +7282,7 @@ window.OBSERVATOIRE = {
             "bytes": 331884
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail-in.protection.bpce-it.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "91.135.177.200",
-              "asn": "213466",
-              "as": "FR-BPCE - BPCE S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:35Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Banque Populaire",
@@ -9892,7 +7316,7 @@ window.OBSERVATOIRE = {
             "names": 15
           },
           "net": {
-            "ip": "18.245.175.28",
+            "ip": "18.245.175.84",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -9900,13 +7324,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudfront",
           "server": "",
-          "at": "2026-10-15T22:06:51Z",
+          "at": "2026-11-02T13:27:58Z",
           "cost": {
-            "hybrid": 13.7,
-            "classical": 14,
-            "hybrid_median": 15.6,
-            "classical_median": 14.9,
-            "rtt": 7.7,
+            "hybrid": 13.8,
+            "classical": 13.8,
+            "hybrid_median": 22.1,
+            "classical_median": 20.2,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -9927,36 +7351,10 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer-when-downgrade",
             "permissions": "sync-xhr=(self)",
             "coop": "",
-            "bytes": 332228
+            "bytes": 332597
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail-in.protection.bpce-it.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "91.135.177.200",
-              "asn": "213466",
-              "as": "FR-BPCE - BPCE S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:35Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Crédit Mutuel",
@@ -9991,7 +7389,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "other",
           "server": "eiws",
-          "at": "2026-10-15T22:06:38Z",
+          "at": "2026-11-02T13:27:46Z",
           "cost": null,
           "page": {
             "final": "https://www.creditmutuel.fr/home/index.html",
@@ -10011,43 +7409,7 @@ window.OBSERVATOIRE = {
             "bytes": 36013
           },
           "ai": [],
-          "hf": [
-            {
-              "name": "cmarkea",
-              "fullname": "Credit Mutuel Arkea",
-              "models": 35,
-              "datasets": 4,
-              "spaces": 0,
-              "followers": 67
-            }
-          ],
-          "mail": {
-            "mx": [
-              "smtp1-inki.e-i.net",
-              "smtp1-insi.e-i.net"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "145.226.163.230",
-              "asn": "8255",
-              "as": "EURO-INFORMATION - Euro-Information-Europeenne de Traitement de l_Information SAS, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:05Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "CIC",
@@ -10082,7 +7444,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "other",
           "server": "eiws",
-          "at": "2026-10-15T22:06:35Z",
+          "at": "2026-11-02T13:27:44Z",
           "cost": null,
           "page": {
             "final": "https://www.cic.fr/fr/particuliers.html",
@@ -10100,37 +7462,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 164360
+            "bytes": 165996
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "smtp1-inki.e-i.net",
-              "smtp1-insi.e-i.net"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "145.226.163.230",
-              "asn": "8255",
-              "as": "EURO-INFORMATION - Euro-Information-Europeenne de Traitement de l_Information SAS, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:05Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "BoursoBank",
@@ -10170,7 +7505,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:30Z",
+          "at": "2026-11-02T13:27:34Z",
           "cost": null,
           "page": {
             "final": "https://www.boursobank.com/",
@@ -10187,37 +7522,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 350502
+            "bytes": 351401
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mail001.boursorama.fr",
-              "mail101.boursorama.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "193.108.111.206",
-              "asn": "208128",
-              "as": "BRS-BOI - BOURSORAMA S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:38Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Fortuneo",
@@ -10251,7 +7559,7 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "18.245.199.31",
+            "ip": "18.245.199.7",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -10259,13 +7567,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains; preload",
           "front": "cloudfront",
           "server": "cloudfront",
-          "at": "2026-10-15T22:07:08Z",
+          "at": "2026-11-02T13:28:18Z",
           "cost": {
-            "hybrid": 13.6,
-            "classical": 13.3,
-            "hybrid_median": 15.8,
-            "classical_median": 14.2,
-            "rtt": 7.8,
+            "hybrid": 12.8,
+            "classical": 12.3,
+            "hybrid_median": 17.7,
+            "classical_median": 15.6,
+            "rtt": 8.6,
             "n": [
               10,
               10
@@ -10285,39 +7593,10 @@ window.OBSERVATOIRE = {
             "referrer": "same-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 813280
+            "bytes": 821821
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx5.arkea.com",
-              "mx6.arkea.com",
-              "mx7.arkea.com",
-              "mx8.arkea.com"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "195.101.71.8",
-              "asn": "3215",
-              "as": "AS3215 - Orange S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:43Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Hello bank!",
@@ -10344,9 +7623,9 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA384",
             "issuer": "DigiCert Inc",
-            "from": "2026-08-12",
-            "until": "2027-02-26",
-            "names": 27
+            "from": "2026-10-16",
+            "until": "2027-05-02",
+            "names": 26
           },
           "net": {
             "ip": "23.40.6.142",
@@ -10357,13 +7636,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "akamai",
           "server": "akamaighost",
-          "at": "2026-10-15T22:06:44Z",
+          "at": "2026-11-02T13:27:54Z",
           "cost": {
-            "hybrid": 12.8,
-            "classical": 12.2,
-            "hybrid_median": 15.7,
-            "classical_median": 14.3,
-            "rtt": 7.7,
+            "hybrid": 13.3,
+            "classical": 11.3,
+            "hybrid_median": 21.7,
+            "classical_median": 13.3,
+            "rtt": 7.5,
             "n": [
               10,
               10
@@ -10383,36 +7662,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 201721
+            "bytes": 193805
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "smtp-in-internet-usr-m.gslb.srv.bnpparibas"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "155.140.74.100",
-              "asn": "25215",
-              "as": "BNP-Paribas - BNP PARIBAS S.A., FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:02Z"
-            }
-          }
+          "hf": []
         }
       ]
     },
@@ -10463,13 +7716,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:40Z",
+          "at": "2026-11-02T13:27:47Z",
           "cost": {
-            "hybrid": 17.3,
-            "classical": 14.8,
-            "hybrid_median": 19.5,
-            "classical_median": 15.7,
-            "rtt": 9,
+            "hybrid": 15.7,
+            "classical": 13.2,
+            "hybrid_median": 21.3,
+            "classical_median": 16.8,
+            "rtt": 8.4,
             "n": [
               10,
               10
@@ -10478,7 +7731,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://www.doctolib.fr/",
             "code": 200,
-            "csp": "default-src 'self'; script-src report-sample 'self' blob: data: https://assets.doctolib.fr https://sdk.privacy-center.org https://www.datadoghq-browser-agent.com https://challenges.cloudflare.com https://*.walkme.com https://*.screeb.app https://*.googleapis.com https://static.opentok.com https://sdk.onfido.com https://applepay.cdn-apple.com https://pay.google.com https://tok.doctolib.fr 'wasm-unsafe-eval' 'nonce-Kbo6QAXDJFg/lWUjQNMvmA==' 'nonce-Kbo6QAXDJFg/lWUjQNMvmA=='; style-src report-sample 'self' 'unsafe-inline' data: https://assets.doctolib.fr https://sdk.onfido.com https://www.gstatic.com https://*.googleapis.com https://*.walkme.com https://maxcdn.bootstrapcdn.com https://*.fontawesome.com; object-src 'none'; base-uri 'self'; connect-src 'self' blob: data: https://assets.doctolib.fr https://api.doctolib.fr https://tok.doctolib.fr wss://tok.doctolib.fr https://exceptions.doctolib.fr https://siilo-api.doctolib.fr https://*.siilo.com https://*.doctolibdata.com https://www.doctolib.fr https://api.privacy-center.org https://browser-intake-datadoghq.eu https://challenges.cloudflare.com https://*.walkme.com https://*.tokbox.com wss://*.tokbox.com https://*.opentok.com https://*.screeb.app https://*.googleapis.com https://maps.gstatic.com https://*.sentry.io https://eu-api.friendlycaptcha.eu https://media.doctolib.com https://media-assets.doctolib.com https://api.eu.onfido.com wss://sync.onfido.com https://*.google.com https://google.com https://doctolib-pa-audio-production.s3.eu-central-1.amazonaws.com https://finos-qbf-prd-aws-de-fra-1.s3.eu-central-1.amazonaws.com https://finos-invoices-prd-aws-fr-par-1.s3.eu-west-3.amazonaws.com https://finos-invoices-prd-aws-de-fra-1.s3.eu-central-1.amazonaws.com https://doctolib-ehr-imports-prd-aws-de-fra-1.s3.eu-central-1.amazonaws.com https://checkoutshopper-live.cdn.adyen.com https://checkoutshopper-live.adyen.com https://checkoutanalytics-live.adyen.com https://events-logs.doctolib.com https://events-logs.doctolib.fr; font-src data: blob: *; frame-src blob: data: tel: *; img-src data: blob: *; manifest-src 'self'; media-src 'self' data: https://doctolib-pa-audio-production.s3.eu-central-1.amazonaws.com; worker-src 'self' blob: data: https://assets.doctolib.fr https://pro.doctolib.fr/service-worker.js; report-uri https://api.doctolib.fr/__csp_report__",
+            "csp": "default-src 'self'; script-src report-sample 'self' blob: data: https://assets.doctolib.fr https://sdk.privacy-center.org https://www.datadoghq-browser-agent.com https://challenges.cloudflare.com https://*.walkme.com https://*.screeb.app https://maps.googleapis.com https://static.opentok.com https://sdk.onfido.com https://applepay.cdn-apple.com https://pay.google.com https://tok.doctolib.fr 'wasm-unsafe-eval' 'nonce-hE59qBiclm+ofZwAv4tqJg==' 'nonce-hE59qBiclm+ofZwAv4tqJg=='; style-src report-sample 'self' 'unsafe-inline' data: https://assets.doctolib.fr https://sdk.onfido.com https://www.gstatic.com https://fonts.googleapis.com https://*.walkme.com https://maxcdn.bootstrapcdn.com https://*.fontawesome.com; object-src 'none'; base-uri 'self'; connect-src 'self' blob: data: https://assets.doctolib.fr https://api.doctolib.fr https://tok.doctolib.fr wss://tok.doctolib.fr https://exceptions.doctolib.fr https://siilo-api.doctolib.fr https://*.siilo.com https://*.doctolibdata.com https://www.doctolib.fr https://api.privacy-center.org https://browser-intake-datadoghq.eu https://challenges.cloudflare.com https://*.walkme.com https://*.tokbox.com wss://*.tokbox.com https://*.opentok.com https://*.screeb.app https://maps.googleapis.com https://maps.gstatic.com https://*.sentry.io https://eu-api.friendlycaptcha.eu https://media.doctolib.com https://media-assets.doctolib.com https://api.eu.onfido.com wss://sync.onfido.com https://*.google.com https://google.com https://doctolib-pa-audio-production.s3.eu-central-1.amazonaws.com https://finos-qbf-prd-aws-de-fra-1.s3.eu-central-1.amazonaws.com https://finos-invoices-prd-aws-fr-par-1.s3.eu-west-3.amazonaws.com https://finos-invoices-prd-aws-de-fra-1.s3.eu-central-1.amazonaws.com https://doctolib-ehr-imports-prd-aws-de-fra-1.s3.eu-central-1.amazonaws.com https://checkoutshopper-live.cdn.adyen.com https://checkoutshopper-live.adyen.com https://checkoutanalytics-live.adyen.com https://events-logs.doctolib.com https://events-logs.doctolib.fr; font-src data: blob: *; frame-src blob: data: tel: *; img-src data: blob: *; manifest-src 'self'; media-src 'self' data: https://doctolib-pa-audio-production.s3.eu-central-1.amazonaws.com; worker-src 'self' blob: data: https://assets.doctolib.fr https://pro.doctolib.fr/service-worker.js; report-uri https://api.doctolib.fr/__csp_report__",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -10490,36 +7743,10 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 1662254
+            "bytes": 1666449
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "aspmx.l.google.com"
-            ],
-            "provider": "google",
-            "mtasts": "enforce",
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "108.177.15.26",
-              "asn": "15169",
-              "as": "GOOGLE - Google LLC, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": true,
-              "default": "X25519MLKEM768",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:24Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Mon espace santé",
@@ -10546,7 +7773,7 @@ window.OBSERVATOIRE = {
             "names": 8
           },
           "net": {
-            "ip": "80.78.12.3",
+            "ip": "80.78.12.4",
             "asn": "21000",
             "cc": "FR",
             "as": "ATOS-AS - Atos France SAS, FR"
@@ -10554,13 +7781,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:57Z",
+          "at": "2026-11-02T13:28:09Z",
           "cost": {
-            "hybrid": 36,
-            "classical": 26.8,
-            "hybrid_median": 40.7,
-            "classical_median": 29.1,
-            "rtt": 11.5,
+            "hybrid": 25.9,
+            "classical": 26.2,
+            "hybrid_median": 31.3,
+            "classical_median": 28.2,
+            "rtt": 10.8,
             "n": [
               10,
               10
@@ -10581,33 +7808,7 @@ window.OBSERVATOIRE = {
             "bytes": 5938
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "smtps1.monespacesante.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "80.78.4.76",
-              "asn": "21000",
-              "as": "ATOS-AS - Atos France SAS, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:06Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "AP-HP",
@@ -10646,8 +7847,8 @@ window.OBSERVATOIRE = {
           },
           "hsts": "",
           "front": "other",
-          "server": "rdwr",
-          "at": "2026-10-15T22:06:27Z",
+          "server": "",
+          "at": "2026-11-02T13:27:33Z",
           "cost": null,
           "page": {
             "final": "https://www.aphp.fr/",
@@ -10661,39 +7862,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 317669
+            "bytes": 319815
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mx01.cloud.vadesecure.com",
-              "mx02.cloud.vadesecure.com",
-              "mx03.cloud.vadesecure.com",
-              "mx04.cloud.vadesecure.com"
-            ],
-            "provider": "vade",
-            "mtasts": "testing",
-            "tlsrpt": true,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "163.172.240.110",
-              "asn": "12876",
-              "as": "AS12876 - Scaleway SAS, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:45Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "AP-HM",
@@ -10733,7 +7905,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:11Z",
+          "at": "2026-11-02T13:27:15Z",
           "cost": null,
           "page": {
             "final": "https://fr.ap-hm.fr/",
@@ -10750,37 +7922,10 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer-when-downgrade",
             "permissions": "",
             "coop": "",
-            "bytes": 89575
+            "bytes": 88712
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-00365e01.gslb.pphosted.com",
-              "mxb-00365e01.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "reject",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "185.183.28.223",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:51Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "Hospices Civils de Lyon",
@@ -10820,7 +7965,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "apache",
-          "at": "2026-10-15T22:06:33Z",
+          "at": "2026-11-02T13:27:42Z",
           "cost": null,
           "page": {
             "final": "https://www.chu-lyon.fr/",
@@ -10836,39 +7981,13 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 106458
+            "bytes": 106009
           },
           "ai": [
             "openai",
             "mistral"
           ],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "chulyon-fr0i.mail.protection.outlook.com"
-            ],
-            "provider": "microsoft",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "52.101.185.114",
-              "asn": "8075",
-              "as": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH secp384r1",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:26Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "CHU de Bordeaux",
@@ -10910,7 +8029,7 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000; includesubdomains",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:33Z",
+          "at": "2026-11-02T13:27:43Z",
           "cost": null,
           "page": {
             "final": "https://www.chu-bordeaux.fr/",
@@ -10926,36 +8045,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 61658
+            "bytes": 62419
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "fwmail.chu-bordeaux.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "194.167.180.30",
-              "asn": "2200",
-              "as": "FR-RENATER - Renater, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "ECDH prime256v1",
-              "protocol": "TLSv1.2",
-              "at": "2026-10-16T10:40:28Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "CHU de Lille",
@@ -10996,13 +8089,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:32Z",
+          "at": "2026-11-02T13:27:41Z",
           "cost": {
-            "hybrid": 19.9,
-            "classical": 18.1,
-            "hybrid_median": 21.5,
-            "classical_median": 19.7,
-            "rtt": 11,
+            "hybrid": 21.1,
+            "classical": 18.7,
+            "hybrid_median": 24.4,
+            "classical_median": 23.9,
+            "rtt": 10.6,
             "n": [
               10,
               10
@@ -11023,37 +8116,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 382765
+            "bytes": 366496
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "vade-mx-fr01.hornetsecurity.com",
-              "vade-mx-fr02.hornetsecurity.com"
-            ],
-            "provider": "vade",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "94.100.138.100",
-              "asn": "25091",
-              "as": "IP-Max - IP-Max SA, CH"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:08Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "CHU de Toulouse",
@@ -11094,13 +8160,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "other",
           "server": "nginx",
-          "at": "2026-10-15T22:06:34Z",
+          "at": "2026-11-02T13:27:43Z",
           "cost": {
             "hybrid": 42.4,
-            "classical": 41.2,
-            "hybrid_median": 45.9,
-            "classical_median": 44.7,
-            "rtt": 8.6,
+            "classical": 42.2,
+            "hybrid_median": 60,
+            "classical_median": 54.1,
+            "rtt": 8,
             "n": [
               10,
               10
@@ -11118,36 +8184,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "accelerometer=(), ambient-light-sensor=(), autoplay=(),  camera=(),display-capture=(), cross-origin-isolated=(), encrypted-media=(), fullscreen=(self \"https://www.youtube.com\" \"https://www.youtube-nocookie.com\"), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(self), usb=()",
             "coop": "",
-            "bytes": 107658
+            "bytes": 106455
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mib.chu-toulouse.fr"
-            ],
-            "provider": "other",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "193.57.201.124",
-              "asn": "215928",
-              "as": "FR-CHU-TLSE - Centre Hospitalier Universitaire de Toulouse, FR"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:40:41Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "CHU de Nantes",
@@ -11184,13 +8224,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "apache/2.4.6 (centos) openssl/1.0.2k-fips mod_jk/1.2.46",
-          "at": "2026-10-15T22:06:34Z",
+          "at": "2026-11-02T13:27:42Z",
           "cost": {
-            "hybrid": 37.2,
-            "classical": 37.1,
-            "hybrid_median": 40.4,
-            "classical_median": 39.1,
-            "rtt": 16.4,
+            "hybrid": 37.9,
+            "classical": 35.5,
+            "hybrid_median": 48.1,
+            "classical_median": 42.6,
+            "rtt": 16.3,
             "n": [
               10,
               10
@@ -11213,34 +8253,7 @@ window.OBSERVATOIRE = {
             "bytes": 144856
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "mxa-0033df01.gslb.pphosted.com",
-              "mxb-0033df01.gslb.pphosted.com"
-            ],
-            "provider": "proofpoint",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": true,
-            "dmarc": "quarantine",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "66.159.235.59",
-              "asn": "52129",
-              "as": "PROOFPOINT-ASN-EU - Proofpoint, Inc., US"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:41:50Z"
-            }
-          }
+          "hf": []
         },
         {
           "name": "CHU de Strasbourg",
@@ -11280,7 +8293,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "nginx",
-          "at": "2026-10-15T22:06:33Z",
+          "at": "2026-11-02T13:27:40Z",
           "cost": null,
           "page": {
             "final": "https://www.chru-strasbourg.fr/",
@@ -11296,37 +8309,10 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 172461
+            "bytes": 172496
           },
           "ai": [],
-          "hf": [],
-          "mail": {
-            "mx": [
-              "vade-mx-fr01.hornetsecurity.com",
-              "vade-mx-fr02.hornetsecurity.com"
-            ],
-            "provider": "vade",
-            "mtasts": null,
-            "tlsrpt": false,
-            "dane": false,
-            "tlsa": false,
-            "dnssec": false,
-            "dmarc": "none",
-            "spf": "-all",
-            "starttls": null,
-            "net": {
-              "ip": "94.100.138.100",
-              "asn": "25091",
-              "as": "IP-Max - IP-Max SA, CH"
-            },
-            "tls": {
-              "reachable": true,
-              "hybrid": false,
-              "default": "X25519 253 bits",
-              "protocol": "TLSv1.3",
-              "at": "2026-10-16T10:42:08Z"
-            }
-          }
+          "hf": []
         }
       ]
     },
@@ -11362,14 +8348,14 @@ window.OBSERVATOIRE = {
             "key": "id-ecPublicKey",
             "bits": 256,
             "curve": "P-256",
-            "sig": "ecdsa-with-SHA256",
-            "issuer": "Google Trust Services",
-            "from": "2026-09-20",
-            "until": "2026-12-19",
-            "names": 3
+            "sig": "ecdsa-with-SHA384",
+            "issuer": "Let's Encrypt",
+            "from": "2026-10-30",
+            "until": "2027-01-28",
+            "names": 2
           },
           "net": {
-            "ip": "104.18.32.47",
+            "ip": "172.64.155.209",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -11377,13 +8363,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:07Z",
+          "at": "2026-11-02T13:27:12Z",
           "cost": {
-            "hybrid": 17.5,
-            "classical": 14.7,
-            "hybrid_median": 21.6,
-            "classical_median": 17.9,
-            "rtt": 10.2,
+            "hybrid": 19,
+            "classical": 15.2,
+            "hybrid_median": 22.1,
+            "classical_median": 17.8,
+            "rtt": 10.6,
             "n": [
               10,
               10
@@ -11392,7 +8378,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://chatgpt.com/",
             "code": 200,
-            "csp": "base-uri 'none'; object-src 'none'; frame-ancestors 'self' chrome-extension://lfkehkpjohcoelkpembgemeipeppanef chrome-extension://hehggadaopoacecdllhhajmbjkdcmajg",
+            "csp": "base-uri 'none'; object-src 'none'; frame-ancestors 'self' chrome-extension://lfkehkpjohcoelkpembgemeipeppanef chrome-extension://hehggadaopoacecdllhhajmbjkdcmajg chrome-extension://odlomjlbamekndcpllcnffbgeohgkmjh",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [],
@@ -11401,7 +8387,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "same-origin-allow-popups",
-            "bytes": 329130
+            "bytes": 459151
           }
         },
         {
@@ -11443,13 +8429,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:04Z",
           "cost": {
-            "hybrid": 14.1,
-            "classical": 13.3,
-            "hybrid_median": 20.5,
-            "classical_median": 15.3,
-            "rtt": 8.7,
+            "hybrid": 14.3,
+            "classical": 12.6,
+            "hybrid_median": 21.9,
+            "classical_median": 15.7,
+            "rtt": 8,
             "n": [
               10,
               10
@@ -11509,13 +8495,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:07Z",
+          "at": "2026-11-02T13:27:11Z",
           "cost": {
-            "hybrid": 18.7,
-            "classical": 15.9,
-            "hybrid_median": 30.8,
-            "classical_median": 20.4,
-            "rtt": 9.8,
+            "hybrid": 16.8,
+            "classical": 15.4,
+            "hybrid_median": 20.1,
+            "classical_median": 18.8,
+            "rtt": 8.5,
             "n": [
               10,
               10
@@ -11524,7 +8510,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://claude.ai/login",
             "code": 200,
-            "csp": "script-src 'nonce-IIeWOkztmAY/+39PoqJ5AA==' 'strict-dynamic' 'sha256-JtzRGrPebZ8u8elKGI44AVwtuFdqcHUrCrog8sYu/14=' 'sha256-4aQureSMVDuR1KGymSIGLF6TW5zcgbHi9yYUOCD1ngY=' 'sha256-D81Kh4KclKqDki95OAdMuuSllue8wW9vbei3fuDxKfU=' 'sha256-96xKJR+kh8rZ+j0Q0OrN6K0Po2N0VrrWm3SMRcxboM4=' 'sha256-rmdvJEye8/04YNQCmhoWKJZERSstfDuLoK3z1VqC+uo=' 'sha256-K3AaGwEd2z1ihno4j82DK0eK3rHggo8JIOooe12Sd/c=' 'sha256-7o0Q+ObG/l2/Q8MJx18XdAasddI6zcwdYOF+JGTwzWk=' 'sha256-8dZmowwnYr9C3cOUfps+pDtRarSncFD7H36T7s50/Es=' 'sha256-j5lD8bkJRdHJPmRAgT5QY6RJvB38KV5HjDZUHi2YqY8=' 'sha256-9tro++PxLJSw47uhlyMLBPmAOh3dbHqGgrqSrcoX76Q=' 'sha256-pvUt+K8Ww/eSfSCiD4NBtvxke+RWuQAlLOJV26XAcWU=' 'sha256-kH2WpnWeIsTR0/njMJtvjhTKRH9NTR/VS7XymQA0sWw=' 'sha256-Z8a6TogIieNJAREGk13SwyaS0v7XVkNiRhZ1AP7ashU=' 'sha256-Xq5e597jKcVjN9Bn95wymXwnhmZaC+3IAuP5wm23vgs=' 'sha256-XB2JCsivqro4vpq9z4+8kOEDSqpTWYIy/45TavVnIO0=' 'sha256-K/anTYR/C5LvVtQPVw0VddEtn3Qa3+9zDTIhzaDNUa8=' 'sha256-VpEcbwZVjESDF6AgDzvRmYdU7ro7OAHf+sJHay2Scac=' 'sha256-+PnvgfwDMRhY7tuKbbZBBtq3XIKQN4Vfvg1kfKGqfm0=' 'sha256-wvguZzglNvNKim5c9A/mfVVvND3q440Bqer+8xsupXg=' 'sha256-vYi1Tag/gm0xfBf5FKhGuJBMsK14OdDqTq42bYEIrI4=' 'wasm-unsafe-eval'; object-src 'none'; base-uri 'none'; block-all-mixed-content; img-src 'self' data: blob: *.anthropic.com *.claude.ai *.claude.com *.gstatic.com * https://js.intercomcdn.com https://static.intercomassets.com https://downloads.intercomcdn.com https://downloads.intercomcdn.eu https://downloads.au.intercomcdn.com https://uploads.intercomusercontent.com https://gifs.intercomcdn.com https://video-messages.intercomcdn.com https://messenger-apps.intercom.io https://messenger-apps.eu.intercom.io https://messenger-apps.au.intercom.io https://*.intercom-attachments-1.com https://*.intercom-attachments.eu https://*.au.intercom-attachments.com https://*.intercom-attachments-2.com https://*.intercom-attachments-3.com https://*.intercom-attachments-4.com https://*.intercom-attachments-5.com https://*.intercom-attachments-6.com https://*.intercom-attachments-7.com https://*.intercom-attachments-8.com https://*.intercom-attachments-9.com https://static.intercomassets.eu https://static.au.intercomassets.com; frame-src 'self' a-cdn.claude.ai a.claude.ai sealed-entry.claude.ai b.stripecdn.com challenges.cloudflare.com embedded-dashboards.metronome.com form.typeform.com forms.hsforms.com js.stripe.com m.stripe.network hcaptcha.com *.hcaptcha.com pay.google.com r.stripe.com www.google.com accounts.google.com www.youtube-nocookie.com https://intercom-sheets.com https://www.intercom-reporting.com https://www.youtube.com https://player.vimeo.com https://fast.wistia.net https://www.claudeusercontent.com https://gdrive.claudeusercontent.com https://www.claudemcpclient.com *.claudemcpcontent.com https://sandbox.claudemcpcontent.com https://claude.ai *.livepreview.claude.ai *.livepreview.claude.app; font-src 'self' assets.claude.ai assets-proxy.anthropic.com https://fonts.gstatic.com https://js.intercomcdn.com https://fonts.intercomcdn.com; form-action 'self' https://forms.hsforms.com https://intercom.help https://api-iam.intercom.io https://api-iam.eu.intercom.io https://api-iam.au.intercom.io https://messenger-apps.intercom.io https://messenger-apps.eu.intercom.io https://messenger-apps.au.intercom.io https://support.claude.com; media-src 'self' blob: cdn.sanity.io https://assets.claude.ai https://assets-proxy.anthropic.com https://js.intercomcdn.com https://downloads.intercomcdn.com https://downloads.intercomcdn.eu https://downloads.au.intercomcdn.com; upgrade-insecure-requests; worker-src 'self' blob: a-cdn.claude.ai assets.claude.ai assets-proxy.anthropic.com a-cdn.anthropic.com s-cdn.anthropic.com; frame-ancestors 'self'",
+            "csp": "script-src 'nonce-PDJfQO+xRT9gKEj4HAjqwQ==' 'strict-dynamic' 'sha256-OP1GRpYp2ebWdWyk4sTdm7A8htGD72iGXvUg6lvfAbI=' 'sha256-5V4viyi/PoLdAYl48Iz53tl08bV0I51z5W2TkcH128A=' 'sha256-GXokX0lNm1XlGteBVofoNx8tjfWy+Npdis0eh+kVxfs=' 'sha256-WRAlqJxMoY8qgg3L//8tGayQNpLkFeOMlSli9mhMCXY=' 'sha256-abLr5G2q8t+ojtIv0oj/TX2Um86pjbtEhk5DyJv5VMo=' 'sha256-K3AaGwEd2z1ihno4j82DK0eK3rHggo8JIOooe12Sd/c=' 'sha256-6cEStHYwGH3nUkWQjhdf4DIQPkBDeojohQLgEvNCLjw=' 'sha256-xFEozjRFeECNb2CCW5hFj+EqyaTncFD46RkjuaK0jHI=' 'sha256-MUdEked4lX5N3Hgd2gzRzIWJuuNK0fJz2Pk/rHJR4zA=' 'sha256-mGbZde1RYzaQiWBow63nZs26uRjC+3rmi3lGHxBiqs8=' 'sha256-gvudIG4+E9On3KVKGFDFGal9eONiNybnMr3SHte3Q3k=' 'sha256-kH2WpnWeIsTR0/njMJtvjhTKRH9NTR/VS7XymQA0sWw=' 'sha256-MBnioi9hzOUQH/2cXajhTqVJbwJtf9skwmsMSZNZPmA=' 'sha256-GPkSgLEoznsPu0RjCnmPiRMc5ib8WQK+d4l7NyaT4XM=' 'sha256-sJk5T20/DzRjpE58LfIf9E7Nz78JCi6sRUpuglw73dw=' 'sha256-whSgrOdxUrGe9Elq9206d6vrHBzgRvZ/E9onIvLynDU=' 'sha256-P4GWG7hQXZLdIWFN1AJRkCxBqJc59dJiDK8s4HRa6hU=' 'sha256-kb4cP3cPdX+u/K/6exFZfE8bCzH+X61miNT/ZDwyKsM=' 'sha256-+PnvgfwDMRhY7tuKbbZBBtq3XIKQN4Vfvg1kfKGqfm0=' 'sha256-+g77EH7C5GscBAaxZlUygt0Ggdv/6FxUzwg5rICELBk=' 'sha256-LC7wl8/C7SSP8zB9a9LD838prfzCgJtbjIA2Bqwo4kI=' 'sha256-nMqswMfq9Zx9nwdLeVLNYapeP7rAW86DE7tT/In5EKw=' 'wasm-unsafe-eval'; object-src 'none'; base-uri 'none'; block-all-mixed-content; img-src 'self' data: blob: *.anthropic.com *.claude.ai *.claude.com *.gstatic.com * https://js.intercomcdn.com https://static.intercomassets.com https://downloads.intercomcdn.com https://downloads.intercomcdn.eu https://downloads.au.intercomcdn.com https://uploads.intercomusercontent.com https://gifs.intercomcdn.com https://video-messages.intercomcdn.com https://messenger-apps.intercom.io https://messenger-apps.eu.intercom.io https://messenger-apps.au.intercom.io https://*.intercom-attachments-1.com https://*.intercom-attachments.eu https://*.au.intercom-attachments.com https://*.intercom-attachments-2.com https://*.intercom-attachments-3.com https://*.intercom-attachments-4.com https://*.intercom-attachments-5.com https://*.intercom-attachments-6.com https://*.intercom-attachments-7.com https://*.intercom-attachments-8.com https://*.intercom-attachments-9.com https://static.intercomassets.eu https://static.au.intercomassets.com; frame-src 'self' a.claude.ai sealed-entry.claude.ai b.stripecdn.com challenges.cloudflare.com embedded-dashboards.metronome.com form.typeform.com forms.hsforms.com js.stripe.com m.stripe.network hcaptcha.com *.hcaptcha.com pay.google.com r.stripe.com www.google.com accounts.google.com www.youtube-nocookie.com https://intercom-sheets.com https://www.intercom-reporting.com https://www.youtube.com https://player.vimeo.com https://fast.wistia.net https://www.claudeusercontent.com https://gdrive.claudeusercontent.com https://repl.claudeusercontent.com https://www.claudemcpclient.com *.claudemcpcontent.com https://sandbox.claudemcpcontent.com https://claude.ai *.livepreview.claude.ai *.livepreview.claude.app; font-src 'self' assets.claude.ai assets-proxy.anthropic.com https://fonts.gstatic.com https://js.intercomcdn.com https://fonts.intercomcdn.com; form-action 'self' https://forms.hsforms.com https://intercom.help https://api-iam.intercom.io https://api-iam.eu.intercom.io https://api-iam.au.intercom.io https://messenger-apps.intercom.io https://messenger-apps.eu.intercom.io https://messenger-apps.au.intercom.io https://support.claude.com; media-src 'self' blob: cdn.sanity.io https://assets.claude.ai https://assets-proxy.anthropic.com https://js.intercomcdn.com https://downloads.intercomcdn.com https://downloads.intercomcdn.eu https://downloads.au.intercomcdn.com; upgrade-insecure-requests; worker-src 'self' blob: assets.claude.ai assets-proxy.anthropic.com s-cdn.anthropic.com; frame-ancestors 'self'",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -11533,9 +8519,9 @@ window.OBSERVATOIRE = {
             "xfo": "",
             "xcto": "nosniff",
             "referrer": "strict-origin-when-cross-origin",
-            "permissions": "accelerometer=self, attribution-reporting=*, autoplay=(self \"https://www.youtube-nocookie.com\"), bluetooth=self, browsing-topics=*, camera=(self \"https://*.claudemcpcontent.com\"), clipboard-read=self, clipboard-write=(self \"https://*.claudemcpcontent.com\"), compute-pressure=self, display-capture=self, encrypted-media=self, fullscreen=(self \"https://www.youtube-nocookie.com\"), gamepad=self, geolocation=(self \"https://*.claudemcpcontent.com\"), gyroscope=self, hid=self, identity-credentials-get=self, idle-detection=self, local-fonts=self, magnetometer=self, microphone=(self \"https://*.claudemcpcontent.com\"), midi=self, otp-credentials=self, picture-in-picture=*, publickey-credentials-create=self, publickey-credentials-get=self, screen-wake-lock=self, serial=self, storage-access=*, unload=(), usb=self, web-share=self, window-management=self, xr-spatial-tracking=self",
+            "permissions": "accelerometer=self, attribution-reporting=*, autoplay=(self \"https://www.youtube-nocookie.com\"), bluetooth=self, browsing-topics=*, camera=(self \"https://*.claudemcpcontent.com\"), clipboard-read=self, clipboard-write=(self \"https://*.claudemcpcontent.com\"), compute-pressure=self, display-capture=self, encrypted-media=(self \"https://*.claudemcpcontent.com\"), fullscreen=(self \"https://www.youtube-nocookie.com\"), gamepad=self, geolocation=(self \"https://*.claudemcpcontent.com\"), gyroscope=self, hid=self, identity-credentials-get=self, idle-detection=self, local-fonts=self, magnetometer=self, microphone=(self \"https://*.claudemcpcontent.com\"), midi=self, otp-credentials=self, picture-in-picture=*, publickey-credentials-create=self, publickey-credentials-get=self, screen-wake-lock=self, serial=self, storage-access=*, unload=(), usb=self, web-share=self, window-management=self, xr-spatial-tracking=self",
             "coop": "same-origin-allow-popups",
-            "bytes": 142223
+            "bytes": 146998
           }
         },
         {
@@ -11577,13 +8563,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:04Z",
           "cost": {
-            "hybrid": 16.1,
-            "classical": 12.3,
-            "hybrid_median": 18.1,
-            "classical_median": 17.2,
-            "rtt": 9.1,
+            "hybrid": 16.6,
+            "classical": 14.2,
+            "hybrid_median": 21,
+            "classical_median": 15.8,
+            "rtt": 9.2,
             "n": [
               10,
               10
@@ -11630,14 +8616,14 @@ window.OBSERVATOIRE = {
             "key": "id-ecPublicKey",
             "bits": 256,
             "curve": "P-256",
-            "sig": "sha256WithRSAEncryption",
+            "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-09-18",
-            "until": "2026-12-11",
+            "from": "2026-10-07",
+            "until": "2026-12-30",
             "names": 65
           },
           "net": {
-            "ip": "142.251.152.2",
+            "ip": "142.251.155.2",
             "asn": "15169",
             "cc": "US",
             "as": "GOOGLE - Google LLC, US"
@@ -11645,13 +8631,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "esf",
-          "at": "2026-10-15T22:06:11Z",
+          "at": "2026-11-02T13:27:16Z",
           "cost": {
             "hybrid": 19.2,
-            "classical": 16.8,
-            "hybrid_median": 23.6,
-            "classical_median": 21.7,
-            "rtt": 8.3,
+            "classical": 18.4,
+            "hybrid_median": 23.3,
+            "classical_median": 22.5,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -11660,8 +8646,8 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://gemini.google.com/",
             "code": 200,
-            "csp": "report-uri /_/BardChatUi/cspreport;default-src 'none';script-src * 'unsafe-inline' 'unsafe-eval' blob: data: https://www.gstatic.com/bg3/boq-bard-web/;object-src * 'unsafe-inline' 'unsafe-eval';worker-src * 'unsafe-inline' 'unsafe-eval';style-src 'report-sample' 'unsafe-inline' https://www.gstatic.com https://gemini.gstatic.com https://fonts.googleapis.com https://gstatic.com/uservoice/surveys/resources/ https://www.gstatic.com/bg3/boq-bard-web/;font-src data: https://fonts.gstatic.com https://www.gstatic.com https://www.gstatic.com/bg3/boq-bard-web/;child-src 'self' https://*.google.com https://*.scf.usercontent.goog https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com/picker/v2/home blob:;frame-src 'self' https://*.google.com https://*.scf.usercontent.goog https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com/picker/v2/home blob: https://www.googletagmanager.com https://bid.g.doubleclick.net https://td.doubleclick.net https://*.fls.doubleclick.net;media-src https://*.google.com https://*.googleusercontent.com https://*.gstatic.com https://*.youtube.com https://*.youtube-nocookie.com https://*.ytimg.com https://*.ggpht.com https://bard.datacommons.org blob: https://*.googlevideo.com https://labs.google https://storage.googleapis.com https://*.googleapis.com;form-action https://ogs.google.com https://onegoogle-autopush.sandbox.google.com https://onegoogle-staging.sandbox.google.com https://onegoogle-dev.corp.google.com https://studio.firebase.google.com/run.api;manifest-src 'none';img-src https://*.google.com https://*.googleusercontent.com https://*.gstatic.com https://*.youtube.com https://*.youtube-nocookie.com https://*.ytimg.com https://*.ggpht.com https://bard.datacommons.org blob: data: https://labs.google https://*.googleapis.com https://www.gstatic.com/bg3/boq-bard-web/ https://*.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://pagead2.googlesyndication.com https://ad.doubleclick.net https://adservice.google.com https://ade.googlesyndication.com https://google.ad https://www.google.ad https://google.ae https://www.google.ae https://google.com.af https://www.google.com.af https://google.com.ag https://www.google.com.ag https://google.com.ai https://www.google.com.ai https://google.al https://www.google.al https://google.am https://www.google.am https://google.co.ao https://www.google.co.ao https://google.com.ar https://www.google.com.ar https://google.as https://www.google.as https://google.at https://www.google.at https://google.com.au https://www.google.com.au https://google.az https://www.google.az https://google.ba https://www.google.ba https://google.com.bd https://www.google.com.bd https://google.be https://www.google.be https://google.bf https://www.google.bf https://google.bg https://www.google.bg https://google.com.bh https://www.google.com.bh https://google.bi https://www.google.bi https://google.bj https://www.google.bj https://google.com.bn https://www.google.com.bn https://google.com.bo https://www.google.com.bo https://google.com.br https://www.google.com.br https://google.bs https://www.google.bs https://google.bt https://www.google.bt https://google.co.bw https://www.google.co.bw https://google.by https://www.google.by https://google.com.bz https://www.google.com.bz https://google.ca https://www.google.ca https://google.cd https://www.google.cd https://google.cf https://www.google.cf https://google.cg https://www.google.cg https://google.ch https://www.google.ch https://google.ci https://www.google.ci https://google.co.ck https://www.google.co.ck https://google.cl https://www.google.cl https://google.cm https://www.google.cm https://google.cn https://www.google.cn https://google.com.cn https://www.google.com.cn https://google.com.co https://www.google.com.co https://google.co.cr https://www.google.co.cr https://google.com.cu https://www.google.com.cu https://google.cv https://www.google.cv https://google.com.cy https://www.google.com.cy https://google.cz https://www.google.cz https://google.de https://www.google.de https://google.dj https://www.google.dj https://google.dk https://www.google.dk https://google.dm https://www.google.dm https://google.com.do https://www.google.com.do https://google.dz https://www.google.dz https://google.com.ec https://www.google.com.ec https://google.ee https://www.google.ee https://google.com.eg https://www.google.com.eg https://google.es https://www.google.es https://google.com.et https://www.google.com.et https://google.fi https://www.google.fi https://google.com.fj https://www.google.com.fj https://google.fm https://www.google.fm https://google.fr https://www.google.fr https://google.ga https://www.google.ga https://google.co.uk https://www.google.co.uk https://google.ge https://www.google.ge https://google.gg https://www.google.gg https://google.com.gh https://www.google.com.gh https://google.com.gi https://www.google.com.gi https://google.gl https://www.google.gl https://google.gm https://www.google.gm https://google.gp https://www.google.gp https://google.gr https://www.google.gr https://google.com.gt https://www.google.com.gt https://google.gy https://www.google.gy https://google.com.hk https://www.google.com.hk https://google.hk https://www.google.hk https://google.hn https://www.google.hn https://google.hr https://www.google.hr https://google.ht https://www.google.ht https://google.hu https://www.google.hu https://google.co.id https://www.google.co.id https://google.ie https://www.google.ie https://google.co.il https://www.google.co.il https://google.im https://www.google.im https://google.co.im https://www.google.co.im https://google.co.in https://www.google.co.in https://google.iq https://www.google.iq https://google.is https://www.google.is https://google.it https://www.google.it https://google.co.je https://www.google.co.je https://google.je https://www.google.je https://google.com.jm https://www.google.com.jm https://google.jo https://www.google.jo https://google.co.jp https://www.google.co.jp https://google.co.ke https://www.google.co.ke https://google.kg https://www.google.kg https://google.com.kh https://www.google.com.kh https://google.ki https://www.google.ki https://google.co.kr https://www.google.co.kr https://google.com.kw https://www.google.com.kw https://google.kz https://www.google.kz https://google.la https://www.google.la https://google.com.lb https://www.google.com.lb https://google.li https://www.google.li https://google.lk https://www.google.lk https://google.co.ls https://www.google.co.ls https://google.lt https://www.google.lt https://google.lu https://www.google.lu https://google.lv https://www.google.lv https://google.com.ly https://www.google.com.ly https://google.co.ma https://www.google.co.ma https://google.md https://www.google.md https://google.me https://www.google.me https://google.mg https://www.google.mg https://google.mk https://www.google.mk https://google.ml https://www.google.ml https://google.com.mm https://www.google.com.mm https://google.mn https://www.google.mn https://google.ms https://www.google.ms https://google.com.mt https://www.google.com.mt https://google.mu https://www.google.mu https://google.mv https://www.google.mv https://google.mw https://www.google.mw https://google.com.mx https://www.google.com.mx https://google.com.my https://www.google.com.my https://google.co.mz https://www.google.co.mz https://google.com.na https://www.google.com.na https://google.ne https://www.google.ne https://google.com.ng https://www.google.com.ng https://google.ng https://www.google.ng https://google.com.ni https://www.google.com.ni https://google.nl https://www.google.nl https://google.no https://www.google.no https://google.com.np https://www.google.com.np https://google.nr https://www.google.nr https://google.nu https://www.google.nu https://google.co.nz https://www.google.co.nz https://google.com.om https://www.google.com.om https://google.com.pa https://www.google.com.pa https://google.com.pe https://www.google.com.pe https://google.com.pg https://www.google.com.pg https://google.com.ph https://www.google.com.ph https://google.com.pk https://www.google.com.pk https://google.pl https://www.google.pl https://google.pn https://www.google.pn https://google.com.pr https://www.google.com.pr https://google.ps https://www.google.ps https://google.pt https://www.google.pt https://google.com.py https://www.google.com.py https://google.com.qa https://www.google.com.qa https://google.ro https://www.google.ro https://google.rs https://www.google.rs https://google.ru https://www.google.ru https://google.rw https://www.google.rw https://google.com.sa https://www.google.com.sa https://google.com.sb https://www.google.com.sb https://google.sc https://www.google.sc https://google.se https://www.google.se https://google.com.sg https://www.google.com.sg https://google.sh https://www.google.sh https://google.si https://www.google.si https://google.sk https://www.google.sk https://google.com.sl https://www.google.com.sl https://google.sm https://www.google.sm https://google.sn https://www.google.sn https://google.so https://www.google.so https://google.sr https://www.google.sr https://google.st https://www.google.st https://google.com.sv https://www.google.com.sv https://google.td https://www.google.td https://google.tg https://www.google.tg https://google.co.th https://www.google.co.th https://google.com.tj https://www.google.com.tj https://google.tk https://www.google.tk https://google.tl https://www.google.tl https://google.tm https://www.google.tm https://google.tn https://www.google.tn https://google.com.tn https://www.google.com.tn https://google.to https://www.google.to https://google.com.tr https://www.google.com.tr https://google.tt https://www.google.tt https://google.com.tw https://www.google.com.tw https://google.co.tz https://www.google.co.tz https://google.com.ua https://www.google.com.ua https://google.co.ug https://www.google.co.ug https://google.com https://www.google.com https://google.com.uy https://www.google.com.uy https://google.co.uz https://www.google.co.uz https://google.com.vc https://www.google.com.vc https://google.co.ve https://www.google.co.ve https://google.vg https://www.google.vg https://google.co.vi https://www.google.co.vi https://google.com.vn https://www.google.com.vn https://google.vu https://www.google.vu https://google.ws https://www.google.ws https://google.co.za https://www.google.co.za https://google.co.zm https://www.google.co.zm https://google.co.zw https://www.google.co.zw;connect-src 'self' https://*.google.com https://*.gstatic.com https://*.google-analytics.com https://csp.withgoogle.com/csp/proto/BardChatUi https://content-push.googleapis.com/upload/ https://*.googleusercontent.com https://ogads-pa.googleapis.com/ https://*.youtube.com https://*.youtube-nocookie.com https://*.googlevideo.com data: https://static.corp.google.com/external_content/scs_corp/bard/artifacts https://*.googleapis.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.googleadservices.com https://pagead2.googlesyndication.com https://ad.doubleclick.net https://adservice.google.com https://ade.googlesyndication.com https://google.ad https://www.google.ad https://google.ae https://www.google.ae https://google.com.af https://www.google.com.af https://google.com.ag https://www.google.com.ag https://google.com.ai https://www.google.com.ai https://google.al https://www.google.al https://google.am https://www.google.am https://google.co.ao https://www.google.co.ao https://google.com.ar https://www.google.com.ar https://google.as https://www.google.as https://google.at https://www.google.at https://google.com.au https://www.google.com.au https://google.az https://www.google.az https://google.ba https://www.google.ba https://google.com.bd https://www.google.com.bd https://google.be https://www.google.be https://google.bf https://www.google.bf https://google.bg https://www.google.bg https://google.com.bh https://www.google.com.bh https://google.bi https://www.google.bi https://google.bj https://www.google.bj https://google.com.bn https://www.google.com.bn https://google.com.bo https://www.google.com.bo https://google.com.br https://www.google.com.br https://google.bs https://www.google.bs https://google.bt https://www.google.bt https://google.co.bw https://www.google.co.bw https://google.by https://www.google.by https://google.com.bz https://www.google.com.bz https://google.ca https://www.google.ca https://google.cd https://www.google.cd https://google.cf https://www.google.cf https://google.cg https://www.google.cg https://google.ch https://www.google.ch https://google.ci https://www.google.ci https://google.co.ck https://www.google.co.ck https://google.cl https://www.google.cl https://google.cm https://www.google.cm https://google.cn https://www.google.cn https://google.com.cn https://www.google.com.cn https://google.com.co https://www.google.com.co https://google.co.cr https://www.google.co.cr https://google.com.cu https://www.google.com.cu https://google.cv https://www.google.cv https://google.com.cy https://www.google.com.cy https://google.cz https://www.google.cz https://google.de https://www.google.de https://google.dj https://www.google.dj https://google.dk https://www.google.dk https://google.dm https://www.google.dm https://google.com.do https://www.google.com.do https://google.dz https://www.google.dz https://google.com.ec https://www.google.com.ec https://google.ee https://www.google.ee https://google.com.eg https://www.google.com.eg https://google.es https://www.google.es https://google.com.et https://www.google.com.et https://google.fi https://www.google.fi https://google.com.fj https://www.google.com.fj https://google.fm https://www.google.fm https://google.fr https://www.google.fr https://google.ga https://www.google.ga https://google.co.uk https://www.google.co.uk https://google.ge https://www.google.ge https://google.gg https://www.google.gg https://google.com.gh https://www.google.com.gh https://google.com.gi https://www.google.com.gi https://google.gl https://www.google.gl https://google.gm https://www.google.gm https://google.gp https://www.google.gp https://google.gr https://www.google.gr https://google.com.gt https://www.google.com.gt https://google.gy https://www.google.gy https://google.com.hk https://www.google.com.hk https://google.hk https://www.google.hk https://google.hn https://www.google.hn https://google.hr https://www.google.hr https://google.ht https://www.google.ht https://google.hu https://www.google.hu https://google.co.id https://www.google.co.id https://google.ie https://www.google.ie https://google.co.il https://www.google.co.il https://google.im https://www.google.im https://google.co.im https://www.google.co.im https://google.co.in https://www.google.co.in https://google.iq https://www.google.iq https://google.is https://www.google.is https://google.it https://www.google.it https://google.co.je https://www.google.co.je https://google.je https://www.google.je https://google.com.jm https://www.google.com.jm https://google.jo https://www.google.jo https://google.co.jp https://www.google.co.jp https://google.co.ke https://www.google.co.ke https://google.kg https://www.google.kg https://google.com.kh https://www.google.com.kh https://google.ki https://www.google.ki https://google.co.kr https://www.google.co.kr https://google.com.kw https://www.google.com.kw https://google.kz https://www.google.kz https://google.la https://www.google.la https://google.com.lb https://www.google.com.lb https://google.li https://www.google.li https://google.lk https://www.google.lk https://google.co.ls https://www.google.co.ls https://google.lt https://www.google.lt https://google.lu https://www.google.lu https://google.lv https://www.google.lv https://google.com.ly https://www.google.com.ly https://google.co.ma https://www.google.co.ma https://google.md https://www.google.md https://google.me https://www.google.me https://google.mg https://www.google.mg https://google.mk https://www.google.mk https://google.ml https://www.google.ml https://google.com.mm https://www.google.com.mm https://google.mn https://www.google.mn https://google.ms https://www.google.ms https://google.com.mt https://www.google.com.mt https://google.mu https://www.google.mu https://google.mv https://www.google.mv https://google.mw https://www.google.mw https://google.com.mx https://www.google.com.mx https://google.com.my https://www.google.com.my https://google.co.mz https://www.google.co.mz https://google.com.na https://www.google.com.na https://google.ne https://www.google.ne https://google.com.ng https://www.google.com.ng https://google.ng https://www.google.ng https://google.com.ni https://www.google.com.ni https://google.nl https://www.google.nl https://google.no https://www.google.no https://google.com.np https://www.google.com.np https://google.nr https://www.google.nr https://google.nu https://www.google.nu https://google.co.nz https://www.google.co.nz https://google.com.om https://www.google.com.om https://google.com.pa https://www.google.com.pa https://google.com.pe https://www.google.com.pe https://google.com.pg https://www.google.com.pg https://google.com.ph https://www.google.com.ph https://google.com.pk https://www.google.com.pk https://google.pl https://www.google.pl https://google.pn https://www.google.pn https://google.com.pr https://www.google.com.pr https://google.ps https://www.google.ps https://google.pt https://www.google.pt https://google.com.py https://www.google.com.py https://google.com.qa https://www.google.com.qa https://google.ro https://www.google.ro https://google.rs https://www.google.rs https://google.ru https://www.google.ru https://google.rw https://www.google.rw https://google.com.sa https://www.google.com.sa https://google.com.sb https://www.google.com.sb https://google.sc https://www.google.sc https://google.se https://www.google.se https://google.com.sg https://www.google.com.sg https://google.sh https://www.google.sh https://google.si https://www.google.si https://google.sk https://www.google.sk https://google.com.sl https://www.google.com.sl https://google.sm https://www.google.sm https://google.sn https://www.google.sn https://google.so https://www.google.so https://google.sr https://www.google.sr https://google.st https://www.google.st https://google.com.sv https://www.google.com.sv https://google.td https://www.google.td https://google.tg https://www.google.tg https://google.co.th https://www.google.co.th https://google.com.tj https://www.google.com.tj https://google.tk https://www.google.tk https://google.tl https://www.google.tl https://google.tm https://www.google.tm https://google.tn https://www.google.tn https://google.com.tn https://www.google.com.tn https://google.to https://www.google.to https://google.com.tr https://www.google.com.tr https://google.tt https://www.google.tt https://google.com.tw https://www.google.com.tw https://google.co.tz https://www.google.co.tz https://google.com.ua https://www.google.com.ua https://google.co.ug https://www.google.co.ug https://google.com https://www.google.com https://google.com.uy https://www.google.com.uy https://google.co.uz https://www.google.co.uz https://google.com.vc https://www.google.com.vc https://google.co.ve https://www.google.co.ve https://google.vg https://www.google.vg https://google.co.vi https://www.google.co.vi https://google.com.vn https://www.google.com.vn https://google.vu https://www.google.vu https://google.ws https://www.google.ws https://google.co.za https://www.google.co.za https://google.co.zm https://www.google.co.zm https://google.co.zw https://www.google.co.zw,script-src 'report-sample' 'nonce-9YBsaybqIyaVVV8hOkrFww' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri /_/BardChatUi/cspreport,script-src 'unsafe-inline' 'unsafe-eval' blob: data: 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com https://www.gstatic.com/bg3/boq-bard-web/ https://www.google.com/tools/feedback/ https://www.gstatic.com/feedback/js/ https://www.gstatic.com/inproduct_help/ https://www.gstatic.com/support/content/ https://www.gstatic.com/uservoice/feedback/client/web/live/ https://www.gstatic.com/uservoice/surveys/resources/prod/js/survey/ https://support.google.com/inapp/ https://maps.googleapis.com https://fonts.gstatic.com https://gemini.gstatic.com https://www.youtube.com/iframe_api https://www.youtube.com/s/player/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://ads.google.com;report-uri /_/BardChatUi/cspreport/allowlist,require-trusted-types-for 'script';report-uri /_/BardChatUi/cspreport",
-            "csp_ro": "script-src 'unsafe-inline' 'unsafe-eval' blob: data: https://www.googleadservices.com/pagead/conversion/ https://www.googletagmanager.com/gtag/js https://www.googletagmanager.com/gtag/destination https://www.googletagmanager.com/gtm.js https://www.google.com/js/bg/ https://www.gstatic.com/external_hosted/highlightjs/highlight.pack.js https://www.gstatic.com/monaco_editor/ https://fonts.gstatic.com/s/e/notoemoji/search/wrapper.js https://www.youtube.com/iframe_api https://translate.google.com/translate_a/element.js https://www-onepick-opensocial.googleusercontent.com/gadgets/js/rpc.js https://www.google.com/tools/feedback/chat_load.js https://www.google.com/tools/feedback/help_api.js https://www.google.com/tools/feedback/load.js https://www.google.com/tools/feedback/open.js https://www.google.com/tools/feedback/open_to_help_guide_lazy.js https://www.gstatic.com/feedback/js/ https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js https://www.gstatic.com/inproduct_help/api/main.min.js https://www.gstatic.com/inproduct_help/chatsupport/chatsupport_button_v2.js https://www.gstatic.com/inproduct_help/service/lazy.min.js https://www.gstatic.com/uservoice/feedback/client/web/live/ https://www.gstatic.com/uservoice/surveys/resources/prod/js/survey/ https://www.gstatic.com/_/mss/boq-one-google/_/ https://www.gstatic.com/og/_/js/ https://apis.google.com/js/api.js https://apis.google.com/js/client.js https://maps.googleapis.com/maps/api/js https://gemini.gstatic.com/_/mss/boq-gemini-web-uiserver/_/js/k=boq-gemini-web-uiserver.BardChatUi.fr.7rsf_0UfA54.2018.O/ https://apis.google.com/_/scs/abc-static/_/js/ https://maps.googleapis.com/maps-api-v3/api/js/ https://maps.googleapis.com/maps/vt https://maps.googleapis.com/maps/api/js/ https://maps.googleapis.com/maps/api/place/js/ https://www.youtube.com/s/player/ https://translate.googleapis.com/_/translate_http/_/js/;report-uri /_/BardChatUi/cspreport/fine-allowlist",
+            "csp": "report-uri /_/BardChatUi/cspreport;default-src 'none';script-src * 'unsafe-inline' 'unsafe-eval' blob: data: https://www.gstatic.com/bg3/boq-bard-web/;object-src * 'unsafe-inline' 'unsafe-eval';worker-src * 'unsafe-inline' 'unsafe-eval';style-src 'report-sample' 'unsafe-inline' https://www.gstatic.com https://gemini.gstatic.com https://fonts.googleapis.com https://gstatic.com/uservoice/surveys/resources/ https://www.gstatic.com/bg3/boq-bard-web/;font-src data: https://fonts.gstatic.com https://www.gstatic.com https://www.gstatic.com/bg3/boq-bard-web/;child-src 'self' https://*.google.com https://*.scf.usercontent.goog https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com/picker/v2/home blob:;frame-src 'self' https://*.google.com https://*.scf.usercontent.goog https://www.youtube.com https://www.youtube-nocookie.com https://docs.google.com/picker/v2/home blob: https://www.googletagmanager.com https://bid.g.doubleclick.net https://td.doubleclick.net https://*.fls.doubleclick.net;media-src https://*.google.com https://*.googleusercontent.com https://*.gstatic.com https://*.youtube.com https://*.youtube-nocookie.com https://*.ytimg.com https://*.ggpht.com https://bard.datacommons.org blob: https://*.googlevideo.com https://labs.google https://storage.googleapis.com https://*.googleapis.com;form-action https://ogs.google.com https://onegoogle-autopush.sandbox.google.com https://onegoogle-staging.sandbox.google.com https://onegoogle-dev.corp.google.com https://studio.firebase.google.com/run.api;manifest-src 'none';img-src https://*.google.com https://*.googleusercontent.com https://*.gstatic.com https://*.youtube.com https://*.youtube-nocookie.com https://*.ytimg.com https://*.ggpht.com https://bard.datacommons.org blob: data: https://labs.google https://*.googleapis.com https://www.gstatic.com/bg3/boq-bard-web/ https://*.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://pagead2.googlesyndication.com https://ad.doubleclick.net https://adservice.google.com https://ade.googlesyndication.com https://tpc.googlesyndication.com https://google.ad https://www.google.ad https://google.ae https://www.google.ae https://google.com.af https://www.google.com.af https://google.com.ag https://www.google.com.ag https://google.com.ai https://www.google.com.ai https://google.al https://www.google.al https://google.am https://www.google.am https://google.co.ao https://www.google.co.ao https://google.com.ar https://www.google.com.ar https://google.as https://www.google.as https://google.at https://www.google.at https://google.com.au https://www.google.com.au https://google.az https://www.google.az https://google.ba https://www.google.ba https://google.com.bd https://www.google.com.bd https://google.be https://www.google.be https://google.bf https://www.google.bf https://google.bg https://www.google.bg https://google.com.bh https://www.google.com.bh https://google.bi https://www.google.bi https://google.bj https://www.google.bj https://google.com.bn https://www.google.com.bn https://google.com.bo https://www.google.com.bo https://google.com.br https://www.google.com.br https://google.bs https://www.google.bs https://google.bt https://www.google.bt https://google.co.bw https://www.google.co.bw https://google.by https://www.google.by https://google.com.bz https://www.google.com.bz https://google.ca https://www.google.ca https://google.cd https://www.google.cd https://google.cf https://www.google.cf https://google.cg https://www.google.cg https://google.ch https://www.google.ch https://google.ci https://www.google.ci https://google.co.ck https://www.google.co.ck https://google.cl https://www.google.cl https://google.cm https://www.google.cm https://google.cn https://www.google.cn https://google.com.cn https://www.google.com.cn https://google.com.co https://www.google.com.co https://google.co.cr https://www.google.co.cr https://google.com.cu https://www.google.com.cu https://google.cv https://www.google.cv https://google.com.cy https://www.google.com.cy https://google.cz https://www.google.cz https://google.de https://www.google.de https://google.dj https://www.google.dj https://google.dk https://www.google.dk https://google.dm https://www.google.dm https://google.com.do https://www.google.com.do https://google.dz https://www.google.dz https://google.com.ec https://www.google.com.ec https://google.ee https://www.google.ee https://google.com.eg https://www.google.com.eg https://google.es https://www.google.es https://google.com.et https://www.google.com.et https://google.fi https://www.google.fi https://google.com.fj https://www.google.com.fj https://google.fm https://www.google.fm https://google.fr https://www.google.fr https://google.ga https://www.google.ga https://google.co.uk https://www.google.co.uk https://google.ge https://www.google.ge https://google.gg https://www.google.gg https://google.com.gh https://www.google.com.gh https://google.com.gi https://www.google.com.gi https://google.gl https://www.google.gl https://google.gm https://www.google.gm https://google.gp https://www.google.gp https://google.gr https://www.google.gr https://google.com.gt https://www.google.com.gt https://google.gy https://www.google.gy https://google.com.hk https://www.google.com.hk https://google.hk https://www.google.hk https://google.hn https://www.google.hn https://google.hr https://www.google.hr https://google.ht https://www.google.ht https://google.hu https://www.google.hu https://google.co.id https://www.google.co.id https://google.ie https://www.google.ie https://google.co.il https://www.google.co.il https://google.im https://www.google.im https://google.co.im https://www.google.co.im https://google.co.in https://www.google.co.in https://google.iq https://www.google.iq https://google.is https://www.google.is https://google.it https://www.google.it https://google.co.je https://www.google.co.je https://google.je https://www.google.je https://google.com.jm https://www.google.com.jm https://google.jo https://www.google.jo https://google.co.jp https://www.google.co.jp https://google.co.ke https://www.google.co.ke https://google.kg https://www.google.kg https://google.com.kh https://www.google.com.kh https://google.ki https://www.google.ki https://google.co.kr https://www.google.co.kr https://google.com.kw https://www.google.com.kw https://google.kz https://www.google.kz https://google.la https://www.google.la https://google.com.lb https://www.google.com.lb https://google.li https://www.google.li https://google.lk https://www.google.lk https://google.co.ls https://www.google.co.ls https://google.lt https://www.google.lt https://google.lu https://www.google.lu https://google.lv https://www.google.lv https://google.com.ly https://www.google.com.ly https://google.co.ma https://www.google.co.ma https://google.md https://www.google.md https://google.me https://www.google.me https://google.mg https://www.google.mg https://google.mk https://www.google.mk https://google.ml https://www.google.ml https://google.com.mm https://www.google.com.mm https://google.mn https://www.google.mn https://google.ms https://www.google.ms https://google.com.mt https://www.google.com.mt https://google.mu https://www.google.mu https://google.mv https://www.google.mv https://google.mw https://www.google.mw https://google.com.mx https://www.google.com.mx https://google.com.my https://www.google.com.my https://google.co.mz https://www.google.co.mz https://google.com.na https://www.google.com.na https://google.ne https://www.google.ne https://google.com.ng https://www.google.com.ng https://google.ng https://www.google.ng https://google.com.ni https://www.google.com.ni https://google.nl https://www.google.nl https://google.no https://www.google.no https://google.com.np https://www.google.com.np https://google.nr https://www.google.nr https://google.nu https://www.google.nu https://google.co.nz https://www.google.co.nz https://google.com.om https://www.google.com.om https://google.com.pa https://www.google.com.pa https://google.com.pe https://www.google.com.pe https://google.com.pg https://www.google.com.pg https://google.com.ph https://www.google.com.ph https://google.com.pk https://www.google.com.pk https://google.pl https://www.google.pl https://google.pn https://www.google.pn https://google.com.pr https://www.google.com.pr https://google.ps https://www.google.ps https://google.pt https://www.google.pt https://google.com.py https://www.google.com.py https://google.com.qa https://www.google.com.qa https://google.ro https://www.google.ro https://google.rs https://www.google.rs https://google.ru https://www.google.ru https://google.rw https://www.google.rw https://google.com.sa https://www.google.com.sa https://google.com.sb https://www.google.com.sb https://google.sc https://www.google.sc https://google.se https://www.google.se https://google.com.sg https://www.google.com.sg https://google.sh https://www.google.sh https://google.si https://www.google.si https://google.sk https://www.google.sk https://google.com.sl https://www.google.com.sl https://google.sm https://www.google.sm https://google.sn https://www.google.sn https://google.so https://www.google.so https://google.sr https://www.google.sr https://google.st https://www.google.st https://google.com.sv https://www.google.com.sv https://google.td https://www.google.td https://google.tg https://www.google.tg https://google.co.th https://www.google.co.th https://google.com.tj https://www.google.com.tj https://google.tk https://www.google.tk https://google.tl https://www.google.tl https://google.tm https://www.google.tm https://google.tn https://www.google.tn https://google.com.tn https://www.google.com.tn https://google.to https://www.google.to https://google.com.tr https://www.google.com.tr https://google.tt https://www.google.tt https://google.com.tw https://www.google.com.tw https://google.co.tz https://www.google.co.tz https://google.com.ua https://www.google.com.ua https://google.co.ug https://www.google.co.ug https://google.com https://www.google.com https://google.com.uy https://www.google.com.uy https://google.co.uz https://www.google.co.uz https://google.com.vc https://www.google.com.vc https://google.co.ve https://www.google.co.ve https://google.vg https://www.google.vg https://google.co.vi https://www.google.co.vi https://google.com.vn https://www.google.com.vn https://google.vu https://www.google.vu https://google.ws https://www.google.ws https://google.co.za https://www.google.co.za https://google.co.zm https://www.google.co.zm https://google.co.zw https://www.google.co.zw;connect-src 'self' https://*.google.com https://*.gstatic.com https://*.google-analytics.com https://csp.withgoogle.com/csp/proto/BardChatUi https://content-push.googleapis.com/upload/ https://*.googleusercontent.com https://ogads-pa.googleapis.com/ https://*.youtube.com https://*.youtube-nocookie.com https://*.googlevideo.com data: https://static.corp.google.com/external_content/scs_corp/bard/artifacts https://*.googleapis.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.googleadservices.com https://pagead2.googlesyndication.com https://ad.doubleclick.net https://adservice.google.com https://ade.googlesyndication.com https://google.ad https://www.google.ad https://google.ae https://www.google.ae https://google.com.af https://www.google.com.af https://google.com.ag https://www.google.com.ag https://google.com.ai https://www.google.com.ai https://google.al https://www.google.al https://google.am https://www.google.am https://google.co.ao https://www.google.co.ao https://google.com.ar https://www.google.com.ar https://google.as https://www.google.as https://google.at https://www.google.at https://google.com.au https://www.google.com.au https://google.az https://www.google.az https://google.ba https://www.google.ba https://google.com.bd https://www.google.com.bd https://google.be https://www.google.be https://google.bf https://www.google.bf https://google.bg https://www.google.bg https://google.com.bh https://www.google.com.bh https://google.bi https://www.google.bi https://google.bj https://www.google.bj https://google.com.bn https://www.google.com.bn https://google.com.bo https://www.google.com.bo https://google.com.br https://www.google.com.br https://google.bs https://www.google.bs https://google.bt https://www.google.bt https://google.co.bw https://www.google.co.bw https://google.by https://www.google.by https://google.com.bz https://www.google.com.bz https://google.ca https://www.google.ca https://google.cd https://www.google.cd https://google.cf https://www.google.cf https://google.cg https://www.google.cg https://google.ch https://www.google.ch https://google.ci https://www.google.ci https://google.co.ck https://www.google.co.ck https://google.cl https://www.google.cl https://google.cm https://www.google.cm https://google.cn https://www.google.cn https://google.com.cn https://www.google.com.cn https://google.com.co https://www.google.com.co https://google.co.cr https://www.google.co.cr https://google.com.cu https://www.google.com.cu https://google.cv https://www.google.cv https://google.com.cy https://www.google.com.cy https://google.cz https://www.google.cz https://google.de https://www.google.de https://google.dj https://www.google.dj https://google.dk https://www.google.dk https://google.dm https://www.google.dm https://google.com.do https://www.google.com.do https://google.dz https://www.google.dz https://google.com.ec https://www.google.com.ec https://google.ee https://www.google.ee https://google.com.eg https://www.google.com.eg https://google.es https://www.google.es https://google.com.et https://www.google.com.et https://google.fi https://www.google.fi https://google.com.fj https://www.google.com.fj https://google.fm https://www.google.fm https://google.fr https://www.google.fr https://google.ga https://www.google.ga https://google.co.uk https://www.google.co.uk https://google.ge https://www.google.ge https://google.gg https://www.google.gg https://google.com.gh https://www.google.com.gh https://google.com.gi https://www.google.com.gi https://google.gl https://www.google.gl https://google.gm https://www.google.gm https://google.gp https://www.google.gp https://google.gr https://www.google.gr https://google.com.gt https://www.google.com.gt https://google.gy https://www.google.gy https://google.com.hk https://www.google.com.hk https://google.hk https://www.google.hk https://google.hn https://www.google.hn https://google.hr https://www.google.hr https://google.ht https://www.google.ht https://google.hu https://www.google.hu https://google.co.id https://www.google.co.id https://google.ie https://www.google.ie https://google.co.il https://www.google.co.il https://google.im https://www.google.im https://google.co.im https://www.google.co.im https://google.co.in https://www.google.co.in https://google.iq https://www.google.iq https://google.is https://www.google.is https://google.it https://www.google.it https://google.co.je https://www.google.co.je https://google.je https://www.google.je https://google.com.jm https://www.google.com.jm https://google.jo https://www.google.jo https://google.co.jp https://www.google.co.jp https://google.co.ke https://www.google.co.ke https://google.kg https://www.google.kg https://google.com.kh https://www.google.com.kh https://google.ki https://www.google.ki https://google.co.kr https://www.google.co.kr https://google.com.kw https://www.google.com.kw https://google.kz https://www.google.kz https://google.la https://www.google.la https://google.com.lb https://www.google.com.lb https://google.li https://www.google.li https://google.lk https://www.google.lk https://google.co.ls https://www.google.co.ls https://google.lt https://www.google.lt https://google.lu https://www.google.lu https://google.lv https://www.google.lv https://google.com.ly https://www.google.com.ly https://google.co.ma https://www.google.co.ma https://google.md https://www.google.md https://google.me https://www.google.me https://google.mg https://www.google.mg https://google.mk https://www.google.mk https://google.ml https://www.google.ml https://google.com.mm https://www.google.com.mm https://google.mn https://www.google.mn https://google.ms https://www.google.ms https://google.com.mt https://www.google.com.mt https://google.mu https://www.google.mu https://google.mv https://www.google.mv https://google.mw https://www.google.mw https://google.com.mx https://www.google.com.mx https://google.com.my https://www.google.com.my https://google.co.mz https://www.google.co.mz https://google.com.na https://www.google.com.na https://google.ne https://www.google.ne https://google.com.ng https://www.google.com.ng https://google.ng https://www.google.ng https://google.com.ni https://www.google.com.ni https://google.nl https://www.google.nl https://google.no https://www.google.no https://google.com.np https://www.google.com.np https://google.nr https://www.google.nr https://google.nu https://www.google.nu https://google.co.nz https://www.google.co.nz https://google.com.om https://www.google.com.om https://google.com.pa https://www.google.com.pa https://google.com.pe https://www.google.com.pe https://google.com.pg https://www.google.com.pg https://google.com.ph https://www.google.com.ph https://google.com.pk https://www.google.com.pk https://google.pl https://www.google.pl https://google.pn https://www.google.pn https://google.com.pr https://www.google.com.pr https://google.ps https://www.google.ps https://google.pt https://www.google.pt https://google.com.py https://www.google.com.py https://google.com.qa https://www.google.com.qa https://google.ro https://www.google.ro https://google.rs https://www.google.rs https://google.ru https://www.google.ru https://google.rw https://www.google.rw https://google.com.sa https://www.google.com.sa https://google.com.sb https://www.google.com.sb https://google.sc https://www.google.sc https://google.se https://www.google.se https://google.com.sg https://www.google.com.sg https://google.sh https://www.google.sh https://google.si https://www.google.si https://google.sk https://www.google.sk https://google.com.sl https://www.google.com.sl https://google.sm https://www.google.sm https://google.sn https://www.google.sn https://google.so https://www.google.so https://google.sr https://www.google.sr https://google.st https://www.google.st https://google.com.sv https://www.google.com.sv https://google.td https://www.google.td https://google.tg https://www.google.tg https://google.co.th https://www.google.co.th https://google.com.tj https://www.google.com.tj https://google.tk https://www.google.tk https://google.tl https://www.google.tl https://google.tm https://www.google.tm https://google.tn https://www.google.tn https://google.com.tn https://www.google.com.tn https://google.to https://www.google.to https://google.com.tr https://www.google.com.tr https://google.tt https://www.google.tt https://google.com.tw https://www.google.com.tw https://google.co.tz https://www.google.co.tz https://google.com.ua https://www.google.com.ua https://google.co.ug https://www.google.co.ug https://google.com https://www.google.com https://google.com.uy https://www.google.com.uy https://google.co.uz https://www.google.co.uz https://google.com.vc https://www.google.com.vc https://google.co.ve https://www.google.co.ve https://google.vg https://www.google.vg https://google.co.vi https://www.google.co.vi https://google.com.vn https://www.google.com.vn https://google.vu https://www.google.vu https://google.ws https://www.google.ws https://google.co.za https://www.google.co.za https://google.co.zm https://www.google.co.zm https://google.co.zw https://www.google.co.zw,script-src 'report-sample' 'nonce-XcQoHJII8Ze8V0IlXRaw3g' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;object-src 'none';base-uri 'self';report-uri /_/BardChatUi/cspreport,script-src 'unsafe-inline' 'unsafe-eval' blob: data: 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com https://www.gstatic.com/bg3/boq-bard-web/ https://www.google.com/tools/feedback/ https://www.gstatic.com/feedback/js/ https://www.gstatic.com/inproduct_help/ https://www.gstatic.com/support/content/ https://www.gstatic.com/uservoice/feedback/client/web/live/ https://www.gstatic.com/uservoice/surveys/resources/prod/js/survey/ https://support.google.com/inapp/ https://maps.googleapis.com https://fonts.gstatic.com https://gemini.gstatic.com https://www.youtube.com/iframe_api https://www.youtube.com/s/player/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://ads.google.com;report-uri /_/BardChatUi/cspreport/allowlist,require-trusted-types-for 'script';report-uri /_/BardChatUi/cspreport",
+            "csp_ro": "script-src 'unsafe-inline' 'unsafe-eval' blob: data: https://www.googleadservices.com/pagead/conversion/ https://www.googletagmanager.com/gtag/js https://www.googletagmanager.com/gtag/destination https://www.googletagmanager.com/gtm.js https://www.google.com/js/bg/ https://www.gstatic.com/external_hosted/highlightjs/highlight.pack.js https://www.gstatic.com/monaco_editor/ https://fonts.gstatic.com/s/e/notoemoji/search/wrapper.js https://www.youtube.com/iframe_api https://translate.google.com/translate_a/element.js https://www-onepick-opensocial.googleusercontent.com/gadgets/js/rpc.js https://www.google.com/tools/feedback/chat_load.js https://www.google.com/tools/feedback/help_api.js https://www.google.com/tools/feedback/load.js https://www.google.com/tools/feedback/open.js https://www.google.com/tools/feedback/open_to_help_guide_lazy.js https://www.gstatic.com/feedback/js/ https://www.gstatic.com/feedback/js/help/prod/service/lazy.min.js https://www.gstatic.com/inproduct_help/api/main.min.js https://www.gstatic.com/inproduct_help/chatsupport/chatsupport_button_v2.js https://www.gstatic.com/inproduct_help/service/lazy.min.js https://www.gstatic.com/uservoice/feedback/client/web/live/ https://www.gstatic.com/uservoice/surveys/resources/prod/js/survey/ https://www.gstatic.com/_/mss/boq-one-google/_/ https://www.gstatic.com/og/_/js/ https://apis.google.com/js/api.js https://apis.google.com/js/client.js https://maps.googleapis.com/maps/api/js https://gemini.gstatic.com/_/mss/boq-gemini-web-uiserver/_/js/k=boq-gemini-web-uiserver.BardChatUi.fr.hudM5477Des.2018.O/ https://apis.google.com/_/scs/abc-static/_/js/ https://maps.googleapis.com/maps-api-v3/api/js/ https://maps.googleapis.com/maps/vt https://maps.googleapis.com/maps/api/js/ https://maps.googleapis.com/maps/api/place/js/ https://www.youtube.com/s/player/ https://translate.googleapis.com/_/translate_http/_/js/;report-uri /_/BardChatUi/cspreport/fine-allowlist",
             "meta_csp": "",
             "scripts": [
               "gemini.gstatic.com",
@@ -11672,7 +8658,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
             "coop": "same-origin-allow-popups",
-            "bytes": 800017
+            "bytes": 848490
           }
         },
         {
@@ -11701,14 +8687,14 @@ window.OBSERVATOIRE = {
             "key": "id-ecPublicKey",
             "bits": 256,
             "curve": "P-256",
-            "sig": "sha256WithRSAEncryption",
+            "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-09-18",
-            "until": "2026-12-11",
+            "from": "2026-10-07",
+            "until": "2026-12-30",
             "names": 17
           },
           "net": {
-            "ip": "172.217.113.4",
+            "ip": "172.217.116.4",
             "asn": "15169",
             "cc": "US",
             "as": "GOOGLE - Google LLC, US"
@@ -11716,13 +8702,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "scaffolding on httpserver2",
-          "at": "2026-10-15T22:06:11Z",
+          "at": "2026-11-02T13:27:17Z",
           "cost": {
-            "hybrid": 18.5,
-            "classical": 17.2,
-            "hybrid_median": 20.7,
-            "classical_median": 21.2,
-            "rtt": 8.3,
+            "hybrid": 17.1,
+            "classical": 17,
+            "hybrid_median": 19.7,
+            "classical_median": 20.5,
+            "rtt": 8.2,
             "n": [
               10,
               10
@@ -11740,7 +8726,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 1561
+            "bytes": 0
           }
         },
         {
@@ -11769,14 +8755,14 @@ window.OBSERVATOIRE = {
             "key": "id-ecPublicKey",
             "bits": 256,
             "curve": "P-256",
-            "sig": "sha256WithRSAEncryption",
+            "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-09-18",
-            "until": "2026-12-11",
+            "from": "2026-10-07",
+            "until": "2026-12-30",
             "names": 17
           },
           "net": {
-            "ip": "172.217.113.4",
+            "ip": "172.217.117.4",
             "asn": "15169",
             "cc": "US",
             "as": "GOOGLE - Google LLC, US"
@@ -11784,13 +8770,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "esf",
-          "at": "2026-10-15T22:06:11Z",
+          "at": "2026-11-02T13:27:16Z",
           "cost": {
-            "hybrid": 21.4,
-            "classical": 17.8,
-            "hybrid_median": 26.5,
-            "classical_median": 19.9,
-            "rtt": 8.4,
+            "hybrid": 17.4,
+            "classical": 17.3,
+            "hybrid_median": 20.5,
+            "classical_median": 20.3,
+            "rtt": 7.5,
             "n": [
               10,
               10
@@ -11852,36 +8838,35 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:08Z",
+          "at": "2026-11-02T13:27:12Z",
           "cost": {
-            "hybrid": 17.8,
-            "classical": 16.8,
-            "hybrid_median": 21,
-            "classical_median": 21,
-            "rtt": 9,
+            "hybrid": 17.2,
+            "classical": 13.3,
+            "hybrid_median": 22.2,
+            "classical_median": 24.6,
+            "rtt": 8.6,
             "n": [
               10,
               10
             ]
           },
           "page": {
-            "final": "https://copilot.com/?fromcode=cmmlf487uwy&sessionId=1a94a6fa-eab4-472a-b342-9ea934617edd&",
+            "final": "https://copilot.com/?fromcode=cmmlf487uwy&sessionId=43410872-7d85-4765-aeb1-4b2376c75cc0&",
             "code": 200,
-            "csp": "default-src 'self';base-uri 'self';script-src 'nonce-RvoZst64SU536q/EVWwZ1Q==' 'strict-dynamic' 'report-sample' https:;report-to csp-endpoint;upgrade-insecure-requests;style-src 'self' 'report-sample' *.cdn.office.net *.microsoft.com res-dev.cdn.officeppe.net 'unsafe-inline' https://www.microsoft.com/;font-src 'self' data: *.cdn.office.net res-dev.cdn.officeppe.net data c.s-microsoft.com *.microsoft.com;connect-src 'self' https://browser.pipe.aria.microsoft.com https://browser.events.data.microsoft.com *.office.com *.office.microsoft.com *.cdn.office.net res-dev.cdn.officeppe.net https://consentreceiverfd-prod.azurefd.net https://*.clarity.ms/collect https://turbo.microsoft.com https://deeplinkservice.svc.cloud.microsoft https://sdf.deferreddeeplinkservice.microsoft.com https://config.edge.skype.com https://admin.microsoft.com https://config.centro.core.microsoft https://mem.gfx.ms https://js.monitor.azure.com data:;frame-src https://login.microsoftonline.com https://login.live.com mem.gfx.ms amcdn.msftauth.net amcdn.msauth.net;img-src * data: blob:;media-src 'self' *.cdn.office.net res-dev.cdn.officeppe.net;worker-src 'self' blob:;child-src 'self' blob:;report-uri https://csp.microsoft.com/report/Harmony-App-PROD;form-action https://login.microsoftonline.com;frame-ancestors 'self';",
+            "csp": "default-src 'self';base-uri 'self';script-src 'nonce-5YnYD1O0Wlk4NZr27xlZxw==' 'strict-dynamic' 'report-sample' https:;report-to csp-endpoint;upgrade-insecure-requests;style-src 'self' 'report-sample' *.cdn.office.net *.microsoft.com res-dev.cdn.officeppe.net 'unsafe-inline' https://www.microsoft.com/;font-src 'self' data: *.cdn.office.net res-dev.cdn.officeppe.net data c.s-microsoft.com *.microsoft.com;connect-src 'self' https://browser.pipe.aria.microsoft.com https://browser.events.data.microsoft.com *.office.com *.office.microsoft.com *.cdn.office.net res-dev.cdn.officeppe.net https://consentreceiverfd-prod.azurefd.net https://*.clarity.ms/collect https://turbo.microsoft.com https://deeplinkservice.svc.cloud.microsoft https://sdf.deferreddeeplinkservice.microsoft.com https://config.edge.skype.com https://admin.microsoft.com https://config.centro.core.microsoft https://mem.gfx.ms https://js.monitor.azure.com data:;frame-src https://login.microsoftonline.com https://login.live.com mem.gfx.ms amcdn.msftauth.net amcdn.msauth.net;img-src * data: blob:;media-src 'self' *.cdn.office.net res-dev.cdn.officeppe.net;worker-src 'self' blob:;child-src 'self' blob:;report-uri https://csp.microsoft.com/report/Harmony-App-PROD;form-action https://login.microsoftonline.com;frame-ancestors 'self';",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
-              "mem.gfx.ms",
               "res.cdn.office.net",
-              "wcpstatic.microsoft.com",
-              "www.microsoft.com"
+              "uhf.microsoft.com",
+              "wcpstatic.microsoft.com"
             ],
             "xfo": "SAMEORIGIN",
             "xcto": "nosniff",
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 314863
+            "bytes": 298547
           }
         },
         {
@@ -11913,15 +8898,15 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "140.82.114.22",
+            "ip": "140.82.112.21",
             "asn": "36459",
             "cc": "US",
             "as": "GITHUB - GitHub, Inc., US"
           },
           "hsts": "",
           "front": "other",
-          "server": "",
-          "at": "2026-10-15T22:06:04Z",
+          "server": "github.com",
+          "at": "2026-11-02T13:27:08Z",
           "cost": null,
           "page": {
             "final": "https://api.githubcopilot.com/",
@@ -11963,8 +8948,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "DigiCert Inc",
-            "from": "2026-07-25",
-            "until": "2026-10-23",
+            "from": "2026-08-11",
+            "until": "2026-11-09",
             "names": 2
           },
           "net": {
@@ -11976,13 +8961,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:54Z",
+          "at": "2026-11-02T13:28:07Z",
           "cost": {
-            "hybrid": 14.8,
-            "classical": 13.2,
-            "hybrid_median": 15.8,
-            "classical_median": 14.3,
-            "rtt": 9.2,
+            "hybrid": 13.2,
+            "classical": 12.5,
+            "hybrid_median": 15.6,
+            "classical_median": 15,
+            "rtt": 9.4,
             "n": [
               10,
               10
@@ -12029,12 +9014,12 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-08-22",
-            "until": "2026-11-20",
+            "from": "2026-10-20",
+            "until": "2027-01-18",
             "names": 1
           },
           "net": {
-            "ip": "141.101.90.107",
+            "ip": "141.101.90.105",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -12042,13 +9027,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15552000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:04Z",
+          "at": "2026-11-02T13:27:08Z",
           "cost": {
-            "hybrid": 19.6,
-            "classical": 14.2,
-            "hybrid_median": 69,
-            "classical_median": 20.3,
-            "rtt": 8.3,
+            "hybrid": 17.7,
+            "classical": 38.1,
+            "hybrid_median": 52.9,
+            "classical_median": 55.7,
+            "rtt": 8.4,
             "n": [
               10,
               10
@@ -12057,7 +9042,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://chat.mistral.ai/chat",
             "code": 200,
-            "csp": "default-src 'self'; script-src 'report-sample' 'self' 'nonce-Uu4wscuvZgr0Wv3kfK5Htg==' 'strict-dynamic' 'unsafe-eval' blob: https://cdn.jsdelivr.net https://js.intercomcdn.com https://js.stripe.com https://static.cloudflareinsights.com https://widget.intercom.io https://*.mistral.ai; style-src 'report-sample' 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://*.mistral.ai https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' https://o4507101628137472.ingest.de.sentry.io https://o4507101628137472.ingest.de.sentry.io https://www.google.com https://*.gstatic.com https://api-iam.eu.intercom.io https://nexus-europe-websocket.intercom.io https://widget.intercom.io https://js.intercomcdn.com wss://nexus-europe-websocket.intercom.io wss://primary-realtime-eu.intercom-messenger.com https://internet-up-realtime.intercom-messenger.com https://api.stripe.com https://js.stripe.com https://static.cloudflareinsights.com https://cdn.jsdelivr.net https://maiextintegrationsprod.blob.core.windows.net https://mistralaiblackforestprod.blob.core.windows.net https://mistralaichatupprodswe.blob.core.windows.net https://mistralaifilesapiprodswe.blob.core.windows.net https://static-assets.mistral.ai https://static-assets.mistralai.com https://*.mistral.ai wss://*.mistral.ai https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.intercomcdn.com https://fonts.gstatic.com data:; frame-ancestors 'none'; frame-src 'self' https://js.stripe.com https://canvas.mistralusercontent.com https://*.web-sandbox.mistralusercontent.com https://trytako.com; img-src 'self' blob: data: https://www.google.com https://*.gstatic.com https://maiextintegrationsprod.blob.core.windows.net https://mistralaiblackforestprod.blob.core.windows.net https://mistralaichatupprodswe.blob.core.windows.net https://mistralaifilesapiprodswe.blob.core.windows.net https://static-assets.mistral.ai https://static-assets.mistralai.com https://*.mistral.ai https://mistral.ai https://static.intercomassets.eu https://js.intercomcdn.com https://downloads.intercomcdn.eu https://avatars.githubusercontent.com; manifest-src 'self'; media-src 'self' data:; worker-src 'self' blob:; report-uri /api/csp-report?build=2026.10.15-main-46255-a3c13f4&document=9aa4cf02-aefb-40cd-afcf-2a70afe8eb5b; upgrade-insecure-requests",
+            "csp": "default-src 'self'; script-src 'report-sample' 'self' 'nonce-RH2Wmj36o7WVr3THNzMSyg==' 'strict-dynamic' 'unsafe-eval' blob: https://cdn.jsdelivr.net https://js.intercomcdn.com https://js.stripe.com https://static.cloudflareinsights.com https://widget.intercom.io https://*.mistral.ai; style-src 'report-sample' 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://*.mistral.ai https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; form-action 'self'; connect-src 'self' https://o4507101628137472.ingest.de.sentry.io https://o4507101628137472.ingest.de.sentry.io https://www.google.com https://*.gstatic.com https://api-iam.eu.intercom.io https://nexus-europe-websocket.intercom.io https://widget.intercom.io https://js.intercomcdn.com wss://nexus-europe-websocket.intercom.io wss://primary-realtime-eu.intercom-messenger.com https://internet-up-realtime.intercom-messenger.com https://api.stripe.com https://js.stripe.com https://static.cloudflareinsights.com https://cdn.jsdelivr.net https://maiextintegrationsprod.blob.core.windows.net https://mistralaiblackforestprod.blob.core.windows.net https://mistralaichatupprodswe.blob.core.windows.net https://mistralaifilesapiprodswe.blob.core.windows.net https://static-assets.mistral.ai https://static-assets.mistralai.com https://*.mistral.ai wss://*.mistral.ai https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.intercomcdn.com https://fonts.gstatic.com data:; frame-ancestors 'none'; frame-src 'self' https://js.stripe.com https://canvas.mistralusercontent.com https://*.web-sandbox.mistralusercontent.com https://trytako.com; img-src 'self' blob: data: https://www.google.com https://*.gstatic.com https://maiextintegrationsprod.blob.core.windows.net https://mistralaiblackforestprod.blob.core.windows.net https://mistralaichatupprodswe.blob.core.windows.net https://mistralaifilesapiprodswe.blob.core.windows.net https://static-assets.mistral.ai https://static-assets.mistralai.com https://*.mistral.ai https://mistral.ai https://static.intercomassets.eu https://js.intercomcdn.com https://downloads.intercomcdn.eu https://avatars.githubusercontent.com; manifest-src 'self'; media-src 'self' data:; worker-src 'self' blob:; report-uri /api/csp-report?build=2026.10.30-main-50584-abf05e5&document=ad311fc1-e9a5-4fc9-9de7-d74df21f03c8; upgrade-insecure-requests",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -12068,7 +9053,7 @@ window.OBSERVATOIRE = {
             "referrer": "origin-when-cross-origin",
             "permissions": "",
             "coop": "",
-            "bytes": 575200
+            "bytes": 592027
           }
         },
         {
@@ -12097,12 +9082,12 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-08-23",
-            "until": "2026-11-21",
+            "from": "2026-10-21",
+            "until": "2027-01-19",
             "names": 1
           },
           "net": {
-            "ip": "172.66.2.203",
+            "ip": "162.159.142.207",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -12110,13 +9095,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15552000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:05:59Z",
+          "at": "2026-11-02T13:27:03Z",
           "cost": {
-            "hybrid": 16.3,
-            "classical": 13.4,
-            "hybrid_median": 19,
-            "classical_median": 15.7,
-            "rtt": 8.8,
+            "hybrid": 15.6,
+            "classical": 15.6,
+            "hybrid_median": 21.5,
+            "classical_median": 18,
+            "rtt": 8.2,
             "n": [
               10,
               10
@@ -12179,13 +9164,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "cloudfront",
           "server": "cloudfront",
-          "at": "2026-10-15T22:06:27Z",
+          "at": "2026-11-02T13:27:32Z",
           "cost": {
-            "hybrid": 14,
-            "classical": 13.2,
-            "hybrid_median": 16.7,
-            "classical_median": 14.3,
-            "rtt": 8,
+            "hybrid": 14.4,
+            "classical": 13.4,
+            "hybrid_median": 15.4,
+            "classical_median": 15.6,
+            "rtt": 7.8,
             "n": [
               10,
               10
@@ -12248,13 +9233,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudfront",
           "server": "elb",
-          "at": "2026-10-15T22:06:23Z",
+          "at": "2026-11-02T13:27:26Z",
           "cost": {
-            "hybrid": 15.4,
-            "classical": 13.2,
-            "hybrid_median": 19,
-            "classical_median": 16,
-            "rtt": 8.5,
+            "hybrid": 13.1,
+            "classical": 14.8,
+            "hybrid_median": 21.1,
+            "classical_median": 20.3,
+            "rtt": 8.3,
             "n": [
               10,
               10
@@ -12272,7 +9257,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 31
+            "bytes": 183
           }
         },
         {
@@ -12301,8 +9286,8 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-09-14",
-            "until": "2026-12-14",
+            "from": "2026-10-30",
+            "until": "2027-01-28",
             "names": 2
           },
           "net": {
@@ -12314,13 +9299,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:15Z",
+          "at": "2026-11-02T13:27:19Z",
           "cost": {
-            "hybrid": 17.4,
-            "classical": 13,
-            "hybrid_median": 18.4,
-            "classical_median": 14.8,
-            "rtt": 8.5,
+            "hybrid": 16,
+            "classical": 14.3,
+            "hybrid_median": 24.2,
+            "classical_median": 17.6,
+            "rtt": 8.1,
             "n": [
               10,
               10
@@ -12329,7 +9314,7 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://grok.com/",
             "code": 200,
-            "csp": "default-src 'self'; script-src 'self' 'nonce-MDU1YTk3NWMtMTk0MC00YzY4LTlmZTItNzRiMmY3ZmRkNWE2' 'strict-dynamic' 'wasm-unsafe-eval' https://cdn.grok.com https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.cloudflareinsights.com https://unpkg.com/@googleworkspace/drive-picker-element@0/dist/index.iife.min.js https://*.reddit.com https://embed.reddit.com/widgets.js https://*.twitter.com https://*.x.com https://analytics.tiktok.com https://sgtm-prod-985009374134.us-central1.run.app https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://cdn.plaid.com https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com https://hcaptcha.com https://*.hcaptcha.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com; worker-src 'self' blob: https://cdn.grok.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://accounts.google.com/gsi/style https://cdn.grok.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://hcaptcha.com https://*.hcaptcha.com; img-src 'self' blob: data: https: https://assets.grok.com https://assets.grokusercontent.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://github.com https://avatars.githubusercontent.com https://media.x.ai; media-src 'self' blob: https://assets.grok.com https://assets.grokusercontent.com https://*.googleapis.com https://*.x.ai wss://*.x.ai https://*.twimg.com https://cdn.grok.com; font-src 'self' https://use.typekit.net https://fonts.gstatic.com https://cdn.grok.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com; frame-src 'self' blob: data: com.grokapp: intent: https://assets.grok.com https://assets.grokusercontent.com https://www.archives.gov https://arxiv.org https://*.js.stripe.com https://*.stripe.com https://hcaptcha.com https://*.hcaptcha.com https://artifacts.grokusercontent.com https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.youtube.com https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://challenges.cloudflare.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://cdn.plaid.com https://*.reddit.com https://groktpcontent.com https://data.x.ai https://*.twitter.com https://*.x.com https://*.grok-sandbox.com https://mcp-sandbox.grokusercontent.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com; object-src 'none'; base-uri 'none'; form-action 'self' https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://*.paypal.com; frame-ancestors https://x.com https://starfleet.teachx.ai; block-all-mixed-content; connect-src 'self' data: https://cdn.grok.com https://*.x.ai wss://*.x.ai https://*.twimg.com https://*.grok.com wss://*.grok.com https://*.grok-sandbox.com wss://*.grok-sandbox.com wss://*.cursorvm.com ws://localhost:* ws://127.0.0.1:* https://assets.grok.com https://assets.grokusercontent.com https://*.js.stripe.com https://*.stripe.com https://hcaptcha.com https://*.hcaptcha.com https://featureassets.org https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://sandbox.plaid.com https://production.plaid.com https://*.mixpanel.com https://us-east-1.hightouch-events.com https://*.twitter.com https://*.x.com https://analytics.tiktok.com https://sgtm-prod-985009374134.us-central1.run.app https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com https://*.braintree-api.com; upgrade-insecure-requests;",
+            "csp": "default-src 'self'; script-src 'self' 'nonce-OTk2MmUxMzAtNjcyOC00YjAxLWIzMmItMWM1NDMwMTJmNzBj' 'strict-dynamic' 'wasm-unsafe-eval' https://cdn.grok.com https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.cloudflareinsights.com https://unpkg.com/@googleworkspace/drive-picker-element@0/dist/index.iife.min.js https://*.reddit.com https://embed.reddit.com/widgets.js https://*.twitter.com https://*.x.com https://analytics.tiktok.com https://sgtm-prod-985009374134.us-central1.run.app https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://cdn.plaid.com https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com https://hcaptcha.com https://*.hcaptcha.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com; worker-src 'self' blob: https://cdn.grok.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://accounts.google.com/gsi/style https://cdn.grok.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://hcaptcha.com https://*.hcaptcha.com; img-src 'self' blob: data: https: https://assets.grok.com https://assets.grokusercontent.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://github.com https://avatars.githubusercontent.com https://media.x.ai; media-src 'self' blob: https://assets.grok.com https://assets.grokusercontent.com https://*.googleapis.com https://*.x.ai wss://*.x.ai https://*.twimg.com https://cdn.grok.com; font-src 'self' https://use.typekit.net https://fonts.gstatic.com https://cdn.grok.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com; frame-src 'self' blob: data: com.grokapp: intent: https://assets.grok.com https://assets.grokusercontent.com https://www.archives.gov https://arxiv.org https://*.js.stripe.com https://*.stripe.com https://hcaptcha.com https://*.hcaptcha.com https://artifacts.grokusercontent.com https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.youtube.com https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://challenges.cloudflare.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://cdn.plaid.com https://*.reddit.com https://groktpcontent.com https://data.x.ai https://*.twitter.com https://*.x.com https://*.grok-sandbox.com https://mcp-sandbox.grokusercontent.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com; object-src 'none'; base-uri 'none'; form-action 'self' https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://*.paypal.com; frame-ancestors https://x.com https://starfleet.teachx.ai; block-all-mixed-content; connect-src 'self' data: https://cdn.grok.com https://*.x.ai wss://*.x.ai https://*.twimg.com https://*.grok.com wss://*.grok.com https://*.grok-sandbox.com wss://*.grok-sandbox.com wss://*.cursorvm.com ws://localhost:* ws://127.0.0.1:* https://assets.grok.com https://assets.grokusercontent.com https://*.js.stripe.com https://*.stripe.com https://hcaptcha.com https://*.hcaptcha.com https://featureassets.org https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://sandbox.plaid.com https://production.plaid.com https://*.mixpanel.com https://us-east-1.hightouch-events.com https://*.twitter.com https://*.x.com https://analytics.tiktok.com https://sgtm-prod-985009374134.us-central1.run.app https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com https://*.braintree-api.com; upgrade-insecure-requests;",
             "csp_ro": "",
             "meta_csp": "",
             "scripts": [
@@ -12342,7 +9327,7 @@ window.OBSERVATOIRE = {
             "referrer": "origin-when-cross-origin",
             "permissions": "camera=(self), microphone=(self), pointer-lock=(self)",
             "coop": "",
-            "bytes": 371376
+            "bytes": 202171
           }
         },
         {
@@ -12384,13 +9369,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:03Z",
+          "at": "2026-11-02T13:27:07Z",
           "cost": {
-            "hybrid": 16.6,
-            "classical": 13.9,
-            "hybrid_median": 21.9,
-            "classical_median": 17.4,
-            "rtt": 9,
+            "hybrid": 16.8,
+            "classical": 15.7,
+            "hybrid_median": 24.3,
+            "classical_median": 22.9,
+            "rtt": 8.5,
             "n": [
               10,
               10
@@ -12450,13 +9435,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:07:00Z",
+          "at": "2026-11-02T13:28:12Z",
           "cost": {
-            "hybrid": 17.4,
-            "classical": 15,
-            "hybrid_median": 23.7,
-            "classical_median": 19,
-            "rtt": 9.3,
+            "hybrid": 19.1,
+            "classical": 15.1,
+            "hybrid_median": 21.4,
+            "classical_median": 16.9,
+            "rtt": 8.2,
             "n": [
               10,
               10
@@ -12465,12 +9450,10 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://www.perplexity.ai/",
             "code": 200,
-            "csp": "object-src 'none'; base-uri 'self'; form-action 'self' https://onedrive.live.com https://*.sharepoint.com https://*.paypal.com https://*.venmo.com; frame-ancestors 'self' https://onedrive.live.com https://*.sharepoint.com https://app.athina.ai; upgrade-insecure-requests",
-            "csp_ro": "",
+            "csp": "object-src 'none'; base-uri 'self'; form-action 'self' perplexity-app: https://onedrive.live.com https://*.sharepoint.com https://*.paypal.com https://*.venmo.com; frame-ancestors 'self' https://onedrive.live.com https://*.sharepoint.com https://app.athina.ai; upgrade-insecure-requests",
+            "csp_ro": "script-src 'sha256-LgCGb6zRdmniK+vOZIu10D/3s7atcvr/3NkZIVNTfwk=' 'strict-dynamic' https: 'wasm-unsafe-eval' 'sha256-m6zwpSfkfkKEuBiwZwd/qwT86JrTMzWG2/kEMXYg5aM=' 'sha256-a1Xz+NFw7kz03yl7Jh2hZIOFN3jBPYsTJka1cHS/6z0=' 'sha256-rGGr8fhAOqOL6QsZFRf69HqrHegpiDfNpcCsM07hQpg='; script-src-attr 'none'; worker-src 'self' blob:; object-src 'none'; base-uri 'self', script-src 'self' https://pplx-next-static-public.perplexity.ai https://r2cdn.perplexity.ai/js/count/0.1.0/loader.min.js https://www.dubcdn.com/analytics/script.js https://accounts.google.com/gsi/client https://apis.google.com/js/api.js https://apis.google.com/_/scs/abc-static/_/js/ https://js.stripe.com https://*.js.stripe.com https://www.dropbox.com/static/api/2/dropins.js https://cdn01.boxcdn.net/platform/elements/ https://ah-cdn.merge.dev https://decagon.ai https://cdn.usecanopy.com 'unsafe-inline' 'wasm-unsafe-eval'; worker-src 'self' blob:",
             "meta_csp": "",
             "scripts": [
-              "pplx-next-static-public.perplexity.ai",
-              "r2cdn.perplexity.ai",
               "static.cloudflareinsights.com"
             ],
             "xfo": "DENY",
@@ -12478,7 +9461,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin",
             "permissions": "accelerometer=(), ambient-light-sensor=(), autoplay=(self \"https://www.youtube.com\"), battery=(), bluetooth=(), camera=(self), clipboard-read=(self), clipboard-write=(self \"https://js.stripe.com\"), compute-pressure=(), display-capture=(self), encrypted-media=(self \"https://www.youtube.com\"), fullscreen=(self \"https://www.youtube.com\"), geolocation=(self), gyroscope=(), hid=(), identity-credentials-get=(self \"https://accounts.google.com\"), idle-detection=(), magnetometer=(), microphone=(self), midi=(), payment=(self \"https://js.stripe.com\" \"https://checkout.link.com\" \"https://www.paypal.com\" \"https://www.sandbox.paypal.com\" \"https://www.test28.stage.paypal.com\"), picture-in-picture=(self \"https://www.youtube.com\"), publickey-credentials-get=(self \"https://js.stripe.com\" \"https://checkout.link.com\" \"https://www.paypal.com\" \"https://www.sandbox.paypal.com\" \"https://www.test28.stage.paypal.com\" \"https://acs.capitalone.com\" \"https://capitalone.com\"), publickey-credentials-create=(self \"https://js.stripe.com\" \"https://checkout.link.com\" \"https://www.paypal.com\" \"https://www.sandbox.paypal.com\" \"https://www.test28.stage.paypal.com\"), screen-wake-lock=(), serial=(), speaker-selection=(), usb=(), web-share=(), window-management=(), xr-spatial-tracking=()",
             "coop": "unsafe-none",
-            "bytes": 18511
+            "bytes": 19137
           }
         },
         {
@@ -12520,13 +9503,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000; includesubdomains; preload",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:03Z",
           "cost": {
-            "hybrid": 19.3,
-            "classical": 16.7,
-            "hybrid_median": 22.4,
-            "classical_median": 18.8,
-            "rtt": 8.7,
+            "hybrid": 18.4,
+            "classical": 17.4,
+            "hybrid_median": 22.6,
+            "classical_median": 19.3,
+            "rtt": 7.8,
             "n": [
               10,
               10
@@ -12586,7 +9569,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:07Z",
+          "at": "2026-11-02T13:27:12Z",
           "cost": null,
           "page": {
             "final": "https://chat.qwen.ai/",
@@ -12607,10 +9590,10 @@ window.OBSERVATOIRE = {
           "name": "API Cohere",
           "host": "api.cohere.com",
           "reachable": true,
-          "pq": "partial",
-          "hits": 2,
+          "pq": "full",
+          "hits": 5,
           "tries": 5,
-          "group": "X25519",
+          "group": "X25519MLKEM768",
           "protocol": "TLSv1.3",
           "cipher": "TLS_AES_256_GCM_SHA384",
           "protocols": [
@@ -12642,15 +9625,15 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "google",
           "server": "envoy",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:04Z",
           "cost": {
-            "hybrid": 19.3,
-            "classical": 17.4,
-            "hybrid_median": 26.2,
-            "classical_median": 22.7,
-            "rtt": 8.7,
+            "hybrid": 16.5,
+            "classical": 14.6,
+            "hybrid_median": 18.9,
+            "classical_median": 17,
+            "rtt": 8.9,
             "n": [
-              5,
+              10,
               10
             ]
           },
@@ -12700,7 +9683,7 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "172.64.149.20",
+            "ip": "104.18.38.236",
             "asn": "13335",
             "cc": "US",
             "as": "CLOUDFLARENET - Cloudflare, Inc., US"
@@ -12708,13 +9691,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=15552000",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:04Z",
           "cost": {
-            "hybrid": 15.6,
-            "classical": 12.5,
-            "hybrid_median": 20.5,
-            "classical_median": 16.7,
-            "rtt": 8.6,
+            "hybrid": 16.2,
+            "classical": 14.9,
+            "hybrid_median": 20.1,
+            "classical_median": 18.6,
+            "rtt": 7.9,
             "n": [
               10,
               10
@@ -12761,8 +9744,8 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA256",
             "issuer": "Google Trust Services",
-            "from": "2026-10-15",
-            "until": "2027-01-13",
+            "from": "2026-11-02",
+            "until": "2027-01-31",
             "names": 3
           },
           "net": {
@@ -12774,13 +9757,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000",
           "front": "cloudflare",
           "server": "cloudflare",
-          "at": "2026-10-15T22:06:18Z",
+          "at": "2026-11-02T13:27:24Z",
           "cost": {
-            "hybrid": 18.2,
-            "classical": 14.4,
-            "hybrid_median": 19,
-            "classical_median": 16.4,
-            "rtt": 8.2,
+            "hybrid": 15.9,
+            "classical": 13.7,
+            "hybrid_median": 17.7,
+            "classical_median": 20.3,
+            "rtt": 8,
             "n": [
               10,
               10
@@ -12789,8 +9772,8 @@ window.OBSERVATOIRE = {
           "page": {
             "final": "https://openrouter.ai/",
             "code": 200,
-            "csp": "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://clerk.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://challenges.cloudflare.com https://checkout.stripe.com https://connect-js.stripe.com https://js.stripe.com https://maps.googleapis.com https://www.googletagmanager.com https://*.googletagmanager.com 'wasm-unsafe-eval' https://unpkg.com https://esm.sh https://static.cloudflareinsights.com https://cdn.jsdelivr.net https://*.algolia.net https://*.algolianet.com https://app.buildwithfern.com https://prod.ferndocs.com https://cdn.segment.com https://jobs.ashbyhq.com https://*.posthog.com https://cdn.tldraw.com; connect-src 'self' blob: https://model-assets.openrouter.ai https://clerk.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://*.protect.clerk.com:* https://clerk-telemetry.com https://checkout.stripe.com https://api.stripe.com https://m.stripe.com https://maps.googleapis.com *.google-analytics.com https://www.googletagmanager.com https://www.google.com https://*.analytics.google.com https://analytics.google.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://fonts.googleapis.com https://raw.githubusercontent.com wss://www.walletlink.org/rpc https://static.cloudflareinsights.com https://esm.sh https://*.browser-intake-datadoghq.com https://browser-intake-us5-datadoghq.com https://rum.browser-intake-us5-datadoghq.com https://api-na2.hsforms.com https://*.algolia.net https://*.algolianet.com https://app.buildwithfern.com https://prod.ferndocs.com https://api.segment.io https://cdn.segment.com https://www.openrouter.ai https://openrouter.ai https://jobs.ashbyhq.com https://api.ashbyhq.com/ https://*.posthog.com https://cdn.tldraw.com https://wrapped.openrouter.ai https://storage.googleapis.com; frame-src 'self' https://model-assets.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://challenges.cloudflare.com https://checkout.stripe.com https://connect-js.stripe.com https://js.stripe.com https://hooks.stripe.com https://m.stripe.network https://us5.datadoghq.com https://share-na2.hsforms.com https://www.youtube.com https://app.buildwithfern.com https://prod.ferndocs.com https://jobs.ashbyhq.com; img-src 'self' data: blob: https://*.github.io https://model-assets.openrouter.ai https://img.clerk.com https://*.stripe.com https://www.googletagmanager.com www.google.com https://*.google-analytics.com https://*.googletagmanager.com https://analytics.google.com https://*.analytics.google.com https://*.g.doubleclick.net https://source.unsplash.com https://t0.gstatic.com https://imagedelivery.net https://raw.githubusercontent.com https://*.algolia.io https://files.buildwithfern.com https://icons.ferndocs.com https://cdn.tldraw.com https://wrapped.openrouter.ai; media-src 'self' data: blob: https://model-assets.openrouter.ai https://vgi-bench-mirror.openrouter.ai; worker-src 'self' blob: data:; style-src 'self' 'unsafe-inline' sha256-0hAheEzaMe6uXIKV4EehS9pu1am1lj/KnnzrOYqckXk= https://fonts.googleapis.com https://unpkg.com https://cdn.jsdelivr.net https://app.buildwithfern.com https://prod.ferndocs.com https://jobs.ashbyhq.com https://*.posthog.com https://cdn.tldraw.com; frame-ancestors 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdn.tldraw.com; upgrade-insecure-requests",
-            "csp_ro": "",
+            "csp": "default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://clerk.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://challenges.cloudflare.com https://checkout.stripe.com https://connect-js.stripe.com https://js.stripe.com https://www.googletagmanager.com https://*.googletagmanager.com 'wasm-unsafe-eval' https://unpkg.com https://esm.sh https://cdn.jsdelivr.net https://static.cloudflareinsights.com https://*.posthog.com; connect-src 'self' blob: https://openrouter.ai https://model-assets.openrouter.ai https://clerk.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://*.protect.clerk.com:* https://clerk-telemetry.com https://checkout.stripe.com https://api.stripe.com https://m.stripe.com *.google-analytics.com https://www.googletagmanager.com https://www.google.com https://*.analytics.google.com https://analytics.google.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://fonts.googleapis.com https://raw.githubusercontent.com https://static.cloudflareinsights.com https://esm.sh https://*.browser-intake-datadoghq.com https://browser-intake-us5-datadoghq.com https://rum.browser-intake-us5-datadoghq.com https://api-na2.hsforms.com https://*.posthog.com https://wrapped.openrouter.ai https://storage.googleapis.com; frame-src 'self' https://model-assets.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://challenges.cloudflare.com https://checkout.stripe.com https://connect-js.stripe.com https://js.stripe.com https://hooks.stripe.com https://m.stripe.network https://us5.datadoghq.com https://share-na2.hsforms.com https://www.youtube.com; img-src 'self' data: blob: https://*.github.io https://model-assets.openrouter.ai https://img.clerk.com https://*.stripe.com https://www.googletagmanager.com www.google.com https://*.google-analytics.com https://*.googletagmanager.com https://analytics.google.com https://*.analytics.google.com https://*.g.doubleclick.net https://source.unsplash.com https://t0.gstatic.com https://imagedelivery.net https://raw.githubusercontent.com https://wrapped.openrouter.ai; media-src 'self' data: blob: https://model-assets.openrouter.ai https://vgi-bench-mirror.openrouter.ai; worker-src 'self' blob: data:; style-src 'self' 'unsafe-inline' sha256-0hAheEzaMe6uXIKV4EehS9pu1am1lj/KnnzrOYqckXk= https://fonts.googleapis.com https://unpkg.com https://cdn.jsdelivr.net https://*.posthog.com; frame-ancestors 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; upgrade-insecure-requests",
+            "csp_ro": "default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://clerk.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://challenges.cloudflare.com https://checkout.stripe.com https://connect-js.stripe.com https://js.stripe.com https://www.googletagmanager.com https://*.googletagmanager.com 'wasm-unsafe-eval' https://unpkg.com https://esm.sh https://cdn.jsdelivr.net https://static.cloudflareinsights.com https://*.posthog.com; connect-src 'self' blob: https://openrouter.ai https://model-assets.openrouter.ai https://clerk.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://*.protect.clerk.com:* https://clerk-telemetry.com https://checkout.stripe.com https://api.stripe.com https://m.stripe.com *.google-analytics.com https://www.googletagmanager.com https://www.google.com https://*.analytics.google.com https://analytics.google.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://fonts.googleapis.com https://raw.githubusercontent.com https://static.cloudflareinsights.com https://esm.sh https://*.browser-intake-datadoghq.com https://browser-intake-us5-datadoghq.com https://rum.browser-intake-us5-datadoghq.com https://api-na2.hsforms.com https://*.posthog.com https://wrapped.openrouter.ai https://storage.googleapis.com; frame-src 'self' https://model-assets.openrouter.ai https://*.protect.clerk.com https://*.client.protect.clerk.com https://challenges.cloudflare.com https://checkout.stripe.com https://connect-js.stripe.com https://js.stripe.com https://hooks.stripe.com https://m.stripe.network https://us5.datadoghq.com https://share-na2.hsforms.com https://www.youtube.com; img-src 'self' data: blob: https://*.github.io https://model-assets.openrouter.ai https://img.clerk.com https://*.stripe.com https://www.googletagmanager.com www.google.com https://*.google-analytics.com https://*.googletagmanager.com https://analytics.google.com https://*.analytics.google.com https://*.g.doubleclick.net https://source.unsplash.com https://t0.gstatic.com https://imagedelivery.net https://raw.githubusercontent.com https://wrapped.openrouter.ai; media-src 'self' data: blob: https://model-assets.openrouter.ai https://vgi-bench-mirror.openrouter.ai; worker-src 'self' blob: data:; style-src 'self' 'unsafe-inline' sha256-0hAheEzaMe6uXIKV4EehS9pu1am1lj/KnnzrOYqckXk= https://fonts.googleapis.com https://unpkg.com https://cdn.jsdelivr.net https://*.posthog.com; frame-ancestors 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; script-src-attr 'none'",
             "meta_csp": "",
             "scripts": [
               "clerk.openrouter.ai",
@@ -12802,7 +9785,7 @@ window.OBSERVATOIRE = {
             "referrer": "no-referrer, strict-origin-when-cross-origin,no-referrer, strict-origin-when-cross-origin",
             "permissions": "payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\"),payment=(self \"https://checkout.stripe.com\" \"https://connect-js.stripe.com\" \"https://js.stripe.com\" \"https://*.js.stripe.com\" \"https://hooks.stripe.com\")",
             "coop": "",
-            "bytes": 262710
+            "bytes": 192540
           }
         },
         {
@@ -12837,7 +9820,7 @@ window.OBSERVATOIRE = {
             "names": 2
           },
           "net": {
-            "ip": "18.155.129.31",
+            "ip": "99.86.109.115",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -12845,13 +9828,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "cloudfront",
           "server": "",
-          "at": "2026-10-15T22:06:39Z",
+          "at": "2026-11-02T13:27:43Z",
           "cost": {
-            "hybrid": 14.6,
-            "classical": 13.5,
-            "hybrid_median": 17.4,
-            "classical_median": 15,
-            "rtt": 8.4,
+            "hybrid": 14.3,
+            "classical": 13.4,
+            "hybrid_median": 17.1,
+            "classical_median": 15.4,
+            "rtt": 7.8,
             "n": [
               10,
               10
@@ -12871,7 +9854,7 @@ window.OBSERVATOIRE = {
             "referrer": "strict-origin-when-cross-origin",
             "permissions": "",
             "coop": "same-origin",
-            "bytes": 175200
+            "bytes": 179125
           }
         },
         {
@@ -12914,13 +9897,13 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=31536000",
           "front": "cloudfront",
           "server": "",
-          "at": "2026-10-15T22:06:42Z",
+          "at": "2026-11-02T13:27:50Z",
           "cost": {
-            "hybrid": 15.4,
-            "classical": 13.6,
-            "hybrid_median": 16.9,
-            "classical_median": 16.7,
-            "rtt": 8.3,
+            "hybrid": 15.2,
+            "classical": 13.9,
+            "hybrid_median": 19.5,
+            "classical_median": 18.6,
+            "rtt": 7.8,
             "n": [
               10,
               10
@@ -12971,7 +9954,7 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "15.188.107.28",
+            "ip": "51.44.230.15",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -12979,13 +9962,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "",
-          "at": "2026-10-15T22:06:03Z",
+          "at": "2026-11-02T13:27:07Z",
           "cost": {
-            "hybrid": 19.2,
-            "classical": 12.9,
-            "hybrid_median": 23.2,
-            "classical_median": 15.5,
-            "rtt": 8.7,
+            "hybrid": 20.2,
+            "classical": 14.2,
+            "hybrid_median": 22.9,
+            "classical_median": 15.6,
+            "rtt": 8.4,
             "n": [
               10,
               10
@@ -13036,7 +10019,7 @@ window.OBSERVATOIRE = {
             "names": 3
           },
           "net": {
-            "ip": "3.92.129.183",
+            "ip": "34.225.159.174",
             "asn": "14618",
             "cc": "US",
             "as": "AMAZON-AES - Amazon.com, Inc., US"
@@ -13044,7 +10027,7 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "envoy",
-          "at": "2026-10-15T22:06:07Z",
+          "at": "2026-11-02T13:27:12Z",
           "cost": null,
           "page": {
             "final": "https://api2.cursor.sh/",
@@ -13058,7 +10041,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 132
+            "bytes": 128
           }
         },
         {
@@ -13100,13 +10083,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "envoy",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:04Z",
           "cost": {
-            "hybrid": 16,
-            "classical": 16.9,
-            "hybrid_median": 34.3,
-            "classical_median": 26.7,
-            "rtt": 8.7,
+            "hybrid": 20.1,
+            "classical": 18.8,
+            "hybrid_median": 40.8,
+            "classical_median": 27.3,
+            "rtt": 10.5,
             "n": [
               10,
               10
@@ -13124,7 +10107,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 72
+            "bytes": 90
           }
         },
         {
@@ -13152,8 +10135,8 @@ window.OBSERVATOIRE = {
             "curve": "",
             "sig": "sha256WithRSAEncryption",
             "issuer": "Let's Encrypt",
-            "from": "2026-08-22",
-            "until": "2026-11-20",
+            "from": "2026-10-21",
+            "until": "2027-01-19",
             "names": 4
           },
           "net": {
@@ -13164,8 +10147,8 @@ window.OBSERVATOIRE = {
           },
           "hsts": "",
           "front": "other",
-          "server": "kong/3.9.3",
-          "at": "2026-10-15T22:06:18Z",
+          "server": "kong/3.9.4",
+          "at": "2026-11-02T13:27:24Z",
           "cost": null,
           "page": {
             "final": "https://oai.endpoints.kepler.ai.cloud.ovh.net/",
@@ -13208,9 +10191,9 @@ window.OBSERVATOIRE = {
             "curve": "P-256",
             "sig": "ecdsa-with-SHA384",
             "issuer": "Let's Encrypt",
-            "from": "2026-08-28",
-            "until": "2026-11-26",
-            "names": 4
+            "from": "2026-10-21",
+            "until": "2027-01-19",
+            "names": 3
           },
           "net": {
             "ip": "142.44.61.228",
@@ -13221,13 +10204,13 @@ window.OBSERVATOIRE = {
           "hsts": "",
           "front": "other",
           "server": "nginx",
-          "at": "2026-10-15T22:06:00Z",
+          "at": "2026-11-02T13:27:04Z",
           "cost": {
-            "hybrid": 15.9,
-            "classical": 15.4,
-            "hybrid_median": 18.9,
-            "classical_median": 16.8,
-            "rtt": 8.9,
+            "hybrid": 17.2,
+            "classical": 16.5,
+            "hybrid_median": 20.6,
+            "classical_median": 26,
+            "rtt": 10.8,
             "n": [
               10,
               10
@@ -13279,7 +10262,7 @@ window.OBSERVATOIRE = {
             "names": 1
           },
           "net": {
-            "ip": "216.150.16.193",
+            "ip": "216.150.1.193",
             "asn": "16509",
             "cc": "US",
             "as": "AMAZON-02 - Amazon.com, Inc., US"
@@ -13287,20 +10270,20 @@ window.OBSERVATOIRE = {
           "hsts": "max-age=63072000",
           "front": "other",
           "server": "vercel",
-          "at": "2026-10-15T22:06:16Z",
+          "at": "2026-11-02T13:27:20Z",
           "cost": {
-            "hybrid": 17.9,
-            "classical": 14.7,
-            "hybrid_median": 20.8,
-            "classical_median": 17.7,
-            "rtt": 8,
+            "hybrid": 16.6,
+            "classical": 14.5,
+            "hybrid_median": 19.1,
+            "classical_median": 19.2,
+            "rtt": 8.3,
             "n": [
               10,
               10
             ]
           },
           "page": {
-            "final": "https://www.lighton.ai/",
+            "final": "https://www.lighton.ai/fr",
             "code": 200,
             "csp": "",
             "csp_ro": "",
@@ -13313,7 +10296,7 @@ window.OBSERVATOIRE = {
             "referrer": "",
             "permissions": "",
             "coop": "",
-            "bytes": 135671
+            "bytes": 151174
           }
         }
       ]

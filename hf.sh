@@ -32,8 +32,10 @@ cands=$(printf '%s' "$search" | jq -r --arg want "$name" '
     # Word for word: "AXA France" is AXA, "Amelia" is not Ameli.
     | [.orgs[]? | select(((.fullname // "") | norm) as $f | $f == $w or ($f | startswith($w + " ")))] | .[:5][] | .name')
 # Verified, matching, and still not the company: kept out by hand, with the reason.
-#   ledger  "Ledger Investing", an insurer, not Ledger the wallet maker
-skip=' ledger '
+#   ledger   "Ledger Investing", an insurer, not Ledger the wallet maker
+#   cmarkea  Crédit Mutuel Arkéa, a group of its own, not Crédit Mutuel
+#            Alliance Fédérale that answers at creditmutuel.fr
+skip=' ledger cmarkea '
 out='[]'
 for org in $cands; do
     case "$skip" in *" $org "*) continue ;; esac
